@@ -13,7 +13,7 @@ package javaproject;
 public class BishopPiece {
     
     private String ewan;
-    
+    private String anonah;
     
     public BishopPiece()
     {
