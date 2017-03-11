@@ -10,17 +10,11 @@ import java.io.*;
 import javax.swing.*;
 
 
-
 /**
  *
  * @author aweso
  */
 public class MainFrame extends javax.swing.JFrame {
-    
-    String File = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
-    
-    ImageIcon BRook = new ImageIcon(File + "queen-w.png");
-    
     
     /**
      * Creates new form MainFrame
