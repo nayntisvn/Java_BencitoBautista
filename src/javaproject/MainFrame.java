@@ -5,13 +5,10 @@
  */
 package javaproject;
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Insets;
 import java.util.*;
 import java.io.*;
 import javax.swing.*;
-import javax.swing.border.Border;
+
 
 
 /**
@@ -19,7 +16,10 @@ import javax.swing.border.Border;
  * @author aweso
  */
 public class MainFrame extends javax.swing.JFrame {
-
+    
+    String File = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    
+    ImageIcon BRook = new ImageIcon(File + "queen-w.png");
     
     
     /**
@@ -41,7 +41,7 @@ public class MainFrame extends javax.swing.JFrame {
         java.awt.GridBagConstraints gridBagConstraints;
 
         A1 = new javax.swing.JPanel();
-        blackRoot2 = new javax.swing.JLabel();
+        blackRoot3 = new javax.swing.JLabel();
         A2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         A3 = new javax.swing.JPanel();
@@ -56,12 +56,13 @@ public class MainFrame extends javax.swing.JFrame {
         A8 = new javax.swing.JPanel();
         blackRoot1 = new javax.swing.JLabel();
         B1 = new javax.swing.JPanel();
+        blackRoot2 = new javax.swing.JLabel();
         B2 = new javax.swing.JPanel();
         B3 = new javax.swing.JPanel();
         B4 = new javax.swing.JPanel();
         B5 = new javax.swing.JPanel();
-        B6 = new javax.swing.JPanel();
         blackRoot = new javax.swing.JLabel();
+        B6 = new javax.swing.JPanel();
         B7 = new javax.swing.JPanel();
         B8 = new javax.swing.JPanel();
         C1 = new javax.swing.JPanel();
@@ -148,13 +149,13 @@ public class MainFrame extends javax.swing.JFrame {
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.setLayout(new java.awt.GridBagLayout());
 
-        blackRoot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        blackRoot2.addMouseListener(new java.awt.event.MouseAdapter() {
+        blackRoot3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
+        blackRoot3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                blackRoot2MouseClicked(evt);
+                blackRoot3MouseClicked(evt);
             }
         });
-        A1.add(blackRoot2, new java.awt.GridBagConstraints());
+        A1.add(blackRoot3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(238, 191, 120));
         A2.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -221,6 +222,14 @@ public class MainFrame extends javax.swing.JFrame {
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
 
+        blackRoot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
+        blackRoot2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                blackRoot2MouseClicked(evt);
+            }
+        });
+        B1.add(blackRoot2, new java.awt.GridBagConstraints());
+
         B2.setBackground(new java.awt.Color(170, 102, 26));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.setLayout(new java.awt.GridBagLayout());
@@ -237,10 +246,6 @@ public class MainFrame extends javax.swing.JFrame {
         B5.setPreferredSize(new java.awt.Dimension(100, 100));
         B5.setLayout(new java.awt.GridBagLayout());
 
-        B6.setBackground(new java.awt.Color(170, 102, 26));
-        B6.setPreferredSize(new java.awt.Dimension(100, 100));
-        B6.setLayout(new java.awt.GridBagLayout());
-
         blackRoot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
         blackRoot.setToolTipText("");
         blackRoot.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -248,7 +253,11 @@ public class MainFrame extends javax.swing.JFrame {
                 blackRootMouseClicked(evt);
             }
         });
-        B6.add(blackRoot, new java.awt.GridBagConstraints());
+        B5.add(blackRoot, new java.awt.GridBagConstraints());
+
+        B6.setBackground(new java.awt.Color(170, 102, 26));
+        B6.setPreferredSize(new java.awt.Dimension(100, 100));
+        B6.setLayout(new java.awt.GridBagLayout());
 
         B7.setBackground(new java.awt.Color(238, 191, 120));
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -1145,15 +1154,8 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void blackRootMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blackRootMouseClicked
         // TODO add your handling code here:
-        B3.setBackground(Color.red);
-        B1.setBackground(Color.red);
-        B4.setBackground(Color.red);
-        B5.setBackground(Color.red);
-        B6.setBackground(Color.red);
-        B7.setBackground(Color.red);
-        B8.setBackground(Color.red);
         
-        blackRoot2.setIcon(null);
+        
         
     }//GEN-LAST:event_blackRootMouseClicked
 
@@ -1163,6 +1165,10 @@ public class MainFrame extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_blackRoot2MouseClicked
+
+    private void blackRoot3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blackRoot3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_blackRoot3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1267,6 +1273,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel blackRoot;
     private javax.swing.JLabel blackRoot1;
     private javax.swing.JLabel blackRoot2;
+    private javax.swing.JLabel blackRoot3;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
