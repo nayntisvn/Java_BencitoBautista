@@ -21,7 +21,7 @@ import javax.swing.border.Border;
 public class MainFrame extends javax.swing.JFrame {
 
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
-    
+                        
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
     ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
     ImageIcon queenb = new ImageIcon(directory + "queen-b.png");
@@ -36,14 +36,35 @@ public class MainFrame extends javax.swing.JFrame {
     ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
     
     
+    public void refreshBoard()
+    {
+        lblA1.setIcon(rookw);
+        lblB1.setIcon(knightw);
+        lblC1.setIcon(bishopw);
+        lblD1.setIcon(queenw);
+        lblE1.setIcon(kingw);
+        lblF1.setIcon(bishopw);
+        lblG1.setIcon(knightw);
+        lblH1.setIcon(rookw);
+        
+        lblA2.setIcon(pawnw);
+        lblB2.setIcon(pawnw);
+        lblC2.setIcon(pawnw);
+        lblD2.setIcon(pawnw);
+        lblE2.setIcon(pawnw);
+        lblF2.setIcon(pawnw);
+        lblG2.setIcon(pawnw);
+        lblH2.setIcon(pawnw);
+        
+    }
+    
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
         initComponents();
         
-        
-        
+        refreshBoard();
     }
 
     /**
