@@ -20,6 +20,12 @@ import javax.swing.border.Border;
  */
 public class MainFrame extends javax.swing.JFrame {
 
+    String bufferpiece = null;
+    
+    Border orig = BorderFactory.createLineBorder(Color.black, 1);
+    Border checked = BorderFactory.createLineBorder(Color.red, 5);
+    Border movement = BorderFactory.createLineBorder(Color.yellow, 5);
+    
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
                         
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
@@ -73,6 +79,11 @@ public class MainFrame extends javax.swing.JFrame {
         lblG7.setIcon(pawnb);
         lblH7.setIcon(pawnb);
         
+    }
+    
+    public void refreshBorder(JPanel square)
+    {
+        square.setBorder(orig);
         
     }
     
@@ -432,6 +443,11 @@ public class MainFrame extends javax.swing.JFrame {
         A4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A4.setMaximumSize(new java.awt.Dimension(100, 100));
         A4.setMinimumSize(new java.awt.Dimension(100, 100));
+        A4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A4MouseClicked(evt);
+            }
+        });
         A4.setLayout(new java.awt.GridBagLayout());
         A4.add(lblA4, new java.awt.GridBagConstraints());
 
@@ -486,6 +502,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         A3.setBackground(new java.awt.Color(170, 102, 26));
         A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A3MouseClicked(evt);
+            }
+        });
         A3.setLayout(new java.awt.GridBagLayout());
         A3.add(lblA3, new java.awt.GridBagConstraints());
 
@@ -536,6 +557,12 @@ public class MainFrame extends javax.swing.JFrame {
         A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
+
+        lblA2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA2MouseClicked(evt);
+            }
+        });
         A2.add(lblA2, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(170, 102, 26));
@@ -935,6 +962,46 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
+        // TODO add your handling code here:
+        
+        bufferpiece = "pawnw";
+        
+        A3.setBorder(movement);
+        A4.setBorder(movement);
+        
+    }//GEN-LAST:event_lblA2MouseClicked
+
+    private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
+        // TODO add your handling code here:
+        
+        if(bufferpiece.equals("pawnw"))
+        {
+            lblA3.setIcon(pawnw);
+            lblA2.setIcon(null); 
+            
+            bufferpiece = null;
+            refreshBorder(A3);
+            refreshBorder(A4);
+        }
+        
+    }//GEN-LAST:event_A3MouseClicked
+
+    private void A4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A4MouseClicked
+        // TODO add your handling code here:
+        
+        if(bufferpiece.equals("pawnw"))
+        {
+            lblA4.setIcon(pawnw);
+            lblA2.setIcon(null); 
+            
+            bufferpiece = null;
+            refreshBorder(A3);
+            refreshBorder(A4);
+        }
+        
+    }//GEN-LAST:event_A4MouseClicked
 
     /**
      * @param args the command line arguments
