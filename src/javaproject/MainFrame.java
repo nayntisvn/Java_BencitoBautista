@@ -20,26 +20,16 @@ import javax.swing.border.Border;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-    String bufferpiece = null;
-    String bufferloc = null;
-    
-    Border orig = BorderFactory.createLineBorder(Color.black, 2);
-    Border checked = BorderFactory.createLineBorder(Color.red, 2);
-    Border movement = BorderFactory.createLineBorder(Color.yellow, 2);
-    
-    PawnPiece p1w = new PawnPiece("white","A2");
-    PawnPiece p2w = new PawnPiece("white","B2");
-    PawnPiece p3w = new PawnPiece("white","C2");
-    PawnPiece p4w = new PawnPiece("white","D2");
-    PawnPiece p5w = new PawnPiece("white","E2");
-    PawnPiece p6w = new PawnPiece("white","F2");
-    PawnPiece p7w = new PawnPiece("white","G2");
-    PawnPiece p8w = new PawnPiece("white","H2");
-    
-    ArrayList<String> possiblem = new ArrayList<>();
-    
+    //  Directory of files
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
-                        
+    
+    //String directory = null;
+    //  Anne, dito mo ilagay yung directory mo dun sa may null.
+    //  Tas icomment out mo yung sakin.
+
+    //======================================================
+    
+    // Importing the pictures for each pieces
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
     ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
     ImageIcon queenb = new ImageIcon(directory + "queen-b.png");
@@ -52,10 +42,39 @@ public class MainFrame extends javax.swing.JFrame {
     ImageIcon knightw = new ImageIcon(directory + "horse-w.png");
     ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
     ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
+    //======================================================
     
+    //   Trace of which piece will be move
+    String bufferpiece = null;
+    String bufferloc = null;
+    //======================================================
+    
+    //  Graphics for each scenario
+    Border orig = BorderFactory.createLineBorder(Color.black, 2);       // Default border
+    Border checked = BorderFactory.createLineBorder(Color.red, 2);      // Border when checked
+    Border movement = BorderFactory.createLineBorder(Color.yellow, 2);  // Available destination
+    //======================================================
+    
+    // Creating the object for each piece
+    PawnPiece p1w = new PawnPiece("white","A2");
+    PawnPiece p2w = new PawnPiece("white","B2");
+    PawnPiece p3w = new PawnPiece("white","C2");
+    PawnPiece p4w = new PawnPiece("white","D2");
+    PawnPiece p5w = new PawnPiece("white","E2");
+    PawnPiece p6w = new PawnPiece("white","F2");
+    PawnPiece p7w = new PawnPiece("white","G2");
+    PawnPiece p8w = new PawnPiece("white","H2");
+    //======================================================
+    
+    //  Array for possible destinations of a piece
+    ArrayList<String> possiblem = new ArrayList<>();
+    //======================================================
+    
+    //  Table of array to check if a piece is in place
     String[][] piecesAlive = new String[8][8];
+    //======================================================
     
-    
+    //  Populating the board at the start of the game
     public void refreshBoard()
     {
         lblA1.setIcon(rookw);
@@ -101,8 +120,47 @@ public class MainFrame extends javax.swing.JFrame {
                 piecesAlive[j][i] = "";
             }
         }
+        
+        piecesAlive[0][0] = "r1w";
+        piecesAlive[1][0] = "h1w";
+        piecesAlive[2][0] = "b1w";
+        piecesAlive[3][0] = "q1w";
+        piecesAlive[4][0] = "k1w";
+        piecesAlive[5][0] = "b2w";
+        piecesAlive[6][0] = "h2w";
+        piecesAlive[7][0] = "r2w";
+        
+        piecesAlive[0][1] = "p1w";
+        piecesAlive[1][1] = "p2w";
+        piecesAlive[2][1] = "p3w";
+        piecesAlive[3][1] = "p4w";
+        piecesAlive[4][1] = "p5w";
+        piecesAlive[5][1] = "p6w";
+        piecesAlive[6][1] = "p7w";
+        piecesAlive[7][1] = "p8w";
+        
+        piecesAlive[0][7] = "r1b";
+        piecesAlive[1][7] = "h1b";
+        piecesAlive[2][7] = "b1b";
+        piecesAlive[3][7] = "q1b";
+        piecesAlive[4][7] = "k1b";
+        piecesAlive[5][7] = "b2b";
+        piecesAlive[6][7] = "h2b";
+        piecesAlive[7][7] = "r2b";
+        
+        piecesAlive[0][6] = "p1b";
+        piecesAlive[1][6] = "p2b";
+        piecesAlive[2][6] = "p3b";
+        piecesAlive[3][6] = "p4b";
+        piecesAlive[4][6] = "p5b";
+        piecesAlive[5][6] = "p6b";
+        piecesAlive[6][6] = "p7b";
+        piecesAlive[7][6] = "p8b";
+        
     }
+    //======================================================
     
+    //  Possible destinations of a piece to place in the array 
     public void possiblemoves(ArrayList<String> possiblem)
     {
         for(String s : possiblem)
@@ -142,17 +200,25 @@ public class MainFrame extends javax.swing.JFrame {
         }
         
     }
+    //======================================================
     
-    public void moviePiece()
+    //  To refresh and delete the trace of piece that been moved
+    public void refreshHistory()
     {
+        possiblem.clear();
+        
         
     }
+    //======================================================
     
-    public void refreshBorder(JPanel square)
+    //  To move the indicated piece to an indicated position
+    public void movePiece()
     {
-        square.setBorder(orig);
+        
         
     }
+    //======================================================
+    
     
     /**
      * Creates new form MainFrame
@@ -1034,8 +1100,6 @@ public class MainFrame extends javax.swing.JFrame {
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
         
-        piecesAlive[0][1] = "p1w";
-        
         switch(piecesAlive[0][1])
         {
             case "p1w" : {
@@ -1063,8 +1127,6 @@ public class MainFrame extends javax.swing.JFrame {
             
             bufferpiece = null;
         }
-        
-        
     }//GEN-LAST:event_A3MouseClicked
 
     private void A4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A4MouseClicked
@@ -1080,8 +1142,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
         // TODO add your handling code here:
-        
-        
         
     }//GEN-LAST:event_lblA3MouseClicked
 
