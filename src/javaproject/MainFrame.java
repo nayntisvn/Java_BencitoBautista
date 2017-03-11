@@ -73,7 +73,6 @@ public class MainFrame extends javax.swing.JFrame {
         lblG7.setIcon(pawnb);
         lblH7.setIcon(pawnb);
         
-        
     }
     
     /**
