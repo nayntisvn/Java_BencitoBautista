@@ -30,11 +30,10 @@ public class MainFrame extends javax.swing.JFrame {
     ImageIcon kingw = new ImageIcon(directory + "king-w.png");
     ImageIcon bishopb = new ImageIcon(directory + "bishop-b.png");
     ImageIcon bishopw = new ImageIcon(directory + "bishop-w.png");
-    ImageIcon knightb = new ImageIcon(directory + "knight-b.png");
-    ImageIcon knightw = new ImageIcon(directory + "knight-w.png");
+    ImageIcon knightb = new ImageIcon(directory + "horse-b.png");
+    ImageIcon knightw = new ImageIcon(directory + "horse-w.png");
     ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
     ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
-    
     
     public void refreshBoard()
     {
@@ -55,6 +54,25 @@ public class MainFrame extends javax.swing.JFrame {
         lblF2.setIcon(pawnw);
         lblG2.setIcon(pawnw);
         lblH2.setIcon(pawnw);
+
+        lblA8.setIcon(rookb);
+        lblB8.setIcon(knightb);
+        lblC8.setIcon(bishopb);
+        lblD8.setIcon(queenb);
+        lblE8.setIcon(kingb);
+        lblF8.setIcon(bishopb);
+        lblG8.setIcon(knightb);
+        lblH8.setIcon(rookb);
+        
+        lblA7.setIcon(pawnb);
+        lblB7.setIcon(pawnb);
+        lblC7.setIcon(pawnb);
+        lblD7.setIcon(pawnb);
+        lblE7.setIcon(pawnb);
+        lblF7.setIcon(pawnb);
+        lblG7.setIcon(pawnb);
+        lblH7.setIcon(pawnb);
+        
         
     }
     
@@ -467,6 +485,7 @@ public class MainFrame extends javax.swing.JFrame {
         H3.add(lblH3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(170, 102, 26));
+        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204), 5));
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
         A2.add(lblA2, new java.awt.GridBagConstraints());
@@ -509,6 +528,7 @@ public class MainFrame extends javax.swing.JFrame {
         H2.add(lblH2, new java.awt.GridBagConstraints());
 
         A1.setBackground(new java.awt.Color(238, 191, 120));
+        A1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 102, 0), 5, true));
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.setLayout(new java.awt.GridBagLayout());
         A1.add(lblA1, new java.awt.GridBagConstraints());
@@ -524,11 +544,13 @@ public class MainFrame extends javax.swing.JFrame {
         C1.add(lblC1, new java.awt.GridBagConstraints());
 
         D1.setBackground(new java.awt.Color(170, 102, 26));
+        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         D1.setPreferredSize(new java.awt.Dimension(100, 100));
         D1.setLayout(new java.awt.GridBagLayout());
         D1.add(lblD1, new java.awt.GridBagConstraints());
 
         E1.setBackground(new java.awt.Color(238, 191, 120));
+        E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         E1.setPreferredSize(new java.awt.Dimension(100, 100));
         E1.setLayout(new java.awt.GridBagLayout());
 
