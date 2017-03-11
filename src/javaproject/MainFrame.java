@@ -21,10 +21,22 @@ import javax.swing.border.Border;
 public class MainFrame extends javax.swing.JFrame {
 
     String bufferpiece = null;
+    String bufferloc = null;
     
-    Border orig = BorderFactory.createLineBorder(Color.black, 1);
-    Border checked = BorderFactory.createLineBorder(Color.red, 5);
-    Border movement = BorderFactory.createLineBorder(Color.yellow, 5);
+    Border orig = BorderFactory.createLineBorder(Color.black, 2);
+    Border checked = BorderFactory.createLineBorder(Color.red, 2);
+    Border movement = BorderFactory.createLineBorder(Color.yellow, 2);
+    
+    PawnPiece p1w = new PawnPiece("white","A2");
+    PawnPiece p2w = new PawnPiece("white","B2");
+    PawnPiece p3w = new PawnPiece("white","C2");
+    PawnPiece p4w = new PawnPiece("white","D2");
+    PawnPiece p5w = new PawnPiece("white","E2");
+    PawnPiece p6w = new PawnPiece("white","F2");
+    PawnPiece p7w = new PawnPiece("white","G2");
+    PawnPiece p8w = new PawnPiece("white","H2");
+    
+    ArrayList<String> possiblem = new ArrayList<>();
     
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
                         
@@ -40,6 +52,9 @@ public class MainFrame extends javax.swing.JFrame {
     ImageIcon knightw = new ImageIcon(directory + "horse-w.png");
     ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
     ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
+    
+    String[][] piecesAlive = new String[8][8];
+    
     
     public void refreshBoard()
     {
@@ -78,6 +93,58 @@ public class MainFrame extends javax.swing.JFrame {
         lblF7.setIcon(pawnb);
         lblG7.setIcon(pawnb);
         lblH7.setIcon(pawnb);
+        
+        for(int i = 0; i < 8; i++)
+        {
+            for(int j = 0; j < 8; j++)
+            {
+                piecesAlive[j][i] = "";
+            }
+        }
+    }
+    
+    public void possiblemoves(ArrayList<String> possiblem)
+    {
+        for(String s : possiblem)
+        {
+            if(s.equals("A1") && piecesAlive[0][0].equals(""))
+            {
+                A1.setBorder(movement);
+            }
+            if(s.equals("A2") && piecesAlive[0][1].equals(""))
+            {
+                A2.setBorder(movement);
+            }
+            if(s.equals("A3") && piecesAlive[0][2].equals(""))
+            {
+                A3.setBorder(movement);
+            }
+            if(s.equals("A4") && piecesAlive[0][3].equals(""))
+            {
+                A4.setBorder(movement);
+            }
+            if(s.equals("A5") && piecesAlive[0][4].equals(""))
+            {
+                A5.setBorder(movement);
+            }
+            if(s.equals("A6") && piecesAlive[0][5].equals(""))
+            {
+                A6.setBorder(movement);
+            }
+            if(s.equals("A7") && piecesAlive[0][6].equals(""))
+            {
+                A7.setBorder(movement);
+            }
+            if(s.equals("A8") && piecesAlive[0][7].equals(""))
+            {
+                A8.setBorder(movement);
+            }
+        }
+        
+    }
+    
+    public void moviePiece()
+    {
         
     }
     
@@ -508,6 +575,12 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         A3.setLayout(new java.awt.GridBagLayout());
+
+        lblA3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA3MouseClicked(evt);
+            }
+        });
         A3.add(lblA3, new java.awt.GridBagConstraints());
 
         B3.setBackground(new java.awt.Color(238, 191, 120));
@@ -555,6 +628,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         A2.setBackground(new java.awt.Color(238, 191, 120));
         A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A2.setName("A2"); // NOI18N
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
 
@@ -611,6 +685,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         A1.setBackground(new java.awt.Color(170, 102, 26));
         A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A1.setName("A1"); // NOI18N
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.setLayout(new java.awt.GridBagLayout());
         A1.add(lblA1, new java.awt.GridBagConstraints());
@@ -954,45 +1029,61 @@ public class MainFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
         
-        bufferpiece = "pawnw";
+        piecesAlive[0][1] = "p1w";
         
-        A3.setBorder(movement);
-        A4.setBorder(movement);
+        switch(piecesAlive[0][1])
+        {
+            case "p1w" : {
+                            bufferpiece = "p1w";
+                            bufferloc = "A2";
+                            possiblem = p1w.movementW();
+
+                            possiblemoves(possiblem);
+                            
+                        }
+                    break;
+        };
         
     }//GEN-LAST:event_lblA2MouseClicked
 
     private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
         // TODO add your handling code here:
         
-        if(bufferpiece.equals("pawnw"))
+        if(bufferpiece.equals("p1w"))
         {
+            piecesAlive[0][2] = "";
+            
             lblA3.setIcon(pawnw);
-            lblA2.setIcon(null); 
+            p1w.location = "A3";
             
             bufferpiece = null;
-            refreshBorder(A3);
-            refreshBorder(A4);
         }
+        
         
     }//GEN-LAST:event_A3MouseClicked
 
     private void A4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A4MouseClicked
         // TODO add your handling code here:
-        
-        if(bufferpiece.equals("pawnw"))
+        if(bufferpiece.equals("p1w"))
         {
             lblA4.setIcon(pawnw);
-            lblA2.setIcon(null); 
+            p1w.location = "A4";
             
             bufferpiece = null;
-            refreshBorder(A3);
-            refreshBorder(A4);
         }
-        
     }//GEN-LAST:event_A4MouseClicked
+
+    private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
+        // TODO add your handling code here:
+        
+        
+        
+    }//GEN-LAST:event_lblA3MouseClicked
 
     /**
      * @param args the command line arguments
