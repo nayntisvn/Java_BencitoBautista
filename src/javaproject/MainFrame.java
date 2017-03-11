@@ -16,6 +16,10 @@ import javax.swing.*;
  */
 public class MainFrame extends javax.swing.JFrame {
     
+    String buffer = null;
+    
+    File Rook = new File();
+    
     /**
      * Creates new form MainFrame
      */
@@ -34,17 +38,18 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        A1 = new javax.swing.JPanel();
+        A8 = new javax.swing.JPanel();
+        blackRoot3 = new javax.swing.JLabel();
+        blackRoot2 = new javax.swing.JLabel();
         A2 = new javax.swing.JPanel();
-        blackRoot1 = new javax.swing.JLabel();
         A3 = new javax.swing.JPanel();
         A4 = new javax.swing.JPanel();
         A5 = new javax.swing.JPanel();
         A6 = new javax.swing.JPanel();
+        labelF8 = new javax.swing.JLabel();
         A7 = new javax.swing.JPanel();
-        A8 = new javax.swing.JPanel();
+        H8 = new javax.swing.JPanel();
         B1 = new javax.swing.JPanel();
-        blackRoot2 = new javax.swing.JLabel();
         B2 = new javax.swing.JPanel();
         B3 = new javax.swing.JPanel();
         B4 = new javax.swing.JPanel();
@@ -56,7 +61,6 @@ public class MainFrame extends javax.swing.JFrame {
         B8 = new javax.swing.JPanel();
         C1 = new javax.swing.JPanel();
         C2 = new javax.swing.JPanel();
-        blackRoot3 = new javax.swing.JLabel();
         C3 = new javax.swing.JPanel();
         C4 = new javax.swing.JPanel();
         C5 = new javax.swing.JPanel();
@@ -95,7 +99,7 @@ public class MainFrame extends javax.swing.JFrame {
         G6 = new javax.swing.JPanel();
         G7 = new javax.swing.JPanel();
         G8 = new javax.swing.JPanel();
-        H1 = new javax.swing.JPanel();
+        A1 = new javax.swing.JPanel();
         H2 = new javax.swing.JPanel();
         H3 = new javax.swing.JPanel();
         H4 = new javax.swing.JPanel();
@@ -106,7 +110,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         H7 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
-        H8 = new javax.swing.JPanel();
+        H1 = new javax.swing.JPanel();
         jPanelSide = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -122,21 +126,36 @@ public class MainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        A1.setBackground(new java.awt.Color(170, 102, 26));
-        A1.setMinimumSize(new java.awt.Dimension(100, 75));
-        A1.setPreferredSize(new java.awt.Dimension(100, 100));
-        A1.setLayout(new java.awt.GridBagLayout());
+        A8.setBackground(new java.awt.Color(170, 102, 26));
+        A8.setMinimumSize(new java.awt.Dimension(100, 75));
+        A8.setPreferredSize(new java.awt.Dimension(100, 100));
+        A8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A8MouseClicked(evt);
+            }
+        });
+        A8.setLayout(new java.awt.GridBagLayout());
+        A8.add(blackRoot3, new java.awt.GridBagConstraints());
+
+        blackRoot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
+        blackRoot2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                blackRoot2MouseClicked(evt);
+            }
+        });
+        A8.add(blackRoot2, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(238, 191, 120));
         A2.setMinimumSize(new java.awt.Dimension(100, 100));
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
 
-        blackRoot1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        blackRoot1.setToolTipText("");
-        A2.add(blackRoot1, new java.awt.GridBagConstraints());
-
         A3.setBackground(new java.awt.Color(170, 102, 26));
+        A3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A3MouseClicked(evt);
+            }
+        });
         A3.setLayout(new java.awt.GridBagLayout());
 
         A4.setBackground(new java.awt.Color(238, 191, 120));
@@ -147,21 +166,32 @@ public class MainFrame extends javax.swing.JFrame {
         A5.setLayout(new java.awt.GridBagLayout());
 
         A6.setBackground(new java.awt.Color(238, 191, 120));
+        A6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A6MouseClicked(evt);
+            }
+        });
         A6.setLayout(new java.awt.GridBagLayout());
+
+        labelF8.setToolTipText("");
+        labelF8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        labelF8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelF8MouseClicked(evt);
+            }
+        });
+        A6.add(labelF8, new java.awt.GridBagConstraints());
 
         A7.setBackground(new java.awt.Color(170, 102, 26));
         A7.setLayout(new java.awt.GridBagLayout());
 
-        A8.setBackground(new java.awt.Color(238, 191, 120));
-        A8.setPreferredSize(new java.awt.Dimension(75, 100));
-        A8.setLayout(new java.awt.GridBagLayout());
+        H8.setBackground(new java.awt.Color(238, 191, 120));
+        H8.setPreferredSize(new java.awt.Dimension(75, 100));
+        H8.setLayout(new java.awt.GridBagLayout());
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
-
-        blackRoot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        B1.add(blackRoot2, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(170, 102, 26));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -207,9 +237,6 @@ public class MainFrame extends javax.swing.JFrame {
         C2.setBackground(new java.awt.Color(238, 191, 120));
         C2.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         C2.setLayout(new java.awt.GridBagLayout());
-
-        blackRoot3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        C2.add(blackRoot3, new java.awt.GridBagConstraints());
 
         C3.setBackground(new java.awt.Color(170, 102, 26));
         C3.setLayout(new java.awt.GridBagLayout());
@@ -373,9 +400,9 @@ public class MainFrame extends javax.swing.JFrame {
         G8.setPreferredSize(new java.awt.Dimension(100, 100));
         G8.setLayout(new java.awt.GridBagLayout());
 
-        H1.setBackground(new java.awt.Color(238, 191, 120));
-        H1.setPreferredSize(new java.awt.Dimension(100, 100));
-        H1.setLayout(new java.awt.GridBagLayout());
+        A1.setBackground(new java.awt.Color(238, 191, 120));
+        A1.setPreferredSize(new java.awt.Dimension(100, 100));
+        A1.setLayout(new java.awt.GridBagLayout());
 
         H2.setBackground(new java.awt.Color(170, 102, 26));
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -425,9 +452,9 @@ public class MainFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(16, 15, 14, 15);
         H7.add(jLabel29, gridBagConstraints);
 
-        H8.setBackground(new java.awt.Color(170, 102, 26));
-        H8.setPreferredSize(new java.awt.Dimension(100, 100));
-        H8.setLayout(new java.awt.GridBagLayout());
+        H1.setBackground(new java.awt.Color(170, 102, 26));
+        H1.setPreferredSize(new java.awt.Dimension(100, 100));
+        H1.setLayout(new java.awt.GridBagLayout());
 
         jPanelSide.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -543,7 +570,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGap(0, 0, 0)
                         .addComponent(F8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(H1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(H2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
@@ -561,7 +588,7 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(G7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(G8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(H8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(H1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(E1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
@@ -585,7 +612,7 @@ public class MainFrame extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(C1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(B1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(A1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(A8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(B2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(A2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -630,7 +657,7 @@ public class MainFrame extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(C8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(B8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(A8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                    .addComponent(H8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanelSide, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -639,14 +666,14 @@ public class MainFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(A1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(A8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(A2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(A3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(A4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(A5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(A6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(A7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(A8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(H8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(B1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -707,14 +734,14 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(G8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(H1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(H7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(H8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(H1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -725,6 +752,36 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void labelF8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelF8MouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_labelF8MouseClicked
+
+    private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_A3MouseClicked
+
+    private void A8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A8MouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_A8MouseClicked
+
+    private void blackRoot2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blackRoot2MouseClicked
+        // TODO add your handling code here:
+        buffer = "rook";
+        
+    }//GEN-LAST:event_blackRoot2MouseClicked
+
+    private void A6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A6MouseClicked
+        // TODO add your handling code here:
+        
+        if(buffer == "rook")
+        {
+            labelF8.setIcon(icon);
+        }
+    }//GEN-LAST:event_A6MouseClicked
 
     /**
      * @param args the command line arguments
@@ -828,7 +885,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel H7;
     private javax.swing.JPanel H8;
     private javax.swing.JLabel blackRoot;
-    private javax.swing.JLabel blackRoot1;
     private javax.swing.JLabel blackRoot2;
     private javax.swing.JLabel blackRoot3;
     private javax.swing.JLabel jLabel26;
@@ -846,5 +902,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel labelF8;
     // End of variables declaration//GEN-END:variables
 }
