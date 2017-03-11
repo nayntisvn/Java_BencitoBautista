@@ -38,75 +38,135 @@ public class MainFrame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         A8 = new javax.swing.JPanel();
+        lblA8 = new javax.swing.JLabel();
         A7 = new javax.swing.JPanel();
+        lblA7 = new javax.swing.JLabel();
         A6 = new javax.swing.JPanel();
+        lblA6 = new javax.swing.JLabel();
         A5 = new javax.swing.JPanel();
+        lblA5 = new javax.swing.JLabel();
         A4 = new javax.swing.JPanel();
+        lblA4 = new javax.swing.JLabel();
         A3 = new javax.swing.JPanel();
+        lblA3 = new javax.swing.JLabel();
         A2 = new javax.swing.JPanel();
+        lblA2 = new javax.swing.JLabel();
         A1 = new javax.swing.JPanel();
+        lblA1 = new javax.swing.JLabel();
         B8 = new javax.swing.JPanel();
+        lblB8 = new javax.swing.JLabel();
         B7 = new javax.swing.JPanel();
+        lblB7 = new javax.swing.JLabel();
         B6 = new javax.swing.JPanel();
+        lblB6 = new javax.swing.JLabel();
         B5 = new javax.swing.JPanel();
+        lblB5 = new javax.swing.JLabel();
         B4 = new javax.swing.JPanel();
+        lblB4 = new javax.swing.JLabel();
         B3 = new javax.swing.JPanel();
+        lblB3 = new javax.swing.JLabel();
         B2 = new javax.swing.JPanel();
+        lblB2 = new javax.swing.JLabel();
         B1 = new javax.swing.JPanel();
+        lblB1 = new javax.swing.JLabel();
         C8 = new javax.swing.JPanel();
+        lblC8 = new javax.swing.JLabel();
         C7 = new javax.swing.JPanel();
-        blackRoot = new javax.swing.JLabel();
+        lblC7 = new javax.swing.JLabel();
         C6 = new javax.swing.JPanel();
+        lblC6 = new javax.swing.JLabel();
         C5 = new javax.swing.JPanel();
+        lblC5 = new javax.swing.JLabel();
         C4 = new javax.swing.JPanel();
+        lblC4 = new javax.swing.JLabel();
         C3 = new javax.swing.JPanel();
+        lblC3 = new javax.swing.JLabel();
         C2 = new javax.swing.JPanel();
+        lblC2 = new javax.swing.JLabel();
         C1 = new javax.swing.JPanel();
+        lblC1 = new javax.swing.JLabel();
         D8 = new javax.swing.JPanel();
+        lblD8 = new javax.swing.JLabel();
         D7 = new javax.swing.JPanel();
+        lblD7 = new javax.swing.JLabel();
         D6 = new javax.swing.JPanel();
+        lblD6 = new javax.swing.JLabel();
         D5 = new javax.swing.JPanel();
+        lblD5 = new javax.swing.JLabel();
         D4 = new javax.swing.JPanel();
+        lblD4 = new javax.swing.JLabel();
         D3 = new javax.swing.JPanel();
+        lblD3 = new javax.swing.JLabel();
         D2 = new javax.swing.JPanel();
+        lblD2 = new javax.swing.JLabel();
         D1 = new javax.swing.JPanel();
+        lblD1 = new javax.swing.JLabel();
         E8 = new javax.swing.JPanel();
+        lblE8 = new javax.swing.JLabel();
         E7 = new javax.swing.JPanel();
+        lblE7 = new javax.swing.JLabel();
         E6 = new javax.swing.JPanel();
-        blackRoot2 = new javax.swing.JLabel();
+        lblE6 = new javax.swing.JLabel();
         E5 = new javax.swing.JPanel();
+        lblE5 = new javax.swing.JLabel();
         E4 = new javax.swing.JPanel();
+        lblE4 = new javax.swing.JLabel();
         E3 = new javax.swing.JPanel();
+        lblE3 = new javax.swing.JLabel();
         E2 = new javax.swing.JPanel();
+        lblE2 = new javax.swing.JLabel();
         E1 = new javax.swing.JPanel();
+        lblE1 = new javax.swing.JLabel();
         F8 = new javax.swing.JPanel();
+        lblF8 = new javax.swing.JLabel();
         F7 = new javax.swing.JPanel();
+        lblF7 = new javax.swing.JLabel();
         F6 = new javax.swing.JPanel();
+        lblF6 = new javax.swing.JLabel();
         F5 = new javax.swing.JPanel();
+        lblF5 = new javax.swing.JLabel();
         F4 = new javax.swing.JPanel();
+        lblF4 = new javax.swing.JLabel();
         F3 = new javax.swing.JPanel();
+        lblF3 = new javax.swing.JLabel();
         F2 = new javax.swing.JPanel();
+        lblF2 = new javax.swing.JLabel();
         F1 = new javax.swing.JPanel();
+        lblF1 = new javax.swing.JLabel();
         G8 = new javax.swing.JPanel();
+        lblG8 = new javax.swing.JLabel();
         G7 = new javax.swing.JPanel();
+        lblG7 = new javax.swing.JLabel();
         G6 = new javax.swing.JPanel();
+        lblG6 = new javax.swing.JLabel();
         G5 = new javax.swing.JPanel();
+        lblG5 = new javax.swing.JLabel();
         G4 = new javax.swing.JPanel();
+        lblG4 = new javax.swing.JLabel();
         G3 = new javax.swing.JPanel();
+        lblG3 = new javax.swing.JLabel();
         G2 = new javax.swing.JPanel();
+        lblG2 = new javax.swing.JLabel();
         G1 = new javax.swing.JPanel();
+        lblG1 = new javax.swing.JLabel();
         H8 = new javax.swing.JPanel();
+        lblH8 = new javax.swing.JLabel();
         H7 = new javax.swing.JPanel();
+        lblH7 = new javax.swing.JLabel();
         H6 = new javax.swing.JPanel();
+        lblH6 = new javax.swing.JLabel();
         H5 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
+        lblH5 = new javax.swing.JLabel();
         H4 = new javax.swing.JPanel();
+        lblH4 = new javax.swing.JLabel();
         H3 = new javax.swing.JPanel();
+        lblH3 = new javax.swing.JLabel();
         H2 = new javax.swing.JPanel();
+        lblH2 = new javax.swing.JLabel();
         H1 = new javax.swing.JPanel();
+        lblH1 = new javax.swing.JLabel();
         jPanelSide = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -126,289 +186,330 @@ public class MainFrame extends javax.swing.JFrame {
         A8.setMinimumSize(new java.awt.Dimension(100, 75));
         A8.setPreferredSize(new java.awt.Dimension(100, 100));
         A8.setLayout(new java.awt.GridBagLayout());
+        A8.add(lblA8, new java.awt.GridBagConstraints());
 
         A7.setBackground(new java.awt.Color(238, 191, 120));
         A7.setMinimumSize(new java.awt.Dimension(100, 100));
         A7.setPreferredSize(new java.awt.Dimension(100, 100));
         A7.setLayout(new java.awt.GridBagLayout());
+        A7.add(lblA7, new java.awt.GridBagConstraints());
 
         A6.setBackground(new java.awt.Color(170, 102, 26));
         A6.setLayout(new java.awt.GridBagLayout());
+        A6.add(lblA6, new java.awt.GridBagConstraints());
 
         A5.setBackground(new java.awt.Color(238, 191, 120));
         A5.setLayout(new java.awt.GridBagLayout());
+        A5.add(lblA5, new java.awt.GridBagConstraints());
 
         A4.setBackground(new java.awt.Color(170, 102, 26));
         A4.setRequestFocusEnabled(false);
         A4.setLayout(new java.awt.GridBagLayout());
+        A4.add(lblA4, new java.awt.GridBagConstraints());
 
         A3.setBackground(new java.awt.Color(238, 191, 120));
         A3.setLayout(new java.awt.GridBagLayout());
+        A3.add(lblA3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(170, 102, 26));
         A2.setLayout(new java.awt.GridBagLayout());
+        A2.add(lblA2, new java.awt.GridBagConstraints());
 
         A1.setBackground(new java.awt.Color(238, 191, 120));
         A1.setPreferredSize(new java.awt.Dimension(75, 100));
         A1.setLayout(new java.awt.GridBagLayout());
+        A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(238, 191, 120));
         B8.setPreferredSize(new java.awt.Dimension(100, 100));
         B8.setLayout(new java.awt.GridBagLayout());
+        B8.add(lblB8, new java.awt.GridBagConstraints());
 
         B7.setBackground(new java.awt.Color(170, 102, 26));
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
         B7.setLayout(new java.awt.GridBagLayout());
+        B7.add(lblB7, new java.awt.GridBagConstraints());
 
         B6.setBackground(new java.awt.Color(238, 191, 120));
         B6.setPreferredSize(new java.awt.Dimension(100, 100));
         B6.setLayout(new java.awt.GridBagLayout());
+        B6.add(lblB6, new java.awt.GridBagConstraints());
 
         B5.setBackground(new java.awt.Color(170, 102, 26));
         B5.setPreferredSize(new java.awt.Dimension(100, 100));
         B5.setLayout(new java.awt.GridBagLayout());
+        B5.add(lblB5, new java.awt.GridBagConstraints());
 
         B4.setBackground(new java.awt.Color(238, 191, 120));
         B4.setPreferredSize(new java.awt.Dimension(100, 100));
         B4.setLayout(new java.awt.GridBagLayout());
+        B4.add(lblB4, new java.awt.GridBagConstraints());
 
         B3.setBackground(new java.awt.Color(170, 102, 26));
         B3.setPreferredSize(new java.awt.Dimension(100, 100));
         B3.setLayout(new java.awt.GridBagLayout());
+        B3.add(lblB3, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(238, 191, 120));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.setLayout(new java.awt.GridBagLayout());
+        B2.add(lblB2, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(170, 102, 26));
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
+        B1.add(lblB1, new java.awt.GridBagConstraints());
 
         C8.setBackground(new java.awt.Color(170, 102, 26));
         C8.setMaximumSize(new java.awt.Dimension(100, 100));
         C8.setMinimumSize(new java.awt.Dimension(100, 100));
         C8.setLayout(new java.awt.GridBagLayout());
+        C8.add(lblC8, new java.awt.GridBagConstraints());
 
         C7.setBackground(new java.awt.Color(238, 191, 120));
         C7.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         C7.setLayout(new java.awt.GridBagLayout());
-
-        blackRoot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        blackRoot.setToolTipText("");
-        blackRoot.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                blackRootMouseClicked(evt);
-            }
-        });
-        C7.add(blackRoot, new java.awt.GridBagConstraints());
+        C7.add(lblC7, new java.awt.GridBagConstraints());
 
         C6.setBackground(new java.awt.Color(170, 102, 26));
         C6.setLayout(new java.awt.GridBagLayout());
+        C6.add(lblC6, new java.awt.GridBagConstraints());
 
         C5.setBackground(new java.awt.Color(238, 191, 120));
         C5.setLayout(new java.awt.GridBagLayout());
+        C5.add(lblC5, new java.awt.GridBagConstraints());
 
         C4.setBackground(new java.awt.Color(170, 102, 26));
         C4.setLayout(new java.awt.GridBagLayout());
+        C4.add(lblC4, new java.awt.GridBagConstraints());
 
         C3.setBackground(new java.awt.Color(238, 191, 120));
         C3.setLayout(new java.awt.GridBagLayout());
+        C3.add(lblC3, new java.awt.GridBagConstraints());
 
         C2.setBackground(new java.awt.Color(170, 102, 26));
         C2.setLayout(new java.awt.GridBagLayout());
+        C2.add(lblC2, new java.awt.GridBagConstraints());
 
         C1.setBackground(new java.awt.Color(238, 191, 120));
         C1.setLayout(new java.awt.GridBagLayout());
+        C1.add(lblC1, new java.awt.GridBagConstraints());
 
         D8.setBackground(new java.awt.Color(238, 191, 120));
         D8.setMaximumSize(new java.awt.Dimension(100, 100));
         D8.setMinimumSize(new java.awt.Dimension(100, 100));
         D8.setLayout(new java.awt.GridBagLayout());
+        D8.add(lblD8, new java.awt.GridBagConstraints());
 
         D7.setBackground(new java.awt.Color(170, 102, 26));
         D7.setLayout(new java.awt.GridBagLayout());
+        D7.add(lblD7, new java.awt.GridBagConstraints());
 
         D6.setBackground(new java.awt.Color(238, 191, 120));
         D6.setMaximumSize(new java.awt.Dimension(100, 100));
         D6.setMinimumSize(new java.awt.Dimension(100, 100));
         D6.setLayout(new java.awt.GridBagLayout());
+        D6.add(lblD6, new java.awt.GridBagConstraints());
 
         D5.setBackground(new java.awt.Color(170, 102, 26));
         D5.setMaximumSize(new java.awt.Dimension(100, 100));
         D5.setMinimumSize(new java.awt.Dimension(100, 100));
         D5.setLayout(new java.awt.GridBagLayout());
+        D5.add(lblD5, new java.awt.GridBagConstraints());
 
         D4.setBackground(new java.awt.Color(238, 191, 120));
         D4.setMaximumSize(new java.awt.Dimension(100, 100));
         D4.setMinimumSize(new java.awt.Dimension(100, 100));
         D4.setLayout(new java.awt.GridBagLayout());
+        D4.add(lblD4, new java.awt.GridBagConstraints());
 
         D3.setBackground(new java.awt.Color(170, 102, 26));
         D3.setMaximumSize(new java.awt.Dimension(100, 100));
         D3.setMinimumSize(new java.awt.Dimension(100, 100));
         D3.setLayout(new java.awt.GridBagLayout());
+        D3.add(lblD3, new java.awt.GridBagConstraints());
 
         D2.setBackground(new java.awt.Color(238, 191, 120));
         D2.setMaximumSize(new java.awt.Dimension(100, 100));
         D2.setMinimumSize(new java.awt.Dimension(100, 100));
         D2.setLayout(new java.awt.GridBagLayout());
+        D2.add(lblD2, new java.awt.GridBagConstraints());
 
         D1.setBackground(new java.awt.Color(170, 102, 26));
         D1.setMaximumSize(new java.awt.Dimension(100, 100));
         D1.setMinimumSize(new java.awt.Dimension(100, 100));
         D1.setLayout(new java.awt.GridBagLayout());
+        D1.add(lblD1, new java.awt.GridBagConstraints());
 
         E8.setBackground(new java.awt.Color(170, 102, 26));
         E8.setMaximumSize(new java.awt.Dimension(100, 100));
         E8.setMinimumSize(new java.awt.Dimension(100, 100));
         E8.setLayout(new java.awt.GridBagLayout());
+        E8.add(lblE8, new java.awt.GridBagConstraints());
 
         E7.setBackground(new java.awt.Color(238, 191, 120));
         E7.setMaximumSize(new java.awt.Dimension(100, 100));
         E7.setMinimumSize(new java.awt.Dimension(100, 100));
         E7.setLayout(new java.awt.GridBagLayout());
+        E7.add(lblE7, new java.awt.GridBagConstraints());
 
         E6.setBackground(new java.awt.Color(170, 102, 26));
         E6.setMaximumSize(new java.awt.Dimension(100, 100));
         E6.setMinimumSize(new java.awt.Dimension(100, 100));
         E6.setLayout(new java.awt.GridBagLayout());
-
-        blackRoot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/rook-b.png"))); // NOI18N
-        blackRoot2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                blackRoot2MouseClicked(evt);
-            }
-        });
-        E6.add(blackRoot2, new java.awt.GridBagConstraints());
+        E6.add(lblE6, new java.awt.GridBagConstraints());
 
         E5.setBackground(new java.awt.Color(238, 191, 120));
         E5.setMaximumSize(new java.awt.Dimension(100, 100));
         E5.setMinimumSize(new java.awt.Dimension(100, 100));
         E5.setLayout(new java.awt.GridBagLayout());
+        E5.add(lblE5, new java.awt.GridBagConstraints());
 
         E4.setBackground(new java.awt.Color(170, 102, 26));
         E4.setMaximumSize(new java.awt.Dimension(100, 100));
         E4.setMinimumSize(new java.awt.Dimension(100, 100));
         E4.setLayout(new java.awt.GridBagLayout());
+        E4.add(lblE4, new java.awt.GridBagConstraints());
 
         E3.setBackground(new java.awt.Color(238, 191, 120));
         E3.setMaximumSize(new java.awt.Dimension(100, 100));
         E3.setMinimumSize(new java.awt.Dimension(100, 100));
         E3.setLayout(new java.awt.GridBagLayout());
+        E3.add(lblE3, new java.awt.GridBagConstraints());
 
         E2.setBackground(new java.awt.Color(170, 102, 26));
         E2.setMaximumSize(new java.awt.Dimension(100, 100));
         E2.setMinimumSize(new java.awt.Dimension(100, 100));
         E2.setLayout(new java.awt.GridBagLayout());
+        E2.add(lblE2, new java.awt.GridBagConstraints());
 
         E1.setBackground(new java.awt.Color(238, 191, 120));
         E1.setMaximumSize(new java.awt.Dimension(100, 100));
         E1.setMinimumSize(new java.awt.Dimension(100, 100));
         E1.setLayout(new java.awt.GridBagLayout());
+        E1.add(lblE1, new java.awt.GridBagConstraints());
 
         F8.setBackground(new java.awt.Color(238, 191, 120));
         F8.setLayout(new java.awt.GridBagLayout());
+        F8.add(lblF8, new java.awt.GridBagConstraints());
 
         F7.setBackground(new java.awt.Color(170, 102, 26));
         F7.setLayout(new java.awt.GridBagLayout());
+        F7.add(lblF7, new java.awt.GridBagConstraints());
 
         F6.setBackground(new java.awt.Color(238, 191, 120));
         F6.setMaximumSize(new java.awt.Dimension(100, 100));
         F6.setLayout(new java.awt.GridBagLayout());
+        F6.add(lblF6, new java.awt.GridBagConstraints());
 
         F5.setBackground(new java.awt.Color(170, 102, 26));
         F5.setMaximumSize(new java.awt.Dimension(100, 100));
         F5.setLayout(new java.awt.GridBagLayout());
+        F5.add(lblF5, new java.awt.GridBagConstraints());
 
         F4.setBackground(new java.awt.Color(238, 191, 120));
         F4.setLayout(new java.awt.GridBagLayout());
+        F4.add(lblF4, new java.awt.GridBagConstraints());
 
         F3.setBackground(new java.awt.Color(170, 102, 26));
         F3.setMaximumSize(new java.awt.Dimension(100, 100));
         F3.setMinimumSize(new java.awt.Dimension(100, 100));
         F3.setLayout(new java.awt.GridBagLayout());
+        F3.add(lblF3, new java.awt.GridBagConstraints());
 
         F2.setBackground(new java.awt.Color(238, 191, 120));
         F2.setMaximumSize(new java.awt.Dimension(100, 100));
         F2.setMinimumSize(new java.awt.Dimension(100, 100));
         F2.setLayout(new java.awt.GridBagLayout());
+        F2.add(lblF2, new java.awt.GridBagConstraints());
 
         F1.setBackground(new java.awt.Color(170, 102, 26));
         F1.setMaximumSize(new java.awt.Dimension(100, 100));
         F1.setMinimumSize(new java.awt.Dimension(100, 100));
         F1.setLayout(new java.awt.GridBagLayout());
+        F1.add(lblF1, new java.awt.GridBagConstraints());
 
         G8.setBackground(new java.awt.Color(170, 102, 26));
         G8.setPreferredSize(new java.awt.Dimension(100, 100));
         G8.setLayout(new java.awt.GridBagLayout());
+        G8.add(lblG8, new java.awt.GridBagConstraints());
 
         G7.setBackground(new java.awt.Color(238, 191, 120));
         G7.setPreferredSize(new java.awt.Dimension(100, 100));
         G7.setLayout(new java.awt.GridBagLayout());
+        G7.add(lblG7, new java.awt.GridBagConstraints());
 
         G6.setBackground(new java.awt.Color(170, 102, 26));
         G6.setPreferredSize(new java.awt.Dimension(100, 100));
         G6.setLayout(new java.awt.GridBagLayout());
+        G6.add(lblG6, new java.awt.GridBagConstraints());
 
         G5.setBackground(new java.awt.Color(238, 191, 120));
         G5.setMinimumSize(new java.awt.Dimension(100, 100));
         G5.setPreferredSize(new java.awt.Dimension(100, 100));
         G5.setLayout(new java.awt.GridBagLayout());
+        G5.add(lblG5, new java.awt.GridBagConstraints());
 
         G4.setBackground(new java.awt.Color(170, 102, 26));
         G4.setMinimumSize(new java.awt.Dimension(100, 100));
         G4.setPreferredSize(new java.awt.Dimension(100, 100));
         G4.setLayout(new java.awt.GridBagLayout());
+        G4.add(lblG4, new java.awt.GridBagConstraints());
 
         G3.setBackground(new java.awt.Color(238, 191, 120));
         G3.setPreferredSize(new java.awt.Dimension(100, 100));
         G3.setLayout(new java.awt.GridBagLayout());
+        G3.add(lblG3, new java.awt.GridBagConstraints());
 
         G2.setBackground(new java.awt.Color(170, 102, 26));
         G2.setPreferredSize(new java.awt.Dimension(100, 100));
         G2.setLayout(new java.awt.GridBagLayout());
+        G2.add(lblG2, new java.awt.GridBagConstraints());
 
         G1.setBackground(new java.awt.Color(238, 191, 120));
         G1.setPreferredSize(new java.awt.Dimension(100, 100));
         G1.setLayout(new java.awt.GridBagLayout());
+        G1.add(lblG1, new java.awt.GridBagConstraints());
 
         H8.setBackground(new java.awt.Color(238, 191, 120));
         H8.setPreferredSize(new java.awt.Dimension(100, 100));
         H8.setLayout(new java.awt.GridBagLayout());
+        H8.add(lblH8, new java.awt.GridBagConstraints());
 
         H7.setBackground(new java.awt.Color(170, 102, 26));
         H7.setPreferredSize(new java.awt.Dimension(100, 100));
         H7.setLayout(new java.awt.GridBagLayout());
+        H7.add(lblH7, new java.awt.GridBagConstraints());
 
         H6.setBackground(new java.awt.Color(238, 191, 120));
         H6.setPreferredSize(new java.awt.Dimension(100, 100));
         H6.setLayout(new java.awt.GridBagLayout());
+        H6.add(lblH6, new java.awt.GridBagConstraints());
 
         H5.setBackground(new java.awt.Color(170, 102, 26));
         H5.setPreferredSize(new java.awt.Dimension(100, 100));
         H5.setLayout(new java.awt.GridBagLayout());
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(16, 15, 14, 15);
-        H5.add(jLabel26, gridBagConstraints);
+        H5.add(lblH5, new java.awt.GridBagConstraints());
 
         H4.setBackground(new java.awt.Color(238, 191, 120));
         H4.setPreferredSize(new java.awt.Dimension(100, 100));
         H4.setLayout(new java.awt.GridBagLayout());
+        H4.add(lblH4, new java.awt.GridBagConstraints());
 
         H3.setBackground(new java.awt.Color(170, 102, 26));
         H3.setPreferredSize(new java.awt.Dimension(100, 100));
         H3.setLayout(new java.awt.GridBagLayout());
+        H3.add(lblH3, new java.awt.GridBagConstraints());
 
         H2.setBackground(new java.awt.Color(238, 191, 120));
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
         H2.setLayout(new java.awt.GridBagLayout());
+        H2.add(lblH2, new java.awt.GridBagConstraints());
 
         H1.setBackground(new java.awt.Color(170, 102, 26));
         H1.setPreferredSize(new java.awt.Dimension(100, 100));
         H1.setLayout(new java.awt.GridBagLayout());
+        H1.add(lblH1, new java.awt.GridBagConstraints());
 
         jPanelSide.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -707,27 +808,6 @@ public class MainFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void blackRootMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blackRootMouseClicked
-        // TODO add your handling code here:
-        B6.setBackground(Color.red);
-        B8.setBackground(Color.red);
-        B5.setBackground(Color.red);
-        B4.setBackground(Color.red);
-        B3.setBackground(Color.red);
-        B2.setBackground(Color.red);
-        B1.setBackground(Color.red);
-        
-        blackRoot2.setIcon(null);
-        
-    }//GEN-LAST:event_blackRootMouseClicked
-
-    private void blackRoot2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_blackRoot2MouseClicked
-        // TODO add your handling code here:
-        
-        
-        
-    }//GEN-LAST:event_blackRoot2MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -828,9 +908,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel H6;
     private javax.swing.JPanel H7;
     private javax.swing.JPanel H8;
-    private javax.swing.JLabel blackRoot;
-    private javax.swing.JLabel blackRoot2;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JMenu jMenu1;
@@ -842,5 +919,69 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lblA1;
+    private javax.swing.JLabel lblA2;
+    private javax.swing.JLabel lblA3;
+    private javax.swing.JLabel lblA4;
+    private javax.swing.JLabel lblA5;
+    private javax.swing.JLabel lblA6;
+    private javax.swing.JLabel lblA7;
+    private javax.swing.JLabel lblA8;
+    private javax.swing.JLabel lblB1;
+    private javax.swing.JLabel lblB2;
+    private javax.swing.JLabel lblB3;
+    private javax.swing.JLabel lblB4;
+    private javax.swing.JLabel lblB5;
+    private javax.swing.JLabel lblB6;
+    private javax.swing.JLabel lblB7;
+    private javax.swing.JLabel lblB8;
+    private javax.swing.JLabel lblC1;
+    private javax.swing.JLabel lblC2;
+    private javax.swing.JLabel lblC3;
+    private javax.swing.JLabel lblC4;
+    private javax.swing.JLabel lblC5;
+    private javax.swing.JLabel lblC6;
+    private javax.swing.JLabel lblC7;
+    private javax.swing.JLabel lblC8;
+    private javax.swing.JLabel lblD1;
+    private javax.swing.JLabel lblD2;
+    private javax.swing.JLabel lblD3;
+    private javax.swing.JLabel lblD4;
+    private javax.swing.JLabel lblD5;
+    private javax.swing.JLabel lblD6;
+    private javax.swing.JLabel lblD7;
+    private javax.swing.JLabel lblD8;
+    private javax.swing.JLabel lblE1;
+    private javax.swing.JLabel lblE2;
+    private javax.swing.JLabel lblE3;
+    private javax.swing.JLabel lblE4;
+    private javax.swing.JLabel lblE5;
+    private javax.swing.JLabel lblE6;
+    private javax.swing.JLabel lblE7;
+    private javax.swing.JLabel lblE8;
+    private javax.swing.JLabel lblF1;
+    private javax.swing.JLabel lblF2;
+    private javax.swing.JLabel lblF3;
+    private javax.swing.JLabel lblF4;
+    private javax.swing.JLabel lblF5;
+    private javax.swing.JLabel lblF6;
+    private javax.swing.JLabel lblF7;
+    private javax.swing.JLabel lblF8;
+    private javax.swing.JLabel lblG1;
+    private javax.swing.JLabel lblG2;
+    private javax.swing.JLabel lblG3;
+    private javax.swing.JLabel lblG4;
+    private javax.swing.JLabel lblG5;
+    private javax.swing.JLabel lblG6;
+    private javax.swing.JLabel lblG7;
+    private javax.swing.JLabel lblG8;
+    private javax.swing.JLabel lblH1;
+    private javax.swing.JLabel lblH2;
+    private javax.swing.JLabel lblH3;
+    private javax.swing.JLabel lblH4;
+    private javax.swing.JLabel lblH5;
+    private javax.swing.JLabel lblH6;
+    private javax.swing.JLabel lblH7;
+    private javax.swing.JLabel lblH8;
     // End of variables declaration//GEN-END:variables
 }
