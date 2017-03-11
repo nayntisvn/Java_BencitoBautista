@@ -20,6 +20,20 @@ import javax.swing.border.Border;
  */
 public class MainFrame extends javax.swing.JFrame {
 
+    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    
+    ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
+    ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
+    ImageIcon queenb = new ImageIcon(directory + "queen-b.png");
+    ImageIcon queenw = new ImageIcon(directory + "queen-w.png");
+    ImageIcon kingb = new ImageIcon(directory + "king-b.png");
+    ImageIcon kingw = new ImageIcon(directory + "king-w.png");
+    ImageIcon bishopb = new ImageIcon(directory + "bishop-b.png");
+    ImageIcon bishopw = new ImageIcon(directory + "bishop-w.png");
+    ImageIcon knightb = new ImageIcon(directory + "knight-b.png");
+    ImageIcon knightw = new ImageIcon(directory + "knight-w.png");
+    ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
+    ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
     
     
     /**
@@ -27,6 +41,8 @@ public class MainFrame extends javax.swing.JFrame {
      */
     public MainFrame() {
         initComponents();
+        
+        
         
     }
 
