@@ -26,20 +26,21 @@ public class MainFrame extends javax.swing.JFrame {
     Border checked = BorderFactory.createLineBorder(Color.red, 5);
     Border movement = BorderFactory.createLineBorder(Color.yellow, 5);
     
-    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    //String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources";
                         
-    ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
-    ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
-    ImageIcon queenb = new ImageIcon(directory + "queen-b.png");
-    ImageIcon queenw = new ImageIcon(directory + "queen-w.png");
-    ImageIcon kingb = new ImageIcon(directory + "king-b.png");
-    ImageIcon kingw = new ImageIcon(directory + "king-w.png");
-    ImageIcon bishopb = new ImageIcon(directory + "bishop-b.png");
-    ImageIcon bishopw = new ImageIcon(directory + "bishop-w.png");
-    ImageIcon knightb = new ImageIcon(directory + "horse-b.png");
-    ImageIcon knightw = new ImageIcon(directory + "horse-w.png");
-    ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
-    ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
+    ImageIcon pawnb = new ImageIcon(getClass().getClassLoader().getResource("resources/pawn-b.png"));
+    ImageIcon pawnw = new ImageIcon(getClass().getClassLoader().getResource("resources/pawn-w.png"));
+    ImageIcon queenb = new ImageIcon(getClass().getClassLoader().getResource("resources/queen-b.png"));
+    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("resources/queen-w.png"));
+    ImageIcon kingb = new ImageIcon(getClass().getClassLoader().getResource("resources/king-b.png"));
+    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("resources/king-w.png"));
+    ImageIcon bishopb = new ImageIcon(getClass().getClassLoader().getResource("resources/bishop-b.png"));
+    ImageIcon bishopw = new ImageIcon(getClass().getClassLoader().getResource("resources/bishop-w.png"));
+    ImageIcon knightb = new ImageIcon(getClass().getClassLoader().getResource("resources/horse-b.png"));
+    ImageIcon knightw = new ImageIcon(getClass().getClassLoader().getResource("resources/horse-w.png"));
+    ImageIcon rookb = new ImageIcon(getClass().getClassLoader().getResource("resources/rook-b.png"));
+    ImageIcon rookw = new ImageIcon(getClass().getClassLoader().getResource("resources/rook-w.png"));
     
     public void refreshBoard()
     {
