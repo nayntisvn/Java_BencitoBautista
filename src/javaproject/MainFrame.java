@@ -20,6 +20,8 @@ import javax.swing.border.Border;
  */
 public class MainFrame extends javax.swing.JFrame {
 
+    String bufferpiece = null;
+    
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
                         
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
@@ -82,6 +84,8 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
+        
+        
     }
 
     /**
@@ -507,6 +511,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         E3.setBackground(new java.awt.Color(238, 191, 120));
         E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
+        E3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E3MouseClicked(evt);
+            }
+        });
         E3.setLayout(new java.awt.GridBagLayout());
         E3.add(lblE3, new java.awt.GridBagConstraints());
 
@@ -535,6 +544,12 @@ public class MainFrame extends javax.swing.JFrame {
         A2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(170, 102, 26), 5, true));
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
+
+        lblA2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA2MouseClicked(evt);
+            }
+        });
         A2.add(lblA2, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(238, 191, 120));
@@ -933,6 +948,24 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
+        // TODO add your handling code here:
+        
+        bufferpiece = "pawnw";
+        
+    }//GEN-LAST:event_lblA2MouseClicked
+
+    private void E3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E3MouseClicked
+        // TODO add your handling code here:
+        
+        if(bufferpiece == "pawnw")
+        {
+            lblE3.setIcon(pawnw);
+            lblA3.setIcon(null);
+        }
+        
+    }//GEN-LAST:event_E3MouseClicked
 
     /**
      * @param args the command line arguments
