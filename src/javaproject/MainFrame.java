@@ -237,264 +237,314 @@ public class MainFrame extends javax.swing.JFrame {
         setResizable(false);
 
         A8.setBackground(new java.awt.Color(170, 102, 26));
+        A8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         A8.setMinimumSize(new java.awt.Dimension(100, 75));
         A8.setPreferredSize(new java.awt.Dimension(100, 100));
         A8.setLayout(new java.awt.GridBagLayout());
         A8.add(lblA8, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(238, 191, 120));
+        B8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         B8.setMinimumSize(new java.awt.Dimension(100, 100));
         B8.setPreferredSize(new java.awt.Dimension(100, 100));
         B8.setLayout(new java.awt.GridBagLayout());
         B8.add(lblB8, new java.awt.GridBagConstraints());
 
         C8.setBackground(new java.awt.Color(170, 102, 26));
+        C8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         C8.setLayout(new java.awt.GridBagLayout());
         C8.add(lblC8, new java.awt.GridBagConstraints());
 
         D8.setBackground(new java.awt.Color(238, 191, 120));
+        D8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         D8.setLayout(new java.awt.GridBagLayout());
         D8.add(lblD8, new java.awt.GridBagConstraints());
 
         E8.setBackground(new java.awt.Color(170, 102, 26));
+        E8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         E8.setRequestFocusEnabled(false);
         E8.setLayout(new java.awt.GridBagLayout());
         E8.add(lblE8, new java.awt.GridBagConstraints());
 
         F8.setBackground(new java.awt.Color(238, 191, 120));
+        F8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         F8.setLayout(new java.awt.GridBagLayout());
         F8.add(lblF8, new java.awt.GridBagConstraints());
 
         G8.setBackground(new java.awt.Color(170, 102, 26));
+        G8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         G8.setLayout(new java.awt.GridBagLayout());
         G8.add(lblG8, new java.awt.GridBagConstraints());
 
         H8.setBackground(new java.awt.Color(238, 191, 120));
+        H8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         H8.setPreferredSize(new java.awt.Dimension(75, 100));
         H8.setLayout(new java.awt.GridBagLayout());
         H8.add(lblH8, new java.awt.GridBagConstraints());
 
         A7.setBackground(new java.awt.Color(238, 191, 120));
+        A7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         A7.setPreferredSize(new java.awt.Dimension(100, 100));
         A7.setLayout(new java.awt.GridBagLayout());
         A7.add(lblA7, new java.awt.GridBagConstraints());
 
         B7.setBackground(new java.awt.Color(170, 102, 26));
+        B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
         B7.setLayout(new java.awt.GridBagLayout());
         B7.add(lblB7, new java.awt.GridBagConstraints());
 
         C7.setBackground(new java.awt.Color(238, 191, 120));
+        C7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         C7.setPreferredSize(new java.awt.Dimension(100, 100));
         C7.setLayout(new java.awt.GridBagLayout());
         C7.add(lblC7, new java.awt.GridBagConstraints());
 
         D7.setBackground(new java.awt.Color(170, 102, 26));
+        D7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         D7.setPreferredSize(new java.awt.Dimension(100, 100));
         D7.setLayout(new java.awt.GridBagLayout());
         D7.add(lblD7, new java.awt.GridBagConstraints());
 
         E7.setBackground(new java.awt.Color(238, 191, 120));
+        E7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         E7.setPreferredSize(new java.awt.Dimension(100, 100));
         E7.setLayout(new java.awt.GridBagLayout());
         E7.add(lblE7, new java.awt.GridBagConstraints());
 
         F7.setBackground(new java.awt.Color(170, 102, 26));
+        F7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         F7.setPreferredSize(new java.awt.Dimension(100, 100));
         F7.setLayout(new java.awt.GridBagLayout());
         F7.add(lblF7, new java.awt.GridBagConstraints());
 
         G7.setBackground(new java.awt.Color(238, 191, 120));
+        G7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         G7.setPreferredSize(new java.awt.Dimension(100, 100));
         G7.setLayout(new java.awt.GridBagLayout());
         G7.add(lblG7, new java.awt.GridBagConstraints());
 
         H7.setBackground(new java.awt.Color(170, 102, 26));
+        H7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         H7.setPreferredSize(new java.awt.Dimension(100, 100));
         H7.setLayout(new java.awt.GridBagLayout());
         H7.add(lblH7, new java.awt.GridBagConstraints());
 
         A6.setBackground(new java.awt.Color(170, 102, 26));
+        A6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         A6.setMaximumSize(new java.awt.Dimension(100, 100));
         A6.setMinimumSize(new java.awt.Dimension(100, 100));
         A6.setLayout(new java.awt.GridBagLayout());
         A6.add(lblA6, new java.awt.GridBagConstraints());
 
         B6.setBackground(new java.awt.Color(238, 191, 120));
+        B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         B6.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         B6.setLayout(new java.awt.GridBagLayout());
         B6.add(lblB6, new java.awt.GridBagConstraints());
 
         C6.setBackground(new java.awt.Color(170, 102, 26));
+        C6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         C6.setLayout(new java.awt.GridBagLayout());
         C6.add(lblC6, new java.awt.GridBagConstraints());
 
         D6.setBackground(new java.awt.Color(238, 191, 120));
+        D6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         D6.setLayout(new java.awt.GridBagLayout());
         D6.add(lblD6, new java.awt.GridBagConstraints());
 
         E6.setBackground(new java.awt.Color(170, 102, 26));
+        E6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         E6.setLayout(new java.awt.GridBagLayout());
         E6.add(lblE6, new java.awt.GridBagConstraints());
 
         F6.setBackground(new java.awt.Color(238, 191, 120));
+        F6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         F6.setLayout(new java.awt.GridBagLayout());
         F6.add(lblF6, new java.awt.GridBagConstraints());
 
         G6.setBackground(new java.awt.Color(170, 102, 26));
+        G6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         G6.setLayout(new java.awt.GridBagLayout());
         G6.add(lblG6, new java.awt.GridBagConstraints());
 
         H6.setBackground(new java.awt.Color(238, 191, 120));
+        H6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         H6.setLayout(new java.awt.GridBagLayout());
         H6.add(lblH6, new java.awt.GridBagConstraints());
 
         A5.setBackground(new java.awt.Color(238, 191, 120));
+        A5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         A5.setMaximumSize(new java.awt.Dimension(100, 100));
         A5.setMinimumSize(new java.awt.Dimension(100, 100));
         A5.setLayout(new java.awt.GridBagLayout());
         A5.add(lblA5, new java.awt.GridBagConstraints());
 
         B5.setBackground(new java.awt.Color(170, 102, 26));
+        B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         B5.setLayout(new java.awt.GridBagLayout());
         B5.add(lblB5, new java.awt.GridBagConstraints());
 
         C5.setBackground(new java.awt.Color(238, 191, 120));
+        C5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         C5.setMaximumSize(new java.awt.Dimension(100, 100));
         C5.setMinimumSize(new java.awt.Dimension(100, 100));
         C5.setLayout(new java.awt.GridBagLayout());
         C5.add(lblC5, new java.awt.GridBagConstraints());
 
         D5.setBackground(new java.awt.Color(170, 102, 26));
+        D5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         D5.setMaximumSize(new java.awt.Dimension(100, 100));
         D5.setMinimumSize(new java.awt.Dimension(100, 100));
         D5.setLayout(new java.awt.GridBagLayout());
         D5.add(lblD5, new java.awt.GridBagConstraints());
 
         E5.setBackground(new java.awt.Color(238, 191, 120));
+        E5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         E5.setMaximumSize(new java.awt.Dimension(100, 100));
         E5.setMinimumSize(new java.awt.Dimension(100, 100));
         E5.setLayout(new java.awt.GridBagLayout());
         E5.add(lblE5, new java.awt.GridBagConstraints());
 
         F5.setBackground(new java.awt.Color(170, 102, 26));
+        F5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         F5.setMaximumSize(new java.awt.Dimension(100, 100));
         F5.setMinimumSize(new java.awt.Dimension(100, 100));
         F5.setLayout(new java.awt.GridBagLayout());
         F5.add(lblF5, new java.awt.GridBagConstraints());
 
         G5.setBackground(new java.awt.Color(238, 191, 120));
+        G5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         G5.setMaximumSize(new java.awt.Dimension(100, 100));
         G5.setMinimumSize(new java.awt.Dimension(100, 100));
         G5.setLayout(new java.awt.GridBagLayout());
         G5.add(lblG5, new java.awt.GridBagConstraints());
 
         H5.setBackground(new java.awt.Color(170, 102, 26));
+        H5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         H5.setMaximumSize(new java.awt.Dimension(100, 100));
         H5.setMinimumSize(new java.awt.Dimension(100, 100));
         H5.setLayout(new java.awt.GridBagLayout());
         H5.add(lblH5, new java.awt.GridBagConstraints());
 
         A4.setBackground(new java.awt.Color(170, 102, 26));
+        A4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         A4.setMaximumSize(new java.awt.Dimension(100, 100));
         A4.setMinimumSize(new java.awt.Dimension(100, 100));
         A4.setLayout(new java.awt.GridBagLayout());
         A4.add(lblA4, new java.awt.GridBagConstraints());
 
         B4.setBackground(new java.awt.Color(238, 191, 120));
+        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         B4.setMaximumSize(new java.awt.Dimension(100, 100));
         B4.setMinimumSize(new java.awt.Dimension(100, 100));
         B4.setLayout(new java.awt.GridBagLayout());
         B4.add(lblB4, new java.awt.GridBagConstraints());
 
         C4.setBackground(new java.awt.Color(170, 102, 26));
+        C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         C4.setMaximumSize(new java.awt.Dimension(100, 100));
         C4.setMinimumSize(new java.awt.Dimension(100, 100));
         C4.setLayout(new java.awt.GridBagLayout());
         C4.add(lblC4, new java.awt.GridBagConstraints());
 
         D4.setBackground(new java.awt.Color(238, 191, 120));
+        D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         D4.setMaximumSize(new java.awt.Dimension(100, 100));
         D4.setMinimumSize(new java.awt.Dimension(100, 100));
         D4.setLayout(new java.awt.GridBagLayout());
         D4.add(lblD4, new java.awt.GridBagConstraints());
 
         E4.setBackground(new java.awt.Color(170, 102, 26));
+        E4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         E4.setMaximumSize(new java.awt.Dimension(100, 100));
         E4.setMinimumSize(new java.awt.Dimension(100, 100));
         E4.setLayout(new java.awt.GridBagLayout());
         E4.add(lblE4, new java.awt.GridBagConstraints());
 
         F4.setBackground(new java.awt.Color(238, 191, 120));
+        F4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         F4.setMaximumSize(new java.awt.Dimension(100, 100));
         F4.setMinimumSize(new java.awt.Dimension(100, 100));
         F4.setLayout(new java.awt.GridBagLayout());
         F4.add(lblF4, new java.awt.GridBagConstraints());
 
         G4.setBackground(new java.awt.Color(170, 102, 26));
+        G4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         G4.setMaximumSize(new java.awt.Dimension(100, 100));
         G4.setMinimumSize(new java.awt.Dimension(100, 100));
         G4.setLayout(new java.awt.GridBagLayout());
         G4.add(lblG4, new java.awt.GridBagConstraints());
 
         H4.setBackground(new java.awt.Color(238, 191, 120));
+        H4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         H4.setMaximumSize(new java.awt.Dimension(100, 100));
         H4.setMinimumSize(new java.awt.Dimension(100, 100));
         H4.setLayout(new java.awt.GridBagLayout());
         H4.add(lblH4, new java.awt.GridBagConstraints());
 
         A3.setBackground(new java.awt.Color(238, 191, 120));
+        A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         A3.setLayout(new java.awt.GridBagLayout());
         A3.add(lblA3, new java.awt.GridBagConstraints());
 
         B3.setBackground(new java.awt.Color(170, 102, 26));
+        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         B3.setLayout(new java.awt.GridBagLayout());
         B3.add(lblB3, new java.awt.GridBagConstraints());
 
         C3.setBackground(new java.awt.Color(238, 191, 120));
+        C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         C3.setMaximumSize(new java.awt.Dimension(100, 100));
         C3.setLayout(new java.awt.GridBagLayout());
         C3.add(lblC3, new java.awt.GridBagConstraints());
 
         D3.setBackground(new java.awt.Color(170, 102, 26));
+        D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         D3.setMaximumSize(new java.awt.Dimension(100, 100));
         D3.setLayout(new java.awt.GridBagLayout());
         D3.add(lblD3, new java.awt.GridBagConstraints());
 
         E3.setBackground(new java.awt.Color(238, 191, 120));
+        E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         E3.setLayout(new java.awt.GridBagLayout());
         E3.add(lblE3, new java.awt.GridBagConstraints());
 
         F3.setBackground(new java.awt.Color(170, 102, 26));
+        F3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         F3.setMaximumSize(new java.awt.Dimension(100, 100));
         F3.setMinimumSize(new java.awt.Dimension(100, 100));
         F3.setLayout(new java.awt.GridBagLayout());
         F3.add(lblF3, new java.awt.GridBagConstraints());
 
         G3.setBackground(new java.awt.Color(238, 191, 120));
+        G3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         G3.setMaximumSize(new java.awt.Dimension(100, 100));
         G3.setMinimumSize(new java.awt.Dimension(100, 100));
         G3.setLayout(new java.awt.GridBagLayout());
         G3.add(lblG3, new java.awt.GridBagConstraints());
 
         H3.setBackground(new java.awt.Color(170, 102, 26));
+        H3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         H3.setMaximumSize(new java.awt.Dimension(100, 100));
         H3.setMinimumSize(new java.awt.Dimension(100, 100));
         H3.setLayout(new java.awt.GridBagLayout());
         H3.add(lblH3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(170, 102, 26));
-        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204), 5));
+        A2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(170, 102, 26), 5, true));
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
         A2.add(lblA2, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(238, 191, 120));
+        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.setLayout(new java.awt.GridBagLayout());
         B2.add(lblB2, new java.awt.GridBagConstraints());
 
         C2.setBackground(new java.awt.Color(170, 102, 26));
+        C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         C2.setPreferredSize(new java.awt.Dimension(100, 100));
         C2.setLayout(new java.awt.GridBagLayout());
         C2.add(lblC2, new java.awt.GridBagConstraints());
@@ -506,64 +556,73 @@ public class MainFrame extends javax.swing.JFrame {
         D2.add(lblD2, new java.awt.GridBagConstraints());
 
         E2.setBackground(new java.awt.Color(170, 102, 26));
+        E2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         E2.setMinimumSize(new java.awt.Dimension(100, 100));
         E2.setPreferredSize(new java.awt.Dimension(100, 100));
         E2.setLayout(new java.awt.GridBagLayout());
         E2.add(lblE2, new java.awt.GridBagConstraints());
 
         F2.setBackground(new java.awt.Color(238, 191, 120));
+        F2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         F2.setPreferredSize(new java.awt.Dimension(100, 100));
         F2.setLayout(new java.awt.GridBagLayout());
         F2.add(lblF2, new java.awt.GridBagConstraints());
 
         G2.setBackground(new java.awt.Color(170, 102, 26));
+        G2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         G2.setPreferredSize(new java.awt.Dimension(100, 100));
         G2.setLayout(new java.awt.GridBagLayout());
         G2.add(lblG2, new java.awt.GridBagConstraints());
 
         H2.setBackground(new java.awt.Color(238, 191, 120));
+        H2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
         H2.setLayout(new java.awt.GridBagLayout());
         H2.add(lblH2, new java.awt.GridBagConstraints());
 
         A1.setBackground(new java.awt.Color(238, 191, 120));
-        A1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 102, 0), 5, true));
+        A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.setLayout(new java.awt.GridBagLayout());
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(170, 102, 26));
+        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
         B1.add(lblB1, new java.awt.GridBagConstraints());
 
         C1.setBackground(new java.awt.Color(238, 191, 120));
+        C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         C1.setPreferredSize(new java.awt.Dimension(100, 100));
         C1.setLayout(new java.awt.GridBagLayout());
         C1.add(lblC1, new java.awt.GridBagConstraints());
 
         D1.setBackground(new java.awt.Color(170, 102, 26));
-        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         D1.setPreferredSize(new java.awt.Dimension(100, 100));
         D1.setLayout(new java.awt.GridBagLayout());
         D1.add(lblD1, new java.awt.GridBagConstraints());
 
         E1.setBackground(new java.awt.Color(238, 191, 120));
-        E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         E1.setPreferredSize(new java.awt.Dimension(100, 100));
         E1.setLayout(new java.awt.GridBagLayout());
 
         F1.setBackground(new java.awt.Color(170, 102, 26));
+        F1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         F1.setPreferredSize(new java.awt.Dimension(100, 100));
         F1.setLayout(new java.awt.GridBagLayout());
         F1.add(lblF1, new java.awt.GridBagConstraints());
 
         G1.setBackground(new java.awt.Color(238, 191, 120));
+        G1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(238, 191, 120), 5));
         G1.setPreferredSize(new java.awt.Dimension(100, 100));
         G1.setLayout(new java.awt.GridBagLayout());
         G1.add(lblG1, new java.awt.GridBagConstraints());
 
         H1.setBackground(new java.awt.Color(170, 102, 26));
+        H1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(170, 102, 26), 5));
         H1.setPreferredSize(new java.awt.Dimension(100, 100));
         H1.setLayout(new java.awt.GridBagLayout());
         H1.add(lblH1, new java.awt.GridBagConstraints());
