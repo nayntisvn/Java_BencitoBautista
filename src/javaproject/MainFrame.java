@@ -2714,6 +2714,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, G3);  
     }//GEN-LAST:event_B1MouseClicked
 
     private void B2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B2MouseClicked
