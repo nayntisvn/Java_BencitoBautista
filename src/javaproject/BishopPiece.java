@@ -31,7 +31,7 @@ public class BishopPiece {
     public ArrayList<String> movementW() {
         possiblem.clear();
         char[] charA = location.toCharArray();
-        
+        //
         switch(charA[0]){
             case 'A':   
             {
