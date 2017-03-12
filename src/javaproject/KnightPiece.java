@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  *
  * @author Sdist
- */
+ *///
 public class KnightPiece {
     int moves = 0;
     String location = null;
