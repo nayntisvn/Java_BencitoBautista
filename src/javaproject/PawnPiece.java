@@ -100,19 +100,16 @@ public class PawnPiece {
             switch(location)
             {
                 case "A3": {
-                    System.out.println("Hey");
                             ordinate[1] = '4';
                             possiblem.add("A" + ordinate[1] + "");
                         }
                         break;
                 case "A4": {
-                    System.out.println("2");
                             ordinate[1] = '5';
                             possiblem.add("A" + ordinate[1] + "");
                         }
                         break;
                 case "A5": {
-                    System.out.println("3");
                             ordinate[1] = '6';
                             possiblem.add("A" + ordinate[1] + "");
                         }
