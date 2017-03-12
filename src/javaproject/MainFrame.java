@@ -68,6 +68,16 @@ public class MainFrame extends javax.swing.JFrame {
     PawnPiece p6w = new PawnPiece("white","F2");
     PawnPiece p7w = new PawnPiece("white","G2");
     PawnPiece p8w = new PawnPiece("white","H2");
+    
+    PawnPiece p1b = new PawnPiece("black","A7");
+    PawnPiece p2b = new PawnPiece("black","B7");
+    PawnPiece p3b = new PawnPiece("black","C7");
+    PawnPiece p4b = new PawnPiece("black","D7");
+    PawnPiece p5b = new PawnPiece("black","E7");
+    PawnPiece p6b = new PawnPiece("black","F7");
+    PawnPiece p7b = new PawnPiece("black","G7");
+    PawnPiece p8b = new PawnPiece("black","H7");
+    
     //======================================================
     
     //  Array for possible destinations of a piece
@@ -2370,7 +2380,6 @@ public class MainFrame extends javax.swing.JFrame {
         premovePiece(piecesAlive[0][6], lblA7);
     }//GEN-LAST:event_lblA7MouseClicked
 
-    //PANELS
     private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
         // TODO add your handling code here:
         postmovePiece(bufferpiece, A3);   
