@@ -285,8 +285,8 @@ public class PawnPiece {
                         }
                         break;
                 case "H5": {
-                            ordinate[1] = 'H';
-                            possiblem.add("B" + ordinate[1] + "");
+                            ordinate[1] = '6';
+                            possiblem.add("H" + ordinate[1] + "");
                         }
                         break;
                 case "H6": {
