@@ -639,7 +639,8 @@ public class MainFrame extends javax.swing.JFrame {
             case "p2w" : 
                     {
                         if(destination.getBorder() == movement)
-                        {
+                        {   
+                            System.out.println(destination.getName());
                             switch(destination.getName())
                             {
                                 case "B3" : 
