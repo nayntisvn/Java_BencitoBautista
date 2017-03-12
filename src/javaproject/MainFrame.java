@@ -515,6 +515,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  To know the indicated piece and possible moves
     public void premovePiece(String pieceToMove, JLabel initial)
     {
+        refreshHistory();
         possiblem.clear();
         switch(pieceToMove)
         {
@@ -527,6 +528,15 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         possiblemoves(possiblem);
 
+                    }
+            case "p2w" : 
+                    {
+                        bufferpiece = pieceToMove;
+                        bufferloc = initial.getName();
+                        
+                        possiblem = p2w.movementW();
+                        
+                        possiblemoves(possiblem);
                     }
         }
     }
@@ -620,6 +630,96 @@ public class MainFrame extends javax.swing.JFrame {
                                             lblA7.setIcon(null);
                                             lblA8.setIcon(pawnw);
                                             p1w.location = "A8";
+
+                                            refreshHistory();
+                                        }break;
+                            }
+                        }
+                    }
+            case "p2w" : 
+                    {
+                        if(destination.getBorder() == movement)
+                        {
+                            switch(destination.getName())
+                            {
+                                case "B3" : 
+                                        {   
+                                            System.out.println("hey");
+                                            piecesAlive[1][2] = "p2w";
+                                            piecesAlive[1][1] = "";
+
+                                            lblB2.setIcon(null);
+                                            lblB3.setIcon(pawnw);
+                                            p2w.location = "B3";
+
+                                            refreshHistory();
+                                        }break;
+                                case "B4" : 
+                                        {   
+                                            if(p2w.moves == 1)
+                                            {   
+                                                piecesAlive[1][3] = "p2w";
+                                                piecesAlive[1][1] = "";
+
+                                                lblB2.setIcon(null);
+                                                lblB4.setIcon(pawnw);
+                                                p2w.location = "B4";
+
+                                                refreshHistory();
+                                            }
+                                            else if(p2w.moves >= 2)
+                                            {   
+                                                piecesAlive[1][3] = "p2w";
+                                                piecesAlive[1][2] = "";
+
+                                                lblB3.setIcon(null);
+                                                lblB4.setIcon(pawnw);
+                                                p2w.location = "B4";
+
+                                                refreshHistory();
+                                            }
+                                        }break;  
+                                case "B5" : 
+                                        {   
+                                            piecesAlive[1][4] = "p2w";
+                                            piecesAlive[1][3] = "";
+
+                                            lblB4.setIcon(null);
+                                            lblB5.setIcon(pawnw);
+                                            p2w.location = "B5";
+
+                                            refreshHistory();
+                                        }break;
+                                case "B6" : 
+                                        {   
+                                            piecesAlive[1][5] = "p2w";
+                                            piecesAlive[1][4] = "";
+
+                                            lblB5.setIcon(null);
+                                            lblB6.setIcon(pawnw);
+                                            p2w.location = "B6";
+
+                                            refreshHistory();
+                                        }break;
+                                case "B7" : 
+                                        {   
+                                            piecesAlive[1][6] = "p2w";
+                                            piecesAlive[1][5] = "";
+
+                                            lblB6.setIcon(null);
+                                            lblB7.setIcon(pawnw);
+                                            p2w.location = "B7";
+
+                                            refreshHistory();
+                                        }break;
+                                case "B8" : 
+                                        {   
+                                            piecesAlive[1][7] = "p2w";
+                                            piecesAlive[1][6] = "";
+
+                                            lblB7.setIcon(null);
+                                            lblB8.setIcon(pawnw);
+                                            p2w.location = "B8";
 
                                             refreshHistory();
                                         }break;
@@ -2184,6 +2284,7 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
+        refreshHistory();
         premovePiece(piecesAlive[0][1], lblA2);
     }//GEN-LAST:event_lblA2MouseClicked
 
