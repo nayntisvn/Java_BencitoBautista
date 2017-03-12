@@ -636,7 +636,7 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         initComponents();
         
-        //refreshBoard();
+        refreshBoard();
     }
 
     /**
@@ -2156,31 +2156,37 @@ public class MainFrame extends javax.swing.JFrame {
 
     
     private void B3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B3MouseClicked
-        
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_B3MouseClicked
 
     private void B4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B4MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_B4MouseClicked
 
     private void B5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B5MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_B5MouseClicked
 
     private void B6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B6MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_B6MouseClicked
 
     private void B7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B7MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_B7MouseClicked
 
     private void C3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C3MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_C3MouseClicked
 
     private void C4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C4MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
     }//GEN-LAST:event_C4MouseClicked
 
     private void C5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C5MouseClicked
