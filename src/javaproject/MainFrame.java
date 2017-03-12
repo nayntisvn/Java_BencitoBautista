@@ -207,18 +207,195 @@ public class MainFrame extends javax.swing.JFrame {
     {
         possiblem.clear();
         
+        bufferpiece = "";
+        bufferloc = "";
         
+        A1.setBorder(orig);
+        A2.setBorder(orig);
+        A3.setBorder(orig);
+        A4.setBorder(orig);
+        A5.setBorder(orig);
+        A6.setBorder(orig);
+        A7.setBorder(orig);
+        A8.setBorder(orig);
+
+        B1.setBorder(orig);
+        B2.setBorder(orig);
+        B3.setBorder(orig);
+        B4.setBorder(orig);
+        B5.setBorder(orig);
+        B6.setBorder(orig);
+        B7.setBorder(orig);
+        B8.setBorder(orig);
+       
+        C1.setBorder(orig);
+        C2.setBorder(orig);
+        C3.setBorder(orig);
+        C4.setBorder(orig);
+        C5.setBorder(orig);
+        C6.setBorder(orig);
+        C7.setBorder(orig);
+        C8.setBorder(orig);
+        
+        D1.setBorder(orig);
+        D2.setBorder(orig);
+        D3.setBorder(orig);
+        D4.setBorder(orig);
+        D5.setBorder(orig);
+        D6.setBorder(orig);
+        D7.setBorder(orig);
+        D8.setBorder(orig);
+        
+        E1.setBorder(orig);
+        E2.setBorder(orig);
+        E3.setBorder(orig);
+        E4.setBorder(orig);
+        E5.setBorder(orig);
+        E6.setBorder(orig);
+        E7.setBorder(orig);
+        E8.setBorder(orig);
+        
+        F1.setBorder(orig);
+        F2.setBorder(orig);
+        F3.setBorder(orig);
+        F4.setBorder(orig);
+        F5.setBorder(orig);
+        F6.setBorder(orig);
+        F7.setBorder(orig);
+        F8.setBorder(orig);
+        
+        G1.setBorder(orig);
+        G2.setBorder(orig);
+        G3.setBorder(orig);
+        G4.setBorder(orig);
+        G5.setBorder(orig);
+        G6.setBorder(orig);
+        G7.setBorder(orig);
+        G8.setBorder(orig);
+        
+        H1.setBorder(orig);
+        H2.setBorder(orig);
+        H3.setBorder(orig);
+        H4.setBorder(orig);
+        H5.setBorder(orig);
+        H6.setBorder(orig);
+        H7.setBorder(orig);
+        H8.setBorder(orig);
+    }
+    //======================================================
+    
+    //  To know the indicated piece and possible moves
+    public void premovePiece(String pieceToMove, JLabel initial)
+    {
+        switch(pieceToMove)
+        {
+            case "p1w" : 
+                    {
+                        bufferpiece = pieceToMove;
+                        bufferloc = initial.getName();
+                        
+                        possiblem = p1w.movementW();
+                        
+                        possiblemoves(possiblem);
+                    }
+        }
     }
     //======================================================
     
     //  To move the indicated piece to an indicated position
-    public void movePiece()
+    public void postmovePiece(String buffer, JPanel destination)
     {
-        
-        
+        switch(buffer)
+        {
+            case "p1w" : 
+                    {
+                        switch(destination.getName())
+                        {
+                            case "A3" : 
+                                    {   
+                                        piecesAlive[0][2] = "p1w";
+                                        piecesAlive[0][1] = "";
+                                        
+                                        lblA2.setIcon(null);
+                                        lblA3.setIcon(pawnw);
+                                        p1w.location = "A3";
+
+                                        refreshHistory();
+                                    }break;
+                            case "A4" : 
+                                    {   
+                                        if(p1w.moves == 1)
+                                        {   
+                                            piecesAlive[0][3] = "p1w";
+                                            piecesAlive[0][1] = "";
+                                        
+                                            lblA2.setIcon(null);
+                                            lblA4.setIcon(pawnw);
+                                            p1w.location = "A4";
+
+                                            refreshHistory();
+                                        }
+                                        else if(p1w.moves != 1)
+                                        {   
+                                            piecesAlive[0][3] = "p1w";
+                                            piecesAlive[0][2] = "";
+                                        
+                                            lblA3.setIcon(null);
+                                            lblA4.setIcon(pawnw);
+                                            p1w.location = "A4";
+
+                                            refreshHistory();
+                                        }
+                                    }break;  
+                            case "A5" : 
+                                    {   
+                                        piecesAlive[0][4] = "p1w";
+                                        piecesAlive[0][3] = "";
+                                    
+                                        lblA4.setIcon(null);
+                                        lblA5.setIcon(pawnw);
+                                        p1w.location = "A5";
+                                        
+                                        refreshHistory();
+                                    }break;
+                            case "A6" : 
+                                    {   
+                                        piecesAlive[0][5] = "p1w";
+                                        piecesAlive[0][4] = "";
+                                    
+                                        lblA5.setIcon(null);
+                                        lblA6.setIcon(pawnw);
+                                        p1w.location = "A6";
+
+                                        refreshHistory();
+                                    }break;
+                            case "A7" : 
+                                    {   
+                                        piecesAlive[0][6] = "p1w";
+                                        piecesAlive[0][5] = "";
+                                    
+                                        lblA6.setIcon(null);
+                                        lblA7.setIcon(pawnw);
+                                        p1w.location = "A7";
+
+                                        refreshHistory();
+                                    }break;
+                            case "A8" : 
+                                    {   
+                                        piecesAlive[0][7] = "p1w";
+                                        piecesAlive[0][6] = "";
+                                    
+                                        lblA7.setIcon(null);
+                                        lblA8.setIcon(pawnw);
+                                        p1w.location = "A8";
+
+                                        refreshHistory();
+                                    }break;
+                        }
+                    }
+        }
     }
     //======================================================
-    
     
     /**
      * Creates new form MainFrame
@@ -382,259 +559,309 @@ public class MainFrame extends javax.swing.JFrame {
         setResizable(false);
 
         A8.setBackground(new java.awt.Color(238, 191, 120));
-        A8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A8.setMinimumSize(new java.awt.Dimension(100, 75));
+        A8.setName("A8"); // NOI18N
         A8.setPreferredSize(new java.awt.Dimension(100, 100));
+        A8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A8MouseClicked(evt);
+            }
+        });
         A8.setLayout(new java.awt.GridBagLayout());
         A8.add(lblA8, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(170, 102, 26));
-        B8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B8.setMinimumSize(new java.awt.Dimension(100, 100));
         B8.setPreferredSize(new java.awt.Dimension(100, 100));
         B8.setLayout(new java.awt.GridBagLayout());
         B8.add(lblB8, new java.awt.GridBagConstraints());
 
         C8.setBackground(new java.awt.Color(238, 191, 120));
-        C8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C8.setLayout(new java.awt.GridBagLayout());
         C8.add(lblC8, new java.awt.GridBagConstraints());
 
         D8.setBackground(new java.awt.Color(170, 102, 26));
-        D8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D8.setLayout(new java.awt.GridBagLayout());
         D8.add(lblD8, new java.awt.GridBagConstraints());
 
         E8.setBackground(new java.awt.Color(238, 191, 120));
-        E8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E8.setRequestFocusEnabled(false);
         E8.setLayout(new java.awt.GridBagLayout());
         E8.add(lblE8, new java.awt.GridBagConstraints());
 
         F8.setBackground(new java.awt.Color(170, 102, 26));
-        F8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F8.setLayout(new java.awt.GridBagLayout());
         F8.add(lblF8, new java.awt.GridBagConstraints());
 
         G8.setBackground(new java.awt.Color(238, 191, 120));
-        G8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G8.setLayout(new java.awt.GridBagLayout());
         G8.add(lblG8, new java.awt.GridBagConstraints());
 
         H8.setBackground(new java.awt.Color(170, 102, 26));
-        H8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H8.setPreferredSize(new java.awt.Dimension(75, 100));
         H8.setLayout(new java.awt.GridBagLayout());
         H8.add(lblH8, new java.awt.GridBagConstraints());
 
         A7.setBackground(new java.awt.Color(170, 102, 26));
-        A7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        A7.setName("A7"); // NOI18N
         A7.setPreferredSize(new java.awt.Dimension(100, 100));
+        A7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A7MouseClicked(evt);
+            }
+        });
         A7.setLayout(new java.awt.GridBagLayout());
+
+        lblA7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA7MouseClicked(evt);
+            }
+        });
         A7.add(lblA7, new java.awt.GridBagConstraints());
 
         B7.setBackground(new java.awt.Color(238, 191, 120));
-        B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
         B7.setLayout(new java.awt.GridBagLayout());
         B7.add(lblB7, new java.awt.GridBagConstraints());
 
         C7.setBackground(new java.awt.Color(170, 102, 26));
-        C7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C7.setPreferredSize(new java.awt.Dimension(100, 100));
         C7.setLayout(new java.awt.GridBagLayout());
         C7.add(lblC7, new java.awt.GridBagConstraints());
 
         D7.setBackground(new java.awt.Color(238, 191, 120));
-        D7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D7.setPreferredSize(new java.awt.Dimension(100, 100));
         D7.setLayout(new java.awt.GridBagLayout());
         D7.add(lblD7, new java.awt.GridBagConstraints());
 
         E7.setBackground(new java.awt.Color(170, 102, 26));
-        E7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E7.setPreferredSize(new java.awt.Dimension(100, 100));
         E7.setLayout(new java.awt.GridBagLayout());
         E7.add(lblE7, new java.awt.GridBagConstraints());
 
         F7.setBackground(new java.awt.Color(238, 191, 120));
-        F7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F7.setPreferredSize(new java.awt.Dimension(100, 100));
         F7.setLayout(new java.awt.GridBagLayout());
         F7.add(lblF7, new java.awt.GridBagConstraints());
 
         G7.setBackground(new java.awt.Color(170, 102, 26));
-        G7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G7.setPreferredSize(new java.awt.Dimension(100, 100));
         G7.setLayout(new java.awt.GridBagLayout());
         G7.add(lblG7, new java.awt.GridBagConstraints());
 
         H7.setBackground(new java.awt.Color(238, 191, 120));
-        H7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H7.setPreferredSize(new java.awt.Dimension(100, 100));
         H7.setLayout(new java.awt.GridBagLayout());
         H7.add(lblH7, new java.awt.GridBagConstraints());
 
         A6.setBackground(new java.awt.Color(238, 191, 120));
-        A6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A6.setMaximumSize(new java.awt.Dimension(100, 100));
         A6.setMinimumSize(new java.awt.Dimension(100, 100));
+        A6.setName("A6"); // NOI18N
+        A6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A6MouseClicked(evt);
+            }
+        });
         A6.setLayout(new java.awt.GridBagLayout());
+
+        lblA6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA6MouseClicked(evt);
+            }
+        });
         A6.add(lblA6, new java.awt.GridBagConstraints());
 
         B6.setBackground(new java.awt.Color(170, 102, 26));
-        B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B6.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         B6.setLayout(new java.awt.GridBagLayout());
         B6.add(lblB6, new java.awt.GridBagConstraints());
 
         C6.setBackground(new java.awt.Color(238, 191, 120));
-        C6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C6.setLayout(new java.awt.GridBagLayout());
         C6.add(lblC6, new java.awt.GridBagConstraints());
 
         D6.setBackground(new java.awt.Color(170, 102, 26));
-        D6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D6.setLayout(new java.awt.GridBagLayout());
         D6.add(lblD6, new java.awt.GridBagConstraints());
 
         E6.setBackground(new java.awt.Color(238, 191, 120));
-        E6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E6.setLayout(new java.awt.GridBagLayout());
         E6.add(lblE6, new java.awt.GridBagConstraints());
 
         F6.setBackground(new java.awt.Color(170, 102, 26));
-        F6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F6.setLayout(new java.awt.GridBagLayout());
         F6.add(lblF6, new java.awt.GridBagConstraints());
 
         G6.setBackground(new java.awt.Color(238, 191, 120));
-        G6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G6.setLayout(new java.awt.GridBagLayout());
         G6.add(lblG6, new java.awt.GridBagConstraints());
 
         H6.setBackground(new java.awt.Color(170, 102, 26));
-        H6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H6.setLayout(new java.awt.GridBagLayout());
         H6.add(lblH6, new java.awt.GridBagConstraints());
 
         A5.setBackground(new java.awt.Color(170, 102, 26));
-        A5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A5.setMaximumSize(new java.awt.Dimension(100, 100));
         A5.setMinimumSize(new java.awt.Dimension(100, 100));
+        A5.setName("A5"); // NOI18N
+        A5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A5MouseClicked(evt);
+            }
+        });
         A5.setLayout(new java.awt.GridBagLayout());
+
+        lblA5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA5MouseClicked(evt);
+            }
+        });
         A5.add(lblA5, new java.awt.GridBagConstraints());
 
         B5.setBackground(new java.awt.Color(238, 191, 120));
-        B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B5.setLayout(new java.awt.GridBagLayout());
         B5.add(lblB5, new java.awt.GridBagConstraints());
 
         C5.setBackground(new java.awt.Color(170, 102, 26));
-        C5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C5.setMaximumSize(new java.awt.Dimension(100, 100));
         C5.setMinimumSize(new java.awt.Dimension(100, 100));
         C5.setLayout(new java.awt.GridBagLayout());
         C5.add(lblC5, new java.awt.GridBagConstraints());
 
         D5.setBackground(new java.awt.Color(238, 191, 120));
-        D5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D5.setMaximumSize(new java.awt.Dimension(100, 100));
         D5.setMinimumSize(new java.awt.Dimension(100, 100));
         D5.setLayout(new java.awt.GridBagLayout());
         D5.add(lblD5, new java.awt.GridBagConstraints());
 
         E5.setBackground(new java.awt.Color(170, 102, 26));
-        E5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E5.setMaximumSize(new java.awt.Dimension(100, 100));
         E5.setMinimumSize(new java.awt.Dimension(100, 100));
         E5.setLayout(new java.awt.GridBagLayout());
         E5.add(lblE5, new java.awt.GridBagConstraints());
 
         F5.setBackground(new java.awt.Color(238, 191, 120));
-        F5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F5.setMaximumSize(new java.awt.Dimension(100, 100));
         F5.setMinimumSize(new java.awt.Dimension(100, 100));
         F5.setLayout(new java.awt.GridBagLayout());
         F5.add(lblF5, new java.awt.GridBagConstraints());
 
         G5.setBackground(new java.awt.Color(170, 102, 26));
-        G5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G5.setMaximumSize(new java.awt.Dimension(100, 100));
         G5.setMinimumSize(new java.awt.Dimension(100, 100));
         G5.setLayout(new java.awt.GridBagLayout());
         G5.add(lblG5, new java.awt.GridBagConstraints());
 
         H5.setBackground(new java.awt.Color(238, 191, 120));
-        H5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H5.setMaximumSize(new java.awt.Dimension(100, 100));
         H5.setMinimumSize(new java.awt.Dimension(100, 100));
         H5.setLayout(new java.awt.GridBagLayout());
         H5.add(lblH5, new java.awt.GridBagConstraints());
 
         A4.setBackground(new java.awt.Color(238, 191, 120));
-        A4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A4.setMaximumSize(new java.awt.Dimension(100, 100));
         A4.setMinimumSize(new java.awt.Dimension(100, 100));
+        A4.setName("A4"); // NOI18N
         A4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 A4MouseClicked(evt);
             }
         });
         A4.setLayout(new java.awt.GridBagLayout());
+
+        lblA4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA4MouseClicked(evt);
+            }
+        });
         A4.add(lblA4, new java.awt.GridBagConstraints());
 
         B4.setBackground(new java.awt.Color(170, 102, 26));
-        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B4.setMaximumSize(new java.awt.Dimension(100, 100));
         B4.setMinimumSize(new java.awt.Dimension(100, 100));
         B4.setLayout(new java.awt.GridBagLayout());
         B4.add(lblB4, new java.awt.GridBagConstraints());
 
         C4.setBackground(new java.awt.Color(238, 191, 120));
-        C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C4.setMaximumSize(new java.awt.Dimension(100, 100));
         C4.setMinimumSize(new java.awt.Dimension(100, 100));
         C4.setLayout(new java.awt.GridBagLayout());
         C4.add(lblC4, new java.awt.GridBagConstraints());
 
         D4.setBackground(new java.awt.Color(170, 102, 26));
-        D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D4.setMaximumSize(new java.awt.Dimension(100, 100));
         D4.setMinimumSize(new java.awt.Dimension(100, 100));
         D4.setLayout(new java.awt.GridBagLayout());
         D4.add(lblD4, new java.awt.GridBagConstraints());
 
         E4.setBackground(new java.awt.Color(238, 191, 120));
-        E4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E4.setMaximumSize(new java.awt.Dimension(100, 100));
         E4.setMinimumSize(new java.awt.Dimension(100, 100));
         E4.setLayout(new java.awt.GridBagLayout());
         E4.add(lblE4, new java.awt.GridBagConstraints());
 
         F4.setBackground(new java.awt.Color(170, 102, 26));
-        F4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F4.setMaximumSize(new java.awt.Dimension(100, 100));
         F4.setMinimumSize(new java.awt.Dimension(100, 100));
         F4.setLayout(new java.awt.GridBagLayout());
         F4.add(lblF4, new java.awt.GridBagConstraints());
 
         G4.setBackground(new java.awt.Color(238, 191, 120));
-        G4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G4.setMaximumSize(new java.awt.Dimension(100, 100));
         G4.setMinimumSize(new java.awt.Dimension(100, 100));
         G4.setLayout(new java.awt.GridBagLayout());
         G4.add(lblG4, new java.awt.GridBagConstraints());
 
         H4.setBackground(new java.awt.Color(170, 102, 26));
-        H4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H4.setMaximumSize(new java.awt.Dimension(100, 100));
         H4.setMinimumSize(new java.awt.Dimension(100, 100));
         H4.setLayout(new java.awt.GridBagLayout());
         H4.add(lblH4, new java.awt.GridBagConstraints());
 
         A3.setBackground(new java.awt.Color(170, 102, 26));
-        A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        A3.setName("A3"); // NOI18N
         A3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 A3MouseClicked(evt);
@@ -650,50 +877,50 @@ public class MainFrame extends javax.swing.JFrame {
         A3.add(lblA3, new java.awt.GridBagConstraints());
 
         B3.setBackground(new java.awt.Color(238, 191, 120));
-        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B3.setLayout(new java.awt.GridBagLayout());
         B3.add(lblB3, new java.awt.GridBagConstraints());
 
         C3.setBackground(new java.awt.Color(170, 102, 26));
-        C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C3.setMaximumSize(new java.awt.Dimension(100, 100));
         C3.setLayout(new java.awt.GridBagLayout());
         C3.add(lblC3, new java.awt.GridBagConstraints());
 
         D3.setBackground(new java.awt.Color(238, 191, 120));
-        D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D3.setMaximumSize(new java.awt.Dimension(100, 100));
         D3.setLayout(new java.awt.GridBagLayout());
         D3.add(lblD3, new java.awt.GridBagConstraints());
 
         E3.setBackground(new java.awt.Color(170, 102, 26));
-        E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E3.setLayout(new java.awt.GridBagLayout());
         E3.add(lblE3, new java.awt.GridBagConstraints());
 
         F3.setBackground(new java.awt.Color(238, 191, 120));
-        F3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F3.setMaximumSize(new java.awt.Dimension(100, 100));
         F3.setMinimumSize(new java.awt.Dimension(100, 100));
         F3.setLayout(new java.awt.GridBagLayout());
         F3.add(lblF3, new java.awt.GridBagConstraints());
 
         G3.setBackground(new java.awt.Color(170, 102, 26));
-        G3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G3.setMaximumSize(new java.awt.Dimension(100, 100));
         G3.setMinimumSize(new java.awt.Dimension(100, 100));
         G3.setLayout(new java.awt.GridBagLayout());
         G3.add(lblG3, new java.awt.GridBagConstraints());
 
         H3.setBackground(new java.awt.Color(238, 191, 120));
-        H3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H3.setMaximumSize(new java.awt.Dimension(100, 100));
         H3.setMinimumSize(new java.awt.Dimension(100, 100));
         H3.setLayout(new java.awt.GridBagLayout());
         H3.add(lblH3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(238, 191, 120));
-        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A2.setName("A2"); // NOI18N
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.setLayout(new java.awt.GridBagLayout());
@@ -706,94 +933,94 @@ public class MainFrame extends javax.swing.JFrame {
         A2.add(lblA2, new java.awt.GridBagConstraints());
 
         B2.setBackground(new java.awt.Color(170, 102, 26));
-        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.setLayout(new java.awt.GridBagLayout());
         B2.add(lblB2, new java.awt.GridBagConstraints());
 
         C2.setBackground(new java.awt.Color(238, 191, 120));
-        C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C2.setPreferredSize(new java.awt.Dimension(100, 100));
         C2.setLayout(new java.awt.GridBagLayout());
         C2.add(lblC2, new java.awt.GridBagConstraints());
 
         D2.setBackground(new java.awt.Color(170, 102, 26));
-        D2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D2.setMinimumSize(new java.awt.Dimension(100, 100));
         D2.setPreferredSize(new java.awt.Dimension(100, 100));
         D2.setLayout(new java.awt.GridBagLayout());
         D2.add(lblD2, new java.awt.GridBagConstraints());
 
         E2.setBackground(new java.awt.Color(238, 191, 120));
-        E2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E2.setMinimumSize(new java.awt.Dimension(100, 100));
         E2.setPreferredSize(new java.awt.Dimension(100, 100));
         E2.setLayout(new java.awt.GridBagLayout());
         E2.add(lblE2, new java.awt.GridBagConstraints());
 
         F2.setBackground(new java.awt.Color(170, 102, 26));
-        F2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F2.setPreferredSize(new java.awt.Dimension(100, 100));
         F2.setLayout(new java.awt.GridBagLayout());
         F2.add(lblF2, new java.awt.GridBagConstraints());
 
         G2.setBackground(new java.awt.Color(238, 191, 120));
-        G2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G2.setPreferredSize(new java.awt.Dimension(100, 100));
         G2.setLayout(new java.awt.GridBagLayout());
         G2.add(lblG2, new java.awt.GridBagConstraints());
 
         H2.setBackground(new java.awt.Color(170, 102, 26));
-        H2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
         H2.setLayout(new java.awt.GridBagLayout());
         H2.add(lblH2, new java.awt.GridBagConstraints());
 
         A1.setBackground(new java.awt.Color(170, 102, 26));
-        A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A1.setName("A1"); // NOI18N
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.setLayout(new java.awt.GridBagLayout());
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
-        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
         B1.add(lblB1, new java.awt.GridBagConstraints());
 
         C1.setBackground(new java.awt.Color(170, 102, 26));
-        C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C1.setPreferredSize(new java.awt.Dimension(100, 100));
         C1.setLayout(new java.awt.GridBagLayout());
         C1.add(lblC1, new java.awt.GridBagConstraints());
 
         D1.setBackground(new java.awt.Color(238, 191, 120));
-        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D1.setPreferredSize(new java.awt.Dimension(100, 100));
         D1.setLayout(new java.awt.GridBagLayout());
         D1.add(lblD1, new java.awt.GridBagConstraints());
 
         E1.setBackground(new java.awt.Color(170, 102, 26));
-        E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E1.setPreferredSize(new java.awt.Dimension(100, 100));
         E1.setLayout(new java.awt.GridBagLayout());
         E1.add(lblE1, new java.awt.GridBagConstraints());
 
         F1.setBackground(new java.awt.Color(238, 191, 120));
-        F1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        F1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F1.setPreferredSize(new java.awt.Dimension(100, 100));
         F1.setLayout(new java.awt.GridBagLayout());
         F1.add(lblF1, new java.awt.GridBagConstraints());
 
         G1.setBackground(new java.awt.Color(170, 102, 26));
-        G1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        G1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G1.setPreferredSize(new java.awt.Dimension(100, 100));
         G1.setLayout(new java.awt.GridBagLayout());
         G1.add(lblG1, new java.awt.GridBagConstraints());
 
         H1.setBackground(new java.awt.Color(238, 191, 120));
-        H1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        H1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H1.setPreferredSize(new java.awt.Dimension(100, 100));
         H1.setLayout(new java.awt.GridBagLayout());
         H1.add(lblH1, new java.awt.GridBagConstraints());
@@ -1095,56 +1322,67 @@ public class MainFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
-        
-        switch(piecesAlive[0][1])
-        {
-            case "p1w" : {
-                            bufferpiece = "p1w";
-                            bufferloc = "A2";
-                            possiblem = p1w.movementW();
-
-                            possiblemoves(possiblem);
-                            
-                        }
-                    break;
-        };
-        
+        premovePiece(piecesAlive[0][1], lblA2);
     }//GEN-LAST:event_lblA2MouseClicked
+
+    private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
+        // TODO add your handling code here:
+        premovePiece(piecesAlive[0][2], lblA3);
+    }//GEN-LAST:event_lblA3MouseClicked
+
+    private void lblA4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA4MouseClicked
+        // TODO add your handling code here:
+        premovePiece(piecesAlive[0][3], lblA4);
+    }//GEN-LAST:event_lblA4MouseClicked
+
+    private void lblA5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA5MouseClicked
+        // TODO add your handling code here:
+        premovePiece(piecesAlive[0][4], lblA5);
+    }//GEN-LAST:event_lblA5MouseClicked
+
+    private void lblA6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA6MouseClicked
+        // TODO add your handling code here:
+        premovePiece(piecesAlive[0][5], lblA6);
+    }//GEN-LAST:event_lblA6MouseClicked
+
+    private void lblA7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA7MouseClicked
+        // TODO add your handling code here:
+        premovePiece(piecesAlive[0][6], lblA7);
+    }//GEN-LAST:event_lblA7MouseClicked
 
     private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
         // TODO add your handling code here:
-        
-        if(bufferpiece.equals("p1w"))
-        {
-            piecesAlive[0][2] = "";
-            
-            lblA3.setIcon(pawnw);
-            p1w.location = "A3";
-            
-            bufferpiece = null;
-        }
+        postmovePiece(bufferpiece, A3);
     }//GEN-LAST:event_A3MouseClicked
 
     private void A4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A4MouseClicked
         // TODO add your handling code here:
-        if(bufferpiece.equals("p1w"))
-        {
-            lblA4.setIcon(pawnw);
-            p1w.location = "A4";
-            
-            bufferpiece = null;
-        }
+        postmovePiece(bufferpiece, A4);
     }//GEN-LAST:event_A4MouseClicked
 
-    private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
+    private void A5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A5MouseClicked
         // TODO add your handling code here:
-        
-    }//GEN-LAST:event_lblA3MouseClicked
+        postmovePiece(bufferpiece, A5);
+    }//GEN-LAST:event_A5MouseClicked
 
+    private void A6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A6MouseClicked
+        // TODO add your handling code here:
+        postmovePiece(bufferpiece, A6);
+    }//GEN-LAST:event_A6MouseClicked
+
+    private void A7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A7MouseClicked
+        // TODO add your handling code here:
+        postmovePiece(bufferpiece, A7);
+    }//GEN-LAST:event_A7MouseClicked
+
+    private void A8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A8MouseClicked
+        // TODO add your handling code here:
+        postmovePiece(bufferpiece, A8);
+    }//GEN-LAST:event_A8MouseClicked
+
+    
     /**
      * @param args the command line arguments
      */
