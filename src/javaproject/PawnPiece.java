@@ -100,7 +100,7 @@ public class PawnPiece {
             switch(location)
             {
                 case "A3": {
-                            System.out.println("1");
+                    System.out.println("Hey");
                             ordinate[1] = '4';
                             possiblem.add("A" + ordinate[1] + "");
                         }

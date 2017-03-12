@@ -8,6 +8,10 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Insets;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.*;
 import java.io.*;
 import javax.swing.*;
@@ -632,7 +636,7 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         initComponents();
         
-        refreshBoard();
+        //refreshBoard();
     }
 
     /**
@@ -785,6 +789,7 @@ public class MainFrame extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Chess");
         setResizable(false);
 
         A8.setBackground(new java.awt.Color(238, 191, 120));
@@ -805,38 +810,80 @@ public class MainFrame extends javax.swing.JFrame {
         B8.setMinimumSize(new java.awt.Dimension(100, 100));
         B8.setPreferredSize(new java.awt.Dimension(100, 100));
         B8.setLayout(new java.awt.GridBagLayout());
+
+        lblB8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB8MouseClicked(evt);
+            }
+        });
         B8.add(lblB8, new java.awt.GridBagConstraints());
 
         C8.setBackground(new java.awt.Color(238, 191, 120));
         C8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C8.setLayout(new java.awt.GridBagLayout());
+
+        lblC8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC8MouseClicked(evt);
+            }
+        });
         C8.add(lblC8, new java.awt.GridBagConstraints());
 
         D8.setBackground(new java.awt.Color(170, 102, 26));
         D8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D8.setLayout(new java.awt.GridBagLayout());
+
+        lblD8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD8MouseClicked(evt);
+            }
+        });
         D8.add(lblD8, new java.awt.GridBagConstraints());
 
         E8.setBackground(new java.awt.Color(238, 191, 120));
         E8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E8.setRequestFocusEnabled(false);
         E8.setLayout(new java.awt.GridBagLayout());
+
+        lblE8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE8MouseClicked(evt);
+            }
+        });
         E8.add(lblE8, new java.awt.GridBagConstraints());
 
         F8.setBackground(new java.awt.Color(170, 102, 26));
         F8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F8.setLayout(new java.awt.GridBagLayout());
+
+        lblF8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF8MouseClicked(evt);
+            }
+        });
         F8.add(lblF8, new java.awt.GridBagConstraints());
 
         G8.setBackground(new java.awt.Color(238, 191, 120));
         G8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G8.setLayout(new java.awt.GridBagLayout());
+
+        lblG8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG8MouseClicked(evt);
+            }
+        });
         G8.add(lblG8, new java.awt.GridBagConstraints());
 
         H8.setBackground(new java.awt.Color(170, 102, 26));
         H8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H8.setPreferredSize(new java.awt.Dimension(75, 100));
         H8.setLayout(new java.awt.GridBagLayout());
+
+        lblH8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH8MouseClicked(evt);
+            }
+        });
         H8.add(lblH8, new java.awt.GridBagConstraints());
 
         A7.setBackground(new java.awt.Color(170, 102, 26));
@@ -860,43 +907,120 @@ public class MainFrame extends javax.swing.JFrame {
         B7.setBackground(new java.awt.Color(238, 191, 120));
         B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
+        B7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B7MouseClicked(evt);
+            }
+        });
         B7.setLayout(new java.awt.GridBagLayout());
+
+        lblB7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB7MouseClicked(evt);
+            }
+        });
         B7.add(lblB7, new java.awt.GridBagConstraints());
 
         C7.setBackground(new java.awt.Color(170, 102, 26));
         C7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C7.setPreferredSize(new java.awt.Dimension(100, 100));
+        C7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C7MouseClicked(evt);
+            }
+        });
         C7.setLayout(new java.awt.GridBagLayout());
+
+        lblC7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC7MouseClicked(evt);
+            }
+        });
         C7.add(lblC7, new java.awt.GridBagConstraints());
 
         D7.setBackground(new java.awt.Color(238, 191, 120));
         D7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D7.setPreferredSize(new java.awt.Dimension(100, 100));
+        D7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                D7MouseClicked(evt);
+            }
+        });
         D7.setLayout(new java.awt.GridBagLayout());
+
+        lblD7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD7MouseClicked(evt);
+            }
+        });
         D7.add(lblD7, new java.awt.GridBagConstraints());
 
         E7.setBackground(new java.awt.Color(170, 102, 26));
         E7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E7.setPreferredSize(new java.awt.Dimension(100, 100));
+        E7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E7MouseClicked(evt);
+            }
+        });
         E7.setLayout(new java.awt.GridBagLayout());
+
+        lblE7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE7MouseClicked(evt);
+            }
+        });
         E7.add(lblE7, new java.awt.GridBagConstraints());
 
         F7.setBackground(new java.awt.Color(238, 191, 120));
         F7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F7.setPreferredSize(new java.awt.Dimension(100, 100));
+        F7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                F7MouseClicked(evt);
+            }
+        });
         F7.setLayout(new java.awt.GridBagLayout());
+
+        lblF7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF7MouseClicked(evt);
+            }
+        });
         F7.add(lblF7, new java.awt.GridBagConstraints());
 
         G7.setBackground(new java.awt.Color(170, 102, 26));
         G7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G7.setPreferredSize(new java.awt.Dimension(100, 100));
+        G7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G7MouseClicked(evt);
+            }
+        });
         G7.setLayout(new java.awt.GridBagLayout());
+
+        lblG7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG7MouseClicked(evt);
+            }
+        });
         G7.add(lblG7, new java.awt.GridBagConstraints());
 
         H7.setBackground(new java.awt.Color(238, 191, 120));
         H7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H7.setPreferredSize(new java.awt.Dimension(100, 100));
+        H7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                H7MouseClicked(evt);
+            }
+        });
         H7.setLayout(new java.awt.GridBagLayout());
+
+        lblH7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH7MouseClicked(evt);
+            }
+        });
         H7.add(lblH7, new java.awt.GridBagConstraints());
 
         A6.setBackground(new java.awt.Color(238, 191, 120));
@@ -921,37 +1045,114 @@ public class MainFrame extends javax.swing.JFrame {
         B6.setBackground(new java.awt.Color(170, 102, 26));
         B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B6.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        B6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B6MouseClicked(evt);
+            }
+        });
         B6.setLayout(new java.awt.GridBagLayout());
+
+        lblB6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB6MouseClicked(evt);
+            }
+        });
         B6.add(lblB6, new java.awt.GridBagConstraints());
 
         C6.setBackground(new java.awt.Color(238, 191, 120));
         C6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C6MouseClicked(evt);
+            }
+        });
         C6.setLayout(new java.awt.GridBagLayout());
+
+        lblC6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC6MouseClicked(evt);
+            }
+        });
         C6.add(lblC6, new java.awt.GridBagConstraints());
 
         D6.setBackground(new java.awt.Color(170, 102, 26));
         D6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        D6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                D6MouseClicked(evt);
+            }
+        });
         D6.setLayout(new java.awt.GridBagLayout());
+
+        lblD6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD6MouseClicked(evt);
+            }
+        });
         D6.add(lblD6, new java.awt.GridBagConstraints());
 
         E6.setBackground(new java.awt.Color(238, 191, 120));
         E6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E6MouseClicked(evt);
+            }
+        });
         E6.setLayout(new java.awt.GridBagLayout());
+
+        lblE6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE6MouseClicked(evt);
+            }
+        });
         E6.add(lblE6, new java.awt.GridBagConstraints());
 
         F6.setBackground(new java.awt.Color(170, 102, 26));
         F6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                F6MouseClicked(evt);
+            }
+        });
         F6.setLayout(new java.awt.GridBagLayout());
+
+        lblF6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF6MouseClicked(evt);
+            }
+        });
         F6.add(lblF6, new java.awt.GridBagConstraints());
 
         G6.setBackground(new java.awt.Color(238, 191, 120));
         G6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G6MouseClicked(evt);
+            }
+        });
         G6.setLayout(new java.awt.GridBagLayout());
+
+        lblG6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG6MouseClicked(evt);
+            }
+        });
         G6.add(lblG6, new java.awt.GridBagConstraints());
 
         H6.setBackground(new java.awt.Color(170, 102, 26));
         H6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                H6MouseClicked(evt);
+            }
+        });
         H6.setLayout(new java.awt.GridBagLayout());
+
+        lblH6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH6MouseClicked(evt);
+            }
+        });
         H6.add(lblH6, new java.awt.GridBagConstraints());
 
         A5.setBackground(new java.awt.Color(170, 102, 26));
@@ -975,49 +1176,126 @@ public class MainFrame extends javax.swing.JFrame {
 
         B5.setBackground(new java.awt.Color(238, 191, 120));
         B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B5MouseClicked(evt);
+            }
+        });
         B5.setLayout(new java.awt.GridBagLayout());
+
+        lblB5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB5MouseClicked(evt);
+            }
+        });
         B5.add(lblB5, new java.awt.GridBagConstraints());
 
         C5.setBackground(new java.awt.Color(170, 102, 26));
         C5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C5.setMaximumSize(new java.awt.Dimension(100, 100));
         C5.setMinimumSize(new java.awt.Dimension(100, 100));
+        C5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C5MouseClicked(evt);
+            }
+        });
         C5.setLayout(new java.awt.GridBagLayout());
+
+        lblC5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC5MouseClicked(evt);
+            }
+        });
         C5.add(lblC5, new java.awt.GridBagConstraints());
 
         D5.setBackground(new java.awt.Color(238, 191, 120));
         D5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D5.setMaximumSize(new java.awt.Dimension(100, 100));
         D5.setMinimumSize(new java.awt.Dimension(100, 100));
+        D5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                D5MouseClicked(evt);
+            }
+        });
         D5.setLayout(new java.awt.GridBagLayout());
+
+        lblD5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD5MouseClicked(evt);
+            }
+        });
         D5.add(lblD5, new java.awt.GridBagConstraints());
 
         E5.setBackground(new java.awt.Color(170, 102, 26));
         E5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E5.setMaximumSize(new java.awt.Dimension(100, 100));
         E5.setMinimumSize(new java.awt.Dimension(100, 100));
+        E5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E5MouseClicked(evt);
+            }
+        });
         E5.setLayout(new java.awt.GridBagLayout());
+
+        lblE5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE5MouseClicked(evt);
+            }
+        });
         E5.add(lblE5, new java.awt.GridBagConstraints());
 
         F5.setBackground(new java.awt.Color(238, 191, 120));
         F5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F5.setMaximumSize(new java.awt.Dimension(100, 100));
         F5.setMinimumSize(new java.awt.Dimension(100, 100));
+        F5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                F5MouseClicked(evt);
+            }
+        });
         F5.setLayout(new java.awt.GridBagLayout());
+
+        lblF5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF5MouseClicked(evt);
+            }
+        });
         F5.add(lblF5, new java.awt.GridBagConstraints());
 
         G5.setBackground(new java.awt.Color(170, 102, 26));
         G5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G5.setMaximumSize(new java.awt.Dimension(100, 100));
         G5.setMinimumSize(new java.awt.Dimension(100, 100));
+        G5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G5MouseClicked(evt);
+            }
+        });
         G5.setLayout(new java.awt.GridBagLayout());
+
+        lblG5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG5MouseClicked(evt);
+            }
+        });
         G5.add(lblG5, new java.awt.GridBagConstraints());
 
         H5.setBackground(new java.awt.Color(238, 191, 120));
         H5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H5.setMaximumSize(new java.awt.Dimension(100, 100));
         H5.setMinimumSize(new java.awt.Dimension(100, 100));
+        H5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                H5MouseClicked(evt);
+            }
+        });
         H5.setLayout(new java.awt.GridBagLayout());
+
+        lblH5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH5MouseClicked(evt);
+            }
+        });
         H5.add(lblH5, new java.awt.GridBagConstraints());
 
         A4.setBackground(new java.awt.Color(238, 191, 120));
@@ -1043,49 +1321,126 @@ public class MainFrame extends javax.swing.JFrame {
         B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B4.setMaximumSize(new java.awt.Dimension(100, 100));
         B4.setMinimumSize(new java.awt.Dimension(100, 100));
+        B4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B4MouseClicked(evt);
+            }
+        });
         B4.setLayout(new java.awt.GridBagLayout());
+
+        lblB4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB4MouseClicked(evt);
+            }
+        });
         B4.add(lblB4, new java.awt.GridBagConstraints());
 
         C4.setBackground(new java.awt.Color(238, 191, 120));
         C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C4.setMaximumSize(new java.awt.Dimension(100, 100));
         C4.setMinimumSize(new java.awt.Dimension(100, 100));
+        C4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C4MouseClicked(evt);
+            }
+        });
         C4.setLayout(new java.awt.GridBagLayout());
+
+        lblC4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC4MouseClicked(evt);
+            }
+        });
         C4.add(lblC4, new java.awt.GridBagConstraints());
 
         D4.setBackground(new java.awt.Color(170, 102, 26));
         D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D4.setMaximumSize(new java.awt.Dimension(100, 100));
         D4.setMinimumSize(new java.awt.Dimension(100, 100));
+        D4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                D4MouseClicked(evt);
+            }
+        });
         D4.setLayout(new java.awt.GridBagLayout());
+
+        lblD4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD4MouseClicked(evt);
+            }
+        });
         D4.add(lblD4, new java.awt.GridBagConstraints());
 
         E4.setBackground(new java.awt.Color(238, 191, 120));
         E4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E4.setMaximumSize(new java.awt.Dimension(100, 100));
         E4.setMinimumSize(new java.awt.Dimension(100, 100));
+        E4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E4MouseClicked(evt);
+            }
+        });
         E4.setLayout(new java.awt.GridBagLayout());
+
+        lblE4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE4MouseClicked(evt);
+            }
+        });
         E4.add(lblE4, new java.awt.GridBagConstraints());
 
         F4.setBackground(new java.awt.Color(170, 102, 26));
         F4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F4.setMaximumSize(new java.awt.Dimension(100, 100));
         F4.setMinimumSize(new java.awt.Dimension(100, 100));
+        F4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                F4MouseClicked(evt);
+            }
+        });
         F4.setLayout(new java.awt.GridBagLayout());
+
+        lblF4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF4MouseClicked(evt);
+            }
+        });
         F4.add(lblF4, new java.awt.GridBagConstraints());
 
         G4.setBackground(new java.awt.Color(238, 191, 120));
         G4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G4.setMaximumSize(new java.awt.Dimension(100, 100));
         G4.setMinimumSize(new java.awt.Dimension(100, 100));
+        G4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G4MouseClicked(evt);
+            }
+        });
         G4.setLayout(new java.awt.GridBagLayout());
+
+        lblG4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG4MouseClicked(evt);
+            }
+        });
         G4.add(lblG4, new java.awt.GridBagConstraints());
 
         H4.setBackground(new java.awt.Color(170, 102, 26));
         H4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H4.setMaximumSize(new java.awt.Dimension(100, 100));
         H4.setMinimumSize(new java.awt.Dimension(100, 100));
+        H4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                H4MouseClicked(evt);
+            }
+        });
         H4.setLayout(new java.awt.GridBagLayout());
+
+        lblH4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH4MouseClicked(evt);
+            }
+        });
         H4.add(lblH4, new java.awt.GridBagConstraints());
 
         A3.setBackground(new java.awt.Color(170, 102, 26));
@@ -1107,45 +1462,122 @@ public class MainFrame extends javax.swing.JFrame {
 
         B3.setBackground(new java.awt.Color(238, 191, 120));
         B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B3MouseClicked(evt);
+            }
+        });
         B3.setLayout(new java.awt.GridBagLayout());
+
+        lblB3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB3MouseClicked(evt);
+            }
+        });
         B3.add(lblB3, new java.awt.GridBagConstraints());
 
         C3.setBackground(new java.awt.Color(170, 102, 26));
         C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C3.setMaximumSize(new java.awt.Dimension(100, 100));
+        C3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                C3MouseClicked(evt);
+            }
+        });
         C3.setLayout(new java.awt.GridBagLayout());
+
+        lblC3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC3MouseClicked(evt);
+            }
+        });
         C3.add(lblC3, new java.awt.GridBagConstraints());
 
         D3.setBackground(new java.awt.Color(238, 191, 120));
         D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D3.setMaximumSize(new java.awt.Dimension(100, 100));
+        D3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                D3MouseClicked(evt);
+            }
+        });
         D3.setLayout(new java.awt.GridBagLayout());
+
+        lblD3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD3MouseClicked(evt);
+            }
+        });
         D3.add(lblD3, new java.awt.GridBagConstraints());
 
         E3.setBackground(new java.awt.Color(170, 102, 26));
         E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                E3MouseClicked(evt);
+            }
+        });
         E3.setLayout(new java.awt.GridBagLayout());
+
+        lblE3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE3MouseClicked(evt);
+            }
+        });
         E3.add(lblE3, new java.awt.GridBagConstraints());
 
         F3.setBackground(new java.awt.Color(238, 191, 120));
         F3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F3.setMaximumSize(new java.awt.Dimension(100, 100));
         F3.setMinimumSize(new java.awt.Dimension(100, 100));
+        F3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                F3MouseClicked(evt);
+            }
+        });
         F3.setLayout(new java.awt.GridBagLayout());
+
+        lblF3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF3MouseClicked(evt);
+            }
+        });
         F3.add(lblF3, new java.awt.GridBagConstraints());
 
         G3.setBackground(new java.awt.Color(170, 102, 26));
         G3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G3.setMaximumSize(new java.awt.Dimension(100, 100));
         G3.setMinimumSize(new java.awt.Dimension(100, 100));
+        G3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G3MouseClicked(evt);
+            }
+        });
         G3.setLayout(new java.awt.GridBagLayout());
+
+        lblG3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG3MouseClicked(evt);
+            }
+        });
         G3.add(lblG3, new java.awt.GridBagConstraints());
 
         H3.setBackground(new java.awt.Color(238, 191, 120));
         H3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H3.setMaximumSize(new java.awt.Dimension(100, 100));
         H3.setMinimumSize(new java.awt.Dimension(100, 100));
+        H3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                H3MouseClicked(evt);
+            }
+        });
         H3.setLayout(new java.awt.GridBagLayout());
+
+        lblH3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH3MouseClicked(evt);
+            }
+        });
         H3.add(lblH3, new java.awt.GridBagConstraints());
 
         A2.setBackground(new java.awt.Color(238, 191, 120));
@@ -1170,12 +1602,24 @@ public class MainFrame extends javax.swing.JFrame {
         B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.setLayout(new java.awt.GridBagLayout());
+
+        lblB2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB2MouseClicked(evt);
+            }
+        });
         B2.add(lblB2, new java.awt.GridBagConstraints());
 
         C2.setBackground(new java.awt.Color(238, 191, 120));
         C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C2.setPreferredSize(new java.awt.Dimension(100, 100));
         C2.setLayout(new java.awt.GridBagLayout());
+
+        lblC2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC2MouseClicked(evt);
+            }
+        });
         C2.add(lblC2, new java.awt.GridBagConstraints());
 
         D2.setBackground(new java.awt.Color(170, 102, 26));
@@ -1183,6 +1627,12 @@ public class MainFrame extends javax.swing.JFrame {
         D2.setMinimumSize(new java.awt.Dimension(100, 100));
         D2.setPreferredSize(new java.awt.Dimension(100, 100));
         D2.setLayout(new java.awt.GridBagLayout());
+
+        lblD2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD2MouseClicked(evt);
+            }
+        });
         D2.add(lblD2, new java.awt.GridBagConstraints());
 
         E2.setBackground(new java.awt.Color(238, 191, 120));
@@ -1190,24 +1640,53 @@ public class MainFrame extends javax.swing.JFrame {
         E2.setMinimumSize(new java.awt.Dimension(100, 100));
         E2.setPreferredSize(new java.awt.Dimension(100, 100));
         E2.setLayout(new java.awt.GridBagLayout());
+
+        lblE2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE2MouseClicked(evt);
+            }
+        });
         E2.add(lblE2, new java.awt.GridBagConstraints());
 
         F2.setBackground(new java.awt.Color(170, 102, 26));
         F2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F2.setPreferredSize(new java.awt.Dimension(100, 100));
         F2.setLayout(new java.awt.GridBagLayout());
+
+        lblF2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF2MouseClicked(evt);
+            }
+        });
         F2.add(lblF2, new java.awt.GridBagConstraints());
 
         G2.setBackground(new java.awt.Color(238, 191, 120));
         G2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G2.setPreferredSize(new java.awt.Dimension(100, 100));
+        G2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                G2MouseClicked(evt);
+            }
+        });
         G2.setLayout(new java.awt.GridBagLayout());
+
+        lblG2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG2MouseClicked(evt);
+            }
+        });
         G2.add(lblG2, new java.awt.GridBagConstraints());
 
         H2.setBackground(new java.awt.Color(170, 102, 26));
         H2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
         H2.setLayout(new java.awt.GridBagLayout());
+
+        lblH2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH2MouseClicked(evt);
+            }
+        });
         H2.add(lblH2, new java.awt.GridBagConstraints());
 
         A1.setBackground(new java.awt.Color(170, 102, 26));
@@ -1226,42 +1705,84 @@ public class MainFrame extends javax.swing.JFrame {
         B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.setLayout(new java.awt.GridBagLayout());
+
+        lblB1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblB1MouseClicked(evt);
+            }
+        });
         B1.add(lblB1, new java.awt.GridBagConstraints());
 
         C1.setBackground(new java.awt.Color(170, 102, 26));
         C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C1.setPreferredSize(new java.awt.Dimension(100, 100));
         C1.setLayout(new java.awt.GridBagLayout());
+
+        lblC1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblC1MouseClicked(evt);
+            }
+        });
         C1.add(lblC1, new java.awt.GridBagConstraints());
 
         D1.setBackground(new java.awt.Color(238, 191, 120));
         D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D1.setPreferredSize(new java.awt.Dimension(100, 100));
         D1.setLayout(new java.awt.GridBagLayout());
+
+        lblD1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblD1MouseClicked(evt);
+            }
+        });
         D1.add(lblD1, new java.awt.GridBagConstraints());
 
         E1.setBackground(new java.awt.Color(170, 102, 26));
         E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E1.setPreferredSize(new java.awt.Dimension(100, 100));
         E1.setLayout(new java.awt.GridBagLayout());
+
+        lblE1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblE1MouseClicked(evt);
+            }
+        });
         E1.add(lblE1, new java.awt.GridBagConstraints());
 
         F1.setBackground(new java.awt.Color(238, 191, 120));
         F1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F1.setPreferredSize(new java.awt.Dimension(100, 100));
         F1.setLayout(new java.awt.GridBagLayout());
+
+        lblF1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblF1MouseClicked(evt);
+            }
+        });
         F1.add(lblF1, new java.awt.GridBagConstraints());
 
         G1.setBackground(new java.awt.Color(170, 102, 26));
         G1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G1.setPreferredSize(new java.awt.Dimension(100, 100));
         G1.setLayout(new java.awt.GridBagLayout());
+
+        lblG1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblG1MouseClicked(evt);
+            }
+        });
         G1.add(lblG1, new java.awt.GridBagConstraints());
 
         H1.setBackground(new java.awt.Color(238, 191, 120));
         H1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H1.setPreferredSize(new java.awt.Dimension(100, 100));
         H1.setLayout(new java.awt.GridBagLayout());
+
+        lblH1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblH1MouseClicked(evt);
+            }
+        });
         H1.add(lblH1, new java.awt.GridBagConstraints());
 
         jPanelSide.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1560,7 +2081,7 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
         premovePiece(piecesAlive[0][1], lblA2);
@@ -1578,7 +2099,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblA5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][4], lblA5);
+       premovePiece(piecesAlive[0][4], lblA5);
     }//GEN-LAST:event_lblA5MouseClicked
 
     private void lblA6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA6MouseClicked
@@ -1591,9 +2112,11 @@ public class MainFrame extends javax.swing.JFrame {
         premovePiece(piecesAlive[0][6], lblA7);
     }//GEN-LAST:event_lblA7MouseClicked
 
+    
+    //PANELS
     private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
         // TODO add your handling code here:
-        postmovePiece(bufferpiece, A3);
+        postmovePiece(bufferpiece, A3);   
     }//GEN-LAST:event_A3MouseClicked
 
     private void A4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A4MouseClicked
@@ -1632,6 +2155,375 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_A2MouseClicked
 
     
+    private void B3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B3MouseClicked
+        
+    }//GEN-LAST:event_B3MouseClicked
+
+    private void B4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B4MouseClicked
+
+    private void B5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B5MouseClicked
+
+    private void B6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B6MouseClicked
+
+    private void B7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B7MouseClicked
+
+    private void C3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C3MouseClicked
+
+    private void C4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C4MouseClicked
+
+    private void C5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C5MouseClicked
+
+    private void C6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C6MouseClicked
+
+    private void C7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_C7MouseClicked
+
+    private void D3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D3MouseClicked
+
+    private void D4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D4MouseClicked
+
+    private void D5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D5MouseClicked
+
+    private void D6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D6MouseClicked
+
+    private void D7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D7MouseClicked
+
+    private void E3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_E3MouseClicked
+
+    private void E4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_E4MouseClicked
+
+    private void E5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_E5MouseClicked
+
+    private void E6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_E6MouseClicked
+
+    private void E7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_E7MouseClicked
+
+    private void F3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F3MouseClicked
+
+    private void F4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F4MouseClicked
+
+    private void F5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F5MouseClicked
+
+    private void F6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F6MouseClicked
+
+    private void F7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F7MouseClicked
+
+    private void G2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G2MouseClicked
+
+    private void G3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G3MouseClicked
+
+    private void G4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G4MouseClicked
+
+    private void G5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G5MouseClicked
+
+    private void G6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G6MouseClicked
+
+    private void G7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_G7MouseClicked
+
+    private void H3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_H3MouseClicked
+
+    private void H4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_H4MouseClicked
+
+    private void H5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_H5MouseClicked
+
+    private void H6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_H6MouseClicked
+
+    private void H7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_H7MouseClicked
+
+    private void lblB1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB1MouseClicked
+
+    private void lblB3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB3MouseClicked
+
+    private void lblB2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB2MouseClicked
+
+    private void lblB4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB4MouseClicked
+
+    private void lblB5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB5MouseClicked
+
+    private void lblB6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB6MouseClicked
+
+    private void lblB7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB7MouseClicked
+
+    private void lblB8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblB8MouseClicked
+
+    private void lblC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC1MouseClicked
+
+    private void lblC2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC2MouseClicked
+
+    private void lblC3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC3MouseClicked
+
+    private void lblC4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC4MouseClicked
+
+    private void lblC5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC5MouseClicked
+
+    private void lblC6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC6MouseClicked
+
+    private void lblC7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC7MouseClicked
+
+    private void lblC8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblC8MouseClicked
+
+    private void lblD1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD1MouseClicked
+
+    private void lblD2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD2MouseClicked
+
+    private void lblD3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD3MouseClicked
+
+    private void lblD4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD4MouseClicked
+
+    private void lblD5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD5MouseClicked
+
+    private void lblD6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD6MouseClicked
+
+    private void lblD7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD7MouseClicked
+
+    private void lblD8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblD8MouseClicked
+
+    private void lblE1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE1MouseClicked
+
+    private void lblE2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE2MouseClicked
+
+    private void lblE3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE3MouseClicked
+
+    private void lblE4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE4MouseClicked
+
+    private void lblE5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE5MouseClicked
+
+    private void lblE6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE6MouseClicked
+
+    private void lblE7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE7MouseClicked
+
+    private void lblE8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblE8MouseClicked
+
+    private void lblF1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF1MouseClicked
+
+    private void lblF2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF2MouseClicked
+
+    private void lblF3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF3MouseClicked
+
+    private void lblF4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF4MouseClicked
+
+    private void lblF5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF5MouseClicked
+
+    private void lblF6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF6MouseClicked
+
+    private void lblF7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF7MouseClicked
+
+    private void lblF8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblF8MouseClicked
+
+    private void lblG1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG1MouseClicked
+
+    private void lblG2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG2MouseClicked
+
+    private void lblG3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG3MouseClicked
+
+    private void lblG4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG4MouseClicked
+
+    private void lblG5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG5MouseClicked
+
+    private void lblG6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG6MouseClicked
+
+    private void lblG7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG7MouseClicked
+
+    private void lblG8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblG8MouseClicked
+
+    private void lblH1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH1MouseClicked
+
+    private void lblH2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH2MouseClicked
+
+    private void lblH3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH3MouseClicked
+
+    private void lblH4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH4MouseClicked
+
+    private void lblH5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH5MouseClicked
+
+    private void lblH6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH6MouseClicked
+
+    private void lblH7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH7MouseClicked
+
+    private void lblH8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblH8MouseClicked
+  
+
     /**
      * @param args the command line arguments
      */
