@@ -1,6 +1,5 @@
 package javaproject;
 
-import com.sun.javafx.image.impl.IntArgb;
 import java.util.*;
 import javax.swing.*;
 
@@ -98,6 +97,7 @@ public class PawnPiece {
             switch(location)
             {
                 case "A3": {
+                    System.out.println("Hey");
                             ordinate[1] = '4';
                             possiblem.add("A" + ordinate[1] + "");
                         }
@@ -125,6 +125,10 @@ public class PawnPiece {
             }
         }
         
+        
+        moves++;
+        
+        System.out.println("Hey");
         return possiblem;
     }
     
