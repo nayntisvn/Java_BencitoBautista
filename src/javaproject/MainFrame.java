@@ -909,6 +909,7 @@ public class MainFrame extends javax.swing.JFrame {
         B8.setBackground(new java.awt.Color(170, 102, 26));
         B8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B8.setMinimumSize(new java.awt.Dimension(100, 100));
+        B8.setName("B8"); // NOI18N
         B8.setPreferredSize(new java.awt.Dimension(100, 100));
         B8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -926,6 +927,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         C8.setBackground(new java.awt.Color(238, 191, 120));
         C8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C8.setName("C8"); // NOI18N
         C8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 C8MouseClicked(evt);
@@ -942,6 +944,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         D8.setBackground(new java.awt.Color(170, 102, 26));
         D8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        D8.setName("D8"); // NOI18N
         D8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 D8MouseClicked(evt);
@@ -958,6 +961,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         E8.setBackground(new java.awt.Color(238, 191, 120));
         E8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E8.setName("E8"); // NOI18N
         E8.setRequestFocusEnabled(false);
         E8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -975,6 +979,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         F8.setBackground(new java.awt.Color(170, 102, 26));
         F8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F8.setName("F8"); // NOI18N
         F8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 F8MouseClicked(evt);
@@ -991,6 +996,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         G8.setBackground(new java.awt.Color(238, 191, 120));
         G8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G8.setName("G8"); // NOI18N
         G8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 G8MouseClicked(evt);
@@ -1007,6 +1013,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         H8.setBackground(new java.awt.Color(170, 102, 26));
         H8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H8.setName("H8"); // NOI18N
         H8.setPreferredSize(new java.awt.Dimension(75, 100));
         H8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1042,6 +1049,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         B7.setBackground(new java.awt.Color(238, 191, 120));
         B7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B7.setName("B7"); // NOI18N
         B7.setPreferredSize(new java.awt.Dimension(100, 100));
         B7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1059,6 +1067,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         C7.setBackground(new java.awt.Color(170, 102, 26));
         C7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C7.setName("C7"); // NOI18N
         C7.setPreferredSize(new java.awt.Dimension(100, 100));
         C7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1076,6 +1085,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         D7.setBackground(new java.awt.Color(238, 191, 120));
         D7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        D7.setName("D7"); // NOI18N
         D7.setPreferredSize(new java.awt.Dimension(100, 100));
         D7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1093,6 +1103,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         E7.setBackground(new java.awt.Color(170, 102, 26));
         E7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E7.setName("E7"); // NOI18N
         E7.setPreferredSize(new java.awt.Dimension(100, 100));
         E7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1110,6 +1121,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         F7.setBackground(new java.awt.Color(238, 191, 120));
         F7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F7.setName("F7"); // NOI18N
         F7.setPreferredSize(new java.awt.Dimension(100, 100));
         F7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1127,6 +1139,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         G7.setBackground(new java.awt.Color(170, 102, 26));
         G7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G7.setName("G7"); // NOI18N
         G7.setPreferredSize(new java.awt.Dimension(100, 100));
         G7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1144,6 +1157,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         H7.setBackground(new java.awt.Color(238, 191, 120));
         H7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H7.setName("H7"); // NOI18N
         H7.setPreferredSize(new java.awt.Dimension(100, 100));
         H7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1181,6 +1195,7 @@ public class MainFrame extends javax.swing.JFrame {
         B6.setBackground(new java.awt.Color(170, 102, 26));
         B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B6.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        B6.setName("B6"); // NOI18N
         B6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 B6MouseClicked(evt);
@@ -1197,6 +1212,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         C6.setBackground(new java.awt.Color(238, 191, 120));
         C6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C6.setName("C6"); // NOI18N
         C6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 C6MouseClicked(evt);
@@ -1213,6 +1229,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         D6.setBackground(new java.awt.Color(170, 102, 26));
         D6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        D6.setName("D6"); // NOI18N
         D6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 D6MouseClicked(evt);
@@ -1229,6 +1246,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         E6.setBackground(new java.awt.Color(238, 191, 120));
         E6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E6.setName("E6"); // NOI18N
         E6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 E6MouseClicked(evt);
@@ -1245,6 +1263,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         F6.setBackground(new java.awt.Color(170, 102, 26));
         F6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F6.setName("F6"); // NOI18N
         F6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 F6MouseClicked(evt);
@@ -1261,6 +1280,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         G6.setBackground(new java.awt.Color(238, 191, 120));
         G6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G6.setName("G6"); // NOI18N
         G6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 G6MouseClicked(evt);
@@ -1277,6 +1297,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         H6.setBackground(new java.awt.Color(170, 102, 26));
         H6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H6.setName("H6"); // NOI18N
         H6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 H6MouseClicked(evt);
@@ -1312,6 +1333,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         B5.setBackground(new java.awt.Color(238, 191, 120));
         B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B5.setName("B5"); // NOI18N
         B5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 B5MouseClicked(evt);
@@ -1330,6 +1352,7 @@ public class MainFrame extends javax.swing.JFrame {
         C5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C5.setMaximumSize(new java.awt.Dimension(100, 100));
         C5.setMinimumSize(new java.awt.Dimension(100, 100));
+        C5.setName("C5"); // NOI18N
         C5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 C5MouseClicked(evt);
@@ -1348,6 +1371,7 @@ public class MainFrame extends javax.swing.JFrame {
         D5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D5.setMaximumSize(new java.awt.Dimension(100, 100));
         D5.setMinimumSize(new java.awt.Dimension(100, 100));
+        D5.setName("D5"); // NOI18N
         D5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 D5MouseClicked(evt);
@@ -1366,6 +1390,7 @@ public class MainFrame extends javax.swing.JFrame {
         E5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E5.setMaximumSize(new java.awt.Dimension(100, 100));
         E5.setMinimumSize(new java.awt.Dimension(100, 100));
+        E5.setName("E5"); // NOI18N
         E5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 E5MouseClicked(evt);
@@ -1384,6 +1409,7 @@ public class MainFrame extends javax.swing.JFrame {
         F5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F5.setMaximumSize(new java.awt.Dimension(100, 100));
         F5.setMinimumSize(new java.awt.Dimension(100, 100));
+        F5.setName("F5"); // NOI18N
         F5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 F5MouseClicked(evt);
@@ -1402,6 +1428,7 @@ public class MainFrame extends javax.swing.JFrame {
         G5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G5.setMaximumSize(new java.awt.Dimension(100, 100));
         G5.setMinimumSize(new java.awt.Dimension(100, 100));
+        G5.setName("G5"); // NOI18N
         G5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 G5MouseClicked(evt);
@@ -1420,6 +1447,7 @@ public class MainFrame extends javax.swing.JFrame {
         H5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H5.setMaximumSize(new java.awt.Dimension(100, 100));
         H5.setMinimumSize(new java.awt.Dimension(100, 100));
+        H5.setName("H5"); // NOI18N
         H5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 H5MouseClicked(evt);
@@ -1457,6 +1485,7 @@ public class MainFrame extends javax.swing.JFrame {
         B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         B4.setMaximumSize(new java.awt.Dimension(100, 100));
         B4.setMinimumSize(new java.awt.Dimension(100, 100));
+        B4.setName("B4"); // NOI18N
         B4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 B4MouseClicked(evt);
@@ -1475,6 +1504,7 @@ public class MainFrame extends javax.swing.JFrame {
         C4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C4.setMaximumSize(new java.awt.Dimension(100, 100));
         C4.setMinimumSize(new java.awt.Dimension(100, 100));
+        C4.setName("C4"); // NOI18N
         C4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 C4MouseClicked(evt);
@@ -1493,6 +1523,7 @@ public class MainFrame extends javax.swing.JFrame {
         D4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D4.setMaximumSize(new java.awt.Dimension(100, 100));
         D4.setMinimumSize(new java.awt.Dimension(100, 100));
+        D4.setName("D4"); // NOI18N
         D4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 D4MouseClicked(evt);
@@ -1511,6 +1542,7 @@ public class MainFrame extends javax.swing.JFrame {
         E4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E4.setMaximumSize(new java.awt.Dimension(100, 100));
         E4.setMinimumSize(new java.awt.Dimension(100, 100));
+        E4.setName("E4"); // NOI18N
         E4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 E4MouseClicked(evt);
@@ -1529,6 +1561,7 @@ public class MainFrame extends javax.swing.JFrame {
         F4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F4.setMaximumSize(new java.awt.Dimension(100, 100));
         F4.setMinimumSize(new java.awt.Dimension(100, 100));
+        F4.setName("F4"); // NOI18N
         F4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 F4MouseClicked(evt);
@@ -1547,6 +1580,7 @@ public class MainFrame extends javax.swing.JFrame {
         G4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G4.setMaximumSize(new java.awt.Dimension(100, 100));
         G4.setMinimumSize(new java.awt.Dimension(100, 100));
+        G4.setName("G4"); // NOI18N
         G4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 G4MouseClicked(evt);
@@ -1565,6 +1599,7 @@ public class MainFrame extends javax.swing.JFrame {
         H4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H4.setMaximumSize(new java.awt.Dimension(100, 100));
         H4.setMinimumSize(new java.awt.Dimension(100, 100));
+        H4.setName("H4"); // NOI18N
         H4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 H4MouseClicked(evt);
@@ -1598,6 +1633,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         B3.setBackground(new java.awt.Color(238, 191, 120));
         B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B3.setName("B3"); // NOI18N
         B3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 B3MouseClicked(evt);
@@ -1615,6 +1651,7 @@ public class MainFrame extends javax.swing.JFrame {
         C3.setBackground(new java.awt.Color(170, 102, 26));
         C3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         C3.setMaximumSize(new java.awt.Dimension(100, 100));
+        C3.setName("C3"); // NOI18N
         C3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 C3MouseClicked(evt);
@@ -1632,6 +1669,7 @@ public class MainFrame extends javax.swing.JFrame {
         D3.setBackground(new java.awt.Color(238, 191, 120));
         D3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D3.setMaximumSize(new java.awt.Dimension(100, 100));
+        D3.setName("D3"); // NOI18N
         D3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 D3MouseClicked(evt);
@@ -1648,6 +1686,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         E3.setBackground(new java.awt.Color(170, 102, 26));
         E3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E3.setName("E3"); // NOI18N
         E3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 E3MouseClicked(evt);
@@ -1666,6 +1705,7 @@ public class MainFrame extends javax.swing.JFrame {
         F3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         F3.setMaximumSize(new java.awt.Dimension(100, 100));
         F3.setMinimumSize(new java.awt.Dimension(100, 100));
+        F3.setName("F3"); // NOI18N
         F3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 F3MouseClicked(evt);
@@ -1684,6 +1724,7 @@ public class MainFrame extends javax.swing.JFrame {
         G3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         G3.setMaximumSize(new java.awt.Dimension(100, 100));
         G3.setMinimumSize(new java.awt.Dimension(100, 100));
+        G3.setName("G3"); // NOI18N
         G3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 G3MouseClicked(evt);
@@ -1702,6 +1743,7 @@ public class MainFrame extends javax.swing.JFrame {
         H3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         H3.setMaximumSize(new java.awt.Dimension(100, 100));
         H3.setMinimumSize(new java.awt.Dimension(100, 100));
+        H3.setName("H3"); // NOI18N
         H3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 H3MouseClicked(evt);
@@ -1736,6 +1778,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         B2.setBackground(new java.awt.Color(170, 102, 26));
         B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B2.setName("B2"); // NOI18N
         B2.setPreferredSize(new java.awt.Dimension(100, 100));
         B2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1753,6 +1796,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         C2.setBackground(new java.awt.Color(238, 191, 120));
         C2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C2.setName("C2"); // NOI18N
         C2.setPreferredSize(new java.awt.Dimension(100, 100));
         C2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1771,6 +1815,7 @@ public class MainFrame extends javax.swing.JFrame {
         D2.setBackground(new java.awt.Color(170, 102, 26));
         D2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         D2.setMinimumSize(new java.awt.Dimension(100, 100));
+        D2.setName("D2"); // NOI18N
         D2.setPreferredSize(new java.awt.Dimension(100, 100));
         D2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1789,6 +1834,7 @@ public class MainFrame extends javax.swing.JFrame {
         E2.setBackground(new java.awt.Color(238, 191, 120));
         E2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         E2.setMinimumSize(new java.awt.Dimension(100, 100));
+        E2.setName("E2"); // NOI18N
         E2.setPreferredSize(new java.awt.Dimension(100, 100));
         E2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1806,6 +1852,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         F2.setBackground(new java.awt.Color(170, 102, 26));
         F2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F2.setName("F2"); // NOI18N
         F2.setPreferredSize(new java.awt.Dimension(100, 100));
         F2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1823,6 +1870,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         G2.setBackground(new java.awt.Color(238, 191, 120));
         G2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G2.setName("G2"); // NOI18N
         G2.setPreferredSize(new java.awt.Dimension(100, 100));
         G2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1840,6 +1888,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         H2.setBackground(new java.awt.Color(170, 102, 26));
         H2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H2.setName("H2"); // NOI18N
         H2.setPreferredSize(new java.awt.Dimension(100, 100));
         H2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1869,6 +1918,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
         B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        B1.setName("B1"); // NOI18N
         B1.setPreferredSize(new java.awt.Dimension(100, 100));
         B1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1886,6 +1936,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         C1.setBackground(new java.awt.Color(170, 102, 26));
         C1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        C1.setName("C1"); // NOI18N
         C1.setPreferredSize(new java.awt.Dimension(100, 100));
         C1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1903,6 +1954,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         D1.setBackground(new java.awt.Color(238, 191, 120));
         D1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        D1.setName("D1"); // NOI18N
         D1.setPreferredSize(new java.awt.Dimension(100, 100));
         D1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1920,6 +1972,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         E1.setBackground(new java.awt.Color(170, 102, 26));
         E1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        E1.setName("E1"); // NOI18N
         E1.setPreferredSize(new java.awt.Dimension(100, 100));
         E1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1937,6 +1990,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         F1.setBackground(new java.awt.Color(238, 191, 120));
         F1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        F1.setName("F1"); // NOI18N
         F1.setPreferredSize(new java.awt.Dimension(100, 100));
         F1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1954,6 +2008,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         G1.setBackground(new java.awt.Color(170, 102, 26));
         G1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        G1.setName("G1"); // NOI18N
         G1.setPreferredSize(new java.awt.Dimension(100, 100));
         G1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1971,6 +2026,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         H1.setBackground(new java.awt.Color(238, 191, 120));
         H1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        H1.setName("H1"); // NOI18N
         H1.setPreferredSize(new java.awt.Dimension(100, 100));
         H1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
