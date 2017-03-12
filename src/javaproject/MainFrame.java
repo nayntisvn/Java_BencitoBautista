@@ -197,6 +197,230 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 A8.setBorder(movement);
             }
+            if(s.equals("B1") && piecesAlive[1][0].equals(""))
+            {
+                B1.setBorder(movement);
+            }
+            if(s.equals("B2") && piecesAlive[1][1].equals(""))
+            {
+                B2.setBorder(movement);
+            }
+            if(s.equals("B3") && piecesAlive[1][2].equals(""))
+            {
+                B3.setBorder(movement);
+            }
+            if(s.equals("B4") && piecesAlive[1][3].equals(""))
+            {
+                B4.setBorder(movement);
+            }
+            if(s.equals("B5") && piecesAlive[1][4].equals(""))
+            {
+                B5.setBorder(movement);
+            }
+            if(s.equals("B6") && piecesAlive[1][5].equals(""))
+            {
+                B6.setBorder(movement);
+            }
+            if(s.equals("B7") && piecesAlive[1][6].equals(""))
+            {
+                B7.setBorder(movement);
+            }
+            if(s.equals("B8") && piecesAlive[1][7].equals(""))
+            {
+                B8.setBorder(movement);
+            }
+            if(s.equals("C1") && piecesAlive[2][0].equals(""))
+            {
+                C1.setBorder(movement);
+            }
+            if(s.equals("C2") && piecesAlive[2][1].equals(""))
+            {
+                C2.setBorder(movement);
+            }
+            if(s.equals("C3") && piecesAlive[2][2].equals(""))
+            {
+                C3.setBorder(movement);
+            }
+            if(s.equals("C4") && piecesAlive[2][3].equals(""))
+            {
+                C4.setBorder(movement);
+            }
+            if(s.equals("C5") && piecesAlive[2][4].equals(""))
+            {
+                C5.setBorder(movement);
+            }
+            if(s.equals("C6") && piecesAlive[2][5].equals(""))
+            {
+                C6.setBorder(movement);
+            }
+            if(s.equals("C7") && piecesAlive[2][6].equals(""))
+            {
+                C7.setBorder(movement);
+            }
+            if(s.equals("C8") && piecesAlive[2][7].equals(""))
+            {
+                C8.setBorder(movement);
+            }
+            if(s.equals("D1") && piecesAlive[3][0].equals(""))
+            {
+                D1.setBorder(movement);
+            }
+            if(s.equals("D2") && piecesAlive[3][1].equals(""))
+            {
+                D2.setBorder(movement);
+            }
+            if(s.equals("D3") && piecesAlive[3][2].equals(""))
+            {
+                D3.setBorder(movement);
+            }
+            if(s.equals("D4") && piecesAlive[3][3].equals(""))
+            {
+                D4.setBorder(movement);
+            }
+            if(s.equals("D5") && piecesAlive[3][4].equals(""))
+            {
+                D5.setBorder(movement);
+            }
+            if(s.equals("D6") && piecesAlive[3][5].equals(""))
+            {
+                D6.setBorder(movement);
+            }
+            if(s.equals("D7") && piecesAlive[3][6].equals(""))
+            {
+                D7.setBorder(movement);
+            }
+            if(s.equals("D8") && piecesAlive[3][7].equals(""))
+            {
+                D8.setBorder(movement);
+            }
+            if(s.equals("E1") && piecesAlive[4][0].equals(""))
+            {
+                E1.setBorder(movement);
+            }
+            if(s.equals("E2") && piecesAlive[4][1].equals(""))
+            {
+                E2.setBorder(movement);
+            }
+            if(s.equals("E3") && piecesAlive[4][2].equals(""))
+            {
+                E3.setBorder(movement);
+            }
+            if(s.equals("E4") && piecesAlive[4][3].equals(""))
+            {
+                E4.setBorder(movement);
+            }
+            if(s.equals("E5") && piecesAlive[4][4].equals(""))
+            {
+                E5.setBorder(movement);
+            }
+            if(s.equals("E6") && piecesAlive[4][5].equals(""))
+            {
+                E6.setBorder(movement);
+            }
+            if(s.equals("E7") && piecesAlive[4][6].equals(""))
+            {
+                E7.setBorder(movement);
+            }
+            if(s.equals("E8") && piecesAlive[4][7].equals(""))
+            {
+                E8.setBorder(movement);
+            }
+            if(s.equals("F1") && piecesAlive[5][0].equals(""))
+            {
+                F1.setBorder(movement);
+            }
+            if(s.equals("F2") && piecesAlive[5][1].equals(""))
+            {
+                F2.setBorder(movement);
+            }
+            if(s.equals("F3") && piecesAlive[5][2].equals(""))
+            {
+                F3.setBorder(movement);
+            }
+            if(s.equals("F4") && piecesAlive[5][3].equals(""))
+            {
+                F4.setBorder(movement);
+            }
+            if(s.equals("F5") && piecesAlive[5][4].equals(""))
+            {
+                F5.setBorder(movement);
+            }
+            if(s.equals("F6") && piecesAlive[5][5].equals(""))
+            {
+                F6.setBorder(movement);
+            }
+            if(s.equals("F7") && piecesAlive[5][6].equals(""))
+            {
+                F7.setBorder(movement);
+            }
+            if(s.equals("F8") && piecesAlive[5][7].equals(""))
+            {
+                F8.setBorder(movement);
+            }
+            if(s.equals("G1") && piecesAlive[6][0].equals(""))
+            {
+                G1.setBorder(movement);
+            }
+            if(s.equals("G2") && piecesAlive[6][1].equals(""))
+            {
+                G2.setBorder(movement);
+            }
+            if(s.equals("G3") && piecesAlive[6][2].equals(""))
+            {
+                G3.setBorder(movement);
+            }
+            if(s.equals("G4") && piecesAlive[6][3].equals(""))
+            {
+                G4.setBorder(movement);
+            }
+            if(s.equals("G5") && piecesAlive[6][4].equals(""))
+            {
+                G5.setBorder(movement);
+            }
+            if(s.equals("G6") && piecesAlive[6][5].equals(""))
+            {
+                G6.setBorder(movement);
+            }
+            if(s.equals("G7") && piecesAlive[6][6].equals(""))
+            {
+                G7.setBorder(movement);
+            }
+            if(s.equals("G8") && piecesAlive[6][7].equals(""))
+            {
+                G8.setBorder(movement);
+            }
+            if(s.equals("H1") && piecesAlive[7][0].equals(""))
+            {
+                H1.setBorder(movement);
+            }
+            if(s.equals("H2") && piecesAlive[7][1].equals(""))
+            {
+                H2.setBorder(movement);
+            }
+            if(s.equals("H3") && piecesAlive[7][2].equals(""))
+            {
+                H3.setBorder(movement);
+            }
+            if(s.equals("H4") && piecesAlive[7][3].equals(""))
+            {
+                H4.setBorder(movement);
+            }
+            if(s.equals("H5") && piecesAlive[7][4].equals(""))
+            {
+                H5.setBorder(movement);
+            }
+            if(s.equals("H6") && piecesAlive[7][5].equals(""))
+            {
+                H6.setBorder(movement);
+            }
+            if(s.equals("H7") && piecesAlive[7][6].equals(""))
+            {
+                H7.setBorder(movement);
+            }
+            if(s.equals("H8") && piecesAlive[7][7].equals(""))
+            {
+                H8.setBorder(movement);
+            }
         }
         
     }
@@ -287,6 +511,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  To know the indicated piece and possible moves
     public void premovePiece(String pieceToMove, JLabel initial)
     {
+        possiblem.clear();
         switch(pieceToMove)
         {
             case "p1w" : 
@@ -297,6 +522,7 @@ public class MainFrame extends javax.swing.JFrame {
                         possiblem = p1w.movementW();
                         
                         possiblemoves(possiblem);
+
                     }
         }
     }
@@ -309,88 +535,91 @@ public class MainFrame extends javax.swing.JFrame {
         {
             case "p1w" : 
                     {
-                        switch(destination.getName())
+                        if(destination.getBorder() == movement)
                         {
-                            case "A3" : 
-                                    {   
-                                        piecesAlive[0][2] = "p1w";
-                                        piecesAlive[0][1] = "";
-                                        
-                                        lblA2.setIcon(null);
-                                        lblA3.setIcon(pawnw);
-                                        p1w.location = "A3";
-
-                                        refreshHistory();
-                                    }break;
-                            case "A4" : 
-                                    {   
-                                        if(p1w.moves == 1)
+                            switch(destination.getName())
+                            {
+                                case "A3" : 
                                         {   
-                                            piecesAlive[0][3] = "p1w";
+                                            piecesAlive[0][2] = "p1w";
                                             piecesAlive[0][1] = "";
-                                        
+
                                             lblA2.setIcon(null);
-                                            lblA4.setIcon(pawnw);
-                                            p1w.location = "A4";
+                                            lblA3.setIcon(pawnw);
+                                            p1w.location = "A3";
 
                                             refreshHistory();
-                                        }
-                                        else if(p1w.moves != 1)
+                                        }break;
+                                case "A4" : 
                                         {   
-                                            piecesAlive[0][3] = "p1w";
-                                            piecesAlive[0][2] = "";
-                                        
-                                            lblA3.setIcon(null);
-                                            lblA4.setIcon(pawnw);
-                                            p1w.location = "A4";
+                                            if(p1w.moves == 1)
+                                            {   
+                                                piecesAlive[0][3] = "p1w";
+                                                piecesAlive[0][1] = "";
+
+                                                lblA2.setIcon(null);
+                                                lblA4.setIcon(pawnw);
+                                                p1w.location = "A4";
+
+                                                refreshHistory();
+                                            }
+                                            else if(p1w.moves >= 2)
+                                            {   
+                                                piecesAlive[0][3] = "p1w";
+                                                piecesAlive[0][2] = "";
+
+                                                lblA3.setIcon(null);
+                                                lblA4.setIcon(pawnw);
+                                                p1w.location = "A4";
+
+                                                refreshHistory();
+                                            }
+                                        }break;  
+                                case "A5" : 
+                                        {   
+                                            piecesAlive[0][4] = "p1w";
+                                            piecesAlive[0][3] = "";
+
+                                            lblA4.setIcon(null);
+                                            lblA5.setIcon(pawnw);
+                                            p1w.location = "A5";
 
                                             refreshHistory();
-                                        }
-                                    }break;  
-                            case "A5" : 
-                                    {   
-                                        piecesAlive[0][4] = "p1w";
-                                        piecesAlive[0][3] = "";
-                                    
-                                        lblA4.setIcon(null);
-                                        lblA5.setIcon(pawnw);
-                                        p1w.location = "A5";
-                                        
-                                        refreshHistory();
-                                    }break;
-                            case "A6" : 
-                                    {   
-                                        piecesAlive[0][5] = "p1w";
-                                        piecesAlive[0][4] = "";
-                                    
-                                        lblA5.setIcon(null);
-                                        lblA6.setIcon(pawnw);
-                                        p1w.location = "A6";
+                                        }break;
+                                case "A6" : 
+                                        {   
+                                            piecesAlive[0][5] = "p1w";
+                                            piecesAlive[0][4] = "";
 
-                                        refreshHistory();
-                                    }break;
-                            case "A7" : 
-                                    {   
-                                        piecesAlive[0][6] = "p1w";
-                                        piecesAlive[0][5] = "";
-                                    
-                                        lblA6.setIcon(null);
-                                        lblA7.setIcon(pawnw);
-                                        p1w.location = "A7";
+                                            lblA5.setIcon(null);
+                                            lblA6.setIcon(pawnw);
+                                            p1w.location = "A6";
 
-                                        refreshHistory();
-                                    }break;
-                            case "A8" : 
-                                    {   
-                                        piecesAlive[0][7] = "p1w";
-                                        piecesAlive[0][6] = "";
-                                    
-                                        lblA7.setIcon(null);
-                                        lblA8.setIcon(pawnw);
-                                        p1w.location = "A8";
+                                            refreshHistory();
+                                        }break;
+                                case "A7" : 
+                                        {   
+                                            piecesAlive[0][6] = "p1w";
+                                            piecesAlive[0][5] = "";
 
-                                        refreshHistory();
-                                    }break;
+                                            lblA6.setIcon(null);
+                                            lblA7.setIcon(pawnw);
+                                            p1w.location = "A7";
+
+                                            refreshHistory();
+                                        }break;
+                                case "A8" : 
+                                        {   
+                                            piecesAlive[0][7] = "p1w";
+                                            piecesAlive[0][6] = "";
+
+                                            lblA7.setIcon(null);
+                                            lblA8.setIcon(pawnw);
+                                            p1w.location = "A8";
+
+                                            refreshHistory();
+                                        }break;
+                            }
                         }
                     }
         }
@@ -923,6 +1152,11 @@ public class MainFrame extends javax.swing.JFrame {
         A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A2.setName("A2"); // NOI18N
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
+        A2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A2MouseClicked(evt);
+            }
+        });
         A2.setLayout(new java.awt.GridBagLayout());
 
         lblA2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -980,6 +1214,11 @@ public class MainFrame extends javax.swing.JFrame {
         A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         A1.setName("A1"); // NOI18N
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
+        A1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                A1MouseClicked(evt);
+            }
+        });
         A1.setLayout(new java.awt.GridBagLayout());
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
@@ -1381,6 +1620,16 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         postmovePiece(bufferpiece, A8);
     }//GEN-LAST:event_A8MouseClicked
+
+    private void A1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A1MouseClicked
+        // TODO add your handling code here:
+        postmovePiece(bufferpiece, A1);
+    }//GEN-LAST:event_A1MouseClicked
+
+    private void A2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A2MouseClicked
+        // TODO add your handling code here:
+        postmovePiece(bufferpiece, A2);
+    }//GEN-LAST:event_A2MouseClicked
 
     
     /**
