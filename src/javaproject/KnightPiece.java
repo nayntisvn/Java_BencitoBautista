@@ -37,7 +37,7 @@ public class KnightPiece {
             case "A2":  {
                         possiblem.add("B4");
                         possiblem.add("C3");
-                        possiblem.add("C2");
+                        possiblem.add("C1");
                         break;
                         }
             case "A3":  {
