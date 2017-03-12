@@ -30,7 +30,7 @@ public class MainFrame extends javax.swing.JFrame {
     //String directory = null;
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
-
+//
     //======================================================
     
     // Importing the pictures for each pieces
