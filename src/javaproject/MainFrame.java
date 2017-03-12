@@ -2679,118 +2679,137 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblH2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][1], lblH2);
     }//GEN-LAST:event_lblH2MouseClicked
 
     private void lblH3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][2], lblH3);
     }//GEN-LAST:event_lblH3MouseClicked
 
     private void lblH4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][3], lblH4);
     }//GEN-LAST:event_lblH4MouseClicked
 
     private void lblH5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][4], lblH5);
     }//GEN-LAST:event_lblH5MouseClicked
 
     private void lblH6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][5], lblH6);
     }//GEN-LAST:event_lblH6MouseClicked
 
     private void lblH7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][6], lblH7);
     }//GEN-LAST:event_lblH7MouseClicked
 
     private void lblH8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        premovePiece(piecesAlive[7][7], lblH8);
     }//GEN-LAST:event_lblH8MouseClicked
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
         // TODO add your handling code here:
-        postmovePiece(bufferpiece, G3);  
+        postmovePiece(bufferpiece, B1);  
     }//GEN-LAST:event_B1MouseClicked
 
     private void B2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, B2);  
     }//GEN-LAST:event_B2MouseClicked
 
     private void C2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, C2);  
     }//GEN-LAST:event_C2MouseClicked
 
     private void D2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, D2);  
     }//GEN-LAST:event_D2MouseClicked
 
     private void E2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, E2);  
     }//GEN-LAST:event_E2MouseClicked
 
     private void F2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, F2);  
     }//GEN-LAST:event_F2MouseClicked
 
     private void H2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H2MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, H2);  
     }//GEN-LAST:event_H2MouseClicked
 
     private void C1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, C1);  
     }//GEN-LAST:event_C1MouseClicked
 
     private void D1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, D1);  
     }//GEN-LAST:event_D1MouseClicked
 
     private void E1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, E1);  
     }//GEN-LAST:event_E1MouseClicked
 
     private void F1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, F1);  
     }//GEN-LAST:event_F1MouseClicked
 
     private void G1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, G1);  
     }//GEN-LAST:event_G1MouseClicked
 
     private void H1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H1MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, H1);  
     }//GEN-LAST:event_H1MouseClicked
 
     private void B8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, B8);  
     }//GEN-LAST:event_B8MouseClicked
 
     private void C8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_C8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, C8);  
     }//GEN-LAST:event_C8MouseClicked
 
     private void D8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_D8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, D8);  
     }//GEN-LAST:event_D8MouseClicked
 
     private void E8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_E8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, E8);  
     }//GEN-LAST:event_E8MouseClicked
 
     private void F8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_F8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, F8);  
     }//GEN-LAST:event_F8MouseClicked
 
     private void G8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_G8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, G8);  
     }//GEN-LAST:event_G8MouseClicked
 
     private void H8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_H8MouseClicked
         // TODO add your handling code here:
+        postmovePiece(bufferpiece, H8);  
     }//GEN-LAST:event_H8MouseClicked
                               
     
