@@ -537,7 +537,8 @@ public class MainFrame extends javax.swing.JFrame {
                         possiblem = p1w.movementW();
                         
                         possiblemoves(possiblem);
-
+                        
+                        break;
                     }
             case "p2w" : 
                     {
@@ -547,6 +548,8 @@ public class MainFrame extends javax.swing.JFrame {
                         possiblem = p2w.movementW();
                         
                         possiblemoves(possiblem);
+                        
+                        break;
                     }
             case "p3w" : 
                     {
@@ -556,16 +559,18 @@ public class MainFrame extends javax.swing.JFrame {
                         possiblem = p3w.movementW();
                         
                         possiblemoves(possiblem);
+                        break;
                     }
             case "p4w" : 
-            {
+                    {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
                 possiblem = p4w.movementW();
 
                 possiblemoves(possiblem);
-            }
+                break;
+                    }
             case "p5w" : 
             {
                 bufferpiece = pieceToMove;
@@ -574,6 +579,7 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = p5w.movementW();
 
                 possiblemoves(possiblem);
+                break;
             }
             case "p6w" : 
             {
@@ -583,6 +589,7 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = p6w.movementW();
 
                 possiblemoves(possiblem);
+                break;
             }
             case "p7w" : 
             {
@@ -592,6 +599,7 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = p7w.movementW();
 
                 possiblemoves(possiblem);
+                break;
             }
             case "p8w" : 
             {
@@ -601,6 +609,7 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = p8w.movementW();
 
                 possiblemoves(possiblem);
+                break;
             }
         }
     }
@@ -706,16 +715,11 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     switch(destination.getName())
                     {
-                        if(destination.getBorder() == movement)
-                        {   
-                            System.out.println(destination.getName());
-                            switch(destination.getName())
-                            {
-                                case "B3" : 
-                                        {   
-                                            System.out.println("hey");
-                                            piecesAlive[1][2] = "p2w";
-                                            piecesAlive[1][1] = "";
+                        case "B3" : 
+                                {   
+                                    System.out.println("hey");
+                                    piecesAlive[1][2] = "p2w";
+                                    piecesAlive[1][1] = "";
 
                                     lblB2.setIcon(null);
                                     lblB3.setIcon(pawnw);
@@ -819,8 +823,8 @@ public class MainFrame extends javax.swing.JFrame {
                                 piecesAlive[2][3] = "p3w";
                                 piecesAlive[2][1] = "";
 
-                                lblA2.setIcon(null);
-                                lblA4.setIcon(pawnw);
+                                lblC2.setIcon(null);
+                                lblC4.setIcon(pawnw);
                                 p3w.location = "C4";
 
                                 refreshHistory();
@@ -830,8 +834,8 @@ public class MainFrame extends javax.swing.JFrame {
                                 piecesAlive[2][3] = "p3w";
                                 piecesAlive[2][2] = "";
 
-                                lblA3.setIcon(null);
-                                lblA4.setIcon(pawnw);
+                                lblC3.setIcon(null);
+                                lblC4.setIcon(pawnw);
                                 p3w.location = "C4";
 
                                 refreshHistory();
@@ -842,8 +846,8 @@ public class MainFrame extends javax.swing.JFrame {
                             piecesAlive[2][4] = "p3w";
                             piecesAlive[2][3] = "";
 
-                            lblA4.setIcon(null);
-                            lblA5.setIcon(pawnw);
+                            lblC4.setIcon(null);
+                            lblC5.setIcon(pawnw);
                             p3w.location = "C5";
 
                             refreshHistory();
@@ -853,8 +857,8 @@ public class MainFrame extends javax.swing.JFrame {
                             piecesAlive[2][5] = "p3w";
                             piecesAlive[2][4] = "";
 
-                            lblA5.setIcon(null);
-                            lblA6.setIcon(pawnw);
+                            lblC5.setIcon(null);
+                            lblC6.setIcon(pawnw);
                             p3w.location = "C6";
 
                             refreshHistory();
@@ -864,8 +868,8 @@ public class MainFrame extends javax.swing.JFrame {
                             piecesAlive[2][6] = "p3w";
                             piecesAlive[2][5] = "";
 
-                            lblA6.setIcon(null);
-                            lblA7.setIcon(pawnw);
+                            lblC6.setIcon(null);
+                            lblC7.setIcon(pawnw);
                             p3w.location = "C7";
 
                             refreshHistory();
@@ -875,8 +879,8 @@ public class MainFrame extends javax.swing.JFrame {
                             piecesAlive[2][7] = "p3w";
                             piecesAlive[2][6] = "";
 
-                            lblA7.setIcon(null);
-                            lblA8.setIcon(pawnw);
+                            lblC7.setIcon(null);
+                            lblC8.setIcon(pawnw);
                             p3w.location = "C8";
 
                             refreshHistory();
