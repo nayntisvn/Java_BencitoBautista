@@ -125,10 +125,8 @@ public class PawnPiece {
             }
         }
         
-        
         moves++;
         
-        System.out.println("Hey");
         return possiblem;
     }
     
