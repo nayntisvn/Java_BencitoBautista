@@ -221,7 +221,7 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A4") && piecesAlive[0][3].equals(""))
             {
                 A4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                A4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A5") && piecesAlive[0][4].equals(""))
             {
@@ -231,32 +231,32 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A6") && piecesAlive[0][5].equals(""))
             {
                 A6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                A6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A7") && piecesAlive[0][6].equals(""))
             {
                 A7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                A7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A8") && piecesAlive[0][7].equals(""))
             {
                 A8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                A8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B1") && piecesAlive[1][0].equals(""))
             {
                 B1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B2") && piecesAlive[1][1].equals(""))
             {
                 B2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B3") && piecesAlive[1][2].equals(""))
             {
                 B3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B4") && piecesAlive[1][3].equals(""))
             {
