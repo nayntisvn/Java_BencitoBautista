@@ -34,9 +34,10 @@ public class MainFrame extends javax.swing.JFrame {
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
-    
-    public static String inputFromOpponent = null;
-    public static String outputToOpponent = null;
+    String url = "192.168.1.118";
+    int goNoGo = 0;
+    public String inputFromOpponent = null;
+    public String outputToOpponent = null;
     
     // Importing the pictures for each pieces
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
@@ -861,6 +862,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         
         outputToOpponent = bufferpiece + "," + bufferloc;
+        
     }
     //======================================================
     
@@ -2377,9 +2379,110 @@ public class MainFrame extends javax.swing.JFrame {
                 }
             }
         }
+        
+        outputToOpponent += destination.getName();
+        goNoGo = 1;
     }
     //======================================================
     
+    public class Server implements Runnable{
+
+    ServerSocket serversocket;
+    BufferedReader br1, br2;
+    PrintWriter pr1;
+    Socket socket;
+    Thread t1, t2;
+    String in="",out="";
+
+    public Server() {
+        try {
+            t1 = new Thread(this);
+            t2 = new Thread(this);
+            serversocket = new ServerSocket(5000);
+            System.out.println("Server is waiting. . . . ");
+            socket = serversocket.accept();
+            System.out.println("Client connected with Ip " +        socket.getInetAddress().getHostAddress());
+            t1.start();;
+            t2.start();
+
+        } 
+        catch (Exception e) 
+        {
+            
+        }
+     }
+
+     public void run() {
+        try {
+            if (Thread.currentThread() == t1) {
+                do {
+                    br1 = new BufferedReader(new InputStreamReader(System.in));
+                    pr1 = new PrintWriter(socket.getOutputStream(), true);
+                    if(goNoGo == 1)
+                    {
+                        pr1.println(outputToOpponent);
+                        goNoGo = 0;
+                    }
+                } while (!in.equals("END"));
+            } else {
+                do {
+                    br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
+                    out = br2.readLine();
+                    System.out.println("Client says : : : " + out);
+                } while (!out.equals("END"));
+            }
+        } catch (Exception e) {
+        }
+        }
+    }
+    
+
+    public class Client implements Runnable {
+
+    BufferedReader br1, br2;
+    PrintWriter pr1;
+    Socket socket;
+    Thread t1, t2;
+    String in = "", out = "";
+
+    public Client() {
+        try {
+            t1 = new Thread(this);
+            t2 = new Thread(this);
+            socket = new Socket(url, 5000);
+            t1.start();
+            t2.start();
+
+        } catch (Exception e) {
+        }
+    }
+
+    public void run() {
+
+        try {
+            if (Thread.currentThread() == t2) {
+                do {
+                    br1 = new BufferedReader(new InputStreamReader(System.in));
+                    pr1 = new PrintWriter(socket.getOutputStream(), true);
+                    if(goNoGo == 1)
+                    {
+                        pr1.println(outputToOpponent);
+                        goNoGo = 0;
+                    }
+                } while (!in.equals("END"));
+            } else {
+                do {
+                    br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
+                    out = br2.readLine();
+                    System.out.println("Server says : : : " + out);
+                } while (!out.equals("END"));
+            }
+        } catch (Exception e) {
+        }
+
+     }
+    }
+
     /**
      * Creates new form MainFrame
      */
