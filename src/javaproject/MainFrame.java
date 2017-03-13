@@ -81,6 +81,27 @@ public class MainFrame extends javax.swing.JFrame {
     PawnPiece p7b = new PawnPiece("black","G7");
     PawnPiece p8b = new PawnPiece("black","H7");
     
+    RookPiece r1w = new RookPiece("white", "A1");
+    RookPiece r2w = new RookPiece("white", "H1");
+    RookPiece r1b = new RookPiece("black", "A8");
+    RookPiece r2b = new RookPiece("black", "H8");
+    
+    KnightPiece h1w = new KnightPiece("white", "B1");
+    KnightPiece h2w = new KnightPiece("white", "G1");
+    KnightPiece h1b = new KnightPiece("black", "B8");
+    KnightPiece h2b = new KnightPiece("black", "G8");
+    
+    BishopPiece b1w = new BishopPiece("white", "C1");
+    BishopPiece b2w = new BishopPiece("white", "F1");
+    BishopPiece b1b = new BishopPiece("black", "C8");
+    BishopPiece b2b = new BishopPiece("black", "F8");
+    
+    //QueenPiece q1w = new QueenPiece("white", "D1");
+    //QueenPiece q1b = new QueenPiece("black", "D8");
+    
+    //KingPiece k1w = new KingPiece("white", "E1");
+    //KingPiece k1b = new KingPiece("black", "E8");
+    
     //======================================================
     
     //  Array for possible destinations of a piece
@@ -608,37 +629,37 @@ public class MainFrame extends javax.swing.JFrame {
         switch(pieceToMove)
         {
             case "p1w" : 
-                    {
-                        bufferpiece = pieceToMove;
-                        bufferloc = initial.getName();
-                        
-                        possiblem = p1w.movementW();
-                        
-                        possiblemoves(possiblem);
-                        
-                        break;
-                    }
+                {
+                    bufferpiece = pieceToMove;
+                    bufferloc = initial.getName();
+
+                    possiblem = p1w.movementW();
+
+                    possiblemoves(possiblem);
+
+                    break;
+                }
             case "p2w" : 
-                    {
-                        bufferpiece = pieceToMove;
-                        bufferloc = initial.getName();
-                        
-                        possiblem = p2w.movementW();
-                        
-                        possiblemoves(possiblem);
-                        
-                        break;
-                    }
+                {
+                    bufferpiece = pieceToMove;
+                    bufferloc = initial.getName();
+
+                    possiblem = p2w.movementW();
+
+                    possiblemoves(possiblem);
+
+                    break;
+                }
             case "p3w" : 
-                    {
-                        bufferpiece = pieceToMove;
-                        bufferloc = initial.getName();
-                        
-                        possiblem = p3w.movementW();
-                        
-                        possiblemoves(possiblem);
-                        break;
-                    }
+                {
+                    bufferpiece = pieceToMove;
+                    bufferloc = initial.getName();
+
+                    possiblem = p3w.movementW();
+
+                    possiblemoves(possiblem);
+                    break;
+                }
             case "p4w" : 
                     {
                 bufferpiece = pieceToMove;
