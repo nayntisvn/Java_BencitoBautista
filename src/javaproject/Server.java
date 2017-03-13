@@ -34,6 +34,7 @@ public class Server implements Runnable{
      }
 
      public void run() {
+         
         try {
             if (Thread.currentThread() == t1) {
                 do {
@@ -45,8 +46,7 @@ public class Server implements Runnable{
             } else {
                 do {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
-                    out = br2.readLine();
-                    System.out.println("Client says : : : " + out);
+                    out = MainFrame.outputToOpponent;
                 } while (!out.equals("END"));
             }
         } catch (Exception e) {
