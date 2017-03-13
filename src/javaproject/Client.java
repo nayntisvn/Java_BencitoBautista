@@ -26,7 +26,7 @@ public Client() {
     try {
         t1 = new Thread(this);
         t2 = new Thread(this);
-        socket = new Socket("localhost", 5000);
+        socket = new Socket("192.168.1.118", 5000);
         t1.start();
         t2.start();
 
