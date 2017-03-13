@@ -6,6 +6,7 @@
 package javaproject;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.Point;
@@ -25,9 +26,9 @@ import javax.swing.border.Border;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-    //String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+    //String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
@@ -57,6 +58,8 @@ public class MainFrame extends javax.swing.JFrame {
     Border orig = BorderFactory.createLineBorder(Color.black, 2);       // Default border
     Border checked = BorderFactory.createLineBorder(Color.red, 2);      // Border when checked
     Border movement = BorderFactory.createLineBorder(Color.yellow, 2);  // Available destination
+    Cursor handcur = new Cursor(HAND_CURSOR);
+    Cursor origcur = new Cursor(DEFAULT_CURSOR);
     //======================================================
     
     // Creating the object for each piece
@@ -182,6 +185,7 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A1") && piecesAlive[0][0].equals(""))
             {
                 A1.setBorder(movement);
+                A1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A2") && piecesAlive[0][1].equals(""))
             {
@@ -190,6 +194,7 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A3") && piecesAlive[0][2].equals(""))
             {
                 A3.setBorder(movement);
+                A3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A4") && piecesAlive[0][3].equals(""))
             {
@@ -519,6 +524,79 @@ public class MainFrame extends javax.swing.JFrame {
         H6.setBorder(orig);
         H7.setBorder(orig);
         H8.setBorder(orig);
+        
+        ///////////////////////////
+        A1.setCursor(origcur);
+        A2.setCursor(origcur);
+        A3.setCursor(origcur);
+        A4.setCursor(origcur);
+        A5.setCursor(origcur);
+        A6.setCursor(origcur);
+        A7.setCursor(origcur);
+        A8.setCursor(origcur);
+
+        B1.setCursor(origcur);
+        B2.setCursor(origcur);
+        B3.setCursor(origcur);
+        B4.setCursor(origcur);
+        B5.setCursor(origcur);
+        B6.setCursor(origcur);
+        B7.setCursor(origcur);
+        B8.setCursor(origcur);
+       
+        C1.setCursor(origcur);
+        C2.setCursor(origcur);
+        C3.setCursor(origcur);
+        C4.setCursor(origcur);
+        C5.setCursor(origcur);
+        C6.setCursor(origcur);
+        C7.setCursor(origcur);
+        C8.setCursor(origcur);
+        
+        D1.setCursor(origcur);
+        D2.setCursor(origcur);
+        D3.setCursor(origcur);
+        D4.setCursor(origcur);
+        D5.setCursor(origcur);
+        D6.setCursor(origcur);
+        D7.setCursor(origcur);
+        D8.setCursor(origcur);
+        
+        E1.setCursor(origcur);
+        E2.setCursor(origcur);
+        E3.setCursor(origcur);
+        E4.setCursor(origcur);
+        E5.setCursor(origcur);
+        E6.setCursor(origcur);
+        E7.setCursor(origcur);
+        E8.setCursor(origcur);
+        
+        F1.setCursor(origcur);
+        F2.setCursor(origcur);
+        F3.setCursor(origcur);
+        F4.setCursor(origcur);
+        F5.setCursor(origcur);
+        F6.setCursor(origcur);
+        F7.setCursor(origcur);
+        F8.setCursor(origcur);
+        
+        G1.setCursor(origcur);
+        G2.setCursor(origcur);
+        G3.setCursor(origcur);
+        G4.setCursor(origcur);
+        G5.setCursor(origcur);
+        G6.setCursor(origcur);
+        G7.setCursor(origcur);
+        G8.setCursor(origcur);
+        
+        H1.setCursor(origcur);
+        H2.setCursor(origcur);
+        H3.setCursor(origcur);
+        H4.setCursor(origcur);
+        H5.setCursor(origcur);
+        H6.setCursor(origcur);
+        H7.setCursor(origcur);
+        H8.setCursor(origcur);
     }
     //======================================================
     
@@ -607,6 +685,88 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferloc = initial.getName();
 
                 possiblem = p8w.movementW();
+
+                possiblemoves(possiblem);
+                break;
+            }
+            case "p1b" : 
+                    {
+                        bufferpiece = pieceToMove;
+                        bufferloc = initial.getName();
+                        
+                        possiblem = p1b.movementB();
+                        
+                        possiblemoves(possiblem);
+                        
+                        break;
+                    }
+            case "p2b" : 
+                    {
+                        bufferpiece = pieceToMove;
+                        bufferloc = initial.getName();
+                        
+                        possiblem = p2b.movementB();
+                        
+                        possiblemoves(possiblem);
+                        
+                        break;
+                    }
+            case "p3b" : 
+                    {
+                        bufferpiece = pieceToMove;
+                        bufferloc = initial.getName();
+                        
+                        possiblem = p3b.movementB();
+                        
+                        possiblemoves(possiblem);
+                        break;
+                    }
+            case "p4b" : 
+                    {
+                bufferpiece = pieceToMove;
+                bufferloc = initial.getName();
+
+                possiblem = p4b.movementB();
+
+                possiblemoves(possiblem);
+                break;
+                    }
+            case "p5b" : 
+            {
+                bufferpiece = pieceToMove;
+                bufferloc = initial.getName();
+
+                possiblem = p5b.movementB();
+
+                possiblemoves(possiblem);
+                break;
+            }
+            case "p6b" : 
+            {
+                bufferpiece = pieceToMove;
+                bufferloc = initial.getName();
+
+                possiblem = p6b.movementB();
+
+                possiblemoves(possiblem);
+                break;
+            }
+            case "p7b" : 
+            {
+                bufferpiece = pieceToMove;
+                bufferloc = initial.getName();
+
+                possiblem = p7b.movementB();
+
+                possiblemoves(possiblem);
+                break;
+            }
+            case "p8b" : 
+            {
+                bufferpiece = pieceToMove;
+                bufferloc = initial.getName();
+
+                possiblem = p8b.movementB();
 
                 possiblemoves(possiblem);
                 break;
@@ -1333,6 +1493,96 @@ public class MainFrame extends javax.swing.JFrame {
                     }
                 }
             }
+            /////////////////////////////
+            case "p1b" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A6" : 
+                        {   
+                            piecesAlive[0][5] = "p1b";
+                            piecesAlive[0][6] = "";
+
+                            lblA7.setIcon(null);
+                            lblA6.setIcon(pawnb);
+                            p1b.location = "A6";
+
+                            refreshHistory();
+                        }break;
+                        case "A5" : 
+                        {   
+                            if(p1b.moves == 1)
+                            {   
+                                piecesAlive[0][4] = "p1b";
+                                piecesAlive[0][6] = "";
+
+                                lblA7.setIcon(null);
+                                lblA5.setIcon(pawnb);
+                                p1b.location = "A5";
+
+                                refreshHistory();
+                            }
+                            else if(p1b.moves >= 2)
+                            {   
+                                piecesAlive[0][4] = "p1b";
+                                piecesAlive[0][5] = "";
+
+                                lblA6.setIcon(null);
+                                lblA5.setIcon(pawnb);
+                                p1b.location = "A5";
+
+                                refreshHistory();
+                            }
+                        }break;  
+                        case "A4" : 
+                        {   
+                            piecesAlive[0][3] = "p1b";
+                            piecesAlive[0][4] = "";
+
+                            lblA5.setIcon(null);
+                            lblA4.setIcon(pawnb);
+                            p1b.location = "A4";
+
+                            refreshHistory();
+                        }break;
+                        case "A3" : 
+                        {   
+                            piecesAlive[0][2] = "p1b";
+                            piecesAlive[0][3] = "";
+
+                            lblA4.setIcon(null);
+                            lblA3.setIcon(pawnb);
+                            p1b.location = "A3";
+
+                            refreshHistory();
+                        }break;
+                        case "A2" : 
+                        {   
+                            piecesAlive[0][1] = "p1b";
+                            piecesAlive[0][2] = "";
+
+                            lblA3.setIcon(null);
+                            lblA2.setIcon(pawnb);
+                            p1b.location = "A2";
+
+                            refreshHistory();
+                        }break;
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "p1b";
+                            piecesAlive[0][1] = "";
+
+                            lblA2.setIcon(null);
+                            lblA1.setIcon(pawnb);
+                            p1b.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                    }
+                }
+            }
         }
     }
     //======================================================
@@ -1646,6 +1896,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A7.setLayout(new java.awt.GridBagLayout());
 
+        lblA7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblA7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA7MouseClicked(evt);
