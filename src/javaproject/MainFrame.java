@@ -211,6 +211,7 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A2") && piecesAlive[0][1].equals(""))
             {
                 A2.setBorder(movement);
+                A2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A3") && piecesAlive[0][2].equals(""))
             {
@@ -220,246 +221,307 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("A4") && piecesAlive[0][3].equals(""))
             {
                 A4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A5") && piecesAlive[0][4].equals(""))
             {
                 A5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A6") && piecesAlive[0][5].equals(""))
             {
                 A6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A7") && piecesAlive[0][6].equals(""))
             {
                 A7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("A8") && piecesAlive[0][7].equals(""))
             {
                 A8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B1") && piecesAlive[1][0].equals(""))
             {
                 B1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B2") && piecesAlive[1][1].equals(""))
             {
                 B2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B3") && piecesAlive[1][2].equals(""))
             {
                 B3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B4") && piecesAlive[1][3].equals(""))
             {
                 B4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B5") && piecesAlive[1][4].equals(""))
             {
                 B5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B6") && piecesAlive[1][5].equals(""))
             {
                 B6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B7") && piecesAlive[1][6].equals(""))
             {
                 B7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B8") && piecesAlive[1][7].equals(""))
             {
                 B8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C1") && piecesAlive[2][0].equals(""))
             {
                 C1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C2") && piecesAlive[2][1].equals(""))
             {
                 C2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C3") && piecesAlive[2][2].equals(""))
             {
                 C3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C4") && piecesAlive[2][3].equals(""))
             {
                 C4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C5") && piecesAlive[2][4].equals(""))
             {
                 C5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C6") && piecesAlive[2][5].equals(""))
             {
                 C6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C7") && piecesAlive[2][6].equals(""))
             {
                 C7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C8") && piecesAlive[2][7].equals(""))
             {
                 C8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D1") && piecesAlive[3][0].equals(""))
             {
                 D1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D2") && piecesAlive[3][1].equals(""))
             {
                 D2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D3") && piecesAlive[3][2].equals(""))
             {
                 D3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D4") && piecesAlive[3][3].equals(""))
             {
                 D4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D5") && piecesAlive[3][4].equals(""))
             {
                 D5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D6") && piecesAlive[3][5].equals(""))
             {
                 D6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D7") && piecesAlive[3][6].equals(""))
             {
                 D7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D8") && piecesAlive[3][7].equals(""))
             {
                 D8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E1") && piecesAlive[4][0].equals(""))
             {
                 E1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E2") && piecesAlive[4][1].equals(""))
             {
                 E2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E3") && piecesAlive[4][2].equals(""))
             {
                 E3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E4") && piecesAlive[4][3].equals(""))
             {
                 E4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E5") && piecesAlive[4][4].equals(""))
             {
                 E5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E6") && piecesAlive[4][5].equals(""))
             {
                 E6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E7") && piecesAlive[4][6].equals(""))
             {
                 E7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E8") && piecesAlive[4][7].equals(""))
             {
                 E8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F1") && piecesAlive[5][0].equals(""))
             {
                 F1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F2") && piecesAlive[5][1].equals(""))
             {
                 F2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F3") && piecesAlive[5][2].equals(""))
             {
                 F3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F4") && piecesAlive[5][3].equals(""))
             {
                 F4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F5") && piecesAlive[5][4].equals(""))
             {
                 F5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F6") && piecesAlive[5][5].equals(""))
             {
                 F6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F7") && piecesAlive[5][6].equals(""))
             {
                 F7.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F8") && piecesAlive[5][7].equals(""))
             {
                 F8.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G1") && piecesAlive[6][0].equals(""))
             {
                 G1.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G2") && piecesAlive[6][1].equals(""))
             {
                 G2.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G3") && piecesAlive[6][2].equals(""))
             {
                 G3.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G4") && piecesAlive[6][3].equals(""))
             {
                 G4.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G5") && piecesAlive[6][4].equals(""))
             {
                 G5.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G6") && piecesAlive[6][5].equals(""))
             {
                 G6.setBorder(movement);
+                A5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G7") && piecesAlive[6][6].equals(""))
             {
                 G7.setBorder(movement);
+                G7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G8") && piecesAlive[6][7].equals(""))
             {
                 G8.setBorder(movement);
+                G8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H1") && piecesAlive[7][0].equals(""))
             {
                 H1.setBorder(movement);
+                H1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H2") && piecesAlive[7][1].equals(""))
             {
                 H2.setBorder(movement);
+                H2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H3") && piecesAlive[7][2].equals(""))
             {
                 H3.setBorder(movement);
+                H3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H4") && piecesAlive[7][3].equals(""))
             {
                 H4.setBorder(movement);
+                H4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H5") && piecesAlive[7][4].equals(""))
             {
                 H5.setBorder(movement);
+                H5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H6") && piecesAlive[7][5].equals(""))
             {
                 H6.setBorder(movement);
+                H6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H7") && piecesAlive[7][6].equals(""))
             {
                 H7.setBorder(movement);
+                H7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("H8") && piecesAlive[7][7].equals(""))
             {
                 H8.setBorder(movement);
+                H8.setCursor(new Cursor(HAND_CURSOR));
             }
         }
         
@@ -795,6 +857,85 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }
     //======================================================
+    
+    //  To remove the piece in the two-dimensional array record
+    public void removePiecesAlive(String buff)
+    {
+        switch(buff)
+        {
+            case "A1" : piecesAlive[0][0] = ""; break;
+            case "A2" : piecesAlive[0][1] = ""; break;
+            case "A3" : piecesAlive[0][2] = ""; break;
+            case "A4" : piecesAlive[0][3] = ""; break;
+            case "A5" : piecesAlive[0][4] = ""; break;
+            case "A6" : piecesAlive[0][5] = ""; break;
+            case "A7" : piecesAlive[0][6] = ""; break;
+            case "A8" : piecesAlive[0][7] = ""; break;
+            
+            case "B1" : piecesAlive[1][0] = ""; break;
+            case "B2" : piecesAlive[1][1] = ""; break;
+            case "B3" : piecesAlive[1][2] = ""; break;
+            case "B4" : piecesAlive[1][3] = ""; break;
+            case "B5" : piecesAlive[1][4] = ""; break;
+            case "B6" : piecesAlive[1][5] = ""; break;
+            case "B7" : piecesAlive[1][6] = ""; break;
+            case "B8" : piecesAlive[1][7] = ""; break;
+            
+            case "C1" : piecesAlive[2][0] = ""; break;
+            case "C2" : piecesAlive[2][1] = ""; break;
+            case "C3" : piecesAlive[2][2] = ""; break;
+            case "C4" : piecesAlive[2][3] = ""; break;
+            case "C5" : piecesAlive[2][4] = ""; break;
+            case "C6" : piecesAlive[2][5] = ""; break;
+            case "C7" : piecesAlive[2][6] = ""; break;
+            case "C8" : piecesAlive[2][7] = ""; break;
+            
+            case "D1" : piecesAlive[3][0] = ""; break;
+            case "D2" : piecesAlive[3][1] = ""; break;
+            case "D3" : piecesAlive[3][2] = ""; break;
+            case "D4" : piecesAlive[3][3] = ""; break;
+            case "D5" : piecesAlive[3][4] = ""; break;
+            case "D6" : piecesAlive[3][5] = ""; break;
+            case "D7" : piecesAlive[3][6] = ""; break;
+            case "D8" : piecesAlive[3][7] = ""; break;
+            
+            case "E1" : piecesAlive[4][0] = ""; break;
+            case "E2" : piecesAlive[4][1] = ""; break;
+            case "E3" : piecesAlive[4][2] = ""; break;
+            case "E4" : piecesAlive[4][3] = ""; break;
+            case "E5" : piecesAlive[4][4] = ""; break;
+            case "E6" : piecesAlive[4][5] = ""; break;
+            case "E7" : piecesAlive[4][6] = ""; break;
+            case "E8" : piecesAlive[4][7] = ""; break;
+            
+            case "F1" : piecesAlive[5][0] = ""; break;
+            case "F2" : piecesAlive[5][1] = ""; break;
+            case "F3" : piecesAlive[5][2] = ""; break;
+            case "F4" : piecesAlive[5][3] = ""; break;
+            case "F5" : piecesAlive[5][4] = ""; break;
+            case "F6" : piecesAlive[5][5] = ""; break;
+            case "F7" : piecesAlive[5][6] = ""; break;
+            case "F8" : piecesAlive[5][7] = ""; break;
+            
+            case "G1" : piecesAlive[6][0] = ""; break;
+            case "G2" : piecesAlive[6][1] = ""; break;
+            case "G3" : piecesAlive[6][2] = ""; break;
+            case "G4" : piecesAlive[6][3] = ""; break;
+            case "G5" : piecesAlive[6][4] = ""; break;
+            case "G6" : piecesAlive[6][5] = ""; break;
+            case "G7" : piecesAlive[6][6] = ""; break;
+            case "G8" : piecesAlive[6][7] = ""; break;
+            
+            case "H1" : piecesAlive[7][0] = ""; break;
+            case "H2" : piecesAlive[7][1] = ""; break;
+            case "H3" : piecesAlive[7][2] = ""; break;
+            case "H4" : piecesAlive[7][3] = ""; break;
+            case "H5" : piecesAlive[7][4] = ""; break;
+            case "H6" : piecesAlive[7][5] = ""; break;
+            case "H7" : piecesAlive[7][6] = ""; break;
+            case "H8" : piecesAlive[7][7] = ""; break;
+        }
+    }
     
     //  To move the indicated piece to an indicated position
     public void postmovePiece(String buffer, JPanel destination)
