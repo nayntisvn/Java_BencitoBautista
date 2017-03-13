@@ -25,9 +25,9 @@ import javax.swing.border.Border;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    //String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-    //String directory = null;
+    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
