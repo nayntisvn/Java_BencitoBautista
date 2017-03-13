@@ -35,6 +35,9 @@ public class MainFrame extends javax.swing.JFrame {
 //
     //======================================================
     
+    public static String inputFromOpponent = null;
+    public static String outputToOpponent = null;
+    
     // Importing the pictures for each pieces
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
     ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
@@ -856,6 +859,8 @@ public class MainFrame extends javax.swing.JFrame {
                 break;
             }
         }
+        
+        outputToOpponent = bufferpiece + "," + bufferloc;
     }
     //======================================================
     
@@ -2382,6 +2387,8 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
+        
+        new Server();
     }
 
     /**
