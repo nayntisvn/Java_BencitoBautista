@@ -47,8 +47,7 @@ public void run() {
         } else {
             do {
                 br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
-                out = br2.readLine();
-                System.out.println("Server says : : : " + out);
+                out = MainFrame.outputToOpponent;
             } while (!out.equals("END"));
         }
     } catch (Exception e) {
