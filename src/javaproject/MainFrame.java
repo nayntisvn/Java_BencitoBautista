@@ -34,6 +34,10 @@ public class MainFrame extends javax.swing.JFrame {
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
+    String url = "192.168.1.118";
+    int goNoGo = 0;
+    public String inputFromOpponent = null;
+    public String outputToOpponent = null;
     
     // Importing the pictures for each pieces
     ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
@@ -856,6 +860,9 @@ public class MainFrame extends javax.swing.JFrame {
                 break;
             }
         }
+        
+        outputToOpponent = bufferpiece + "," + bufferloc;
+        
     }
     //======================================================
     
@@ -2372,9 +2379,110 @@ public class MainFrame extends javax.swing.JFrame {
                 }
             }
         }
+        
+        outputToOpponent += destination.getName();
+        goNoGo = 1;
     }
     //======================================================
     
+    public class Server implements Runnable{
+
+    ServerSocket serversocket;
+    BufferedReader br1, br2;
+    PrintWriter pr1;
+    Socket socket;
+    Thread t1, t2;
+    String in="",out="";
+
+    public Server() {
+        try {
+            t1 = new Thread(this);
+            t2 = new Thread(this);
+            serversocket = new ServerSocket(5000);
+            System.out.println("Server is waiting. . . . ");
+            socket = serversocket.accept();
+            System.out.println("Client connected with Ip " +        socket.getInetAddress().getHostAddress());
+            t1.start();;
+            t2.start();
+
+        } 
+        catch (Exception e) 
+        {
+            
+        }
+     }
+
+     public void run() {
+        try {
+            if (Thread.currentThread() == t1) {
+                do {
+                    br1 = new BufferedReader(new InputStreamReader(System.in));
+                    pr1 = new PrintWriter(socket.getOutputStream(), true);
+                    if(goNoGo == 1)
+                    {
+                        pr1.println(outputToOpponent);
+                        goNoGo = 0;
+                    }
+                } while (!in.equals("END"));
+            } else {
+                do {
+                    br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
+                    out = br2.readLine();
+                    System.out.println("Client says : : : " + out);
+                } while (!out.equals("END"));
+            }
+        } catch (Exception e) {
+        }
+        }
+    }
+    
+
+    public class Client implements Runnable {
+
+    BufferedReader br1, br2;
+    PrintWriter pr1;
+    Socket socket;
+    Thread t1, t2;
+    String in = "", out = "";
+
+    public Client() {
+        try {
+            t1 = new Thread(this);
+            t2 = new Thread(this);
+            socket = new Socket(url, 5000);
+            t1.start();
+            t2.start();
+
+        } catch (Exception e) {
+        }
+    }
+
+    public void run() {
+
+        try {
+            if (Thread.currentThread() == t2) {
+                do {
+                    br1 = new BufferedReader(new InputStreamReader(System.in));
+                    pr1 = new PrintWriter(socket.getOutputStream(), true);
+                    if(goNoGo == 1)
+                    {
+                        pr1.println(outputToOpponent);
+                        goNoGo = 0;
+                    }
+                } while (!in.equals("END"));
+            } else {
+                do {
+                    br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
+                    out = br2.readLine();
+                    System.out.println("Server says : : : " + out);
+                } while (!out.equals("END"));
+            }
+        } catch (Exception e) {
+        }
+
+     }
+    }
+
     /**
      * Creates new form MainFrame
      */
@@ -2550,6 +2658,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         A8.setLayout(new java.awt.GridBagLayout());
+
+        lblA8.setName("A8"); // NOI18N
         A8.add(lblA8, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(170, 102, 26));
@@ -2564,6 +2674,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B8.setLayout(new java.awt.GridBagLayout());
 
+        lblB8.setName("B8"); // NOI18N
         lblB8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB8MouseClicked(evt);
@@ -2598,6 +2709,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D8.setLayout(new java.awt.GridBagLayout());
 
+        lblD8.setName("D8"); // NOI18N
         lblD8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD8MouseClicked(evt);
@@ -2616,6 +2728,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E8.setLayout(new java.awt.GridBagLayout());
 
+        lblE8.setName("E8"); // NOI18N
         lblE8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE8MouseClicked(evt);
@@ -2633,6 +2746,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F8.setLayout(new java.awt.GridBagLayout());
 
+        lblF8.setName("F8"); // NOI18N
         lblF8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF8MouseClicked(evt);
@@ -2650,6 +2764,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G8.setLayout(new java.awt.GridBagLayout());
 
+        lblG8.setName("G8"); // NOI18N
         lblG8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG8MouseClicked(evt);
@@ -2668,6 +2783,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H8.setLayout(new java.awt.GridBagLayout());
 
+        lblH8.setName("H8"); // NOI18N
         lblH8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH8MouseClicked(evt);
@@ -2687,6 +2803,7 @@ public class MainFrame extends javax.swing.JFrame {
         A7.setLayout(new java.awt.GridBagLayout());
 
         lblA7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblA7.setName("A7"); // NOI18N
         lblA7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA7MouseClicked(evt);
@@ -2705,6 +2822,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B7.setLayout(new java.awt.GridBagLayout());
 
+        lblB7.setName("B7"); // NOI18N
         lblB7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB7MouseClicked(evt);
@@ -2723,6 +2841,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C7.setLayout(new java.awt.GridBagLayout());
 
+        lblC7.setName("C7"); // NOI18N
         lblC7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC7MouseClicked(evt);
@@ -2741,6 +2860,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D7.setLayout(new java.awt.GridBagLayout());
 
+        lblD7.setName("D7"); // NOI18N
         lblD7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD7MouseClicked(evt);
@@ -2759,6 +2879,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E7.setLayout(new java.awt.GridBagLayout());
 
+        lblE7.setName("E7"); // NOI18N
         lblE7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE7MouseClicked(evt);
@@ -2777,6 +2898,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F7.setLayout(new java.awt.GridBagLayout());
 
+        lblF7.setName("F7"); // NOI18N
         lblF7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF7MouseClicked(evt);
@@ -2795,6 +2917,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G7.setLayout(new java.awt.GridBagLayout());
 
+        lblG7.setName("G7"); // NOI18N
         lblG7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG7MouseClicked(evt);
@@ -2813,6 +2936,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H7.setLayout(new java.awt.GridBagLayout());
 
+        lblH7.setName("H7"); // NOI18N
         lblH7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH7MouseClicked(evt);
@@ -2832,6 +2956,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A6.setLayout(new java.awt.GridBagLayout());
 
+        lblA6.setName("A6"); // NOI18N
         lblA6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA6MouseClicked(evt);
@@ -2850,6 +2975,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B6.setLayout(new java.awt.GridBagLayout());
 
+        lblB6.setName("B6"); // NOI18N
         lblB6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB6MouseClicked(evt);
@@ -2867,6 +2993,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C6.setLayout(new java.awt.GridBagLayout());
 
+        lblC6.setName("C6"); // NOI18N
         lblC6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC6MouseClicked(evt);
@@ -2884,6 +3011,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D6.setLayout(new java.awt.GridBagLayout());
 
+        lblD6.setName("D6"); // NOI18N
         lblD6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD6MouseClicked(evt);
@@ -2901,6 +3029,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E6.setLayout(new java.awt.GridBagLayout());
 
+        lblE6.setName("E6"); // NOI18N
         lblE6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE6MouseClicked(evt);
@@ -2918,6 +3047,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F6.setLayout(new java.awt.GridBagLayout());
 
+        lblF6.setName("F6"); // NOI18N
         lblF6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF6MouseClicked(evt);
@@ -2935,6 +3065,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G6.setLayout(new java.awt.GridBagLayout());
 
+        lblG6.setName("G6"); // NOI18N
         lblG6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG6MouseClicked(evt);
@@ -2952,6 +3083,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H6.setLayout(new java.awt.GridBagLayout());
 
+        lblH6.setName("H6"); // NOI18N
         lblH6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH6MouseClicked(evt);
@@ -2971,6 +3103,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A5.setLayout(new java.awt.GridBagLayout());
 
+        lblA5.setName("A5"); // NOI18N
         lblA5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA5MouseClicked(evt);
@@ -2988,6 +3121,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B5.setLayout(new java.awt.GridBagLayout());
 
+        lblB5.setName("B5"); // NOI18N
         lblB5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB5MouseClicked(evt);
@@ -3007,6 +3141,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C5.setLayout(new java.awt.GridBagLayout());
 
+        lblC5.setName("C5"); // NOI18N
         lblC5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC5MouseClicked(evt);
@@ -3026,6 +3161,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D5.setLayout(new java.awt.GridBagLayout());
 
+        lblD5.setName("D5"); // NOI18N
         lblD5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD5MouseClicked(evt);
@@ -3045,6 +3181,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E5.setLayout(new java.awt.GridBagLayout());
 
+        lblE5.setName("E5"); // NOI18N
         lblE5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE5MouseClicked(evt);
@@ -3064,6 +3201,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F5.setLayout(new java.awt.GridBagLayout());
 
+        lblF5.setName("F5"); // NOI18N
         lblF5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF5MouseClicked(evt);
@@ -3083,6 +3221,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G5.setLayout(new java.awt.GridBagLayout());
 
+        lblG5.setName("G5"); // NOI18N
         lblG5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG5MouseClicked(evt);
@@ -3102,6 +3241,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H5.setLayout(new java.awt.GridBagLayout());
 
+        lblH5.setName("H5"); // NOI18N
         lblH5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH5MouseClicked(evt);
@@ -3121,6 +3261,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A4.setLayout(new java.awt.GridBagLayout());
 
+        lblA4.setName("A4"); // NOI18N
         lblA4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA4MouseClicked(evt);
@@ -3140,6 +3281,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B4.setLayout(new java.awt.GridBagLayout());
 
+        lblB4.setName("B4"); // NOI18N
         lblB4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB4MouseClicked(evt);
@@ -3159,6 +3301,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C4.setLayout(new java.awt.GridBagLayout());
 
+        lblC4.setName("C4"); // NOI18N
         lblC4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC4MouseClicked(evt);
@@ -3178,6 +3321,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D4.setLayout(new java.awt.GridBagLayout());
 
+        lblD4.setName("D4"); // NOI18N
         lblD4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD4MouseClicked(evt);
@@ -3197,6 +3341,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E4.setLayout(new java.awt.GridBagLayout());
 
+        lblE4.setName("E4"); // NOI18N
         lblE4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE4MouseClicked(evt);
@@ -3216,6 +3361,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F4.setLayout(new java.awt.GridBagLayout());
 
+        lblF4.setName("F4"); // NOI18N
         lblF4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF4MouseClicked(evt);
@@ -3235,6 +3381,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G4.setLayout(new java.awt.GridBagLayout());
 
+        lblG4.setName("G4"); // NOI18N
         lblG4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG4MouseClicked(evt);
@@ -3254,6 +3401,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H4.setLayout(new java.awt.GridBagLayout());
 
+        lblH4.setName("H4"); // NOI18N
         lblH4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH4MouseClicked(evt);
@@ -3271,6 +3419,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A3.setLayout(new java.awt.GridBagLayout());
 
+        lblA3.setName("A3"); // NOI18N
         lblA3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA3MouseClicked(evt);
@@ -3288,6 +3437,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B3.setLayout(new java.awt.GridBagLayout());
 
+        lblB3.setName("B3"); // NOI18N
         lblB3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB3MouseClicked(evt);
@@ -3306,6 +3456,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C3.setLayout(new java.awt.GridBagLayout());
 
+        lblC3.setName("C3"); // NOI18N
         lblC3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC3MouseClicked(evt);
@@ -3324,6 +3475,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D3.setLayout(new java.awt.GridBagLayout());
 
+        lblD3.setName("D3"); // NOI18N
         lblD3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD3MouseClicked(evt);
@@ -3341,6 +3493,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E3.setLayout(new java.awt.GridBagLayout());
 
+        lblE3.setName("E3"); // NOI18N
         lblE3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE3MouseClicked(evt);
@@ -3360,6 +3513,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F3.setLayout(new java.awt.GridBagLayout());
 
+        lblF3.setName("F3"); // NOI18N
         lblF3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF3MouseClicked(evt);
@@ -3379,6 +3533,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G3.setLayout(new java.awt.GridBagLayout());
 
+        lblG3.setName("G3"); // NOI18N
         lblG3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG3MouseClicked(evt);
@@ -3398,6 +3553,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H3.setLayout(new java.awt.GridBagLayout());
 
+        lblH3.setName("H3"); // NOI18N
         lblH3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH3MouseClicked(evt);
@@ -3416,6 +3572,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A2.setLayout(new java.awt.GridBagLayout());
 
+        lblA2.setName("A2"); // NOI18N
         lblA2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA2MouseClicked(evt);
@@ -3434,6 +3591,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B2.setLayout(new java.awt.GridBagLayout());
 
+        lblB2.setName("B2"); // NOI18N
         lblB2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB2MouseClicked(evt);
@@ -3452,6 +3610,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C2.setLayout(new java.awt.GridBagLayout());
 
+        lblC2.setName("C2"); // NOI18N
         lblC2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC2MouseClicked(evt);
@@ -3471,6 +3630,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D2.setLayout(new java.awt.GridBagLayout());
 
+        lblD2.setName("D2"); // NOI18N
         lblD2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD2MouseClicked(evt);
@@ -3490,6 +3650,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E2.setLayout(new java.awt.GridBagLayout());
 
+        lblE2.setName("E2"); // NOI18N
         lblE2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE2MouseClicked(evt);
@@ -3508,6 +3669,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F2.setLayout(new java.awt.GridBagLayout());
 
+        lblF2.setName("F2"); // NOI18N
         lblF2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF2MouseClicked(evt);
@@ -3526,6 +3688,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G2.setLayout(new java.awt.GridBagLayout());
 
+        lblG2.setName("G2"); // NOI18N
         lblG2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG2MouseClicked(evt);
@@ -3544,6 +3707,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H2.setLayout(new java.awt.GridBagLayout());
 
+        lblH2.setName("H2"); // NOI18N
         lblH2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH2MouseClicked(evt);
@@ -3561,6 +3725,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         A1.setLayout(new java.awt.GridBagLayout());
+
+        lblA1.setName("A1"); // NOI18N
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
@@ -3574,6 +3740,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B1.setLayout(new java.awt.GridBagLayout());
 
+        lblB1.setName("B1"); // NOI18N
         lblB1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB1MouseClicked(evt);
@@ -3592,6 +3759,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C1.setLayout(new java.awt.GridBagLayout());
 
+        lblC1.setName("C1"); // NOI18N
         lblC1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC1MouseClicked(evt);
@@ -3610,6 +3778,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D1.setLayout(new java.awt.GridBagLayout());
 
+        lblD1.setName("D1"); // NOI18N
         lblD1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD1MouseClicked(evt);
@@ -3628,6 +3797,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E1.setLayout(new java.awt.GridBagLayout());
 
+        lblE1.setName("E1"); // NOI18N
         lblE1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE1MouseClicked(evt);
@@ -3646,6 +3816,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F1.setLayout(new java.awt.GridBagLayout());
 
+        lblF1.setName("F1"); // NOI18N
         lblF1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF1MouseClicked(evt);
@@ -3664,6 +3835,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G1.setLayout(new java.awt.GridBagLayout());
 
+        lblG1.setName("G1"); // NOI18N
         lblG1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG1MouseClicked(evt);
@@ -3682,6 +3854,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H1.setLayout(new java.awt.GridBagLayout());
 
+        lblH1.setName("H1"); // NOI18N
         lblH1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH1MouseClicked(evt);

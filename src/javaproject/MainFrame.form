@@ -315,6 +315,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A8" noResource="true"/>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
               <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
@@ -348,6 +351,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB8MouseClicked"/>
           </Events>
@@ -408,6 +414,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD8MouseClicked"/>
           </Events>
@@ -439,6 +448,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE8MouseClicked"/>
           </Events>
@@ -469,6 +481,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF8MouseClicked"/>
           </Events>
@@ -499,6 +514,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG8MouseClicked"/>
           </Events>
@@ -532,6 +550,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH8">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H8" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH8MouseClicked"/>
           </Events>
@@ -569,6 +590,7 @@
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
+            <Property name="name" type="java.lang.String" value="A7" noResource="true"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA7MouseClicked"/>
@@ -603,6 +625,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB7MouseClicked"/>
           </Events>
@@ -636,6 +661,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC7MouseClicked"/>
           </Events>
@@ -669,6 +697,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD7MouseClicked"/>
           </Events>
@@ -702,6 +733,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE7MouseClicked"/>
           </Events>
@@ -735,6 +769,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF7MouseClicked"/>
           </Events>
@@ -768,6 +805,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG7MouseClicked"/>
           </Events>
@@ -801,6 +841,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH7">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H7" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH7MouseClicked"/>
           </Events>
@@ -837,6 +880,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA6MouseClicked"/>
           </Events>
@@ -870,6 +916,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB6MouseClicked"/>
           </Events>
@@ -900,6 +949,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC6MouseClicked"/>
           </Events>
@@ -930,6 +982,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD6MouseClicked"/>
           </Events>
@@ -960,6 +1015,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE6MouseClicked"/>
           </Events>
@@ -990,6 +1048,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF6MouseClicked"/>
           </Events>
@@ -1020,6 +1081,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG6MouseClicked"/>
           </Events>
@@ -1050,6 +1114,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH6">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H6" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH6MouseClicked"/>
           </Events>
@@ -1086,6 +1153,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA5MouseClicked"/>
           </Events>
@@ -1116,6 +1186,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB5MouseClicked"/>
           </Events>
@@ -1152,6 +1225,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC5MouseClicked"/>
           </Events>
@@ -1188,6 +1264,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD5MouseClicked"/>
           </Events>
@@ -1224,6 +1303,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE5MouseClicked"/>
           </Events>
@@ -1260,6 +1342,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF5MouseClicked"/>
           </Events>
@@ -1296,6 +1381,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG5MouseClicked"/>
           </Events>
@@ -1332,6 +1420,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH5">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H5" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH5MouseClicked"/>
           </Events>
@@ -1368,6 +1459,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA4MouseClicked"/>
           </Events>
@@ -1404,6 +1498,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB4MouseClicked"/>
           </Events>
@@ -1440,6 +1537,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC4MouseClicked"/>
           </Events>
@@ -1476,6 +1576,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD4MouseClicked"/>
           </Events>
@@ -1512,6 +1615,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE4MouseClicked"/>
           </Events>
@@ -1548,6 +1654,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF4MouseClicked"/>
           </Events>
@@ -1584,6 +1693,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG4MouseClicked"/>
           </Events>
@@ -1620,6 +1732,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H4" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH4MouseClicked"/>
           </Events>
@@ -1650,6 +1765,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA3MouseClicked"/>
           </Events>
@@ -1680,6 +1798,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB3MouseClicked"/>
           </Events>
@@ -1713,6 +1834,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC3MouseClicked"/>
           </Events>
@@ -1746,6 +1870,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD3MouseClicked"/>
           </Events>
@@ -1776,6 +1903,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE3MouseClicked"/>
           </Events>
@@ -1812,6 +1942,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF3MouseClicked"/>
           </Events>
@@ -1848,6 +1981,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG3MouseClicked"/>
           </Events>
@@ -1884,6 +2020,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H3" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH3MouseClicked"/>
           </Events>
@@ -1917,6 +2056,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblA2MouseClicked"/>
           </Events>
@@ -1950,6 +2092,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB2MouseClicked"/>
           </Events>
@@ -1983,6 +2128,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC2MouseClicked"/>
           </Events>
@@ -2019,6 +2167,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD2MouseClicked"/>
           </Events>
@@ -2055,6 +2206,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE2MouseClicked"/>
           </Events>
@@ -2088,6 +2242,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF2MouseClicked"/>
           </Events>
@@ -2121,6 +2278,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG2MouseClicked"/>
           </Events>
@@ -2154,6 +2314,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H2" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH2MouseClicked"/>
           </Events>
@@ -2187,6 +2350,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblA1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="A1" noResource="true"/>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
               <GridBagConstraints gridX="-1" gridY="-1" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
@@ -2217,6 +2383,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblB1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="B1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblB1MouseClicked"/>
           </Events>
@@ -2250,6 +2419,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblC1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="C1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblC1MouseClicked"/>
           </Events>
@@ -2283,6 +2455,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblD1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="D1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblD1MouseClicked"/>
           </Events>
@@ -2316,6 +2491,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblE1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="E1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblE1MouseClicked"/>
           </Events>
@@ -2349,6 +2527,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblF1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="F1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblF1MouseClicked"/>
           </Events>
@@ -2382,6 +2563,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblG1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="G1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblG1MouseClicked"/>
           </Events>
@@ -2415,6 +2599,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblH1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="H1" noResource="true"/>
+          </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblH1MouseClicked"/>
           </Events>
