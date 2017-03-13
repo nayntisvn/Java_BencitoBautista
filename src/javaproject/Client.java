@@ -41,13 +41,14 @@ public void run() {
             do {
                 br1 = new BufferedReader(new InputStreamReader(System.in));
                 pr1 = new PrintWriter(socket.getOutputStream(), true);
-                in = MainFrame.outputToOpponent;
+                in = br1.readLine();
+                pr1.println(in);
             } while (!in.equals("END"));
         } else {
             do {
                 br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                 out = br2.readLine();
-                System.out.println("Client says : : : " + out);
+                System.out.println("Server says : : : " + out);
             } while (!out.equals("END"));
         }
     } catch (Exception e) {
