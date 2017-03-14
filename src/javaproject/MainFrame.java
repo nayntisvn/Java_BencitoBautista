@@ -6665,7 +6665,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Client();
+        new Server();
     }
 
     /**
