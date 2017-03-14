@@ -1029,8 +1029,10 @@ public class MainFrame extends javax.swing.JFrame {
     //======================================================
     
     //  To remove the piece in the two-dimensional array record
-    public void removePiecesAlive(String buff)
+    public void removePiecesAlive()
     {
+        String buff = bufferloc;
+        
         switch(buff)
         {
             case "A1" : piecesAlive[0][0] = ""; break;
@@ -3977,6 +3979,25 @@ public class MainFrame extends javax.swing.JFrame {
 
                             refreshHistory();
                         }break;
+                    }
+                }
+            }
+            case "h1w" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "h1w";
+                            removePiecesAlive();
+                            lblA1.setIcon(knightw);
+                            h1w.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                        
                     }
                 }
             }
