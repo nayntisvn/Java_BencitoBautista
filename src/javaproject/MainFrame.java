@@ -2639,7 +2639,7 @@ public class MainFrame extends javax.swing.JFrame {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     out = br2.readLine();
                     
-                    if(!out.equals(null))
+                    if(!out.equals(null) && accept == 1)
                     {
                         inputFromOpponent = out;
                         
@@ -2794,7 +2794,8 @@ public class MainFrame extends javax.swing.JFrame {
                             case "H7" : postmovePiece(input[0], H7); break;
                             case "H8" : postmovePiece(input[0], H8); break;
                         }
-                        
+                     
+                        accept = 0;
                     }
                 } while (!out.equals("END"));
             }
