@@ -424,7 +424,7 @@ public class MainFrame extends javax.swing.JFrame {
                     F2.setBorder(movement);
                     F2.setCursor(new Cursor(HAND_CURSOR));
                 }
-                if(s.equals("F3") && piecesAlive[5][2].equals(""))
+                if(s.equals("F3") && (piecesAlive[5][2].equals("") || piecesAlive[5][2].charAt(2) == 'b'))
                 {
                     F3.setBorder(movement);
                     F3.setCursor(new Cursor(HAND_CURSOR));
@@ -1790,7 +1790,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A2" : 
             {   
-                piecesAlive[0][1] = "name";
+                piecesAlive[0][1] = name;
                 removePiecesAlive();
                 lblA2.setIcon(pieceToSet);
                 piece.location = "A2";
@@ -1799,7 +1799,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A3" : 
             {   
-                piecesAlive[0][2] = "h1w";
+                piecesAlive[0][2] = name;
                 removePiecesAlive();
                 lblA3.setIcon(pieceToSet);
                 piece.location = "A3";
@@ -2377,7 +2377,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A2" : 
             {   
-                piecesAlive[0][1] = "name";
+                piecesAlive[0][1] = name;
                 removePiecesAlive();
                 lblA2.setIcon(pieceToSet);
                 piece.location = "A2";
@@ -2386,7 +2386,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A3" : 
             {   
-                piecesAlive[0][2] = "h1w";
+                piecesAlive[0][2] = name;
                 removePiecesAlive();
                 lblA3.setIcon(pieceToSet);
                 piece.location = "A3";
@@ -2964,7 +2964,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A2" : 
             {   
-                piecesAlive[0][1] = "name";
+                piecesAlive[0][1] = name;
                 removePiecesAlive();
                 lblA2.setIcon(pieceToSet);
                 piece.location = "A2";
@@ -2973,7 +2973,7 @@ public class MainFrame extends javax.swing.JFrame {
             }break;
             case "A3" : 
             {   
-                piecesAlive[0][2] = "h1w";
+                piecesAlive[0][2] = name;
                 removePiecesAlive();
                 lblA3.setIcon(pieceToSet);
                 piece.location = "A3";
@@ -7033,14 +7033,14 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
-        
-        this.player = player;
-        if ("player1".equals(player)){
-            new Server();
-        }else if("player2".equals(player)){
-            new Client();
-        }
-        
+//        
+//        this.player = player;
+//        if ("player1".equals(player)){
+//            new Server();
+//        }else if("player2".equals(player)){
+//            new Client();
+//        }
+//        
     }
 
     /**
