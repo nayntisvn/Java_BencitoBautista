@@ -7033,14 +7033,13 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
-        
-        this.player = player;
-        if ("player1".equals(player)){
-            new Server();
-        }else if("player2".equals(player)){
-            new Client();
-        }
-        
+//        
+//        this.player = player;
+//        if ("player1".equals(player)){
+//            new Server();
+//        }else if("player2".equals(player)){
+//            new Client();
+//        }
     }
 
     /**
@@ -8727,8 +8726,8 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
-        refreshHistory();
         premovePiece(piecesAlive[0][1], lblA2);
+        
     }//GEN-LAST:event_lblA2MouseClicked
 
     private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
@@ -9147,7 +9146,15 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblF3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][2], lblF3);
+        
+        if(piecesAlive[5][2].charAt(2) != bufferpiece.charAt(2))
+        {
+            postmovePiece(bufferpiece, F3);
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][2], lblF3);
+        }
     }//GEN-LAST:event_lblF3MouseClicked
 
     private void lblF4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF4MouseClicked
