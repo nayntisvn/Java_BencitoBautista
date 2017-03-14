@@ -41,18 +41,18 @@ public class MainFrame extends javax.swing.JFrame {
     public String outputToOpponent = null;
     
     // Importing the pictures for each pieces
-    ImageIcon pawnb = new ImageIcon(getClass().getClassLoader().getResource("pawn-b.png"));
-    ImageIcon pawnw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
-    ImageIcon queenb = new ImageIcon(getClass().getClassLoader().getResource("queen-b.png"));
-    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
-    ImageIcon kingb = new ImageIcon(getClass().getClassLoader().getResource("king-b.png"));
-    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
-    ImageIcon bishopb = new ImageIcon(getClass().getClassLoader().getResource("bishop-b.png"));
-    ImageIcon bishopw = new ImageIcon(getClass().getClassLoader().getResource("bishop-w.png"));
-    ImageIcon knightb = new ImageIcon(getClass().getClassLoader().getResource("horse-b.png"));
-    ImageIcon knightw = new ImageIcon(getClass().getClassLoader().getResource("horse-w.png"));
-    ImageIcon rookb = new ImageIcon(getClass().getClassLoader().getResource("rook-b.png"));
-    ImageIcon rookw = new ImageIcon(getClass().getClassLoader().getResource("rook-w.png"));
+    ImageIcon pawnb = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-b.png"));
+    ImageIcon pawnw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
+    ImageIcon queenb = new ImageIcon(getClass().getClassLoader().getResource("Resources/queen-b.png"));
+    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
+    ImageIcon kingb = new ImageIcon(getClass().getClassLoader().getResource("Resources/king-b.png"));
+    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
+    ImageIcon bishopb = new ImageIcon(getClass().getClassLoader().getResource("Resources/bishop-b.png"));
+    ImageIcon bishopw = new ImageIcon(getClass().getClassLoader().getResource("Resources/bishop-w.png"));
+    ImageIcon knightb = new ImageIcon(getClass().getClassLoader().getResource("Resources/horse-b.png"));
+    ImageIcon knightw = new ImageIcon(getClass().getClassLoader().getResource("Resources/horse-w.png"));
+    ImageIcon rookb = new ImageIcon(getClass().getClassLoader().getResource("Resources/rook-b.png"));
+    ImageIcon rookw = new ImageIcon(getClass().getClassLoader().getResource("Resources/rook-w.png"));
     //======================================================
     
     //   Trace of which piece will be move
