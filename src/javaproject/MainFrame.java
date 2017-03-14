@@ -2440,6 +2440,12 @@ public class MainFrame extends javax.swing.JFrame {
                             case "A2" : premovePiece(input[0], lblA1);
                         }
                         
+                        switch(input[2])
+                        {
+                            case "A3" : postmovePiece(input[0], A3);
+                            case "A4" : postmovePiece(input[0], A4);
+                        }
+                        
                     }
                 } while (!out.equals("END"));
             }
