@@ -10,6 +10,7 @@ import java.awt.Cursor;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.Point;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -9004,7 +9005,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
         // TODO add your handling code here:
-        if(evt.equals("\n"))
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER)
         {
             outputToOpponent = "chat," + jTextField2.getText();
             
