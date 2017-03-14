@@ -953,7 +953,15 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblemoves(possiblem);
                 
-                
+                if(bufferloc.equals("A1"))
+                {
+                    if(piecesAlive[0][3].equals(""))
+                    {
+                    } else {
+                        A5.setBorder(orig);
+                        A6.setBorder(orig);
+                    }
+                }
                 break;
             }
             case "h1w" : 
@@ -1024,6 +1032,8 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = r2w.movement();
 
                 possiblemoves(possiblem);
+                
+                
                 break;
             }
             
@@ -4708,6 +4718,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
             case "r2b" : 
             {
+                
+                
                 if(destination.getBorder() == movement)
                 {
                     setterOfPieceRook("r2b", destination.getName(), rookb, r2b);
@@ -6301,11 +6313,11 @@ public class MainFrame extends javax.swing.JFrame {
                         {
                             if(player.equals("player2"))
                             {
-                                jTextArea1.append("\nPlayer 2 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 2 : " + input[1]);
                             }
                             else if(player.equals("player1"))
                             {
-                                jTextArea1.append("\nPlayer 1 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 1 : " + input[1]);
                             }
                         }
                         else if(input[0].equals("move"))
