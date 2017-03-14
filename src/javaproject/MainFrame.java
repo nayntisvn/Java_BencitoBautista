@@ -6298,7 +6298,14 @@ public class MainFrame extends javax.swing.JFrame {
                         input = inputFromOpponent.split(",");
                         if(input[0].equals("chat"))
                         {
-                            jTextArea1.append(input[1] + "\n");
+                            if(player.equals("player2"))
+                            {
+                                jTextArea1.append("Player 2 : " + input[1] + "\n");
+                            }
+                            else if(player.equals("player1"))
+                            {
+                                jTextArea1.append("Player 1 : " + input[1] + "\n");
+                            }
                         }
                         else if(input[0].equals("move"))
                         {
