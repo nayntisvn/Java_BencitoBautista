@@ -6507,7 +6507,14 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         if(input[0].equals("chat"))
                         {
-                            jTextArea1.append(input[1] + "\n");
+                            if(player.equals("player2"))
+                            {
+                                jTextArea1.append("Player 2 : " + input[1] + "\n");
+                            }
+                            else if(player.equals("player1"))
+                            {
+                                jTextArea1.append("Player 1 : " + input[1] + "\n");
+                            }
                         }
                         else if(input[0].equals("move"))
                         {
@@ -6679,6 +6686,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
+        this.player = player;
         if ("player1".equals(player)){
             new Server();
         }else if("player2".equals(player)){
@@ -9008,6 +9016,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             outputToOpponent = "chat," + jTextField2.getText();
             
+            jTextArea1.append("You : " + jTextField2.getText());
             jTextField2.setText("");
             goNoGo = 1;
         }
