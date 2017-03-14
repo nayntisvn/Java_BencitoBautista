@@ -9146,10 +9146,12 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblF3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF3MouseClicked
         // TODO add your handling code here:
-        
-        if(piecesAlive[5][2].charAt(2) != bufferpiece.charAt(2))
+        if(!bufferpiece.equals(""))
         {
-            postmovePiece(bufferpiece, F3);
+            if(piecesAlive[5][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F3);
+            }
         }
         else
         {
