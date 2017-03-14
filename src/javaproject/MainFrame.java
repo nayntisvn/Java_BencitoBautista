@@ -6300,11 +6300,11 @@ public class MainFrame extends javax.swing.JFrame {
                         {
                             if(player.equals("player2"))
                             {
-                                jTextArea1.append("\nPlayer 2 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 2 : " + input[1]);
                             }
                             else if(player.equals("player1"))
                             {
-                                jTextArea1.append("\nPlayer 1 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 1 : " + input[1]);
                             }
                         }
                         else if(input[0].equals("move"))
@@ -9023,7 +9023,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             outputToOpponent = "chat," + jTextField2.getText();
             
-            jTextArea1.append("You : " + jTextField2.getText());
+            
+            jTextArea1.append("\nYou : " + jTextField2.getText());
             jTextField2.setText("");
             goNoGo = 1;
         }
