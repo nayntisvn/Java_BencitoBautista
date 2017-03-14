@@ -6839,6 +6839,11 @@ public class MainFrame extends javax.swing.JFrame {
         A8.setLayout(new java.awt.GridBagLayout());
 
         lblA8.setName("A8"); // NOI18N
+        lblA8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA8MouseClicked(evt);
+            }
+        });
         A8.add(lblA8, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(170, 102, 26));
@@ -8977,6 +8982,10 @@ public class MainFrame extends javax.swing.JFrame {
     private void lblA1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA1MouseClicked
         premovePiece(piecesAlive[0][0], lblA1);
     }//GEN-LAST:event_lblA1MouseClicked
+
+    private void lblA8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA8MouseClicked
+        
+    }//GEN-LAST:event_lblA8MouseClicked
                               
     
 
