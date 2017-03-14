@@ -27,9 +27,9 @@ import java.net.*;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-   // String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
@@ -2542,6 +2542,88 @@ public class MainFrame extends javax.swing.JFrame {
                     }
                 }
             }
+            case "h1w" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "h1w";
+                            removePiecesAlive();
+                            lblA1.setIcon(knightw);
+                            h1w.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                        case "A2" : 
+                        {   
+                            piecesAlive[0][1] = "h1w";
+                            removePiecesAlive();
+                            lblA2.setIcon(knightw);
+                            h1w.location = "A2";
+
+                            refreshHistory();
+                        }break;
+                        case "A3" : 
+                        {   
+                            piecesAlive[0][2] = "h1w";
+                            removePiecesAlive();
+                            lblA3.setIcon(knightw);
+                            h1w.location = "A3";
+
+                            refreshHistory();
+                        }break;
+                        case "A4" : 
+                        {   
+                            piecesAlive[0][3] = "h1w";
+                            removePiecesAlive();
+                            lblA4.setIcon(knightw);
+                            h1w.location = "A4";
+
+                            refreshHistory();
+                        }break;
+                        case "A5" : 
+                        {   
+                            piecesAlive[0][4] = "h1w";
+                            removePiecesAlive();
+                            lblA5.setIcon(knightw);
+                            h1w.location = "A5";
+
+                            refreshHistory();
+                        }break;
+                        case "A6" : 
+                        {   
+                            piecesAlive[0][5] = "h1w";
+                            removePiecesAlive();
+                            lblA6.setIcon(knightw);
+                            h1w.location = "A6";
+
+                            refreshHistory();
+                        }break;
+                        case "A7" : 
+                        {   
+                            piecesAlive[0][6] = "h1w";
+                            removePiecesAlive();
+                            lblA7.setIcon(knightw);
+                            h1w.location = "A7";
+
+                            refreshHistory();
+                        }break;
+                        case "A8" : 
+                        {   
+                            piecesAlive[0][7] = "h1w";
+                            removePiecesAlive();
+                            lblA8.setIcon(knightw);
+                            h1w.location = "A8";
+
+                            refreshHistory();
+                        }break;
+                        
+                    }
+                }
+            }
         }
         
         outputToOpponent += "," + destination.getName();
@@ -3982,25 +4064,6 @@ public class MainFrame extends javax.swing.JFrame {
                     }
                 }
             }
-            case "h1w" : 
-            {
-                if(destination.getBorder() == movement)
-                {
-                    switch(destination.getName())
-                    {
-                        case "A1" : 
-                        {   
-                            piecesAlive[0][0] = "h1w";
-                            removePiecesAlive();
-                            lblA1.setIcon(knightw);
-                            h1w.location = "A1";
-
-                            refreshHistory();
-                        }break;
-                        
-                    }
-                }
-            }
         }
         
         outputToOpponent += "," + destination.getName();
@@ -4433,7 +4496,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Client();
+        new Server();
     }
 
     /**
