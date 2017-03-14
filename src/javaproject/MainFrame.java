@@ -1015,7 +1015,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = r2b.movement();
+                possiblem = r2w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -6665,7 +6665,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Server();
+        new Client();
     }
 
     /**
