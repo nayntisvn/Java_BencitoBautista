@@ -27,16 +27,15 @@ import java.net.*;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+   // String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
     String url = "192.168.1.103";
     int goNoGo = 0;
-    int accept = 0;
     public String inputFromOpponent = null;
     public String outputToOpponent = null;
     
@@ -2383,7 +2382,6 @@ public class MainFrame extends javax.swing.JFrame {
         
         outputToOpponent += "," + destination.getName();
         goNoGo = 1;
-        accept = 1;
     }
     //======================================================
     
@@ -2433,7 +2431,7 @@ public class MainFrame extends javax.swing.JFrame {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     out = br2.readLine();
                     
-                    if(!out.equals(null) && accept == 1)
+                    if(!out.equals(null))
                     {
                         inputFromOpponent = out;
                         
@@ -2589,8 +2587,6 @@ public class MainFrame extends javax.swing.JFrame {
                             case "H8" : postmovePiece(input[0], H8); break;
                            
                         }
-                        
-                        accept = 0;
                     }
                     
                 } while (!out.equals("END"));
@@ -2639,7 +2635,7 @@ public class MainFrame extends javax.swing.JFrame {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     out = br2.readLine();
                     
-                    if(!out.equals(null) && accept == 1)
+                    if(!out.equals(null))
                     {
                         inputFromOpponent = out;
                         
@@ -2795,7 +2791,6 @@ public class MainFrame extends javax.swing.JFrame {
                             case "H8" : postmovePiece(input[0], H8); break;
                         }
                      
-                        accept = 0;
                     }
                 } while (!out.equals("END"));
             }
@@ -2813,7 +2808,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Server();
+        new Client();
     }
 
     /**
