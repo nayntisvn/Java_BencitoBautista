@@ -1035,77 +1035,397 @@ public class MainFrame extends javax.swing.JFrame {
         
         switch(buff)
         {
-            case "A1" : piecesAlive[0][0] = ""; break;
-            case "A2" : piecesAlive[0][1] = ""; break;
-            case "A3" : piecesAlive[0][2] = ""; break;
-            case "A4" : piecesAlive[0][3] = ""; break;
-            case "A5" : piecesAlive[0][4] = ""; break;
-            case "A6" : piecesAlive[0][5] = ""; break;
-            case "A7" : piecesAlive[0][6] = ""; break;
-            case "A8" : piecesAlive[0][7] = ""; break;
+            case "A1" : 
+            {
+                piecesAlive[0][0] = "";
+                lblA1.setIcon(null);
+                break;
+            }
+            case "A2" : 
+            {
+                piecesAlive[0][1] = "";
+                lblA2.setIcon(null);
+                break;
+            }
+            case "A3" : 
+            {
+                piecesAlive[0][2] = "";
+                lblA3.setIcon(null);
+                break;
+            }
+            case "A4" : 
+            {
+                piecesAlive[0][3] = "";
+                lblA4.setIcon(null);
+                break;
+            }
+            case "A5" : 
+            {
+                piecesAlive[0][4] = "";
+                lblA5.setIcon(null);
+                break;
+            }
+            case "A6" : 
+            {
+                piecesAlive[0][5] = "";
+                lblA6.setIcon(null);
+                break;
+            }
+            case "A7" : 
+            {
+                piecesAlive[0][6] = "";
+                lblA7.setIcon(null);
+                break;
+            }
+            case "A8" : 
+            {
+                piecesAlive[0][7] = "";
+                lblA8.setIcon(null);
+                break;
+            }
             
-            case "B1" : piecesAlive[1][0] = ""; break;
-            case "B2" : piecesAlive[1][1] = ""; break;
-            case "B3" : piecesAlive[1][2] = ""; break;
-            case "B4" : piecesAlive[1][3] = ""; break;
-            case "B5" : piecesAlive[1][4] = ""; break;
-            case "B6" : piecesAlive[1][5] = ""; break;
-            case "B7" : piecesAlive[1][6] = ""; break;
-            case "B8" : piecesAlive[1][7] = ""; break;
+            case "B1" : 
+            {
+                piecesAlive[1][0] = "";
+                lblB1.setIcon(null);
+                break;
+            }
+            case "B2" : 
+            {
+                piecesAlive[1][1] = "";
+                lblB2.setIcon(null);
+                break;
+            }
+            case "B3" : 
+            {
+                piecesAlive[1][2] = "";
+                lblB3.setIcon(null);
+                break;
+            }
+            case "B4" : 
+            {
+                piecesAlive[1][3] = "";
+                lblB4.setIcon(null);
+                break;
+            }
+            case "B5" : 
+            {
+                piecesAlive[1][4] = "";
+                lblB5.setIcon(null);
+                break;
+            }
+            case "B6" : 
+            {
+                piecesAlive[1][5] = "";
+                lblB6.setIcon(null);
+                break;
+            }
+            case "B7" : 
+            {
+                piecesAlive[1][6] = "";
+                lblB7.setIcon(null);
+                break;
+            }
+            case "B8" : 
+            {
+                piecesAlive[1][7] = "";
+                lblB8.setIcon(null);
+                break;
+            }
             
-            case "C1" : piecesAlive[2][0] = ""; break;
-            case "C2" : piecesAlive[2][1] = ""; break;
-            case "C3" : piecesAlive[2][2] = ""; break;
-            case "C4" : piecesAlive[2][3] = ""; break;
-            case "C5" : piecesAlive[2][4] = ""; break;
-            case "C6" : piecesAlive[2][5] = ""; break;
-            case "C7" : piecesAlive[2][6] = ""; break;
-            case "C8" : piecesAlive[2][7] = ""; break;
+            case "C1" : 
+            {
+                piecesAlive[2][0] = "";
+                lblC1.setIcon(null);
+                break;
+            }
+            case "C2" : 
+            {
+                piecesAlive[2][1] = "";
+                lblC2.setIcon(null);
+                break;
+            }
+            case "C3" : 
+            {
+                piecesAlive[2][2] = "";
+                lblC3.setIcon(null);
+                break;
+            }
+            case "C4" : 
+            {
+                piecesAlive[2][3] = "";
+                lblC4.setIcon(null);
+                break;
+            }
+            case "C5" : 
+            {
+                piecesAlive[2][4] = "";
+                lblC5.setIcon(null);
+                break;
+            }
+            case "C6" : 
+            {
+                piecesAlive[2][5] = "";
+                lblC6.setIcon(null);
+                break;
+            }
+            case "C7" : 
+            {
+                piecesAlive[2][6] = "";
+                lblC7.setIcon(null);
+                break;
+            }
+            case "C8" : 
+            {
+                piecesAlive[2][7] = "";
+                lblC8.setIcon(null);
+                break;
+            }
             
-            case "D1" : piecesAlive[3][0] = ""; break;
-            case "D2" : piecesAlive[3][1] = ""; break;
-            case "D3" : piecesAlive[3][2] = ""; break;
-            case "D4" : piecesAlive[3][3] = ""; break;
-            case "D5" : piecesAlive[3][4] = ""; break;
-            case "D6" : piecesAlive[3][5] = ""; break;
-            case "D7" : piecesAlive[3][6] = ""; break;
-            case "D8" : piecesAlive[3][7] = ""; break;
+            case "D1" : 
+            {
+                piecesAlive[3][0] = "";
+                lblD1.setIcon(null);
+                break;
+            }
+            case "D2" : 
+            {
+                piecesAlive[3][1] = "";
+                lblD2.setIcon(null);
+                break;
+            }
+            case "D3" : 
+            {
+                piecesAlive[3][2] = "";
+                lblD3.setIcon(null);
+                break;
+            }
+            case "D4" : 
+            {
+                piecesAlive[3][3] = "";
+                lblD4.setIcon(null);
+                break;
+            }
+            case "D5" : 
+            {
+                piecesAlive[3][4] = "";
+                lblD5.setIcon(null);
+                break;
+            }
+            case "D6" : 
+            {
+                piecesAlive[3][5] = "";
+                lblD6.setIcon(null);
+                break;
+            }
+            case "D7" : 
+            {
+                piecesAlive[3][6] = "";
+                lblD7.setIcon(null);
+                break;
+            }
+            case "D8" : 
+            {
+                piecesAlive[3][7] = "";
+                lblD8.setIcon(null);
+                break;
+            }
             
-            case "E1" : piecesAlive[4][0] = ""; break;
-            case "E2" : piecesAlive[4][1] = ""; break;
-            case "E3" : piecesAlive[4][2] = ""; break;
-            case "E4" : piecesAlive[4][3] = ""; break;
-            case "E5" : piecesAlive[4][4] = ""; break;
-            case "E6" : piecesAlive[4][5] = ""; break;
-            case "E7" : piecesAlive[4][6] = ""; break;
-            case "E8" : piecesAlive[4][7] = ""; break;
+            case "E1" : 
+            {
+                piecesAlive[4][0] = "";
+                lblE1.setIcon(null);
+                break;
+            }
+            case "E2" : 
+            {
+                piecesAlive[4][1] = "";
+                lblE2.setIcon(null);
+                break;
+            }
+            case "E3" : 
+            {
+                piecesAlive[4][2] = "";
+                lblE3.setIcon(null);
+                break;
+            }
+            case "E4" : 
+            {
+                piecesAlive[4][3] = "";
+                lblE4.setIcon(null);
+                break;
+            }
+            case "E5" : 
+            {
+                piecesAlive[4][4] = "";
+                lblE5.setIcon(null);
+                break;
+            }
+            case "E6" : 
+            {
+                piecesAlive[4][5] = "";
+                lblE6.setIcon(null);
+                break;
+            }
+            case "E7" : 
+            {
+                piecesAlive[4][6] = "";
+                lblE7.setIcon(null);
+                break;
+            }
+            case "E8" : 
+            {
+                piecesAlive[4][7] = "";
+                lblE8.setIcon(null);
+                break;
+            }
             
-            case "F1" : piecesAlive[5][0] = ""; break;
-            case "F2" : piecesAlive[5][1] = ""; break;
-            case "F3" : piecesAlive[5][2] = ""; break;
-            case "F4" : piecesAlive[5][3] = ""; break;
-            case "F5" : piecesAlive[5][4] = ""; break;
-            case "F6" : piecesAlive[5][5] = ""; break;
-            case "F7" : piecesAlive[5][6] = ""; break;
-            case "F8" : piecesAlive[5][7] = ""; break;
+            case "F1" : 
+            {
+                piecesAlive[5][0] = "";
+                lblF1.setIcon(null);
+                break;
+            }
+            case "F2" : 
+            {
+                piecesAlive[5][1] = "";
+                lblF2.setIcon(null);
+                break;
+            }
+            case "F3" : 
+            {
+                piecesAlive[5][2] = "";
+                lblF3.setIcon(null);
+                break;
+            }
+            case "F4" : 
+            {
+                piecesAlive[5][3] = "";
+                lblF4.setIcon(null);
+                break;
+            }
+            case "F5" : 
+            {
+                piecesAlive[5][4] = "";
+                lblF5.setIcon(null);
+                break;
+            }
+            case "F6" : 
+            {
+                piecesAlive[5][5] = "";
+                lblF6.setIcon(null);
+                break;
+            }
+            case "F7" : 
+            {
+                piecesAlive[5][6] = "";
+                lblF7.setIcon(null);
+                break;
+            }
+            case "F8" : 
+            {
+                piecesAlive[5][7] = "";
+                lblF8.setIcon(null);
+                break;
+            }
             
-            case "G1" : piecesAlive[6][0] = ""; break;
-            case "G2" : piecesAlive[6][1] = ""; break;
-            case "G3" : piecesAlive[6][2] = ""; break;
-            case "G4" : piecesAlive[6][3] = ""; break;
-            case "G5" : piecesAlive[6][4] = ""; break;
-            case "G6" : piecesAlive[6][5] = ""; break;
-            case "G7" : piecesAlive[6][6] = ""; break;
-            case "G8" : piecesAlive[6][7] = ""; break;
+            case "G1" : 
+            {
+                piecesAlive[6][0] = "";
+                lblG1.setIcon(null);
+                break;
+            }
+            case "G2" : 
+            {
+                piecesAlive[6][1] = "";
+                lblG2.setIcon(null);
+                break;
+            }
+            case "G3" : 
+            {
+                piecesAlive[6][2] = "";
+                lblG3.setIcon(null);
+                break;
+            }
+            case "G4" : 
+            {
+                piecesAlive[6][3] = "";
+                lblG4.setIcon(null);
+                break;
+            }
+            case "G5" : 
+            {
+                piecesAlive[6][4] = "";
+                lblG5.setIcon(null);
+                break;
+            }
+            case "G6" : 
+            {
+                piecesAlive[6][5] = "";
+                lblG6.setIcon(null);
+                break;
+            }
+            case "G7" : 
+            {
+                piecesAlive[6][6] = "";
+                lblG7.setIcon(null);
+                break;
+            }
+            case "G8" : 
+            {
+                piecesAlive[6][7] = "";
+                lblG8.setIcon(null);
+                break;
+            }
             
-            case "H1" : piecesAlive[7][0] = ""; break;
-            case "H2" : piecesAlive[7][1] = ""; break;
-            case "H3" : piecesAlive[7][2] = ""; break;
-            case "H4" : piecesAlive[7][3] = ""; break;
-            case "H5" : piecesAlive[7][4] = ""; break;
-            case "H6" : piecesAlive[7][5] = ""; break;
-            case "H7" : piecesAlive[7][6] = ""; break;
-            case "H8" : piecesAlive[7][7] = ""; break;
+            case "H1" : 
+            {
+                piecesAlive[7][0] = "";
+                lblH1.setIcon(null);
+                break;
+            }
+            case "H2" : 
+            {
+                piecesAlive[7][1] = "";
+                lblH2.setIcon(null);
+                break;
+            }
+            case "H3" : 
+            {
+                piecesAlive[7][2] = "";
+                lblH3.setIcon(null);
+                break;
+            }
+            case "H4" : 
+            {
+                piecesAlive[7][3] = "";
+                lblH4.setIcon(null);
+                break;
+            }
+            case "H5" : 
+            {
+                piecesAlive[7][4] = "";
+                lblH5.setIcon(null);
+                break;
+            }
+            case "H6" : 
+            {
+                piecesAlive[7][5] = "";
+                lblH6.setIcon(null);
+                break;
+            }
+            case "H7" : 
+            {
+                piecesAlive[7][6] = "";
+                lblH7.setIcon(null);
+                break;
+            }
+            case "H8" : 
+            {
+                piecesAlive[7][7] = "";
+                lblH8.setIcon(null);
+                break;
+            }
         }
     }
     
@@ -2617,6 +2937,2270 @@ public class MainFrame extends javax.swing.JFrame {
                             removePiecesAlive();
                             lblA8.setIcon(knightw);
                             h1w.location = "A8";
+
+                            refreshHistory();
+                        }break;
+                        case "B1" : 
+                        {   
+                            piecesAlive[1][0] = "h1w";
+                            removePiecesAlive();
+                            lblB1.setIcon(knightw);
+                            h1w.location = "B1";
+
+                            refreshHistory();
+                        }break;
+                        case "B2" : 
+                        {   
+                            piecesAlive[1][1] = "h1w";
+                            removePiecesAlive();
+                            lblB2.setIcon(knightw);
+                            h1w.location = "B2";
+
+                            refreshHistory();
+                        }break;
+                        case "B3" : 
+                        {   
+                            piecesAlive[1][2] = "h1w";
+                            removePiecesAlive();
+                            lblB3.setIcon(knightw);
+                            h1w.location = "B3";
+
+                            refreshHistory();
+                        }break;
+                        case "B4" : 
+                        {   
+                            piecesAlive[1][3] = "h1w";
+                            removePiecesAlive();
+                            lblB4.setIcon(knightw);
+                            h1w.location = "B4";
+
+                            refreshHistory();
+                        }break;
+                        case "B5" : 
+                        {   
+                            piecesAlive[1][4] = "h1w";
+                            removePiecesAlive();
+                            lblB5.setIcon(knightw);
+                            h1w.location = "B5";
+
+                            refreshHistory();
+                        }break;
+                        case "B6" : 
+                        {   
+                            piecesAlive[1][5] = "h1w";
+                            removePiecesAlive();
+                            lblB6.setIcon(knightw);
+                            h1w.location = "B6";
+
+                            refreshHistory();
+                        }break;
+                        case "B7" : 
+                        {   
+                            piecesAlive[1][6] = "h1w";
+                            removePiecesAlive();
+                            lblB7.setIcon(knightw);
+                            h1w.location = "B7";
+
+                            refreshHistory();
+                        }break;
+                        case "B8" : 
+                        {   
+                            piecesAlive[1][7] = "h1w";
+                            removePiecesAlive();
+                            lblB8.setIcon(knightw);
+                            h1w.location = "B8";
+
+                            refreshHistory();
+                        }break;
+                        case "C1" : 
+                        {   
+                            piecesAlive[2][0] = "h1w";
+                            removePiecesAlive();
+                            lblC1.setIcon(knightw);
+                            h1w.location = "C1";
+
+                            refreshHistory();
+                        }break;
+                        case "C2" : 
+                        {   
+                            piecesAlive[2][1] = "h1w";
+                            removePiecesAlive();
+                            lblC2.setIcon(knightw);
+                            h1w.location = "C2";
+
+                            refreshHistory();
+                        }break;
+                        case "C3" : 
+                        {   
+                            piecesAlive[2][2] = "h1w";
+                            removePiecesAlive();
+                            lblC3.setIcon(knightw);
+                            h1w.location = "C3";
+
+                            refreshHistory();
+                        }break;
+                        case "C4" : 
+                        {   
+                            piecesAlive[2][3] = "h1w";
+                            removePiecesAlive();
+                            lblC4.setIcon(knightw);
+                            h1w.location = "C4";
+
+                            refreshHistory();
+                        }break;
+                        case "C5" : 
+                        {   
+                            piecesAlive[2][4] = "h1w";
+                            removePiecesAlive();
+                            lblC5.setIcon(knightw);
+                            h1w.location = "C5";
+
+                            refreshHistory();
+                        }break;
+                        case "C6" : 
+                        {   
+                            piecesAlive[2][5] = "h1w";
+                            removePiecesAlive();
+                            lblC6.setIcon(knightw);
+                            h1w.location = "C6";
+
+                            refreshHistory();
+                        }break;
+                        case "C7" : 
+                        {   
+                            piecesAlive[2][6] = "h1w";
+                            removePiecesAlive();
+                            lblC7.setIcon(knightw);
+                            h1w.location = "C7";
+
+                            refreshHistory();
+                        }break;
+                        case "C8" : 
+                        {   
+                            piecesAlive[2][7] = "h1w";
+                            removePiecesAlive();
+                            lblC8.setIcon(knightw);
+                            h1w.location = "C8";
+
+                            refreshHistory();
+                        }break;
+                        case "D1" : 
+                        {   
+                            piecesAlive[3][0] = "h1w";
+                            removePiecesAlive();
+                            lblD1.setIcon(knightw);
+                            h1w.location = "D1";
+
+                            refreshHistory();
+                        }break;
+                        case "D2" : 
+                        {   
+                            piecesAlive[3][1] = "h1w";
+                            removePiecesAlive();
+                            lblD2.setIcon(knightw);
+                            h1w.location = "D2";
+
+                            refreshHistory();
+                        }break;
+                        case "D3" : 
+                        {   
+                            piecesAlive[3][2] = "h1w";
+                            removePiecesAlive();
+                            lblD3.setIcon(knightw);
+                            h1w.location = "D3";
+
+                            refreshHistory();
+                        }break;
+                        case "D4" : 
+                        {   
+                            piecesAlive[3][3] = "h1w";
+                            removePiecesAlive();
+                            lblD4.setIcon(knightw);
+                            h1w.location = "D4";
+
+                            refreshHistory();
+                        }break;
+                        case "D5" : 
+                        {   
+                            piecesAlive[3][4] = "h1w";
+                            removePiecesAlive();
+                            lblD5.setIcon(knightw);
+                            h1w.location = "D5";
+
+                            refreshHistory();
+                        }break;
+                        case "D6" : 
+                        {   
+                            piecesAlive[3][5] = "h1w";
+                            removePiecesAlive();
+                            lblD6.setIcon(knightw);
+                            h1w.location = "D6";
+
+                            refreshHistory();
+                        }break;
+                        case "D7" : 
+                        {   
+                            piecesAlive[3][6] = "h1w";
+                            removePiecesAlive();
+                            lblD7.setIcon(knightw);
+                            h1w.location = "D7";
+
+                            refreshHistory();
+                        }break;
+                        case "D8" : 
+                        {   
+                            piecesAlive[3][7] = "h1w";
+                            removePiecesAlive();
+                            lblD8.setIcon(knightw);
+                            h1w.location = "D8";
+
+                            refreshHistory();
+                        }break;
+                        case "E1" : 
+                        {   
+                            piecesAlive[4][0] = "h1w";
+                            removePiecesAlive();
+                            lblE1.setIcon(knightw);
+                            h1w.location = "E1";
+
+                            refreshHistory();
+                        }break;
+                        case "E2" : 
+                        {   
+                            piecesAlive[4][1] = "h1w";
+                            removePiecesAlive();
+                            lblE2.setIcon(knightw);
+                            h1w.location = "E2";
+
+                            refreshHistory();
+                        }break;
+                        case "E3" : 
+                        {   
+                            piecesAlive[4][2] = "h1w";
+                            removePiecesAlive();
+                            lblE3.setIcon(knightw);
+                            h1w.location = "E3";
+
+                            refreshHistory();
+                        }break;
+                        case "E4" : 
+                        {   
+                            piecesAlive[4][3] = "h1w";
+                            removePiecesAlive();
+                            lblE4.setIcon(knightw);
+                            h1w.location = "E4";
+
+                            refreshHistory();
+                        }break;
+                        case "E5" : 
+                        {   
+                            piecesAlive[4][4] = "h1w";
+                            removePiecesAlive();
+                            lblE5.setIcon(knightw);
+                            h1w.location = "E5";
+
+                            refreshHistory();
+                        }break;
+                        case "E6" : 
+                        {   
+                            piecesAlive[4][5] = "h1w";
+                            removePiecesAlive();
+                            lblE6.setIcon(knightw);
+                            h1w.location = "E6";
+
+                            refreshHistory();
+                        }break;
+                        case "E7" : 
+                        {   
+                            piecesAlive[4][6] = "h1w";
+                            removePiecesAlive();
+                            lblE7.setIcon(knightw);
+                            h1w.location = "E7";
+
+                            refreshHistory();
+                        }break;
+                        case "E8" : 
+                        {   
+                            piecesAlive[4][7] = "h1w";
+                            removePiecesAlive();
+                            lblE8.setIcon(knightw);
+                            h1w.location = "E8";
+
+                            refreshHistory();
+                        }break;
+                        case "F1" : 
+                        {   
+                            piecesAlive[5][0] = "h1w";
+                            removePiecesAlive();
+                            lblF1.setIcon(knightw);
+                            h1w.location = "F1";
+
+                            refreshHistory();
+                        }break;
+                        case "F2" : 
+                        {   
+                            piecesAlive[5][1] = "h1w";
+                            removePiecesAlive();
+                            lblF2.setIcon(knightw);
+                            h1w.location = "F2";
+
+                            refreshHistory();
+                        }break;
+                        case "F3" : 
+                        {   
+                            piecesAlive[5][2] = "h1w";
+                            removePiecesAlive();
+                            lblF3.setIcon(knightw);
+                            h1w.location = "F3";
+
+                            refreshHistory();
+                        }break;
+                        case "F4" : 
+                        {   
+                            piecesAlive[5][3] = "h1w";
+                            removePiecesAlive();
+                            lblF4.setIcon(knightw);
+                            h1w.location = "F4";
+
+                            refreshHistory();
+                        }break;
+                        case "F5" : 
+                        {   
+                            piecesAlive[5][4] = "h1w";
+                            removePiecesAlive();
+                            lblF5.setIcon(knightw);
+                            h1w.location = "F5";
+
+                            refreshHistory();
+                        }break;
+                        case "F6" : 
+                        {   
+                            piecesAlive[5][5] = "h1w";
+                            removePiecesAlive();
+                            lblF6.setIcon(knightw);
+                            h1w.location = "F6";
+
+                            refreshHistory();
+                        }break;
+                        case "F7" : 
+                        {   
+                            piecesAlive[5][6] = "h1w";
+                            removePiecesAlive();
+                            lblF7.setIcon(knightw);
+                            h1w.location = "F7";
+
+                            refreshHistory();
+                        }break;
+                        case "F8" : 
+                        {   
+                            piecesAlive[5][7] = "h1w";
+                            removePiecesAlive();
+                            lblF8.setIcon(knightw);
+                            h1w.location = "F8";
+
+                            refreshHistory();
+                        }break;
+                        case "G1" : 
+                        {   
+                            piecesAlive[6][0] = "h1w";
+                            removePiecesAlive();
+                            lblG1.setIcon(knightw);
+                            h1w.location = "G1";
+
+                            refreshHistory();
+                        }break;
+                        case "G2" : 
+                        {   
+                            piecesAlive[6][1] = "h1w";
+                            removePiecesAlive();
+                            lblG2.setIcon(knightw);
+                            h1w.location = "G2";
+
+                            refreshHistory();
+                        }break;
+                        case "G3" : 
+                        {   
+                            piecesAlive[6][2] = "h1w";
+                            removePiecesAlive();
+                            lblG3.setIcon(knightw);
+                            h1w.location = "G3";
+
+                            refreshHistory();
+                        }break;
+                        case "G4" : 
+                        {   
+                            piecesAlive[6][3] = "h1w";
+                            removePiecesAlive();
+                            lblG4.setIcon(knightw);
+                            h1w.location = "G4";
+
+                            refreshHistory();
+                        }break;
+                        case "G5" : 
+                        {   
+                            piecesAlive[6][4] = "h1w";
+                            removePiecesAlive();
+                            lblG5.setIcon(knightw);
+                            h1w.location = "G5";
+
+                            refreshHistory();
+                        }break;
+                        case "G6" : 
+                        {   
+                            piecesAlive[6][5] = "h1w";
+                            removePiecesAlive();
+                            lblG6.setIcon(knightw);
+                            h1w.location = "G6";
+
+                            refreshHistory();
+                        }break;
+                        case "G7" : 
+                        {   
+                            piecesAlive[6][6] = "h1w";
+                            removePiecesAlive();
+                            lblG7.setIcon(knightw);
+                            h1w.location = "G7";
+
+                            refreshHistory();
+                        }break;
+                        case "G8" : 
+                        {   
+                            piecesAlive[6][7] = "h1w";
+                            removePiecesAlive();
+                            lblG8.setIcon(knightw);
+                            h1w.location = "G8";
+
+                            refreshHistory();
+                        }break;
+                        case "H1" : 
+                        {   
+                            piecesAlive[7][0] = "h1w";
+                            removePiecesAlive();
+                            lblH1.setIcon(knightw);
+                            h1w.location = "H1";
+
+                            refreshHistory();
+                        }break;
+                        case "H2" : 
+                        {   
+                            piecesAlive[7][1] = "h1w";
+                            removePiecesAlive();
+                            lblH2.setIcon(knightw);
+                            h1w.location = "H2";
+
+                            refreshHistory();
+                        }break;
+                        case "H3" : 
+                        {   
+                            piecesAlive[7][2] = "h1w";
+                            removePiecesAlive();
+                            lblH3.setIcon(knightw);
+                            h1w.location = "H3";
+
+                            refreshHistory();
+                        }break;
+                        case "H4" : 
+                        {   
+                            piecesAlive[7][3] = "h1w";
+                            removePiecesAlive();
+                            lblH4.setIcon(knightw);
+                            h1w.location = "H4";
+
+                            refreshHistory();
+                        }break;
+                        case "H5" : 
+                        {   
+                            piecesAlive[7][4] = "h1w";
+                            removePiecesAlive();
+                            lblH5.setIcon(knightw);
+                            h1w.location = "H5";
+
+                            refreshHistory();
+                        }break;
+                        case "H6" : 
+                        {   
+                            piecesAlive[7][5] = "h1w";
+                            removePiecesAlive();
+                            lblH6.setIcon(knightw);
+                            h1w.location = "H6";
+
+                            refreshHistory();
+                        }break;
+                        case "H7" : 
+                        {   
+                            piecesAlive[7][6] = "h1w";
+                            removePiecesAlive();
+                            lblH7.setIcon(knightw);
+                            h1w.location = "H7";
+
+                            refreshHistory();
+                        }break;
+                        case "H8" : 
+                        {   
+                            piecesAlive[7][7] = "h1w";
+                            removePiecesAlive();
+                            lblH8.setIcon(knightw);
+                            h1w.location = "H8";
+
+                            refreshHistory();
+                        }break;
+                        
+                    }
+                }
+            }
+            case "h2w" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "h2w";
+                            removePiecesAlive();
+                            lblA1.setIcon(knightw);
+                            h2w.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                        case "A2" : 
+                        {   
+                            piecesAlive[0][1] = "h2w";
+                            removePiecesAlive();
+                            lblA2.setIcon(knightw);
+                            h2w.location = "A2";
+
+                            refreshHistory();
+                        }break;
+                        case "A3" : 
+                        {   
+                            piecesAlive[0][2] = "h2w";
+                            removePiecesAlive();
+                            lblA3.setIcon(knightw);
+                            h2w.location = "A3";
+
+                            refreshHistory();
+                        }break;
+                        case "A4" : 
+                        {   
+                            piecesAlive[0][3] = "h2w";
+                            removePiecesAlive();
+                            lblA4.setIcon(knightw);
+                            h2w.location = "A4";
+
+                            refreshHistory();
+                        }break;
+                        case "A5" : 
+                        {   
+                            piecesAlive[0][4] = "h2w";
+                            removePiecesAlive();
+                            lblA5.setIcon(knightw);
+                            h2w.location = "A5";
+
+                            refreshHistory();
+                        }break;
+                        case "A6" : 
+                        {   
+                            piecesAlive[0][5] = "h2w";
+                            removePiecesAlive();
+                            lblA6.setIcon(knightw);
+                            h2w.location = "A6";
+
+                            refreshHistory();
+                        }break;
+                        case "A7" : 
+                        {   
+                            piecesAlive[0][6] = "h2w";
+                            removePiecesAlive();
+                            lblA7.setIcon(knightw);
+                            h2w.location = "A7";
+
+                            refreshHistory();
+                        }break;
+                        case "A8" : 
+                        {   
+                            piecesAlive[0][7] = "h2w";
+                            removePiecesAlive();
+                            lblA8.setIcon(knightw);
+                            h2w.location = "A8";
+
+                            refreshHistory();
+                        }break;
+                        case "B1" : 
+                        {   
+                            piecesAlive[1][0] = "h2w";
+                            removePiecesAlive();
+                            lblB1.setIcon(knightw);
+                            h2w.location = "B1";
+
+                            refreshHistory();
+                        }break;
+                        case "B2" : 
+                        {   
+                            piecesAlive[1][1] = "h2w";
+                            removePiecesAlive();
+                            lblB2.setIcon(knightw);
+                            h2w.location = "B2";
+
+                            refreshHistory();
+                        }break;
+                        case "B3" : 
+                        {   
+                            piecesAlive[1][2] = "h2w";
+                            removePiecesAlive();
+                            lblB3.setIcon(knightw);
+                            h2w.location = "B3";
+
+                            refreshHistory();
+                        }break;
+                        case "B4" : 
+                        {   
+                            piecesAlive[1][3] = "h2w";
+                            removePiecesAlive();
+                            lblB4.setIcon(knightw);
+                            h2w.location = "B4";
+
+                            refreshHistory();
+                        }break;
+                        case "B5" : 
+                        {   
+                            piecesAlive[1][4] = "h2w";
+                            removePiecesAlive();
+                            lblB5.setIcon(knightw);
+                            h2w.location = "B5";
+
+                            refreshHistory();
+                        }break;
+                        case "B6" : 
+                        {   
+                            piecesAlive[1][5] = "h2w";
+                            removePiecesAlive();
+                            lblB6.setIcon(knightw);
+                            h2w.location = "B6";
+
+                            refreshHistory();
+                        }break;
+                        case "B7" : 
+                        {   
+                            piecesAlive[1][6] = "h2w";
+                            removePiecesAlive();
+                            lblB7.setIcon(knightw);
+                            h2w.location = "B7";
+
+                            refreshHistory();
+                        }break;
+                        case "B8" : 
+                        {   
+                            piecesAlive[1][7] = "h2w";
+                            removePiecesAlive();
+                            lblB8.setIcon(knightw);
+                            h2w.location = "B8";
+
+                            refreshHistory();
+                        }break;
+                        case "C1" : 
+                        {   
+                            piecesAlive[2][0] = "h2w";
+                            removePiecesAlive();
+                            lblC1.setIcon(knightw);
+                            h2w.location = "C1";
+
+                            refreshHistory();
+                        }break;
+                        case "C2" : 
+                        {   
+                            piecesAlive[2][1] = "h2w";
+                            removePiecesAlive();
+                            lblC2.setIcon(knightw);
+                            h2w.location = "C2";
+
+                            refreshHistory();
+                        }break;
+                        case "C3" : 
+                        {   
+                            piecesAlive[2][2] = "h2w";
+                            removePiecesAlive();
+                            lblC3.setIcon(knightw);
+                            h2w.location = "C3";
+
+                            refreshHistory();
+                        }break;
+                        case "C4" : 
+                        {   
+                            piecesAlive[2][3] = "h2w";
+                            removePiecesAlive();
+                            lblC4.setIcon(knightw);
+                            h2w.location = "C4";
+
+                            refreshHistory();
+                        }break;
+                        case "C5" : 
+                        {   
+                            piecesAlive[2][4] = "h2w";
+                            removePiecesAlive();
+                            lblC5.setIcon(knightw);
+                            h2w.location = "C5";
+
+                            refreshHistory();
+                        }break;
+                        case "C6" : 
+                        {   
+                            piecesAlive[2][5] = "h2w";
+                            removePiecesAlive();
+                            lblC6.setIcon(knightw);
+                            h2w.location = "C6";
+
+                            refreshHistory();
+                        }break;
+                        case "C7" : 
+                        {   
+                            piecesAlive[2][6] = "h2w";
+                            removePiecesAlive();
+                            lblC7.setIcon(knightw);
+                            h2w.location = "C7";
+
+                            refreshHistory();
+                        }break;
+                        case "C8" : 
+                        {   
+                            piecesAlive[2][7] = "h2w";
+                            removePiecesAlive();
+                            lblC8.setIcon(knightw);
+                            h2w.location = "C8";
+
+                            refreshHistory();
+                        }break;
+                        case "D1" : 
+                        {   
+                            piecesAlive[3][0] = "h2w";
+                            removePiecesAlive();
+                            lblD1.setIcon(knightw);
+                            h2w.location = "D1";
+
+                            refreshHistory();
+                        }break;
+                        case "D2" : 
+                        {   
+                            piecesAlive[3][1] = "h2w";
+                            removePiecesAlive();
+                            lblD2.setIcon(knightw);
+                            h2w.location = "D2";
+
+                            refreshHistory();
+                        }break;
+                        case "D3" : 
+                        {   
+                            piecesAlive[3][2] = "h2w";
+                            removePiecesAlive();
+                            lblD3.setIcon(knightw);
+                            h2w.location = "D3";
+
+                            refreshHistory();
+                        }break;
+                        case "D4" : 
+                        {   
+                            piecesAlive[3][3] = "h2w";
+                            removePiecesAlive();
+                            lblD4.setIcon(knightw);
+                            h2w.location = "D4";
+
+                            refreshHistory();
+                        }break;
+                        case "D5" : 
+                        {   
+                            piecesAlive[3][4] = "h2w";
+                            removePiecesAlive();
+                            lblD5.setIcon(knightw);
+                            h2w.location = "D5";
+
+                            refreshHistory();
+                        }break;
+                        case "D6" : 
+                        {   
+                            piecesAlive[3][5] = "h2w";
+                            removePiecesAlive();
+                            lblD6.setIcon(knightw);
+                            h2w.location = "D6";
+
+                            refreshHistory();
+                        }break;
+                        case "D7" : 
+                        {   
+                            piecesAlive[3][6] = "h2w";
+                            removePiecesAlive();
+                            lblD7.setIcon(knightw);
+                            h2w.location = "D7";
+
+                            refreshHistory();
+                        }break;
+                        case "D8" : 
+                        {   
+                            piecesAlive[3][7] = "h2w";
+                            removePiecesAlive();
+                            lblD8.setIcon(knightw);
+                            h2w.location = "D8";
+
+                            refreshHistory();
+                        }break;
+                        case "E1" : 
+                        {   
+                            piecesAlive[4][0] = "h2w";
+                            removePiecesAlive();
+                            lblE1.setIcon(knightw);
+                            h2w.location = "E1";
+
+                            refreshHistory();
+                        }break;
+                        case "E2" : 
+                        {   
+                            piecesAlive[4][1] = "h2w";
+                            removePiecesAlive();
+                            lblE2.setIcon(knightw);
+                            h2w.location = "E2";
+
+                            refreshHistory();
+                        }break;
+                        case "E3" : 
+                        {   
+                            piecesAlive[4][2] = "h2w";
+                            removePiecesAlive();
+                            lblE3.setIcon(knightw);
+                            h2w.location = "E3";
+
+                            refreshHistory();
+                        }break;
+                        case "E4" : 
+                        {   
+                            piecesAlive[4][3] = "h2w";
+                            removePiecesAlive();
+                            lblE4.setIcon(knightw);
+                            h2w.location = "E4";
+
+                            refreshHistory();
+                        }break;
+                        case "E5" : 
+                        {   
+                            piecesAlive[4][4] = "h2w";
+                            removePiecesAlive();
+                            lblE5.setIcon(knightw);
+                            h2w.location = "E5";
+
+                            refreshHistory();
+                        }break;
+                        case "E6" : 
+                        {   
+                            piecesAlive[4][5] = "h2w";
+                            removePiecesAlive();
+                            lblE6.setIcon(knightw);
+                            h2w.location = "E6";
+
+                            refreshHistory();
+                        }break;
+                        case "E7" : 
+                        {   
+                            piecesAlive[4][6] = "h2w";
+                            removePiecesAlive();
+                            lblE7.setIcon(knightw);
+                            h2w.location = "E7";
+
+                            refreshHistory();
+                        }break;
+                        case "E8" : 
+                        {   
+                            piecesAlive[4][7] = "h2w";
+                            removePiecesAlive();
+                            lblE8.setIcon(knightw);
+                            h2w.location = "E8";
+
+                            refreshHistory();
+                        }break;
+                        case "F1" : 
+                        {   
+                            piecesAlive[5][0] = "h2w";
+                            removePiecesAlive();
+                            lblF1.setIcon(knightw);
+                            h2w.location = "F1";
+
+                            refreshHistory();
+                        }break;
+                        case "F2" : 
+                        {   
+                            piecesAlive[5][1] = "h2w";
+                            removePiecesAlive();
+                            lblF2.setIcon(knightw);
+                            h2w.location = "F2";
+
+                            refreshHistory();
+                        }break;
+                        case "F3" : 
+                        {   
+                            piecesAlive[5][2] = "h2w";
+                            removePiecesAlive();
+                            lblF3.setIcon(knightw);
+                            h2w.location = "F3";
+
+                            refreshHistory();
+                        }break;
+                        case "F4" : 
+                        {   
+                            piecesAlive[5][3] = "h2w";
+                            removePiecesAlive();
+                            lblF4.setIcon(knightw);
+                            h2w.location = "F4";
+
+                            refreshHistory();
+                        }break;
+                        case "F5" : 
+                        {   
+                            piecesAlive[5][4] = "h2w";
+                            removePiecesAlive();
+                            lblF5.setIcon(knightw);
+                            h2w.location = "F5";
+
+                            refreshHistory();
+                        }break;
+                        case "F6" : 
+                        {   
+                            piecesAlive[5][5] = "h2w";
+                            removePiecesAlive();
+                            lblF6.setIcon(knightw);
+                            h2w.location = "F6";
+
+                            refreshHistory();
+                        }break;
+                        case "F7" : 
+                        {   
+                            piecesAlive[5][6] = "h2w";
+                            removePiecesAlive();
+                            lblF7.setIcon(knightw);
+                            h2w.location = "F7";
+
+                            refreshHistory();
+                        }break;
+                        case "F8" : 
+                        {   
+                            piecesAlive[5][7] = "h2w";
+                            removePiecesAlive();
+                            lblF8.setIcon(knightw);
+                            h2w.location = "F8";
+
+                            refreshHistory();
+                        }break;
+                        case "G1" : 
+                        {   
+                            piecesAlive[6][0] = "h2w";
+                            removePiecesAlive();
+                            lblG1.setIcon(knightw);
+                            h2w.location = "G1";
+
+                            refreshHistory();
+                        }break;
+                        case "G2" : 
+                        {   
+                            piecesAlive[6][1] = "h2w";
+                            removePiecesAlive();
+                            lblG2.setIcon(knightw);
+                            h2w.location = "G2";
+
+                            refreshHistory();
+                        }break;
+                        case "G3" : 
+                        {   
+                            piecesAlive[6][2] = "h2w";
+                            removePiecesAlive();
+                            lblG3.setIcon(knightw);
+                            h2w.location = "G3";
+
+                            refreshHistory();
+                        }break;
+                        case "G4" : 
+                        {   
+                            piecesAlive[6][3] = "h2w";
+                            removePiecesAlive();
+                            lblG4.setIcon(knightw);
+                            h2w.location = "G4";
+
+                            refreshHistory();
+                        }break;
+                        case "G5" : 
+                        {   
+                            piecesAlive[6][4] = "h2w";
+                            removePiecesAlive();
+                            lblG5.setIcon(knightw);
+                            h2w.location = "G5";
+
+                            refreshHistory();
+                        }break;
+                        case "G6" : 
+                        {   
+                            piecesAlive[6][5] = "h2w";
+                            removePiecesAlive();
+                            lblG6.setIcon(knightw);
+                            h2w.location = "G6";
+
+                            refreshHistory();
+                        }break;
+                        case "G7" : 
+                        {   
+                            piecesAlive[6][6] = "h2w";
+                            removePiecesAlive();
+                            lblG7.setIcon(knightw);
+                            h2w.location = "G7";
+
+                            refreshHistory();
+                        }break;
+                        case "G8" : 
+                        {   
+                            piecesAlive[6][7] = "h2w";
+                            removePiecesAlive();
+                            lblG8.setIcon(knightw);
+                            h2w.location = "G8";
+
+                            refreshHistory();
+                        }break;
+                        case "H1" : 
+                        {   
+                            piecesAlive[7][0] = "h2w";
+                            removePiecesAlive();
+                            lblH1.setIcon(knightw);
+                            h2w.location = "H1";
+
+                            refreshHistory();
+                        }break;
+                        case "H2" : 
+                        {   
+                            piecesAlive[7][1] = "h2w";
+                            removePiecesAlive();
+                            lblH2.setIcon(knightw);
+                            h2w.location = "H2";
+
+                            refreshHistory();
+                        }break;
+                        case "H3" : 
+                        {   
+                            piecesAlive[7][2] = "h2w";
+                            removePiecesAlive();
+                            lblH3.setIcon(knightw);
+                            h2w.location = "H3";
+
+                            refreshHistory();
+                        }break;
+                        case "H4" : 
+                        {   
+                            piecesAlive[7][3] = "h2w";
+                            removePiecesAlive();
+                            lblH4.setIcon(knightw);
+                            h2w.location = "H4";
+
+                            refreshHistory();
+                        }break;
+                        case "H5" : 
+                        {   
+                            piecesAlive[7][4] = "h2w";
+                            removePiecesAlive();
+                            lblH5.setIcon(knightw);
+                            h2w.location = "H5";
+
+                            refreshHistory();
+                        }break;
+                        case "H6" : 
+                        {   
+                            piecesAlive[7][5] = "h2w";
+                            removePiecesAlive();
+                            lblH6.setIcon(knightw);
+                            h2w.location = "H6";
+
+                            refreshHistory();
+                        }break;
+                        case "H7" : 
+                        {   
+                            piecesAlive[7][6] = "h2w";
+                            removePiecesAlive();
+                            lblH7.setIcon(knightw);
+                            h2w.location = "H7";
+
+                            refreshHistory();
+                        }break;
+                        case "H8" : 
+                        {   
+                            piecesAlive[7][7] = "h2w";
+                            removePiecesAlive();
+                            lblH8.setIcon(knightw);
+                            h2w.location = "H8";
+
+                            refreshHistory();
+                        }break;
+                        
+                    }
+                }
+            }
+            
+            case "h1b" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "h1b";
+                            removePiecesAlive();
+                            lblA1.setIcon(knightb);
+                            h1b.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                        case "A2" : 
+                        {   
+                            piecesAlive[0][1] = "h1b";
+                            removePiecesAlive();
+                            lblA2.setIcon(knightb);
+                            h1b.location = "A2";
+
+                            refreshHistory();
+                        }break;
+                        case "A3" : 
+                        {   
+                            piecesAlive[0][2] = "h1b";
+                            removePiecesAlive();
+                            lblA3.setIcon(knightb);
+                            h1b.location = "A3";
+
+                            refreshHistory();
+                        }break;
+                        case "A4" : 
+                        {   
+                            piecesAlive[0][3] = "h1b";
+                            removePiecesAlive();
+                            lblA4.setIcon(knightb);
+                            h1b.location = "A4";
+
+                            refreshHistory();
+                        }break;
+                        case "A5" : 
+                        {   
+                            piecesAlive[0][4] = "h1b";
+                            removePiecesAlive();
+                            lblA5.setIcon(knightb);
+                            h1b.location = "A5";
+
+                            refreshHistory();
+                        }break;
+                        case "A6" : 
+                        {   
+                            piecesAlive[0][5] = "h1b";
+                            removePiecesAlive();
+                            lblA6.setIcon(knightb);
+                            h1b.location = "A6";
+
+                            refreshHistory();
+                        }break;
+                        case "A7" : 
+                        {   
+                            piecesAlive[0][6] = "h1b";
+                            removePiecesAlive();
+                            lblA7.setIcon(knightb);
+                            h1b.location = "A7";
+
+                            refreshHistory();
+                        }break;
+                        case "A8" : 
+                        {   
+                            piecesAlive[0][7] = "h1b";
+                            removePiecesAlive();
+                            lblA8.setIcon(knightb);
+                            h1b.location = "A8";
+
+                            refreshHistory();
+                        }break;
+                        case "B1" : 
+                        {   
+                            piecesAlive[1][0] = "h1b";
+                            removePiecesAlive();
+                            lblB1.setIcon(knightb);
+                            h1b.location = "B1";
+
+                            refreshHistory();
+                        }break;
+                        case "B2" : 
+                        {   
+                            piecesAlive[1][1] = "h1b";
+                            removePiecesAlive();
+                            lblB2.setIcon(knightb);
+                            h1b.location = "B2";
+
+                            refreshHistory();
+                        }break;
+                        case "B3" : 
+                        {   
+                            piecesAlive[1][2] = "h1b";
+                            removePiecesAlive();
+                            lblB3.setIcon(knightb);
+                            h1b.location = "B3";
+
+                            refreshHistory();
+                        }break;
+                        case "B4" : 
+                        {   
+                            piecesAlive[1][3] = "h1b";
+                            removePiecesAlive();
+                            lblB4.setIcon(knightb);
+                            h1b.location = "B4";
+
+                            refreshHistory();
+                        }break;
+                        case "B5" : 
+                        {   
+                            piecesAlive[1][4] = "h1b";
+                            removePiecesAlive();
+                            lblB5.setIcon(knightb);
+                            h1b.location = "B5";
+
+                            refreshHistory();
+                        }break;
+                        case "B6" : 
+                        {   
+                            piecesAlive[1][5] = "h1b";
+                            removePiecesAlive();
+                            lblB6.setIcon(knightb);
+                            h1b.location = "B6";
+
+                            refreshHistory();
+                        }break;
+                        case "B7" : 
+                        {   
+                            piecesAlive[1][6] = "h1b";
+                            removePiecesAlive();
+                            lblB7.setIcon(knightb);
+                            h1b.location = "B7";
+
+                            refreshHistory();
+                        }break;
+                        case "B8" : 
+                        {   
+                            piecesAlive[1][7] = "h1b";
+                            removePiecesAlive();
+                            lblB8.setIcon(knightb);
+                            h1b.location = "B8";
+
+                            refreshHistory();
+                        }break;
+                        case "C1" : 
+                        {   
+                            piecesAlive[2][0] = "h1b";
+                            removePiecesAlive();
+                            lblC1.setIcon(knightb);
+                            h1b.location = "C1";
+
+                            refreshHistory();
+                        }break;
+                        case "C2" : 
+                        {   
+                            piecesAlive[2][1] = "h1b";
+                            removePiecesAlive();
+                            lblC2.setIcon(knightb);
+                            h1b.location = "C2";
+
+                            refreshHistory();
+                        }break;
+                        case "C3" : 
+                        {   
+                            piecesAlive[2][2] = "h1b";
+                            removePiecesAlive();
+                            lblC3.setIcon(knightb);
+                            h1b.location = "C3";
+
+                            refreshHistory();
+                        }break;
+                        case "C4" : 
+                        {   
+                            piecesAlive[2][3] = "h1b";
+                            removePiecesAlive();
+                            lblC4.setIcon(knightb);
+                            h1b.location = "C4";
+
+                            refreshHistory();
+                        }break;
+                        case "C5" : 
+                        {   
+                            piecesAlive[2][4] = "h1b";
+                            removePiecesAlive();
+                            lblC5.setIcon(knightb);
+                            h1b.location = "C5";
+
+                            refreshHistory();
+                        }break;
+                        case "C6" : 
+                        {   
+                            piecesAlive[2][5] = "h1b";
+                            removePiecesAlive();
+                            lblC6.setIcon(knightb);
+                            h1b.location = "C6";
+
+                            refreshHistory();
+                        }break;
+                        case "C7" : 
+                        {   
+                            piecesAlive[2][6] = "h1b";
+                            removePiecesAlive();
+                            lblC7.setIcon(knightb);
+                            h1b.location = "C7";
+
+                            refreshHistory();
+                        }break;
+                        case "C8" : 
+                        {   
+                            piecesAlive[2][7] = "h1b";
+                            removePiecesAlive();
+                            lblC8.setIcon(knightb);
+                            h1b.location = "C8";
+
+                            refreshHistory();
+                        }break;
+                        case "D1" : 
+                        {   
+                            piecesAlive[3][0] = "h1b";
+                            removePiecesAlive();
+                            lblD1.setIcon(knightb);
+                            h1b.location = "D1";
+
+                            refreshHistory();
+                        }break;
+                        case "D2" : 
+                        {   
+                            piecesAlive[3][1] = "h1b";
+                            removePiecesAlive();
+                            lblD2.setIcon(knightb);
+                            h1b.location = "D2";
+
+                            refreshHistory();
+                        }break;
+                        case "D3" : 
+                        {   
+                            piecesAlive[3][2] = "h1b";
+                            removePiecesAlive();
+                            lblD3.setIcon(knightb);
+                            h1b.location = "D3";
+
+                            refreshHistory();
+                        }break;
+                        case "D4" : 
+                        {   
+                            piecesAlive[3][3] = "h1b";
+                            removePiecesAlive();
+                            lblD4.setIcon(knightb);
+                            h1b.location = "D4";
+
+                            refreshHistory();
+                        }break;
+                        case "D5" : 
+                        {   
+                            piecesAlive[3][4] = "h1b";
+                            removePiecesAlive();
+                            lblD5.setIcon(knightb);
+                            h1b.location = "D5";
+
+                            refreshHistory();
+                        }break;
+                        case "D6" : 
+                        {   
+                            piecesAlive[3][5] = "h1b";
+                            removePiecesAlive();
+                            lblD6.setIcon(knightb);
+                            h1b.location = "D6";
+
+                            refreshHistory();
+                        }break;
+                        case "D7" : 
+                        {   
+                            piecesAlive[3][6] = "h1b";
+                            removePiecesAlive();
+                            lblD7.setIcon(knightb);
+                            h1b.location = "D7";
+
+                            refreshHistory();
+                        }break;
+                        case "D8" : 
+                        {   
+                            piecesAlive[3][7] = "h1b";
+                            removePiecesAlive();
+                            lblD8.setIcon(knightb);
+                            h1b.location = "D8";
+
+                            refreshHistory();
+                        }break;
+                        case "E1" : 
+                        {   
+                            piecesAlive[4][0] = "h1b";
+                            removePiecesAlive();
+                            lblE1.setIcon(knightb);
+                            h1b.location = "E1";
+
+                            refreshHistory();
+                        }break;
+                        case "E2" : 
+                        {   
+                            piecesAlive[4][1] = "h1b";
+                            removePiecesAlive();
+                            lblE2.setIcon(knightb);
+                            h1b.location = "E2";
+
+                            refreshHistory();
+                        }break;
+                        case "E3" : 
+                        {   
+                            piecesAlive[4][2] = "h1b";
+                            removePiecesAlive();
+                            lblE3.setIcon(knightb);
+                            h1b.location = "E3";
+
+                            refreshHistory();
+                        }break;
+                        case "E4" : 
+                        {   
+                            piecesAlive[4][3] = "h1b";
+                            removePiecesAlive();
+                            lblE4.setIcon(knightb);
+                            h1b.location = "E4";
+
+                            refreshHistory();
+                        }break;
+                        case "E5" : 
+                        {   
+                            piecesAlive[4][4] = "h1b";
+                            removePiecesAlive();
+                            lblE5.setIcon(knightb);
+                            h1b.location = "E5";
+
+                            refreshHistory();
+                        }break;
+                        case "E6" : 
+                        {   
+                            piecesAlive[4][5] = "h1b";
+                            removePiecesAlive();
+                            lblE6.setIcon(knightb);
+                            h1b.location = "E6";
+
+                            refreshHistory();
+                        }break;
+                        case "E7" : 
+                        {   
+                            piecesAlive[4][6] = "h1b";
+                            removePiecesAlive();
+                            lblE7.setIcon(knightb);
+                            h1b.location = "E7";
+
+                            refreshHistory();
+                        }break;
+                        case "E8" : 
+                        {   
+                            piecesAlive[4][7] = "h1b";
+                            removePiecesAlive();
+                            lblE8.setIcon(knightb);
+                            h1b.location = "E8";
+
+                            refreshHistory();
+                        }break;
+                        case "F1" : 
+                        {   
+                            piecesAlive[5][0] = "h1b";
+                            removePiecesAlive();
+                            lblF1.setIcon(knightb);
+                            h1b.location = "F1";
+
+                            refreshHistory();
+                        }break;
+                        case "F2" : 
+                        {   
+                            piecesAlive[5][1] = "h1b";
+                            removePiecesAlive();
+                            lblF2.setIcon(knightb);
+                            h1b.location = "F2";
+
+                            refreshHistory();
+                        }break;
+                        case "F3" : 
+                        {   
+                            piecesAlive[5][2] = "h1b";
+                            removePiecesAlive();
+                            lblF3.setIcon(knightb);
+                            h1b.location = "F3";
+
+                            refreshHistory();
+                        }break;
+                        case "F4" : 
+                        {   
+                            piecesAlive[5][3] = "h1b";
+                            removePiecesAlive();
+                            lblF4.setIcon(knightb);
+                            h1b.location = "F4";
+
+                            refreshHistory();
+                        }break;
+                        case "F5" : 
+                        {   
+                            piecesAlive[5][4] = "h1b";
+                            removePiecesAlive();
+                            lblF5.setIcon(knightb);
+                            h1b.location = "F5";
+
+                            refreshHistory();
+                        }break;
+                        case "F6" : 
+                        {   
+                            piecesAlive[5][5] = "h1b";
+                            removePiecesAlive();
+                            lblF6.setIcon(knightb);
+                            h1b.location = "F6";
+
+                            refreshHistory();
+                        }break;
+                        case "F7" : 
+                        {   
+                            piecesAlive[5][6] = "h1b";
+                            removePiecesAlive();
+                            lblF7.setIcon(knightb);
+                            h1b.location = "F7";
+
+                            refreshHistory();
+                        }break;
+                        case "F8" : 
+                        {   
+                            piecesAlive[5][7] = "h1b";
+                            removePiecesAlive();
+                            lblF8.setIcon(knightb);
+                            h1b.location = "F8";
+
+                            refreshHistory();
+                        }break;
+                        case "G1" : 
+                        {   
+                            piecesAlive[6][0] = "h1b";
+                            removePiecesAlive();
+                            lblG1.setIcon(knightb);
+                            h1b.location = "G1";
+
+                            refreshHistory();
+                        }break;
+                        case "G2" : 
+                        {   
+                            piecesAlive[6][1] = "h1b";
+                            removePiecesAlive();
+                            lblG2.setIcon(knightb);
+                            h1b.location = "G2";
+
+                            refreshHistory();
+                        }break;
+                        case "G3" : 
+                        {   
+                            piecesAlive[6][2] = "h1b";
+                            removePiecesAlive();
+                            lblG3.setIcon(knightb);
+                            h1b.location = "G3";
+
+                            refreshHistory();
+                        }break;
+                        case "G4" : 
+                        {   
+                            piecesAlive[6][3] = "h1b";
+                            removePiecesAlive();
+                            lblG4.setIcon(knightb);
+                            h1b.location = "G4";
+
+                            refreshHistory();
+                        }break;
+                        case "G5" : 
+                        {   
+                            piecesAlive[6][4] = "h1b";
+                            removePiecesAlive();
+                            lblG5.setIcon(knightb);
+                            h1b.location = "G5";
+
+                            refreshHistory();
+                        }break;
+                        case "G6" : 
+                        {   
+                            piecesAlive[6][5] = "h1b";
+                            removePiecesAlive();
+                            lblG6.setIcon(knightb);
+                            h1b.location = "G6";
+
+                            refreshHistory();
+                        }break;
+                        case "G7" : 
+                        {   
+                            piecesAlive[6][6] = "h1b";
+                            removePiecesAlive();
+                            lblG7.setIcon(knightb);
+                            h1b.location = "G7";
+
+                            refreshHistory();
+                        }break;
+                        case "G8" : 
+                        {   
+                            piecesAlive[6][7] = "h1b";
+                            removePiecesAlive();
+                            lblG8.setIcon(knightb);
+                            h1b.location = "G8";
+
+                            refreshHistory();
+                        }break;
+                        case "H1" : 
+                        {   
+                            piecesAlive[7][0] = "h1b";
+                            removePiecesAlive();
+                            lblH1.setIcon(knightb);
+                            h1b.location = "H1";
+
+                            refreshHistory();
+                        }break;
+                        case "H2" : 
+                        {   
+                            piecesAlive[7][1] = "h1b";
+                            removePiecesAlive();
+                            lblH2.setIcon(knightb);
+                            h1b.location = "H2";
+
+                            refreshHistory();
+                        }break;
+                        case "H3" : 
+                        {   
+                            piecesAlive[7][2] = "h1b";
+                            removePiecesAlive();
+                            lblH3.setIcon(knightb);
+                            h1b.location = "H3";
+
+                            refreshHistory();
+                        }break;
+                        case "H4" : 
+                        {   
+                            piecesAlive[7][3] = "h1b";
+                            removePiecesAlive();
+                            lblH4.setIcon(knightb);
+                            h1b.location = "H4";
+
+                            refreshHistory();
+                        }break;
+                        case "H5" : 
+                        {   
+                            piecesAlive[7][4] = "h1b";
+                            removePiecesAlive();
+                            lblH5.setIcon(knightb);
+                            h1b.location = "H5";
+
+                            refreshHistory();
+                        }break;
+                        case "H6" : 
+                        {   
+                            piecesAlive[7][5] = "h1b";
+                            removePiecesAlive();
+                            lblH6.setIcon(knightb);
+                            h1b.location = "H6";
+
+                            refreshHistory();
+                        }break;
+                        case "H7" : 
+                        {   
+                            piecesAlive[7][6] = "h1b";
+                            removePiecesAlive();
+                            lblH7.setIcon(knightb);
+                            h1b.location = "H7";
+
+                            refreshHistory();
+                        }break;
+                        case "H8" : 
+                        {   
+                            piecesAlive[7][7] = "h1b";
+                            removePiecesAlive();
+                            lblH8.setIcon(knightb);
+                            h1b.location = "H8";
+
+                            refreshHistory();
+                        }break;
+                        
+                    }
+                }
+            }
+            
+            case "h2b" : 
+            {
+                if(destination.getBorder() == movement)
+                {
+                    switch(destination.getName())
+                    {
+                        case "A1" : 
+                        {   
+                            piecesAlive[0][0] = "h2b";
+                            removePiecesAlive();
+                            lblA1.setIcon(knightb);
+                            h2b.location = "A1";
+
+                            refreshHistory();
+                        }break;
+                        case "A2" : 
+                        {   
+                            piecesAlive[0][1] = "h2b";
+                            removePiecesAlive();
+                            lblA2.setIcon(knightb);
+                            h2b.location = "A2";
+
+                            refreshHistory();
+                        }break;
+                        case "A3" : 
+                        {   
+                            piecesAlive[0][2] = "h2b";
+                            removePiecesAlive();
+                            lblA3.setIcon(knightb);
+                            h2b.location = "A3";
+
+                            refreshHistory();
+                        }break;
+                        case "A4" : 
+                        {   
+                            piecesAlive[0][3] = "h2b";
+                            removePiecesAlive();
+                            lblA4.setIcon(knightb);
+                            h2b.location = "A4";
+
+                            refreshHistory();
+                        }break;
+                        case "A5" : 
+                        {   
+                            piecesAlive[0][4] = "h2b";
+                            removePiecesAlive();
+                            lblA5.setIcon(knightb);
+                            h2b.location = "A5";
+
+                            refreshHistory();
+                        }break;
+                        case "A6" : 
+                        {   
+                            piecesAlive[0][5] = "h2b";
+                            removePiecesAlive();
+                            lblA6.setIcon(knightb);
+                            h2b.location = "A6";
+
+                            refreshHistory();
+                        }break;
+                        case "A7" : 
+                        {   
+                            piecesAlive[0][6] = "h2b";
+                            removePiecesAlive();
+                            lblA7.setIcon(knightb);
+                            h2b.location = "A7";
+
+                            refreshHistory();
+                        }break;
+                        case "A8" : 
+                        {   
+                            piecesAlive[0][7] = "h2b";
+                            removePiecesAlive();
+                            lblA8.setIcon(knightb);
+                            h2b.location = "A8";
+
+                            refreshHistory();
+                        }break;
+                        case "B1" : 
+                        {   
+                            piecesAlive[1][0] = "h2b";
+                            removePiecesAlive();
+                            lblB1.setIcon(knightb);
+                            h2b.location = "B1";
+
+                            refreshHistory();
+                        }break;
+                        case "B2" : 
+                        {   
+                            piecesAlive[1][1] = "h2b";
+                            removePiecesAlive();
+                            lblB2.setIcon(knightb);
+                            h2b.location = "B2";
+
+                            refreshHistory();
+                        }break;
+                        case "B3" : 
+                        {   
+                            piecesAlive[1][2] = "h2b";
+                            removePiecesAlive();
+                            lblB3.setIcon(knightb);
+                            h2b.location = "B3";
+
+                            refreshHistory();
+                        }break;
+                        case "B4" : 
+                        {   
+                            piecesAlive[1][3] = "h2b";
+                            removePiecesAlive();
+                            lblB4.setIcon(knightb);
+                            h2b.location = "B4";
+
+                            refreshHistory();
+                        }break;
+                        case "B5" : 
+                        {   
+                            piecesAlive[1][4] = "h2b";
+                            removePiecesAlive();
+                            lblB5.setIcon(knightb);
+                            h2b.location = "B5";
+
+                            refreshHistory();
+                        }break;
+                        case "B6" : 
+                        {   
+                            piecesAlive[1][5] = "h2b";
+                            removePiecesAlive();
+                            lblB6.setIcon(knightb);
+                            h2b.location = "B6";
+
+                            refreshHistory();
+                        }break;
+                        case "B7" : 
+                        {   
+                            piecesAlive[1][6] = "h2b";
+                            removePiecesAlive();
+                            lblB7.setIcon(knightb);
+                            h2b.location = "B7";
+
+                            refreshHistory();
+                        }break;
+                        case "B8" : 
+                        {   
+                            piecesAlive[1][7] = "h2b";
+                            removePiecesAlive();
+                            lblB8.setIcon(knightb);
+                            h2b.location = "B8";
+
+                            refreshHistory();
+                        }break;
+                        case "C1" : 
+                        {   
+                            piecesAlive[2][0] = "h2b";
+                            removePiecesAlive();
+                            lblC1.setIcon(knightb);
+                            h2b.location = "C1";
+
+                            refreshHistory();
+                        }break;
+                        case "C2" : 
+                        {   
+                            piecesAlive[2][1] = "h2b";
+                            removePiecesAlive();
+                            lblC2.setIcon(knightb);
+                            h2b.location = "C2";
+
+                            refreshHistory();
+                        }break;
+                        case "C3" : 
+                        {   
+                            piecesAlive[2][2] = "h2b";
+                            removePiecesAlive();
+                            lblC3.setIcon(knightb);
+                            h2b.location = "C3";
+
+                            refreshHistory();
+                        }break;
+                        case "C4" : 
+                        {   
+                            piecesAlive[2][3] = "h2b";
+                            removePiecesAlive();
+                            lblC4.setIcon(knightb);
+                            h2b.location = "C4";
+
+                            refreshHistory();
+                        }break;
+                        case "C5" : 
+                        {   
+                            piecesAlive[2][4] = "h2b";
+                            removePiecesAlive();
+                            lblC5.setIcon(knightb);
+                            h2b.location = "C5";
+
+                            refreshHistory();
+                        }break;
+                        case "C6" : 
+                        {   
+                            piecesAlive[2][5] = "h2b";
+                            removePiecesAlive();
+                            lblC6.setIcon(knightb);
+                            h2b.location = "C6";
+
+                            refreshHistory();
+                        }break;
+                        case "C7" : 
+                        {   
+                            piecesAlive[2][6] = "h2b";
+                            removePiecesAlive();
+                            lblC7.setIcon(knightb);
+                            h2b.location = "C7";
+
+                            refreshHistory();
+                        }break;
+                        case "C8" : 
+                        {   
+                            piecesAlive[2][7] = "h2b";
+                            removePiecesAlive();
+                            lblC8.setIcon(knightb);
+                            h2b.location = "C8";
+
+                            refreshHistory();
+                        }break;
+                        case "D1" : 
+                        {   
+                            piecesAlive[3][0] = "h2b";
+                            removePiecesAlive();
+                            lblD1.setIcon(knightb);
+                            h2b.location = "D1";
+
+                            refreshHistory();
+                        }break;
+                        case "D2" : 
+                        {   
+                            piecesAlive[3][1] = "h2b";
+                            removePiecesAlive();
+                            lblD2.setIcon(knightb);
+                            h2b.location = "D2";
+
+                            refreshHistory();
+                        }break;
+                        case "D3" : 
+                        {   
+                            piecesAlive[3][2] = "h2b";
+                            removePiecesAlive();
+                            lblD3.setIcon(knightb);
+                            h2b.location = "D3";
+
+                            refreshHistory();
+                        }break;
+                        case "D4" : 
+                        {   
+                            piecesAlive[3][3] = "h2b";
+                            removePiecesAlive();
+                            lblD4.setIcon(knightb);
+                            h2b.location = "D4";
+
+                            refreshHistory();
+                        }break;
+                        case "D5" : 
+                        {   
+                            piecesAlive[3][4] = "h2b";
+                            removePiecesAlive();
+                            lblD5.setIcon(knightb);
+                            h2b.location = "D5";
+
+                            refreshHistory();
+                        }break;
+                        case "D6" : 
+                        {   
+                            piecesAlive[3][5] = "h2b";
+                            removePiecesAlive();
+                            lblD6.setIcon(knightb);
+                            h2b.location = "D6";
+
+                            refreshHistory();
+                        }break;
+                        case "D7" : 
+                        {   
+                            piecesAlive[3][6] = "h2b";
+                            removePiecesAlive();
+                            lblD7.setIcon(knightb);
+                            h2b.location = "D7";
+
+                            refreshHistory();
+                        }break;
+                        case "D8" : 
+                        {   
+                            piecesAlive[3][7] = "h2b";
+                            removePiecesAlive();
+                            lblD8.setIcon(knightb);
+                            h2b.location = "D8";
+
+                            refreshHistory();
+                        }break;
+                        case "E1" : 
+                        {   
+                            piecesAlive[4][0] = "h2b";
+                            removePiecesAlive();
+                            lblE1.setIcon(knightb);
+                            h2b.location = "E1";
+
+                            refreshHistory();
+                        }break;
+                        case "E2" : 
+                        {   
+                            piecesAlive[4][1] = "h2b";
+                            removePiecesAlive();
+                            lblE2.setIcon(knightb);
+                            h2b.location = "E2";
+
+                            refreshHistory();
+                        }break;
+                        case "E3" : 
+                        {   
+                            piecesAlive[4][2] = "h2b";
+                            removePiecesAlive();
+                            lblE3.setIcon(knightb);
+                            h2b.location = "E3";
+
+                            refreshHistory();
+                        }break;
+                        case "E4" : 
+                        {   
+                            piecesAlive[4][3] = "h2b";
+                            removePiecesAlive();
+                            lblE4.setIcon(knightb);
+                            h2b.location = "E4";
+
+                            refreshHistory();
+                        }break;
+                        case "E5" : 
+                        {   
+                            piecesAlive[4][4] = "h2b";
+                            removePiecesAlive();
+                            lblE5.setIcon(knightb);
+                            h2b.location = "E5";
+
+                            refreshHistory();
+                        }break;
+                        case "E6" : 
+                        {   
+                            piecesAlive[4][5] = "h2b";
+                            removePiecesAlive();
+                            lblE6.setIcon(knightb);
+                            h2b.location = "E6";
+
+                            refreshHistory();
+                        }break;
+                        case "E7" : 
+                        {   
+                            piecesAlive[4][6] = "h2b";
+                            removePiecesAlive();
+                            lblE7.setIcon(knightb);
+                            h2b.location = "E7";
+
+                            refreshHistory();
+                        }break;
+                        case "E8" : 
+                        {   
+                            piecesAlive[4][7] = "h2b";
+                            removePiecesAlive();
+                            lblE8.setIcon(knightb);
+                            h2b.location = "E8";
+
+                            refreshHistory();
+                        }break;
+                        case "F1" : 
+                        {   
+                            piecesAlive[5][0] = "h2b";
+                            removePiecesAlive();
+                            lblF1.setIcon(knightb);
+                            h2b.location = "F1";
+
+                            refreshHistory();
+                        }break;
+                        case "F2" : 
+                        {   
+                            piecesAlive[5][1] = "h2b";
+                            removePiecesAlive();
+                            lblF2.setIcon(knightb);
+                            h2b.location = "F2";
+
+                            refreshHistory();
+                        }break;
+                        case "F3" : 
+                        {   
+                            piecesAlive[5][2] = "h2b";
+                            removePiecesAlive();
+                            lblF3.setIcon(knightb);
+                            h2b.location = "F3";
+
+                            refreshHistory();
+                        }break;
+                        case "F4" : 
+                        {   
+                            piecesAlive[5][3] = "h2b";
+                            removePiecesAlive();
+                            lblF4.setIcon(knightb);
+                            h2b.location = "F4";
+
+                            refreshHistory();
+                        }break;
+                        case "F5" : 
+                        {   
+                            piecesAlive[5][4] = "h2b";
+                            removePiecesAlive();
+                            lblF5.setIcon(knightb);
+                            h2b.location = "F5";
+
+                            refreshHistory();
+                        }break;
+                        case "F6" : 
+                        {   
+                            piecesAlive[5][5] = "h2b";
+                            removePiecesAlive();
+                            lblF6.setIcon(knightb);
+                            h2b.location = "F6";
+
+                            refreshHistory();
+                        }break;
+                        case "F7" : 
+                        {   
+                            piecesAlive[5][6] = "h2b";
+                            removePiecesAlive();
+                            lblF7.setIcon(knightb);
+                            h2b.location = "F7";
+
+                            refreshHistory();
+                        }break;
+                        case "F8" : 
+                        {   
+                            piecesAlive[5][7] = "h2b";
+                            removePiecesAlive();
+                            lblF8.setIcon(knightb);
+                            h2b.location = "F8";
+
+                            refreshHistory();
+                        }break;
+                        case "G1" : 
+                        {   
+                            piecesAlive[6][0] = "h2b";
+                            removePiecesAlive();
+                            lblG1.setIcon(knightb);
+                            h2b.location = "G1";
+
+                            refreshHistory();
+                        }break;
+                        case "G2" : 
+                        {   
+                            piecesAlive[6][1] = "h2b";
+                            removePiecesAlive();
+                            lblG2.setIcon(knightb);
+                            h2b.location = "G2";
+
+                            refreshHistory();
+                        }break;
+                        case "G3" : 
+                        {   
+                            piecesAlive[6][2] = "h2b";
+                            removePiecesAlive();
+                            lblG3.setIcon(knightb);
+                            h2b.location = "G3";
+
+                            refreshHistory();
+                        }break;
+                        case "G4" : 
+                        {   
+                            piecesAlive[6][3] = "h2b";
+                            removePiecesAlive();
+                            lblG4.setIcon(knightb);
+                            h2b.location = "G4";
+
+                            refreshHistory();
+                        }break;
+                        case "G5" : 
+                        {   
+                            piecesAlive[6][4] = "h2b";
+                            removePiecesAlive();
+                            lblG5.setIcon(knightb);
+                            h2b.location = "G5";
+
+                            refreshHistory();
+                        }break;
+                        case "G6" : 
+                        {   
+                            piecesAlive[6][5] = "h2b";
+                            removePiecesAlive();
+                            lblG6.setIcon(knightb);
+                            h2b.location = "G6";
+
+                            refreshHistory();
+                        }break;
+                        case "G7" : 
+                        {   
+                            piecesAlive[6][6] = "h2b";
+                            removePiecesAlive();
+                            lblG7.setIcon(knightb);
+                            h2b.location = "G7";
+
+                            refreshHistory();
+                        }break;
+                        case "G8" : 
+                        {   
+                            piecesAlive[6][7] = "h2b";
+                            removePiecesAlive();
+                            lblG8.setIcon(knightb);
+                            h2b.location = "G8";
+
+                            refreshHistory();
+                        }break;
+                        case "H1" : 
+                        {   
+                            piecesAlive[7][0] = "h2b";
+                            removePiecesAlive();
+                            lblH1.setIcon(knightb);
+                            h2b.location = "H1";
+
+                            refreshHistory();
+                        }break;
+                        case "H2" : 
+                        {   
+                            piecesAlive[7][1] = "h2b";
+                            removePiecesAlive();
+                            lblH2.setIcon(knightb);
+                            h2b.location = "H2";
+
+                            refreshHistory();
+                        }break;
+                        case "H3" : 
+                        {   
+                            piecesAlive[7][2] = "h2b";
+                            removePiecesAlive();
+                            lblH3.setIcon(knightb);
+                            h2b.location = "H3";
+
+                            refreshHistory();
+                        }break;
+                        case "H4" : 
+                        {   
+                            piecesAlive[7][3] = "h2b";
+                            removePiecesAlive();
+                            lblH4.setIcon(knightb);
+                            h2b.location = "H4";
+
+                            refreshHistory();
+                        }break;
+                        case "H5" : 
+                        {   
+                            piecesAlive[7][4] = "h2b";
+                            removePiecesAlive();
+                            lblH5.setIcon(knightb);
+                            h2b.location = "H5";
+
+                            refreshHistory();
+                        }break;
+                        case "H6" : 
+                        {   
+                            piecesAlive[7][5] = "h2b";
+                            removePiecesAlive();
+                            lblH6.setIcon(knightb);
+                            h2b.location = "H6";
+
+                            refreshHistory();
+                        }break;
+                        case "H7" : 
+                        {   
+                            piecesAlive[7][6] = "h2b";
+                            removePiecesAlive();
+                            lblH7.setIcon(knightb);
+                            h2b.location = "H7";
+
+                            refreshHistory();
+                        }break;
+                        case "H8" : 
+                        {   
+                            piecesAlive[7][7] = "h2b";
+                            removePiecesAlive();
+                            lblH8.setIcon(knightb);
+                            h2b.location = "H8";
 
                             refreshHistory();
                         }break;
