@@ -27,9 +27,9 @@ import java.net.*;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    //String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+   // String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
@@ -41,18 +41,18 @@ public class MainFrame extends javax.swing.JFrame {
     public String outputToOpponent = null;
     
     // Importing the pictures for each pieces
-    ImageIcon pawnb = new ImageIcon(directory + "pawn-b.png");
-    ImageIcon pawnw = new ImageIcon(directory + "pawn-w.png");
-    ImageIcon queenb = new ImageIcon(directory + "queen-b.png");
-    ImageIcon queenw = new ImageIcon(directory + "queen-w.png");
-    ImageIcon kingb = new ImageIcon(directory + "king-b.png");
-    ImageIcon kingw = new ImageIcon(directory + "king-w.png");
-    ImageIcon bishopb = new ImageIcon(directory + "bishop-b.png");
-    ImageIcon bishopw = new ImageIcon(directory + "bishop-w.png");
-    ImageIcon knightb = new ImageIcon(directory + "horse-b.png");
-    ImageIcon knightw = new ImageIcon(directory + "horse-w.png");
-    ImageIcon rookb = new ImageIcon(directory + "rook-b.png");
-    ImageIcon rookw = new ImageIcon(directory + "rook-w.png");
+    ImageIcon pawnb = new ImageIcon(getClass().getClassLoader().getResource("pawn-b.png"));
+    ImageIcon pawnw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
+    ImageIcon queenb = new ImageIcon(getClass().getClassLoader().getResource("queen-b.png"));
+    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
+    ImageIcon kingb = new ImageIcon(getClass().getClassLoader().getResource("king-b.png"));
+    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("pawn-w.png"));
+    ImageIcon bishopb = new ImageIcon(getClass().getClassLoader().getResource("bishop-b.png"));
+    ImageIcon bishopw = new ImageIcon(getClass().getClassLoader().getResource("bishop-w.png"));
+    ImageIcon knightb = new ImageIcon(getClass().getClassLoader().getResource("horse-b.png"));
+    ImageIcon knightw = new ImageIcon(getClass().getClassLoader().getResource("horse-w.png"));
+    ImageIcon rookb = new ImageIcon(getClass().getClassLoader().getResource("rook-b.png"));
+    ImageIcon rookw = new ImageIcon(getClass().getClassLoader().getResource("rook-w.png"));
     //======================================================
     
     //   Trace of which piece will be move
@@ -4496,7 +4496,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Server();
+        new Client();
     }
 
     /**
