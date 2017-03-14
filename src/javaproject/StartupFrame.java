@@ -5,6 +5,8 @@
  */
 package javaproject;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author aweso
@@ -30,7 +32,6 @@ public class StartupFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButtonPlayer1 = new javax.swing.JButton();
         jButtonPlayer2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Start Chess");
@@ -40,7 +41,6 @@ public class StartupFrame extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
-        jPanel1.setLayout(null);
 
         jButtonPlayer1.setText("Enter as Player 1");
         jButtonPlayer1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -49,8 +49,6 @@ public class StartupFrame extends javax.swing.JFrame {
                 jButtonPlayer1MouseClicked(evt);
             }
         });
-        jPanel1.add(jButtonPlayer1);
-        jButtonPlayer1.setBounds(210, 240, 160, 23);
 
         jButtonPlayer2.setText("Enter as Player 2");
         jButtonPlayer2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -58,12 +56,30 @@ public class StartupFrame extends javax.swing.JFrame {
                 jButtonPlayer2MouseClicked(evt);
             }
         });
-        jPanel1.add(jButtonPlayer2);
-        jButtonPlayer2.setBounds(210, 270, 160, 23);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/chess.jpg copy.jpg"))); // NOI18N
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 340);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonPlayer1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonPlayer2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(230, 230, 230))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(240, 240, 240)
+                        .addComponent(jButtonPlayer1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(270, 270, 270)
+                        .addComponent(jButtonPlayer2)))
+                .addGap(47, 47, 47))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,7 +154,6 @@ public class StartupFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonPlayer1;
     private javax.swing.JButton jButtonPlayer2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
