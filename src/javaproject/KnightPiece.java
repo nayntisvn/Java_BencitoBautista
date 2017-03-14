@@ -504,7 +504,7 @@ public class KnightPiece {
             case "G8":  {
                         possiblem.add("E7");
                         possiblem.add("H6");
-                        possiblem.add("G6");
+                        possiblem.add("F6");
                         break;
                         }
             case "H1":  {

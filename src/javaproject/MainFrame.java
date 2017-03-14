@@ -62,8 +62,8 @@ public class MainFrame extends javax.swing.JFrame {
     
     //  Graphics for each scenario
     Border orig = BorderFactory.createLineBorder(Color.black, 2);       // Default border
-    Border checked = BorderFactory.createLineBorder(Color.red, 2);      // Border when checked
-    Border movement = BorderFactory.createLineBorder(Color.yellow, 2);  // Available destination
+    Border checked = BorderFactory.createLineBorder(Color.red, 3);      // Border when checked
+    Border movement = BorderFactory.createLineBorder(Color.yellow, 3);  // Available destination
     Cursor handcur = new Cursor(HAND_CURSOR);
     Cursor origcur = new Cursor(DEFAULT_CURSOR);
     //======================================================
@@ -1005,7 +1005,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = h2b.movement();
+                possiblem = h2w.movement();
 
                 possiblemoves(possiblem);
                 break;
