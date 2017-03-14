@@ -419,14 +419,14 @@ public class KnightPiece {
                         break;
                         }
             case "F6":  {
-                        possiblem.add("C7");
-                        possiblem.add("G7");
-                        possiblem.add("F8");
-                        possiblem.add("D8");
-                        possiblem.add("G5");
-                        possiblem.add("C5");
-                        possiblem.add("F4");
-                        possiblem.add("D4");
+                        possiblem.add("D7");
+                        possiblem.add("H7");
+                        possiblem.add("G8");
+                        possiblem.add("E8");
+                        possiblem.add("G4");
+                        possiblem.add("D5");
+                        possiblem.add("E4");
+                        possiblem.add("H5");
                         break;
                         }
             case "F7":  {
@@ -455,7 +455,7 @@ public class KnightPiece {
                         possiblem.add("H4");
                         possiblem.add("E3");
                         possiblem.add("F4");
-                        possiblem.add("H1");
+                        possiblem.add("E1");
                         break;
                         }
             case "G3":  {
@@ -515,13 +515,13 @@ public class KnightPiece {
             case "H2":  {
                         possiblem.add("G4");
                         possiblem.add("F3");
-                        possiblem.add("F2");
+                        possiblem.add("F1");
                         break;
                         }
             case "H3":  {
                         possiblem.add("G5");
                         possiblem.add("F4");
-                        possiblem.add("G3");
+                        possiblem.add("G1");
                         possiblem.add("F2");
                         break;
                         }
