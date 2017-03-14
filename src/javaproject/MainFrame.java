@@ -6300,11 +6300,11 @@ public class MainFrame extends javax.swing.JFrame {
                         {
                             if(player.equals("player2"))
                             {
-                                jTextArea1.append("Player 2 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 2 : " + input[1] + "\n");
                             }
                             else if(player.equals("player1"))
                             {
-                                jTextArea1.append("Player 1 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 1 : " + input[1] + "\n");
                             }
                         }
                         else if(input[0].equals("move"))
@@ -6516,11 +6516,11 @@ public class MainFrame extends javax.swing.JFrame {
                         {
                             if(player.equals("player2"))
                             {
-                                jTextArea1.append("Player 2 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 2 : " + input[1] + "\n");
                             }
                             else if(player.equals("player1"))
                             {
-                                jTextArea1.append("Player 1 : " + input[1] + "\n");
+                                jTextArea1.append("\nPlayer 1 : " + input[1] + "\n");
                             }
                         }
                         else if(input[0].equals("move"))
