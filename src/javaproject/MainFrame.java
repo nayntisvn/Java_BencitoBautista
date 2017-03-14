@@ -7033,14 +7033,14 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
-//        
-//        this.player = player;
-//        if ("player1".equals(player)){
-//            new Server();
-//        }else if("player2".equals(player)){
-//            new Client();
-//        }
-//        
+        
+        this.player = player;
+        if ("player1".equals(player)){
+            new Server();
+        }else if("player2".equals(player)){
+            new Client();
+        }
+        
     }
 
     /**
