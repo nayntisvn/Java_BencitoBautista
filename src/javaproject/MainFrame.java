@@ -45,9 +45,9 @@ public class MainFrame extends javax.swing.JFrame {
     ImageIcon pawnb = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-b.png"));
     ImageIcon pawnw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
     ImageIcon queenb = new ImageIcon(getClass().getClassLoader().getResource("Resources/queen-b.png"));
-    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
+    ImageIcon queenw = new ImageIcon(getClass().getClassLoader().getResource("Resources/queen-w.png"));
     ImageIcon kingb = new ImageIcon(getClass().getClassLoader().getResource("Resources/king-b.png"));
-    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("Resources/pawn-w.png"));
+    ImageIcon kingw = new ImageIcon(getClass().getClassLoader().getResource("Resources/king-w.png"));
     ImageIcon bishopb = new ImageIcon(getClass().getClassLoader().getResource("Resources/bishop-b.png"));
     ImageIcon bishopw = new ImageIcon(getClass().getClassLoader().getResource("Resources/bishop-w.png"));
     ImageIcon knightb = new ImageIcon(getClass().getClassLoader().getResource("Resources/horse-b.png"));
@@ -208,6 +208,8 @@ public class MainFrame extends javax.swing.JFrame {
     //  Possible destinations of a piece to place in the array 
     public void possiblemoves(ArrayList<String> possiblem)
     {
+        char test = bufferpiece.charAt(2);
+        
         for(String s : possiblem)
         {
             if(s.equals("A1") && piecesAlive[0][0].equals(""))
@@ -420,7 +422,7 @@ public class MainFrame extends javax.swing.JFrame {
                 F2.setBorder(movement);
                 F2.setCursor(new Cursor(HAND_CURSOR));
             }
-            if(s.equals("F3") && piecesAlive[5][2].equals(""))
+            if(s.equals("F3") && (piecesAlive[5][2].equals("") || piecesAlive[5][2].charAt(2) == 'b'))
             {
                 F3.setBorder(movement);
                 F3.setCursor(new Cursor(HAND_CURSOR));
@@ -531,8 +533,6 @@ public class MainFrame extends javax.swing.JFrame {
                 H8.setCursor(new Cursor(HAND_CURSOR));
             }
         }
-        
-        
         
     }
     //======================================================
@@ -697,6 +697,7 @@ public class MainFrame extends javax.swing.JFrame {
     {
         refreshHistory();
         possiblem.clear();
+        
         switch(pieceToMove)
         {
             case "p1w" : 
@@ -8386,6 +8387,7 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
+        refreshHistory();
         premovePiece(piecesAlive[0][1], lblA2);
     }//GEN-LAST:event_lblA2MouseClicked
 
@@ -8401,7 +8403,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblA5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA5MouseClicked
         // TODO add your handling code here:
-       premovePiece(piecesAlive[0][4], lblA5);
+        premovePiece(piecesAlive[0][4], lblA5);
     }//GEN-LAST:event_lblA5MouseClicked
 
     private void lblA6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA6MouseClicked
