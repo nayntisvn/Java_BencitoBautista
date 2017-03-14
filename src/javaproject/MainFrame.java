@@ -9035,7 +9035,6 @@ public class MainFrame extends javax.swing.JFrame {
         {
             outputToOpponent = "chat," + jTextField2.getText();
             
-            
             jTextArea1.append("\nYou : " + jTextField2.getText());
             jTextField2.setText("");
             goNoGo = 1;
