@@ -531,6 +531,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         }
         
+        
+        
     }
     //======================================================
     
@@ -868,6 +870,7 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = r1b.movement();
 
                 possiblemoves(possiblem);
+                
                 break;
             }
             case "h1b" : 
@@ -948,6 +951,8 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = r1w.movement();
 
                 possiblemoves(possiblem);
+                
+                
                 break;
             }
             case "h1w" : 
@@ -6866,6 +6871,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C8.setLayout(new java.awt.GridBagLayout());
 
+        lblC8.setName("C8"); // NOI18N
         lblC8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC8MouseClicked(evt);
@@ -7901,6 +7907,11 @@ public class MainFrame extends javax.swing.JFrame {
         A1.setLayout(new java.awt.GridBagLayout());
 
         lblA1.setName("A1"); // NOI18N
+        lblA1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblA1MouseClicked(evt);
+            }
+        });
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
@@ -8962,6 +8973,10 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         postmovePiece(bufferpiece, H8);  
     }//GEN-LAST:event_H8MouseClicked
+
+    private void lblA1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA1MouseClicked
+        premovePiece(piecesAlive[0][0], lblA1);
+    }//GEN-LAST:event_lblA1MouseClicked
                               
     
 
