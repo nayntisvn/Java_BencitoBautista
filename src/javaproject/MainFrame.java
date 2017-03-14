@@ -870,7 +870,6 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = r1b.movement();
 
                 possiblemoves(possiblem);
-                
                 break;
             }
             case "h1b" : 
@@ -1028,7 +1027,7 @@ public class MainFrame extends javax.swing.JFrame {
             
         }
         
-        outputToOpponent = bufferpiece + "," + bufferloc;
+        outputToOpponent = "move," + bufferpiece + "," + bufferloc;
         
     }
     //======================================================
@@ -6290,165 +6289,168 @@ public class MainFrame extends javax.swing.JFrame {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     
                     out = br2.readLine();
-                    System.out.println(out);
                     
                     if(!out.equals(null))
                     {
                         inputFromOpponent = out;
                         
                         input = inputFromOpponent.split(",");
-                        
-                        switch(input[1])
+                        if(input[0].equals("chat"))
                         {
-                            case "A1" : premovePiece(input[0], lblA1); break;
-                            case "A2" : premovePiece(input[0], lblA2); break;
-                            case "A3" : premovePiece(input[0], lblA3); break;
-                            case "A4" : premovePiece(input[0], lblA4); break;
-                            case "A5" : premovePiece(input[0], lblA5); break;
-                            case "A6" : premovePiece(input[0], lblA6); break;
-                            case "A7" : premovePiece(input[0], lblA7); break;
-                            case "A8" : premovePiece(input[0], lblA8); break;
-                            
-                            case "B1" : premovePiece(input[0], lblB1); break;
-                            case "B2" : premovePiece(input[0], lblB2); break;
-                            case "B3" : premovePiece(input[0], lblB3); break;
-                            case "B4" : premovePiece(input[0], lblB4); break;
-                            case "B5" : premovePiece(input[0], lblB5); break;
-                            case "B6" : premovePiece(input[0], lblB6); break;
-                            case "B7" : premovePiece(input[0], lblB7); break;
-                            case "B8" : premovePiece(input[0], lblB8); break;
-                            
-                            case "C1" : premovePiece(input[0], lblC1); break;
-                            case "C2" : premovePiece(input[0], lblC2); break;
-                            case "C3" : premovePiece(input[0], lblC3); break;
-                            case "C4" : premovePiece(input[0], lblC4); break;
-                            case "C5" : premovePiece(input[0], lblC5); break;
-                            case "C6" : premovePiece(input[0], lblC6); break;
-                            case "C7" : premovePiece(input[0], lblC7); break;
-                            case "C8" : premovePiece(input[0], lblC8); break;
-                           
-                            case "D1" : premovePiece(input[0], lblD1); break;
-                            case "D2" : premovePiece(input[0], lblD2); break;
-                            case "D3" : premovePiece(input[0], lblD3); break;
-                            case "D4" : premovePiece(input[0], lblD4); break;
-                            case "D5" : premovePiece(input[0], lblD5); break;
-                            case "D6" : premovePiece(input[0], lblD6); break;
-                            case "D7" : premovePiece(input[0], lblD7); break;
-                            case "D8" : premovePiece(input[0], lblD8); break;
-                           
-                            case "E1" : premovePiece(input[0], lblE1); break;
-                            case "E2" : premovePiece(input[0], lblE2); break;
-                            case "E3" : premovePiece(input[0], lblE3); break;
-                            case "E4" : premovePiece(input[0], lblE4); break;
-                            case "E5" : premovePiece(input[0], lblE5); break;
-                            case "E6" : premovePiece(input[0], lblE6); break;
-                            case "E7" : premovePiece(input[0], lblE7); break;
-                            case "E8" : premovePiece(input[0], lblE8); break;
-                            
-                            case "F1" : premovePiece(input[0], lblF1); break;
-                            case "F2" : premovePiece(input[0], lblF2); break;
-                            case "F3" : premovePiece(input[0], lblF3); break;
-                            case "F4" : premovePiece(input[0], lblF4); break;
-                            case "F5" : premovePiece(input[0], lblF5); break;
-                            case "F6" : premovePiece(input[0], lblF6); break;
-                            case "F7" : premovePiece(input[0], lblF7); break;
-                            case "F8" : premovePiece(input[0], lblF8); break;
-                            
-                            case "G1" : premovePiece(input[0], lblG1); break;
-                            case "G2" : premovePiece(input[0], lblG2); break;
-                            case "G3" : premovePiece(input[0], lblG3); break;
-                            case "G4" : premovePiece(input[0], lblG4); break;
-                            case "G5" : premovePiece(input[0], lblG5); break;
-                            case "G6" : premovePiece(input[0], lblG6); break;
-                            case "G7" : premovePiece(input[0], lblG7); break;
-                            case "G8" : premovePiece(input[0], lblG8); break;
-                          
-                            case "H1" : premovePiece(input[0], lblH1); break;
-                            case "H2" : premovePiece(input[0], lblH2); break;
-                            case "H3" : premovePiece(input[0], lblH3); break;
-                            case "H4" : premovePiece(input[0], lblH4); break;
-                            case "H5" : premovePiece(input[0], lblH5); break;
-                            case "H6" : premovePiece(input[0], lblH6); break;
-                            case "H7" : premovePiece(input[0], lblH7); break;
-                            case "H8" : premovePiece(input[0], lblH8); break;
+                            jTextArea1.append(input[1] + "\n");
                         }
-                        
-                        switch(input[2])
+                        else if(input[0].equals("move"))
                         {
-                            case "A1" : postmovePiece1(input[0], A1); break;
-                            case "A2" : postmovePiece1(input[0], A2); break;
-                            case "A3" : postmovePiece1(input[0], A3); break;
-                            case "A4" : postmovePiece1(input[0], A4); break;
-                            case "A5" : postmovePiece1(input[0], A5); break;
-                            case "A6" : postmovePiece1(input[0], A6); break;
-                            case "A7" : postmovePiece1(input[0], A7); break;
-                            case "A8" : postmovePiece1(input[0], A8); break;
-                            
-                            case "B1" : postmovePiece1(input[0], B1); break;
-                            case "B2" : postmovePiece1(input[0], B2); break;
-                            case "B3" : postmovePiece1(input[0], B3); break;
-                            case "B4" : postmovePiece1(input[0], B4); break;
-                            case "B5" : postmovePiece1(input[0], B5); break;
-                            case "B6" : postmovePiece1(input[0], B6); break;
-                            case "B7" : postmovePiece1(input[0], B7); break;
-                            case "B8" : postmovePiece1(input[0], B8); break;
-                            
-                            case "C1" : postmovePiece1(input[0], C1); break;
-                            case "C2" : postmovePiece1(input[0], C2); break;
-                            case "C3" : postmovePiece1(input[0], C3); break;
-                            case "C4" : postmovePiece1(input[0], C4); break;
-                            case "C5" : postmovePiece1(input[0], C5); break;
-                            case "C6" : postmovePiece1(input[0], C6); break;
-                            case "C7" : postmovePiece1(input[0], C7); break;
-                            case "C8" : postmovePiece1(input[0], C8); break;
-                           
-                            case "D1" : postmovePiece1(input[0], D1); break;
-                            case "D2" : postmovePiece1(input[0], D2); break;
-                            case "D3" : postmovePiece1(input[0], D3); break;
-                            case "D4" : postmovePiece1(input[0], D4); break;
-                            case "D5" : postmovePiece1(input[0], D5); break;
-                            case "D6" : postmovePiece1(input[0], D6); break;
-                            case "D7" : postmovePiece1(input[0], D7); break;
-                            case "D8" : postmovePiece1(input[0], D8); break;
-                           
-                            case "E1" : postmovePiece1(input[0], E1); break;
-                            case "E2" : postmovePiece1(input[0], E2); break;
-                            case "E3" : postmovePiece1(input[0], E3); break;
-                            case "E4" : postmovePiece1(input[0], E4); break;
-                            case "E5" : postmovePiece1(input[0], E5); break;
-                            case "E6" : postmovePiece1(input[0], E6); break;
-                            case "E7" : postmovePiece1(input[0], E7); break;
-                            case "E8" : postmovePiece1(input[0], E8); break;
-                            
-                            case "F1" : postmovePiece1(input[0], F1); break;
-                            case "F2" : postmovePiece1(input[0], F2); break;
-                            case "F3" : postmovePiece1(input[0], F3); break;
-                            case "F4" : postmovePiece1(input[0], F4); break;
-                            case "F5" : postmovePiece1(input[0], F5); break;
-                            case "F6" : postmovePiece1(input[0], F6); break;
-                            case "F7" : postmovePiece1(input[0], F7); break;
-                            case "F8" : postmovePiece1(input[0], F8); break;
-                            
-                            case "G1" : postmovePiece1(input[0], G1); break;
-                            case "G2" : postmovePiece1(input[0], G2); break;
-                            case "G3" : postmovePiece1(input[0], G3); break;
-                            case "G4" : postmovePiece1(input[0], G4); break;
-                            case "G5" : postmovePiece1(input[0], G5); break;
-                            case "G6" : postmovePiece1(input[0], G6); break;
-                            case "G7" : postmovePiece1(input[0], G7); break;
-                            case "G8" : postmovePiece1(input[0], G8); break;
-                          
-                            case "H1" : postmovePiece1(input[0], H1); break;
-                            case "H2" : postmovePiece1(input[0], H2); break;
-                            case "H3" : postmovePiece1(input[0], H3); break;
-                            case "H4" : postmovePiece1(input[0], H4); break;
-                            case "H5" : postmovePiece1(input[0], H5); break;
-                            case "H6" : postmovePiece1(input[0], H6); break;
-                            case "H7" : postmovePiece1(input[0], H7); break;
-                            case "H8" : postmovePiece1(input[0], H8); break;
-                           
+                            switch(input[1])
+                            { 
+                                case "A1" : premovePiece(input[1], lblA1); break;
+                                case "A2" : premovePiece(input[1], lblA2); break;
+                                case "A3" : premovePiece(input[1], lblA3); break;
+                                case "A4" : premovePiece(input[1], lblA4); break;
+                                case "A5" : premovePiece(input[1], lblA5); break;
+                                case "A6" : premovePiece(input[1], lblA6); break;
+                                case "A7" : premovePiece(input[1], lblA7); break;
+                                case "A8" : premovePiece(input[1], lblA8); break;
+
+                                case "B1" : premovePiece(input[1], lblB1); break;
+                                case "B2" : premovePiece(input[1], lblB2); break;
+                                case "B3" : premovePiece(input[1], lblB3); break;
+                                case "B4" : premovePiece(input[1], lblB4); break;
+                                case "B5" : premovePiece(input[1], lblB5); break;
+                                case "B6" : premovePiece(input[1], lblB6); break;
+                                case "B7" : premovePiece(input[1], lblB7); break;
+                                case "B8" : premovePiece(input[1], lblB8); break;
+                                case "C1" : premovePiece(input[1], lblC1); break;
+                                case "C2" : premovePiece(input[1], lblC2); break;
+                                case "C3" : premovePiece(input[1], lblC3); break;
+                                case "C4" : premovePiece(input[1], lblC4); break;
+                                case "C5" : premovePiece(input[1], lblC5); break;
+                                case "C6" : premovePiece(input[1], lblC6); break;
+                                case "C7" : premovePiece(input[1], lblC7); break;
+                                case "C8" : premovePiece(input[1], lblC8); break;
+
+                                case "D1" : premovePiece(input[1], lblD1); break;
+                                case "D2" : premovePiece(input[1], lblD2); break;
+                                case "D3" : premovePiece(input[1], lblD3); break;
+                                case "D4" : premovePiece(input[1], lblD4); break;
+                                case "D5" : premovePiece(input[1], lblD5); break;
+                                case "D6" : premovePiece(input[1], lblD6); break;
+                                case "D7" : premovePiece(input[1], lblD7); break;
+                                case "D8" : premovePiece(input[1], lblD8); break;
+
+                                case "E1" : premovePiece(input[1], lblE1); break;
+                                case "E2" : premovePiece(input[1], lblE2); break;
+                                case "E3" : premovePiece(input[1], lblE3); break;
+                                case "E4" : premovePiece(input[1], lblE4); break;
+                                case "E5" : premovePiece(input[1], lblE5); break;
+                                case "E6" : premovePiece(input[1], lblE6); break;
+                                case "E7" : premovePiece(input[1], lblE7); break;
+                                case "E8" : premovePiece(input[1], lblE8); break;
+
+                                case "F1" : premovePiece(input[1], lblF1); break;
+                                case "F2" : premovePiece(input[1], lblF2); break;
+                                case "F3" : premovePiece(input[1], lblF3); break;
+                                case "F4" : premovePiece(input[1], lblF4); break;
+                                case "F5" : premovePiece(input[1], lblF5); break;
+                                case "F6" : premovePiece(input[1], lblF6); break;
+                                case "F7" : premovePiece(input[1], lblF7); break;
+                                case "F8" : premovePiece(input[1], lblF8); break;
+                                
+                                case "G1" : premovePiece(input[1], lblG1); break;
+                                case "G2" : premovePiece(input[1], lblG2); break;
+                                case "G3" : premovePiece(input[1], lblG3); break;
+                                case "G4" : premovePiece(input[1], lblG4); break;
+                                case "G5" : premovePiece(input[1], lblG5); break;
+                                case "G6" : premovePiece(input[1], lblG6); break;
+                                case "G7" : premovePiece(input[1], lblG7); break;
+                                case "G8" : premovePiece(input[1], lblG8); break;
+                                
+                                case "H1" : premovePiece(input[1], lblH1); break;
+                                case "H2" : premovePiece(input[1], lblH2); break;
+                                case "H3" : premovePiece(input[1], lblH3); break;
+                                case "H4" : premovePiece(input[1], lblH4); break;
+                                case "H5" : premovePiece(input[1], lblH5); break;
+                                case "H6" : premovePiece(input[1], lblH6); break;
+                                case "H7" : premovePiece(input[1], lblH7); break;
+                                case "H8" : premovePiece(input[1], lblH8); break;
+                            }
+
+                            switch(input[3])
+                            {
+                                case "A1" : postmovePiece1(input[1], A1); break;
+                                case "A2" : postmovePiece1(input[1], A2); break;
+                                case "A3" : postmovePiece1(input[1], A3); break;
+                                case "A4" : postmovePiece1(input[1], A4); break;
+                                case "A5" : postmovePiece1(input[1], A5); break;
+                                case "A6" : postmovePiece1(input[1], A6); break;
+                                case "A7" : postmovePiece1(input[1], A7); break;
+                                case "A8" : postmovePiece1(input[1], A8); break;
+
+                                case "B1" : postmovePiece1(input[1], B1); break;
+                                case "B2" : postmovePiece1(input[1], B2); break;
+                                case "B3" : postmovePiece1(input[1], B3); break;
+                                case "B4" : postmovePiece1(input[1], B4); break;
+                                case "B5" : postmovePiece1(input[1], B5); break;
+                                case "B6" : postmovePiece1(input[1], B6); break;
+                                case "B7" : postmovePiece1(input[1], B7); break;
+                                case "B8" : postmovePiece1(input[1], B8); break;
+
+                                case "C1" : postmovePiece1(input[1], C1); break;
+                                case "C2" : postmovePiece1(input[1], C2); break;
+                                case "C3" : postmovePiece1(input[1], C3); break;
+                                case "C4" : postmovePiece1(input[1], C4); break;
+                                case "C5" : postmovePiece1(input[1], C5); break;
+                                case "C6" : postmovePiece1(input[1], C6); break;
+                                case "C7" : postmovePiece1(input[1], C7); break;
+                                case "C8" : postmovePiece1(input[1], C8); break;
+
+                                case "D1" : postmovePiece1(input[1], D1); break;
+                                case "D2" : postmovePiece1(input[1], D2); break;
+                                case "D3" : postmovePiece1(input[1], D3); break;
+                                case "D4" : postmovePiece1(input[1], D4); break;
+                                case "D5" : postmovePiece1(input[1], D5); break;
+                                case "D6" : postmovePiece1(input[1], D6); break;
+                                case "D7" : postmovePiece1(input[1], D7); break;
+                                case "D8" : postmovePiece1(input[1], D8); break;
+
+                                case "E1" : postmovePiece1(input[1], E1); break;
+                                case "E2" : postmovePiece1(input[1], E2); break;
+                                case "E3" : postmovePiece1(input[1], E3); break;
+                                case "E4" : postmovePiece1(input[1], E4); break;
+                                case "E5" : postmovePiece1(input[1], E5); break;
+                                case "E6" : postmovePiece1(input[1], E6); break;
+                                case "E7" : postmovePiece1(input[1], E7); break;
+                                case "E8" : postmovePiece1(input[1], E8); break;
+
+                                case "F1" : postmovePiece1(input[1], F1); break;
+                                case "F2" : postmovePiece1(input[1], F2); break;
+                                case "F3" : postmovePiece1(input[1], F3); break;
+                                case "F4" : postmovePiece1(input[1], F4); break;
+                                case "F5" : postmovePiece1(input[1], F5); break;
+                                case "F6" : postmovePiece1(input[1], F6); break;
+                                case "F7" : postmovePiece1(input[1], F7); break;
+                                case "F8" : postmovePiece1(input[1], F8); break;
+
+                                case "G1" : postmovePiece1(input[1], G1); break;
+                                case "G2" : postmovePiece1(input[1], G2); break;
+                                case "G3" : postmovePiece1(input[1], G3); break;
+                                case "G4" : postmovePiece1(input[1], G4); break;
+                                case "G5" : postmovePiece1(input[1], G5); break;
+                                case "G6" : postmovePiece1(input[1], G6); break;
+                                case "G7" : postmovePiece1(input[1], G7); break;
+                                case "G8" : postmovePiece1(input[1], G8); break;
+
+                                case "H1" : postmovePiece1(input[1], H1); break;
+                                case "H2" : postmovePiece1(input[1], H2); break;
+                                case "H3" : postmovePiece1(input[1], H3); break;
+                                case "H4" : postmovePiece1(input[1], H4); break;
+                                case "H5" : postmovePiece1(input[1], H5); break;
+                                case "H6" : postmovePiece1(input[1], H6); break;
+                                case "H7" : postmovePiece1(input[1], H7); break;
+                                case "H8" : postmovePiece1(input[1], H8); break;
+
+                            }
                         }
-                        
                     }
                     
                 } while (!out.equals("END"));
@@ -6503,154 +6505,161 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         input = inputFromOpponent.split(",");
                         
-                        switch(input[1])
+                        if(input[0].equals("chat"))
                         {
-                            case "A1" : premovePiece(input[0], lblA1); break;
-                            case "A2" : premovePiece(input[0], lblA2); break;
-                            case "A3" : premovePiece(input[0], lblA3); break;
-                            case "A4" : premovePiece(input[0], lblA4); break;
-                            case "A5" : premovePiece(input[0], lblA5); break;
-                            case "A6" : premovePiece(input[0], lblA6); break;
-                            case "A7" : premovePiece(input[0], lblA7); break;
-                            case "A8" : premovePiece(input[0], lblA8); break;
-                            
-                            case "B1" : premovePiece(input[0], lblB1); break;
-                            case "B2" : premovePiece(input[0], lblB2); break;
-                            case "B3" : premovePiece(input[0], lblB3); break;
-                            case "B4" : premovePiece(input[0], lblB4); break;
-                            case "B5" : premovePiece(input[0], lblB5); break;
-                            case "B6" : premovePiece(input[0], lblB6); break;
-                            case "B7" : premovePiece(input[0], lblB7); break;
-                            case "B8" : premovePiece(input[0], lblB8); break;
-                            
-                            case "C1" : premovePiece(input[0], lblC1); break;
-                            case "C2" : premovePiece(input[0], lblC2); break;
-                            case "C3" : premovePiece(input[0], lblC3); break;
-                            case "C4" : premovePiece(input[0], lblC4); break;
-                            case "C5" : premovePiece(input[0], lblC5); break;
-                            case "C6" : premovePiece(input[0], lblC6); break;
-                            case "C7" : premovePiece(input[0], lblC7); break;
-                            case "C8" : premovePiece(input[0], lblC8); break;
-                           
-                            case "D1" : premovePiece(input[0], lblD1); break;
-                            case "D2" : premovePiece(input[0], lblD2); break;
-                            case "D3" : premovePiece(input[0], lblD3); break;
-                            case "D4" : premovePiece(input[0], lblD4); break;
-                            case "D5" : premovePiece(input[0], lblD5); break;
-                            case "D6" : premovePiece(input[0], lblD6); break;
-                            case "D7" : premovePiece(input[0], lblD7); break;
-                            case "D8" : premovePiece(input[0], lblD8); break;
-                           
-                            case "E1" : premovePiece(input[0], lblE1); break;
-                            case "E2" : premovePiece(input[0], lblE2); break;
-                            case "E3" : premovePiece(input[0], lblE3); break;
-                            case "E4" : premovePiece(input[0], lblE4); break;
-                            case "E5" : premovePiece(input[0], lblE5); break;
-                            case "E6" : premovePiece(input[0], lblE6); break;
-                            case "E7" : premovePiece(input[0], lblE7); break;
-                            case "E8" : premovePiece(input[0], lblE8); break;
-                            
-                            case "F1" : premovePiece(input[0], lblF1); break;
-                            case "F2" : premovePiece(input[0], lblF2); break;
-                            case "F3" : premovePiece(input[0], lblF3); break;
-                            case "F4" : premovePiece(input[0], lblF4); break;
-                            case "F5" : premovePiece(input[0], lblF5); break;
-                            case "F6" : premovePiece(input[0], lblF6); break;
-                            case "F7" : premovePiece(input[0], lblF7); break;
-                            case "F8" : premovePiece(input[0], lblF8); break;
-                            
-                            case "G1" : premovePiece(input[0], lblG1); break;
-                            case "G2" : premovePiece(input[0], lblG2); break;
-                            case "G3" : premovePiece(input[0], lblG3); break;
-                            case "G4" : premovePiece(input[0], lblG4); break;
-                            case "G5" : premovePiece(input[0], lblG5); break;
-                            case "G6" : premovePiece(input[0], lblG6); break;
-                            case "G7" : premovePiece(input[0], lblG7); break;
-                            case "G8" : premovePiece(input[0], lblG8); break;
-                          
-                            case "H1" : premovePiece(input[0], lblH1); break;
-                            case "H2" : premovePiece(input[0], lblH2); break;
-                            case "H3" : premovePiece(input[0], lblH3); break;
-                            case "H4" : premovePiece(input[0], lblH4); break;
-                            case "H5" : premovePiece(input[0], lblH5); break;
-                            case "H6" : premovePiece(input[0], lblH6); break;
-                            case "H7" : premovePiece(input[0], lblH7); break;
-                            case "H8" : premovePiece(input[0], lblH8); break;
+                            jTextArea1.append(input[1] + "\n");
                         }
-                        
-                        switch(input[2])
+                        else if(input[0].equals("move"))
                         {
-                            case "A1" : postmovePiece1(input[0], A1); break;
-                            case "A2" : postmovePiece1(input[0], A2); break;
-                            case "A3" : postmovePiece1(input[0], A3); break;
-                            case "A4" : postmovePiece1(input[0], A4); break;
-                            case "A5" : postmovePiece1(input[0], A5); break;
-                            case "A6" : postmovePiece1(input[0], A6); break;
-                            case "A7" : postmovePiece1(input[0], A7); break;
-                            case "A8" : postmovePiece1(input[0], A8); break;
-                            
-                            case "B1" : postmovePiece1(input[0], B1); break;
-                            case "B2" : postmovePiece1(input[0], B2); break;
-                            case "B3" : postmovePiece1(input[0], B3); break;
-                            case "B4" : postmovePiece1(input[0], B4); break;
-                            case "B5" : postmovePiece1(input[0], B5); break;
-                            case "B6" : postmovePiece1(input[0], B6); break;
-                            case "B7" : postmovePiece1(input[0], B7); break;
-                            case "B8" : postmovePiece1(input[0], B8); break;
-                            
-                            case "C1" : postmovePiece1(input[0], C1); break;
-                            case "C2" : postmovePiece1(input[0], C2); break;
-                            case "C3" : postmovePiece1(input[0], C3); break;
-                            case "C4" : postmovePiece1(input[0], C4); break;
-                            case "C5" : postmovePiece1(input[0], C5); break;
-                            case "C6" : postmovePiece1(input[0], C6); break;
-                            case "C7" : postmovePiece1(input[0], C7); break;
-                            case "C8" : postmovePiece1(input[0], C8); break;
-                           
-                            case "D1" : postmovePiece1(input[0], D1); break;
-                            case "D2" : postmovePiece1(input[0], D2); break;
-                            case "D3" : postmovePiece1(input[0], D3); break;
-                            case "D4" : postmovePiece1(input[0], D4); break;
-                            case "D5" : postmovePiece1(input[0], D5); break;
-                            case "D6" : postmovePiece1(input[0], D6); break;
-                            case "D7" : postmovePiece1(input[0], D7); break;
-                            case "D8" : postmovePiece1(input[0], D8); break;
-                           
-                            case "E1" : postmovePiece1(input[0], E1); break;
-                            case "E2" : postmovePiece1(input[0], E2); break;
-                            case "E3" : postmovePiece1(input[0], E3); break;
-                            case "E4" : postmovePiece1(input[0], E4); break;
-                            case "E5" : postmovePiece1(input[0], E5); break;
-                            case "E6" : postmovePiece1(input[0], E6); break;
-                            case "E7" : postmovePiece1(input[0], E7); break;
-                            case "E8" : postmovePiece1(input[0], E8); break;
-                            
-                            case "F1" : postmovePiece1(input[0], F1); break;
-                            case "F2" : postmovePiece1(input[0], F2); break;
-                            case "F3" : postmovePiece1(input[0], F3); break;
-                            case "F4" : postmovePiece1(input[0], F4); break;
-                            case "F5" : postmovePiece1(input[0], F5); break;
-                            case "F6" : postmovePiece1(input[0], F6); break;
-                            case "F7" : postmovePiece1(input[0], F7); break;
-                            case "F8" : postmovePiece1(input[0], F8); break;
-                            
-                            case "G1" : postmovePiece1(input[0], G1); break;
-                            case "G2" : postmovePiece1(input[0], G2); break;
-                            case "G3" : postmovePiece1(input[0], G3); break;
-                            case "G4" : postmovePiece1(input[0], G4); break;
-                            case "G5" : postmovePiece1(input[0], G5); break;
-                            case "G6" : postmovePiece1(input[0], G6); break;
-                            case "G7" : postmovePiece1(input[0], G7); break;
-                            case "G8" : postmovePiece1(input[0], G8); break;
-                          
-                            case "H1" : postmovePiece1(input[0], H1); break;
-                            case "H2" : postmovePiece1(input[0], H2); break;
-                            case "H3" : postmovePiece1(input[0], H3); break;
-                            case "H4" : postmovePiece1(input[0], H4); break;
-                            case "H5" : postmovePiece1(input[0], H5); break;
-                            case "H6" : postmovePiece1(input[0], H6); break;
-                            case "H7" : postmovePiece1(input[0], H7); break;
-                            case "H8" : postmovePiece1(input[0], H8); break;
+                            switch(input[1])
+                            { 
+                                case "A1" : premovePiece(input[1], lblA1); break;
+                                case "A2" : premovePiece(input[1], lblA2); break;
+                                case "A3" : premovePiece(input[1], lblA3); break;
+                                case "A4" : premovePiece(input[1], lblA4); break;
+                                case "A5" : premovePiece(input[1], lblA5); break;
+                                case "A6" : premovePiece(input[1], lblA6); break;
+                                case "A7" : premovePiece(input[1], lblA7); break;
+                                case "A8" : premovePiece(input[1], lblA8); break;
+
+                                case "B1" : premovePiece(input[1], lblB1); break;
+                                case "B2" : premovePiece(input[1], lblB2); break;
+                                case "B3" : premovePiece(input[1], lblB3); break;
+                                case "B4" : premovePiece(input[1], lblB4); break;
+                                case "B5" : premovePiece(input[1], lblB5); break;
+                                case "B6" : premovePiece(input[1], lblB6); break;
+                                case "B7" : premovePiece(input[1], lblB7); break;
+                                case "B8" : premovePiece(input[1], lblB8); break;
+                                case "C1" : premovePiece(input[1], lblC1); break;
+                                case "C2" : premovePiece(input[1], lblC2); break;
+                                case "C3" : premovePiece(input[1], lblC3); break;
+                                case "C4" : premovePiece(input[1], lblC4); break;
+                                case "C5" : premovePiece(input[1], lblC5); break;
+                                case "C6" : premovePiece(input[1], lblC6); break;
+                                case "C7" : premovePiece(input[1], lblC7); break;
+                                case "C8" : premovePiece(input[1], lblC8); break;
+
+                                case "D1" : premovePiece(input[1], lblD1); break;
+                                case "D2" : premovePiece(input[1], lblD2); break;
+                                case "D3" : premovePiece(input[1], lblD3); break;
+                                case "D4" : premovePiece(input[1], lblD4); break;
+                                case "D5" : premovePiece(input[1], lblD5); break;
+                                case "D6" : premovePiece(input[1], lblD6); break;
+                                case "D7" : premovePiece(input[1], lblD7); break;
+                                case "D8" : premovePiece(input[1], lblD8); break;
+
+                                case "E1" : premovePiece(input[1], lblE1); break;
+                                case "E2" : premovePiece(input[1], lblE2); break;
+                                case "E3" : premovePiece(input[1], lblE3); break;
+                                case "E4" : premovePiece(input[1], lblE4); break;
+                                case "E5" : premovePiece(input[1], lblE5); break;
+                                case "E6" : premovePiece(input[1], lblE6); break;
+                                case "E7" : premovePiece(input[1], lblE7); break;
+                                case "E8" : premovePiece(input[1], lblE8); break;
+
+                                case "F1" : premovePiece(input[1], lblF1); break;
+                                case "F2" : premovePiece(input[1], lblF2); break;
+                                case "F3" : premovePiece(input[1], lblF3); break;
+                                case "F4" : premovePiece(input[1], lblF4); break;
+                                case "F5" : premovePiece(input[1], lblF5); break;
+                                case "F6" : premovePiece(input[1], lblF6); break;
+                                case "F7" : premovePiece(input[1], lblF7); break;
+                                case "F8" : premovePiece(input[1], lblF8); break;
+                                
+                                case "G1" : premovePiece(input[1], lblG1); break;
+                                case "G2" : premovePiece(input[1], lblG2); break;
+                                case "G3" : premovePiece(input[1], lblG3); break;
+                                case "G4" : premovePiece(input[1], lblG4); break;
+                                case "G5" : premovePiece(input[1], lblG5); break;
+                                case "G6" : premovePiece(input[1], lblG6); break;
+                                case "G7" : premovePiece(input[1], lblG7); break;
+                                case "G8" : premovePiece(input[1], lblG8); break;
+                                
+                                case "H1" : premovePiece(input[1], lblH1); break;
+                                case "H2" : premovePiece(input[1], lblH2); break;
+                                case "H3" : premovePiece(input[1], lblH3); break;
+                                case "H4" : premovePiece(input[1], lblH4); break;
+                                case "H5" : premovePiece(input[1], lblH5); break;
+                                case "H6" : premovePiece(input[1], lblH6); break;
+                                case "H7" : premovePiece(input[1], lblH7); break;
+                                case "H8" : premovePiece(input[1], lblH8); break;
+                            }
+
+                            switch(input[3])
+                            {
+                                case "A1" : postmovePiece1(input[1], A1); break;
+                                case "A2" : postmovePiece1(input[1], A2); break;
+                                case "A3" : postmovePiece1(input[1], A3); break;
+                                case "A4" : postmovePiece1(input[1], A4); break;
+                                case "A5" : postmovePiece1(input[1], A5); break;
+                                case "A6" : postmovePiece1(input[1], A6); break;
+                                case "A7" : postmovePiece1(input[1], A7); break;
+                                case "A8" : postmovePiece1(input[1], A8); break;
+
+                                case "B1" : postmovePiece1(input[1], B1); break;
+                                case "B2" : postmovePiece1(input[1], B2); break;
+                                case "B3" : postmovePiece1(input[1], B3); break;
+                                case "B4" : postmovePiece1(input[1], B4); break;
+                                case "B5" : postmovePiece1(input[1], B5); break;
+                                case "B6" : postmovePiece1(input[1], B6); break;
+                                case "B7" : postmovePiece1(input[1], B7); break;
+                                case "B8" : postmovePiece1(input[1], B8); break;
+
+                                case "C1" : postmovePiece1(input[1], C1); break;
+                                case "C2" : postmovePiece1(input[1], C2); break;
+                                case "C3" : postmovePiece1(input[1], C3); break;
+                                case "C4" : postmovePiece1(input[1], C4); break;
+                                case "C5" : postmovePiece1(input[1], C5); break;
+                                case "C6" : postmovePiece1(input[1], C6); break;
+                                case "C7" : postmovePiece1(input[1], C7); break;
+                                case "C8" : postmovePiece1(input[1], C8); break;
+
+                                case "D1" : postmovePiece1(input[1], D1); break;
+                                case "D2" : postmovePiece1(input[1], D2); break;
+                                case "D3" : postmovePiece1(input[1], D3); break;
+                                case "D4" : postmovePiece1(input[1], D4); break;
+                                case "D5" : postmovePiece1(input[1], D5); break;
+                                case "D6" : postmovePiece1(input[1], D6); break;
+                                case "D7" : postmovePiece1(input[1], D7); break;
+                                case "D8" : postmovePiece1(input[1], D8); break;
+
+                                case "E1" : postmovePiece1(input[1], E1); break;
+                                case "E2" : postmovePiece1(input[1], E2); break;
+                                case "E3" : postmovePiece1(input[1], E3); break;
+                                case "E4" : postmovePiece1(input[1], E4); break;
+                                case "E5" : postmovePiece1(input[1], E5); break;
+                                case "E6" : postmovePiece1(input[1], E6); break;
+                                case "E7" : postmovePiece1(input[1], E7); break;
+                                case "E8" : postmovePiece1(input[1], E8); break;
+
+                                case "F1" : postmovePiece1(input[1], F1); break;
+                                case "F2" : postmovePiece1(input[1], F2); break;
+                                case "F3" : postmovePiece1(input[1], F3); break;
+                                case "F4" : postmovePiece1(input[1], F4); break;
+                                case "F5" : postmovePiece1(input[1], F5); break;
+                                case "F6" : postmovePiece1(input[1], F6); break;
+                                case "F7" : postmovePiece1(input[1], F7); break;
+                                case "F8" : postmovePiece1(input[1], F8); break;
+
+                                case "G1" : postmovePiece1(input[1], G1); break;
+                                case "G2" : postmovePiece1(input[1], G2); break;
+                                case "G3" : postmovePiece1(input[1], G3); break;
+                                case "G4" : postmovePiece1(input[1], G4); break;
+                                case "G5" : postmovePiece1(input[1], G5); break;
+                                case "G6" : postmovePiece1(input[1], G6); break;
+                                case "G7" : postmovePiece1(input[1], G7); break;
+                                case "G8" : postmovePiece1(input[1], G8); break;
+
+                                case "H1" : postmovePiece1(input[1], H1); break;
+                                case "H2" : postmovePiece1(input[1], H2); break;
+                                case "H3" : postmovePiece1(input[1], H3); break;
+                                case "H4" : postmovePiece1(input[1], H4); break;
+                                case "H5" : postmovePiece1(input[1], H5); break;
+                                case "H6" : postmovePiece1(input[1], H6); break;
+                                case "H7" : postmovePiece1(input[1], H7); break;
+                                case "H8" : postmovePiece1(input[1], H8); break;
+
+                            }
                         }
                      
                     }
@@ -6665,12 +6674,17 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainFrame
      */
-    public MainFrame() {
+    public MainFrame(String player) {
         initComponents();
         
         refreshBoard();
         
-        new Client();
+        if ("player1".equals(player)){
+            new Server();
+        }else if("player2".equals(player)){
+            new Client();
+        }
+        
     }
 
     /**
@@ -8099,6 +8113,12 @@ public class MainFrame extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField2KeyReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelSideLayout = new javax.swing.GroupLayout(jPanelSide);
         jPanelSide.setLayout(jPanelSideLayout);
         jPanelSideLayout.setHorizontalGroup(
@@ -8351,7 +8371,6 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
-        refreshHistory();
         premovePiece(piecesAlive[0][1], lblA2);
     }//GEN-LAST:event_lblA2MouseClicked
 
@@ -8983,8 +9002,19 @@ public class MainFrame extends javax.swing.JFrame {
         premovePiece(piecesAlive[0][0], lblA1);
     }//GEN-LAST:event_lblA1MouseClicked
 
-    private void lblA8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA8MouseClicked
+    private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
+        // TODO add your handling code here:
+        if(evt.equals("\n"))
+        {
+            outputToOpponent = "chat," + jTextField2.getText();
+            
+            goNoGo = 1;
+        }
         
+    }//GEN-LAST:event_jTextField2KeyReleased
+
+    private void lblA8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA8MouseClicked
+        premovePiece(piecesAlive[0][7], lblA8);
     }//GEN-LAST:event_lblA8MouseClicked
                               
     
@@ -9019,7 +9049,7 @@ public class MainFrame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainFrame().setVisible(true);
+                new MainFrame("player1").setVisible(true);
             }
         });
     }

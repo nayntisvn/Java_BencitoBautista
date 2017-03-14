@@ -44,6 +44,11 @@ public class StartupFrame extends javax.swing.JFrame {
         });
 
         jButtonPlayer2.setText("Enter as Player 2");
+        jButtonPlayer2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonPlayer2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -89,11 +94,17 @@ public class StartupFrame extends javax.swing.JFrame {
 
     private void jButtonPlayer1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonPlayer1MouseClicked
         
-        MainFrame mn = new MainFrame();
+        MainFrame mn = new MainFrame("player1");
         this.show(false);
         mn.show(true);
         
     }//GEN-LAST:event_jButtonPlayer1MouseClicked
+
+    private void jButtonPlayer2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonPlayer2MouseClicked
+        MainFrame mn = new MainFrame("player2");
+        this.show(false);
+        mn.show(true);
+    }//GEN-LAST:event_jButtonPlayer2MouseClicked
 
     /**
      * @param args the command line arguments
