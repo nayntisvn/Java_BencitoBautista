@@ -6290,7 +6290,7 @@ public class MainFrame extends javax.swing.JFrame {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     
                     out = br2.readLine();
-                    
+                    String[] input;
                     if(!out.equals(null))
                     {
                         inputFromOpponent = out;
@@ -6302,7 +6302,7 @@ public class MainFrame extends javax.swing.JFrame {
                         }
                         else if(input[0].equals("move"))
                         {
-                            switch(input[1])
+                            switch(input[2])
                             { 
                                 case "A1" : premovePiece(input[1], lblA1); break;
                                 case "A2" : premovePiece(input[1], lblA2); break;
@@ -6463,7 +6463,6 @@ public class MainFrame extends javax.swing.JFrame {
     
     public class Client implements Runnable {
 
-    String[] input;
     BufferedReader br1, br2;
     PrintWriter pr1;
     Socket socket;
@@ -6499,7 +6498,7 @@ public class MainFrame extends javax.swing.JFrame {
                 do {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     out = br2.readLine();
-                    
+                    String[] input;
                     if(!out.equals(null))
                     {
                         inputFromOpponent = out;
@@ -6512,7 +6511,7 @@ public class MainFrame extends javax.swing.JFrame {
                         }
                         else if(input[0].equals("move"))
                         {
-                            switch(input[1])
+                            switch(input[2])
                             { 
                                 case "A1" : premovePiece(input[1], lblA1); break;
                                 case "A2" : premovePiece(input[1], lblA2); break;
@@ -9009,6 +9008,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             outputToOpponent = "chat," + jTextField2.getText();
             
+            jTextField2.setText("");
             goNoGo = 1;
         }
         
