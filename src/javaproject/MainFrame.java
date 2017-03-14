@@ -219,12 +219,12 @@ public class MainFrame extends javax.swing.JFrame {
                     A1.setBorder(movement);
                     A1.setCursor(new Cursor(HAND_CURSOR));
                 }
-                if(s.equals("A2") && piecesAlive[0][1].equals(""))
+                if(s.equals("A2") && (piecesAlive[0][1].equals("") || piecesAlive[0][1].charAt(2) == 'b'))
                 {
                     A2.setBorder(movement);
                     A2.setCursor(new Cursor(HAND_CURSOR));
                 }
-                if(s.equals("A3") && piecesAlive[0][2].equals(""))
+                if(s.equals("A3") && (piecesAlive[0][2].equals("") || piecesAlive[0][2].charAt(2) == 'b'))
                 {
                     A3.setBorder(movement);
                     A3.setCursor(new Cursor(HAND_CURSOR));
@@ -8726,33 +8726,92 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void lblA2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][1], lblA2);
-        
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][1], lblA2);
+        }
     }//GEN-LAST:event_lblA2MouseClicked
 
     private void lblA3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][2], lblA3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][2], lblA3);
+        }
     }//GEN-LAST:event_lblA3MouseClicked
 
     private void lblA4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][3], lblA4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][3], lblA4);
+        }
     }//GEN-LAST:event_lblA4MouseClicked
 
     private void lblA5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][4], lblA5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][4], lblA5);
+        }
     }//GEN-LAST:event_lblA5MouseClicked
 
     private void lblA6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][5], lblA6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][5], lblA6);
+        }
     }//GEN-LAST:event_lblA6MouseClicked
 
     private void lblA7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[0][6], lblA7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][6], lblA7);
+        }
     }//GEN-LAST:event_lblA7MouseClicked
 
     private void A3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_A3MouseClicked
@@ -8976,172 +9035,512 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblB1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][0], lblB1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][0], lblB1);
+        }
     }//GEN-LAST:event_lblB1MouseClicked
 
     private void lblB3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][2], lblB3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][1], lblB2);
+        }
     }//GEN-LAST:event_lblB3MouseClicked
 
     private void lblB2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][1], lblB2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][2], lblB3);
+        }
     }//GEN-LAST:event_lblB2MouseClicked
 
     private void lblB4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][3], lblB4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][3], lblB4);
+        }
     }//GEN-LAST:event_lblB4MouseClicked
 
     private void lblB5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][4], lblB5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][4], lblB5);
+        }
     }//GEN-LAST:event_lblB5MouseClicked
 
     private void lblB6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][5], lblB6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][5], lblB6);
+        }
     }//GEN-LAST:event_lblB6MouseClicked
 
     private void lblB7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][6], lblB7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][6], lblB7);
+        }
     }//GEN-LAST:event_lblB7MouseClicked
 
     private void lblB8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[1][7], lblB8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][7], lblB8);
+        }
     }//GEN-LAST:event_lblB8MouseClicked
 
     private void lblC1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][0], lblC1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][0], lblC1);
+        }
     }//GEN-LAST:event_lblC1MouseClicked
 
     private void lblC2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][1], lblC2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][1], lblC2);
+        }
     }//GEN-LAST:event_lblC2MouseClicked
 
     private void lblC3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][2], lblC3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][2], lblC3);
+        }
     }//GEN-LAST:event_lblC3MouseClicked
 
     private void lblC4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC4MouseClicked
-        // TODO add your handling code here:
-        premovePiece(piecesAlive[2][3], lblC4);
+        // TODO add your handling code here:if(!bufferpiece.equals(""))
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][3], lblC4);
+        }
     }//GEN-LAST:event_lblC4MouseClicked
 
     private void lblC5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][4], lblC5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][4], lblC5);
+        }
     }//GEN-LAST:event_lblC5MouseClicked
 
     private void lblC6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][5], lblC6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][5], lblC6);
+        }
     }//GEN-LAST:event_lblC6MouseClicked
 
     private void lblC7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][6], lblC7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][6], lblC7);
+        }
     }//GEN-LAST:event_lblC7MouseClicked
 
     private void lblC8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblC8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[2][7], lblC8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[2][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, C8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[2][7], lblC8);
+        }
     }//GEN-LAST:event_lblC8MouseClicked
 
     private void lblD1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][0], lblD1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][0], lblD1);
+        }
     }//GEN-LAST:event_lblD1MouseClicked
 
     private void lblD2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][1], lblD2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][1], lblD2);
+        }
     }//GEN-LAST:event_lblD2MouseClicked
 
     private void lblD3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][2], lblD3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][2], lblD3);
+        }
     }//GEN-LAST:event_lblD3MouseClicked
 
     private void lblD4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][3], lblD4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][3], lblD4);
+        }
     }//GEN-LAST:event_lblD4MouseClicked
 
     private void lblD5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][4], lblD5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][4], lblD5);
+        }
     }//GEN-LAST:event_lblD5MouseClicked
 
     private void lblD6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][5], lblD6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][5], lblD6);
+        }
     }//GEN-LAST:event_lblD6MouseClicked
 
     private void lblD7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][6], lblD7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][6], lblD7);
+        }
     }//GEN-LAST:event_lblD7MouseClicked
 
     private void lblD8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblD8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[3][7], lblD8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[3][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, D8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[3][7], lblD8);
+        }
     }//GEN-LAST:event_lblD8MouseClicked
 
     private void lblE1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][0], lblE1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][0], lblE1);
+        }
     }//GEN-LAST:event_lblE1MouseClicked
 
     private void lblE2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][1], lblE2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][1], lblE2);
+        }
     }//GEN-LAST:event_lblE2MouseClicked
 
     private void lblE3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][2], lblE3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][2], lblE3);
+        }
     }//GEN-LAST:event_lblE3MouseClicked
 
     private void lblE4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][3], lblE4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][3], lblE4);
+        }
     }//GEN-LAST:event_lblE4MouseClicked
 
     private void lblE5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][4], lblE5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][4], lblE5);
+        }
     }//GEN-LAST:event_lblE5MouseClicked
 
     private void lblE6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][5], lblE6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][5], lblE6);
+        }
     }//GEN-LAST:event_lblE6MouseClicked
 
     private void lblE7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][6], lblE7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][6], lblE7);
+        }
     }//GEN-LAST:event_lblE7MouseClicked
 
     private void lblE8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblE8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[4][7], lblE8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[4][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, E8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[4][7], lblE8);
+        }
     }//GEN-LAST:event_lblE8MouseClicked
 
     private void lblF1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][0], lblF1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][0], lblF1);
+        }
     }//GEN-LAST:event_lblF1MouseClicked
 
     private void lblF2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][1], lblF2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][1], lblF2);
+        }
     }//GEN-LAST:event_lblF2MouseClicked
 
     private void lblF3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF3MouseClicked
@@ -9161,107 +9560,317 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void lblF4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][3], lblF4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][3], lblF4);
+        }
     }//GEN-LAST:event_lblF4MouseClicked
 
     private void lblF5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][4], lblF5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][4], lblF5);
+        }
     }//GEN-LAST:event_lblF5MouseClicked
 
     private void lblF6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][5], lblF6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][5], lblF6);
+        }
     }//GEN-LAST:event_lblF6MouseClicked
 
     private void lblF7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][6], lblF7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][6], lblF7);
+        }
     }//GEN-LAST:event_lblF7MouseClicked
 
     private void lblF8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblF8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[5][7], lblF8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[5][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, F8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[5][7], lblF8);
+        }
     }//GEN-LAST:event_lblF8MouseClicked
 
     private void lblG1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][0], lblG1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][0], lblG1);
+        }
     }//GEN-LAST:event_lblG1MouseClicked
 
     private void lblG2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][1], lblG2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][1], lblG2);
+        }
     }//GEN-LAST:event_lblG2MouseClicked
 
     private void lblG3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][2], lblG3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][2], lblG3);
+        }
     }//GEN-LAST:event_lblG3MouseClicked
 
     private void lblG4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][3], lblG4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][3], lblG4);
+        }
     }//GEN-LAST:event_lblG4MouseClicked
 
     private void lblG5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][4], lblG5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][4], lblG5);
+        }
     }//GEN-LAST:event_lblG5MouseClicked
 
     private void lblG6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][5], lblG6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][5], lblG6);
+        }
     }//GEN-LAST:event_lblG6MouseClicked
 
     private void lblG7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][6], lblG7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][6], lblG7);
+        }
     }//GEN-LAST:event_lblG7MouseClicked
 
     private void lblG8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblG8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[6][7], lblG8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[6][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, G8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[6][7], lblG8);
+        }
     }//GEN-LAST:event_lblG8MouseClicked
 
     private void lblH1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH1MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][0], lblH1);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][0].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H1);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][0], lblH1);
+        }
     }//GEN-LAST:event_lblH1MouseClicked
 
     private void lblH2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH2MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][1], lblH2);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][1], lblH2);
+        }
     }//GEN-LAST:event_lblH2MouseClicked
 
     private void lblH3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH3MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][2], lblH3);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][2].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H3);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][2], lblH3);
+        }
     }//GEN-LAST:event_lblH3MouseClicked
 
     private void lblH4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH4MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][3], lblH4);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][3].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H4);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][3], lblH4);
+        }
     }//GEN-LAST:event_lblH4MouseClicked
 
     private void lblH5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH5MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][4], lblH5);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][4].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H5);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][4], lblH5);
+        }
     }//GEN-LAST:event_lblH5MouseClicked
 
     private void lblH6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH6MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][5], lblH6);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][5].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H6);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][5], lblH6);
+        }
     }//GEN-LAST:event_lblH6MouseClicked
 
     private void lblH7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH7MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][6], lblH7);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][6].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H7);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][6], lblH7);
+        }
     }//GEN-LAST:event_lblH7MouseClicked
 
     private void lblH8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblH8MouseClicked
         // TODO add your handling code here:
-        premovePiece(piecesAlive[7][7], lblH8);
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[7][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, H8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[7][7], lblH8);
+        }
     }//GEN-LAST:event_lblH8MouseClicked
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
@@ -9382,7 +9991,18 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2KeyReleased
 
     private void lblA8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblA8MouseClicked
-        premovePiece(piecesAlive[0][7], lblA8);
+        
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[0][7].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, A8);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[0][7], lblA8);
+        }
     }//GEN-LAST:event_lblA8MouseClicked
                               
     
