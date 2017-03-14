@@ -27,14 +27,14 @@ import java.net.*;
 public class MainFrame extends javax.swing.JFrame {
 
     //  Directory of files
-    String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
+    //String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
-    String url = "192.168.1.118";
+    String url = "192.168.1.103";
     int goNoGo = 0;
     public String inputFromOpponent = null;
     public String outputToOpponent = null;
@@ -2502,7 +2502,7 @@ public class MainFrame extends javax.swing.JFrame {
         
         refreshBoard();
         
-        new Server();
+        new Client();
     }
 
     /**
