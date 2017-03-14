@@ -29,7 +29,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  Directory of files
     String directory = "C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\Activity6_Bautista\\project-master\\src\\Resources\\";
     
-    //String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
+//    String directory = "C:\\Users\\aweso\\OneDrive\\Documents\\NetBeansProjects\\JavaProject\\src\\Resources\\";
     //  Anne, dito mo ilagay yung directory mo dun sa may null.
     //  Tas icomment out mo yung sakin.
 //
@@ -266,217 +266,217 @@ public class MainFrame extends javax.swing.JFrame {
             if(s.equals("B4") && piecesAlive[1][3].equals(""))
             {
                 B4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B5") && piecesAlive[1][4].equals(""))
             {
                 B5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B6") && piecesAlive[1][5].equals(""))
             {
                 B6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B7") && piecesAlive[1][6].equals(""))
             {
                 B7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("B8") && piecesAlive[1][7].equals(""))
             {
                 B8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                B8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C1") && piecesAlive[2][0].equals(""))
             {
                 C1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C2") && piecesAlive[2][1].equals(""))
             {
                 C2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C3") && piecesAlive[2][2].equals(""))
             {
                 C3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C4") && piecesAlive[2][3].equals(""))
             {
                 C4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C5") && piecesAlive[2][4].equals(""))
             {
                 C5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C6") && piecesAlive[2][5].equals(""))
             {
                 C6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C7") && piecesAlive[2][6].equals(""))
             {
                 C7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("C8") && piecesAlive[2][7].equals(""))
             {
                 C8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                C8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D1") && piecesAlive[3][0].equals(""))
             {
                 D1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D2") && piecesAlive[3][1].equals(""))
             {
                 D2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D3") && piecesAlive[3][2].equals(""))
             {
                 D3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D4") && piecesAlive[3][3].equals(""))
             {
                 D4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D5") && piecesAlive[3][4].equals(""))
             {
                 D5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D6") && piecesAlive[3][5].equals(""))
             {
                 D6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D7") && piecesAlive[3][6].equals(""))
             {
                 D7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("D8") && piecesAlive[3][7].equals(""))
             {
                 D8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                D8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E1") && piecesAlive[4][0].equals(""))
             {
                 E1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E2") && piecesAlive[4][1].equals(""))
             {
                 E2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E3") && piecesAlive[4][2].equals(""))
             {
                 E3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E4") && piecesAlive[4][3].equals(""))
             {
                 E4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E5") && piecesAlive[4][4].equals(""))
             {
                 E5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E6") && piecesAlive[4][5].equals(""))
             {
                 E6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E7") && piecesAlive[4][6].equals(""))
             {
                 E7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("E8") && piecesAlive[4][7].equals(""))
             {
                 E8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                E8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F1") && piecesAlive[5][0].equals(""))
             {
                 F1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F2") && piecesAlive[5][1].equals(""))
             {
                 F2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F3") && piecesAlive[5][2].equals(""))
             {
                 F3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F4") && piecesAlive[5][3].equals(""))
             {
                 F4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F5") && piecesAlive[5][4].equals(""))
             {
                 F5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F6") && piecesAlive[5][5].equals(""))
             {
                 F6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F7") && piecesAlive[5][6].equals(""))
             {
                 F7.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F7.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("F8") && piecesAlive[5][7].equals(""))
             {
                 F8.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                F8.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G1") && piecesAlive[6][0].equals(""))
             {
                 G1.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G1.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G2") && piecesAlive[6][1].equals(""))
             {
                 G2.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G2.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G3") && piecesAlive[6][2].equals(""))
             {
                 G3.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G3.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G4") && piecesAlive[6][3].equals(""))
             {
                 G4.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G4.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G5") && piecesAlive[6][4].equals(""))
             {
                 G5.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G5.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G6") && piecesAlive[6][5].equals(""))
             {
                 G6.setBorder(movement);
-                A5.setCursor(new Cursor(HAND_CURSOR));
+                G6.setCursor(new Cursor(HAND_CURSOR));
             }
             if(s.equals("G7") && piecesAlive[6][6].equals(""))
             {
@@ -2380,7 +2380,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         }
         
-        outputToOpponent += destination.getName();
+        outputToOpponent += "," + destination.getName();
         goNoGo = 1;
     }
     //======================================================
@@ -2393,6 +2393,7 @@ public class MainFrame extends javax.swing.JFrame {
     Socket socket;
     Thread t1, t2;
     String in="",out="";
+    String[] input;
 
     public Server() {
         try {
@@ -2428,7 +2429,18 @@ public class MainFrame extends javax.swing.JFrame {
                 do {
                     br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                     out = br2.readLine();
-                    System.out.println("Client says : : : " + out);
+                    if(!out.equals(null))
+                    {
+                        inputFromOpponent = out;
+                        
+                        input = inputFromOpponent.split(",");
+                        
+                        switch(input[1])
+                        {
+                            case "A2" : premovePiece(input[0], lblA1);
+                        }
+                        
+                    }
                 } while (!out.equals("END"));
             }
         } catch (Exception e) {
@@ -2436,7 +2448,6 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }
     
-
     public class Client implements Runnable {
 
     BufferedReader br1, br2;
@@ -2658,6 +2669,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         A8.setLayout(new java.awt.GridBagLayout());
+
+        lblA8.setName("A8"); // NOI18N
         A8.add(lblA8, new java.awt.GridBagConstraints());
 
         B8.setBackground(new java.awt.Color(170, 102, 26));
@@ -2672,6 +2685,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B8.setLayout(new java.awt.GridBagLayout());
 
+        lblB8.setName("B8"); // NOI18N
         lblB8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB8MouseClicked(evt);
@@ -2706,6 +2720,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D8.setLayout(new java.awt.GridBagLayout());
 
+        lblD8.setName("D8"); // NOI18N
         lblD8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD8MouseClicked(evt);
@@ -2724,6 +2739,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E8.setLayout(new java.awt.GridBagLayout());
 
+        lblE8.setName("E8"); // NOI18N
         lblE8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE8MouseClicked(evt);
@@ -2741,6 +2757,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F8.setLayout(new java.awt.GridBagLayout());
 
+        lblF8.setName("F8"); // NOI18N
         lblF8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF8MouseClicked(evt);
@@ -2758,6 +2775,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G8.setLayout(new java.awt.GridBagLayout());
 
+        lblG8.setName("G8"); // NOI18N
         lblG8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG8MouseClicked(evt);
@@ -2776,6 +2794,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H8.setLayout(new java.awt.GridBagLayout());
 
+        lblH8.setName("H8"); // NOI18N
         lblH8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH8MouseClicked(evt);
@@ -2795,6 +2814,7 @@ public class MainFrame extends javax.swing.JFrame {
         A7.setLayout(new java.awt.GridBagLayout());
 
         lblA7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblA7.setName("A7"); // NOI18N
         lblA7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA7MouseClicked(evt);
@@ -2813,6 +2833,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B7.setLayout(new java.awt.GridBagLayout());
 
+        lblB7.setName("B7"); // NOI18N
         lblB7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB7MouseClicked(evt);
@@ -2831,6 +2852,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C7.setLayout(new java.awt.GridBagLayout());
 
+        lblC7.setName("C7"); // NOI18N
         lblC7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC7MouseClicked(evt);
@@ -2849,6 +2871,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D7.setLayout(new java.awt.GridBagLayout());
 
+        lblD7.setName("D7"); // NOI18N
         lblD7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD7MouseClicked(evt);
@@ -2867,6 +2890,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E7.setLayout(new java.awt.GridBagLayout());
 
+        lblE7.setName("E7"); // NOI18N
         lblE7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE7MouseClicked(evt);
@@ -2885,6 +2909,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F7.setLayout(new java.awt.GridBagLayout());
 
+        lblF7.setName("F7"); // NOI18N
         lblF7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF7MouseClicked(evt);
@@ -2903,6 +2928,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G7.setLayout(new java.awt.GridBagLayout());
 
+        lblG7.setName("G7"); // NOI18N
         lblG7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG7MouseClicked(evt);
@@ -2921,6 +2947,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H7.setLayout(new java.awt.GridBagLayout());
 
+        lblH7.setName("H7"); // NOI18N
         lblH7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH7MouseClicked(evt);
@@ -2940,6 +2967,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A6.setLayout(new java.awt.GridBagLayout());
 
+        lblA6.setName("A6"); // NOI18N
         lblA6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA6MouseClicked(evt);
@@ -2958,6 +2986,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B6.setLayout(new java.awt.GridBagLayout());
 
+        lblB6.setName("B6"); // NOI18N
         lblB6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB6MouseClicked(evt);
@@ -2975,6 +3004,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C6.setLayout(new java.awt.GridBagLayout());
 
+        lblC6.setName("C6"); // NOI18N
         lblC6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC6MouseClicked(evt);
@@ -2992,6 +3022,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D6.setLayout(new java.awt.GridBagLayout());
 
+        lblD6.setName("D6"); // NOI18N
         lblD6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD6MouseClicked(evt);
@@ -3009,6 +3040,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E6.setLayout(new java.awt.GridBagLayout());
 
+        lblE6.setName("E6"); // NOI18N
         lblE6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE6MouseClicked(evt);
@@ -3026,6 +3058,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F6.setLayout(new java.awt.GridBagLayout());
 
+        lblF6.setName("F6"); // NOI18N
         lblF6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF6MouseClicked(evt);
@@ -3043,6 +3076,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G6.setLayout(new java.awt.GridBagLayout());
 
+        lblG6.setName("G6"); // NOI18N
         lblG6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG6MouseClicked(evt);
@@ -3060,6 +3094,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H6.setLayout(new java.awt.GridBagLayout());
 
+        lblH6.setName("H6"); // NOI18N
         lblH6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH6MouseClicked(evt);
@@ -3079,6 +3114,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A5.setLayout(new java.awt.GridBagLayout());
 
+        lblA5.setName("A5"); // NOI18N
         lblA5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA5MouseClicked(evt);
@@ -3096,6 +3132,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B5.setLayout(new java.awt.GridBagLayout());
 
+        lblB5.setName("B5"); // NOI18N
         lblB5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB5MouseClicked(evt);
@@ -3115,6 +3152,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C5.setLayout(new java.awt.GridBagLayout());
 
+        lblC5.setName("C5"); // NOI18N
         lblC5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC5MouseClicked(evt);
@@ -3134,6 +3172,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D5.setLayout(new java.awt.GridBagLayout());
 
+        lblD5.setName("D5"); // NOI18N
         lblD5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD5MouseClicked(evt);
@@ -3153,6 +3192,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E5.setLayout(new java.awt.GridBagLayout());
 
+        lblE5.setName("E5"); // NOI18N
         lblE5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE5MouseClicked(evt);
@@ -3172,6 +3212,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F5.setLayout(new java.awt.GridBagLayout());
 
+        lblF5.setName("F5"); // NOI18N
         lblF5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF5MouseClicked(evt);
@@ -3191,6 +3232,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G5.setLayout(new java.awt.GridBagLayout());
 
+        lblG5.setName("G5"); // NOI18N
         lblG5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG5MouseClicked(evt);
@@ -3210,6 +3252,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H5.setLayout(new java.awt.GridBagLayout());
 
+        lblH5.setName("H5"); // NOI18N
         lblH5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH5MouseClicked(evt);
@@ -3229,6 +3272,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A4.setLayout(new java.awt.GridBagLayout());
 
+        lblA4.setName("A4"); // NOI18N
         lblA4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA4MouseClicked(evt);
@@ -3248,6 +3292,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B4.setLayout(new java.awt.GridBagLayout());
 
+        lblB4.setName("B4"); // NOI18N
         lblB4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB4MouseClicked(evt);
@@ -3267,6 +3312,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C4.setLayout(new java.awt.GridBagLayout());
 
+        lblC4.setName("C4"); // NOI18N
         lblC4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC4MouseClicked(evt);
@@ -3286,6 +3332,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D4.setLayout(new java.awt.GridBagLayout());
 
+        lblD4.setName("D4"); // NOI18N
         lblD4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD4MouseClicked(evt);
@@ -3305,6 +3352,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E4.setLayout(new java.awt.GridBagLayout());
 
+        lblE4.setName("E4"); // NOI18N
         lblE4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE4MouseClicked(evt);
@@ -3324,6 +3372,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F4.setLayout(new java.awt.GridBagLayout());
 
+        lblF4.setName("F4"); // NOI18N
         lblF4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF4MouseClicked(evt);
@@ -3343,6 +3392,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G4.setLayout(new java.awt.GridBagLayout());
 
+        lblG4.setName("G4"); // NOI18N
         lblG4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG4MouseClicked(evt);
@@ -3362,6 +3412,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H4.setLayout(new java.awt.GridBagLayout());
 
+        lblH4.setName("H4"); // NOI18N
         lblH4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH4MouseClicked(evt);
@@ -3379,6 +3430,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A3.setLayout(new java.awt.GridBagLayout());
 
+        lblA3.setName("A3"); // NOI18N
         lblA3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA3MouseClicked(evt);
@@ -3396,6 +3448,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B3.setLayout(new java.awt.GridBagLayout());
 
+        lblB3.setName("B3"); // NOI18N
         lblB3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB3MouseClicked(evt);
@@ -3414,6 +3467,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C3.setLayout(new java.awt.GridBagLayout());
 
+        lblC3.setName("C3"); // NOI18N
         lblC3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC3MouseClicked(evt);
@@ -3432,6 +3486,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D3.setLayout(new java.awt.GridBagLayout());
 
+        lblD3.setName("D3"); // NOI18N
         lblD3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD3MouseClicked(evt);
@@ -3449,6 +3504,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E3.setLayout(new java.awt.GridBagLayout());
 
+        lblE3.setName("E3"); // NOI18N
         lblE3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE3MouseClicked(evt);
@@ -3468,6 +3524,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F3.setLayout(new java.awt.GridBagLayout());
 
+        lblF3.setName("F3"); // NOI18N
         lblF3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF3MouseClicked(evt);
@@ -3487,6 +3544,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G3.setLayout(new java.awt.GridBagLayout());
 
+        lblG3.setName("G3"); // NOI18N
         lblG3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG3MouseClicked(evt);
@@ -3506,6 +3564,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H3.setLayout(new java.awt.GridBagLayout());
 
+        lblH3.setName("H3"); // NOI18N
         lblH3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH3MouseClicked(evt);
@@ -3524,6 +3583,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         A2.setLayout(new java.awt.GridBagLayout());
 
+        lblA2.setName("A2"); // NOI18N
         lblA2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblA2MouseClicked(evt);
@@ -3542,6 +3602,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B2.setLayout(new java.awt.GridBagLayout());
 
+        lblB2.setName("B2"); // NOI18N
         lblB2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB2MouseClicked(evt);
@@ -3560,6 +3621,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C2.setLayout(new java.awt.GridBagLayout());
 
+        lblC2.setName("C2"); // NOI18N
         lblC2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC2MouseClicked(evt);
@@ -3579,6 +3641,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D2.setLayout(new java.awt.GridBagLayout());
 
+        lblD2.setName("D2"); // NOI18N
         lblD2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD2MouseClicked(evt);
@@ -3598,6 +3661,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E2.setLayout(new java.awt.GridBagLayout());
 
+        lblE2.setName("E2"); // NOI18N
         lblE2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE2MouseClicked(evt);
@@ -3616,6 +3680,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F2.setLayout(new java.awt.GridBagLayout());
 
+        lblF2.setName("F2"); // NOI18N
         lblF2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF2MouseClicked(evt);
@@ -3634,6 +3699,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G2.setLayout(new java.awt.GridBagLayout());
 
+        lblG2.setName("G2"); // NOI18N
         lblG2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG2MouseClicked(evt);
@@ -3652,6 +3718,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H2.setLayout(new java.awt.GridBagLayout());
 
+        lblH2.setName("H2"); // NOI18N
         lblH2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH2MouseClicked(evt);
@@ -3669,6 +3736,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
         A1.setLayout(new java.awt.GridBagLayout());
+
+        lblA1.setName("A1"); // NOI18N
         A1.add(lblA1, new java.awt.GridBagConstraints());
 
         B1.setBackground(new java.awt.Color(238, 191, 120));
@@ -3682,6 +3751,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         B1.setLayout(new java.awt.GridBagLayout());
 
+        lblB1.setName("B1"); // NOI18N
         lblB1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblB1MouseClicked(evt);
@@ -3700,6 +3770,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         C1.setLayout(new java.awt.GridBagLayout());
 
+        lblC1.setName("C1"); // NOI18N
         lblC1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblC1MouseClicked(evt);
@@ -3718,6 +3789,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         D1.setLayout(new java.awt.GridBagLayout());
 
+        lblD1.setName("D1"); // NOI18N
         lblD1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblD1MouseClicked(evt);
@@ -3736,6 +3808,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         E1.setLayout(new java.awt.GridBagLayout());
 
+        lblE1.setName("E1"); // NOI18N
         lblE1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblE1MouseClicked(evt);
@@ -3754,6 +3827,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         F1.setLayout(new java.awt.GridBagLayout());
 
+        lblF1.setName("F1"); // NOI18N
         lblF1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblF1MouseClicked(evt);
@@ -3772,6 +3846,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         G1.setLayout(new java.awt.GridBagLayout());
 
+        lblG1.setName("G1"); // NOI18N
         lblG1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblG1MouseClicked(evt);
@@ -3790,6 +3865,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         H1.setLayout(new java.awt.GridBagLayout());
 
+        lblH1.setName("H1"); // NOI18N
         lblH1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblH1MouseClicked(evt);
