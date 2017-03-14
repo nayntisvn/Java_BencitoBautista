@@ -868,6 +868,9 @@ public class MainFrame extends javax.swing.JFrame {
                 possiblem = r1b.movement();
 
                 possiblemoves(possiblem);
+                    
+                
+                
                 break;
             }
             case "h1b" : 
