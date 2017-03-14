@@ -57,8 +57,8 @@ public class MainFrame extends javax.swing.JFrame {
     //======================================================
     
     //   Trace of which piece will be move
-    String bufferpiece = null;
-    String bufferloc = null;
+    String bufferpiece = "";
+    String bufferloc = "";
     //======================================================
     
     //  Graphics for each scenario
