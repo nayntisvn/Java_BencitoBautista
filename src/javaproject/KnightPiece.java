@@ -24,7 +24,7 @@ public class KnightPiece {
         this.location = loc;
     }
     
-    public ArrayList<String> movementW(){
+    public ArrayList<String> movement(){
         possiblem.clear();
         //char[] ordinate = {'0','0'};
 

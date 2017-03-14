@@ -28,7 +28,7 @@ public class BishopPiece {
     /**
      * @return the 
      */
-    public ArrayList<String> movementW() {
+    public ArrayList<String> movement() {
         possiblem.clear();
         char[] charA = location.toCharArray();
         
@@ -117,6 +117,7 @@ public class BishopPiece {
                         break;
                 }
             }
+                break;
             }
             case 'B':{
                 switch(charA[1]){
@@ -206,6 +207,7 @@ public class BishopPiece {
                         break;
                 }
             }
+                break;
             }
             case 'C': {
                 switch(charA[1]){
@@ -313,6 +315,7 @@ public class BishopPiece {
                         break;
                     }
             }
+                break;
             }
             case 'D':{
             switch(charA[1]){
@@ -422,6 +425,7 @@ public class BishopPiece {
                         break;
                     }
             }
+            break;
             }
             case 'E':{
             switch(charA[1]){
@@ -532,6 +536,7 @@ public class BishopPiece {
                         break;
                     }
             }
+            break;
             }
             case 'F':{
                 switch(charA[1]){
@@ -635,7 +640,8 @@ public class BishopPiece {
                         possiblem.add("A3");
                         break;
                     }
-            }  
+            }
+                break;
             }
             case 'G':{
                 switch(charA[1]){
@@ -733,6 +739,7 @@ public class BishopPiece {
                         break;
                     }
             }
+                break;
             }
             case 'H':{
                 switch(charA[1]){
@@ -818,6 +825,7 @@ public class BishopPiece {
                     }
             }
             }
+            break;
         }
         
         moves++;
