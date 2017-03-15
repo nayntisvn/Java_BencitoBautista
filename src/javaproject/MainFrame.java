@@ -35,7 +35,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
-    String url = "192.168.1.100";
+    String url = "192.168.173.229";
     String player = "";
     int goNoGo = 0;
     public String inputFromOpponent = null;
@@ -4451,6 +4451,8 @@ public class MainFrame extends javax.swing.JFrame {
                 }break;
             }
         }
+        
+        piece.moves++;
     }
     //======================================================
     
@@ -11646,13 +11648,13 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
-//        
-//        this.player = player;
-//        if ("player1".equals(player)){
-//            new Server();
-//        }else if("player2".equals(player)){
-//            new Client();
-//        }
+        
+        this.player = player;
+        if ("player1".equals(player)){
+            new Server();
+        }else if("player2".equals(player)){
+            new Client();
+        }
     }
 
     /**
@@ -13345,10 +13347,14 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A2);
             }
-        }
         else
         {
             refreshHistory();
+            premovePiece(piecesAlive[0][1], lblA2);
+        }
+        }
+        else
+        {
             premovePiece(piecesAlive[0][1], lblA2);
         }
     }//GEN-LAST:event_lblA2MouseClicked
@@ -13361,6 +13367,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A3);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][2], lblA3);
+        }
         }
         else
         {
@@ -13376,6 +13386,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A4);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][3], lblA4);
+        }
         }
         else
         {
@@ -13391,6 +13405,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A5);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][4], lblA5);
+        }
         }
         else
         {
@@ -13405,6 +13423,10 @@ public class MainFrame extends javax.swing.JFrame {
             if(piecesAlive[0][5].charAt(2) != bufferpiece.charAt(2))
             {
                 postmovePiece(bufferpiece, A6);
+            }
+            else
+            {
+                premovePiece(piecesAlive[0][5], lblA6);
             }
         }
         else
@@ -13421,6 +13443,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A7);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][6], lblA7);
+        }
         }
         else
         {
@@ -13655,10 +13681,13 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B1);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][0], lblB1);
+        }
         }
         else
         {
-            refreshHistory();
             premovePiece(piecesAlive[1][0], lblB1);
         }
     }//GEN-LAST:event_lblB1MouseClicked
@@ -13671,6 +13700,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B3);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][2], lblB3);
+        }
         }
         else
         {
@@ -13686,6 +13719,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B2);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][1], lblB2);
+        }
         }
         else
         {
@@ -13701,6 +13738,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B4);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][3], lblB4);
+        }
         }
         else
         {
@@ -13716,6 +13757,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B5);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][4], lblB5);
+        }
         }
         else
         {
@@ -13731,6 +13776,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B6);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][5], lblB6);
+        }
         }
         else
         {
@@ -13746,6 +13795,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, B7);
             }
+        else
+        {
+            premovePiece(piecesAlive[1][6], lblB7);
+        }
         }
         else
         {
@@ -13780,6 +13833,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C1);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][0], lblC1);
+        }
         }
         else
         {
@@ -13795,6 +13852,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C2);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][1], lblC2);
+        }
         }
         else
         {
@@ -13810,6 +13871,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C3);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][2], lblC3);
+        }
         }
         else
         {
@@ -13825,6 +13890,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C4);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][3], lblC4);
+        }
         }
         else
         {
@@ -13840,6 +13909,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C5);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][4], lblC5);
+        }
         }
         else
         {
@@ -13855,6 +13928,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C6);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][5], lblC6);
+        }
         }
         else
         {
@@ -13870,6 +13947,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C7);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][6], lblC7);
+        }
         }
         else
         {
@@ -13885,6 +13966,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, C8);
             }
+        else
+        {
+            premovePiece(piecesAlive[2][7], lblC8);
+        }
         }
         else
         {
@@ -13900,6 +13985,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D1);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][0], lblD1);
+        }
         }
         else
         {
@@ -13915,6 +14004,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D2);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][1], lblD2);
+        }
         }
         else
         {
@@ -13930,6 +14023,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D3);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][2], lblD3);
+        }
         }
         else
         {
@@ -13945,6 +14042,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D4);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][3], lblD4);
+        }
         }
         else
         {
@@ -13960,6 +14061,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D5);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][4], lblD5);
+        }
         }
         else
         {
@@ -13975,6 +14080,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D6);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][5], lblD6);
+        }
         }
         else
         {
@@ -13990,6 +14099,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D7);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][6], lblD7);
+        }
         }
         else
         {
@@ -14005,6 +14118,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, D8);
             }
+        else
+        {
+            premovePiece(piecesAlive[3][7], lblD8);
+        }
         }
         else
         {
@@ -14020,6 +14137,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E1);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][0], lblE1);
+        }
         }
         else
         {
@@ -14035,6 +14156,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E2);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][1], lblE2);
+        }
         }
         else
         {
@@ -14050,6 +14175,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E3);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][2], lblE3);
+        }
         }
         else
         {
@@ -14065,6 +14194,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E4);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][3], lblE4);
+        }
         }
         else
         {
@@ -14080,6 +14213,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E5);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][4], lblE5);
+        }
         }
         else
         {
@@ -14095,6 +14232,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E6);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][5], lblE6);
+        }
         }
         else
         {
@@ -14110,6 +14251,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E7);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][6], lblE7);
+        }
         }
         else
         {
@@ -14125,6 +14270,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, E8);
             }
+        else
+        {
+            premovePiece(piecesAlive[4][7], lblE8);
+        }
         }
         else
         {
@@ -14140,6 +14289,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F1);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][0], lblF1);
+        }
         }
         else
         {
@@ -14155,6 +14308,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F2);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][1], lblF2);
+        }
         }
         else
         {
@@ -14170,6 +14327,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F3);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][2], lblF3);
+        }
         }
         else
         {
@@ -14185,6 +14346,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F4);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][3], lblF4);
+        }
         }
         else
         {
@@ -14200,6 +14365,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F5);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][4], lblF5);
+        }
         }
         else
         {
@@ -14215,6 +14384,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F6);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][5], lblF6);
+        }
         }
         else
         {
@@ -14230,6 +14403,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F7);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][6], lblF7);
+        }
         }
         else
         {
@@ -14245,6 +14422,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, F8);
             }
+        else
+        {
+            premovePiece(piecesAlive[5][7], lblF8);
+        }
         }
         else
         {
@@ -14260,6 +14441,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G1);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][0], lblG1);
+        }
         }
         else
         {
@@ -14275,6 +14460,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G2);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][1], lblG2);
+        }
         }
         else
         {
@@ -14290,6 +14479,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G3);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][2], lblG3);
+        }
         }
         else
         {
@@ -14305,6 +14498,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G4);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][3], lblG4);
+        }
         }
         else
         {
@@ -14320,6 +14517,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G5);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][4], lblG5);
+        }
         }
         else
         {
@@ -14335,6 +14536,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G6);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][5], lblG6);
+        }
         }
         else
         {
@@ -14350,6 +14555,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G7);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][6], lblG7);
+        }
         }
         else
         {
@@ -14365,10 +14574,13 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, G8);
             }
+        else
+        {
+            premovePiece(piecesAlive[6][7], lblG8);
+        }
         }
         else
         {
-            refreshHistory();
             premovePiece(piecesAlive[6][7], lblG8);
         }
     }//GEN-LAST:event_lblG8MouseClicked
@@ -14381,6 +14593,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H1);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][0], lblH1);
+        }
         }
         else
         {
@@ -14396,6 +14612,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H2);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][1], lblH2);
+        }
         }
         else
         {
@@ -14411,6 +14631,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H3);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][2], lblH3);
+        }
         }
         else
         {
@@ -14426,6 +14650,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H4);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][3], lblH4);
+        }
         }
         else
         {
@@ -14441,6 +14669,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H5);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][4], lblH5);
+        }
         }
         else
         {
@@ -14456,6 +14688,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H6);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][5], lblH6);
+        }
         }
         else
         {
@@ -14471,6 +14707,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H7);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][6], lblH7);
+        }
         }
         else
         {
@@ -14486,6 +14726,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, H8);
             }
+        else
+        {
+            premovePiece(piecesAlive[7][7], lblH8);
+        }
         }
         else
         {
@@ -14600,6 +14844,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A1);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][0], lblA1);
+        }
         }
         else
         {
@@ -14628,6 +14876,10 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 postmovePiece(bufferpiece, A8);
             }
+        else
+        {
+            premovePiece(piecesAlive[0][7], lblA8);
+        }
         }
         else
         {
