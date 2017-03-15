@@ -1035,10 +1035,11 @@ public class MainFrame extends javax.swing.JFrame {
                     bufferpiece = pieceToMove;
                     bufferloc = initial.getName();
 
-                    possiblem = p1w.movementW();
-
+                    possiblem = p1w.movement();
+                    
+                    blockFinderPawnW();
                     possiblemoves(possiblem);
-
+                    
                     break;
                 }
             case "p2w" : 
@@ -1046,7 +1047,7 @@ public class MainFrame extends javax.swing.JFrame {
                     bufferpiece = pieceToMove;
                     bufferloc = initial.getName();
 
-                    possiblem = p2w.movementW();
+                    possiblem = p2w.movement();
 
                     possiblemoves(possiblem);
 
@@ -1057,7 +1058,7 @@ public class MainFrame extends javax.swing.JFrame {
                     bufferpiece = pieceToMove;
                     bufferloc = initial.getName();
 
-                    possiblem = p3w.movementW();
+                    possiblem = p3w.movement();
 
                     possiblemoves(possiblem);
                     break;
@@ -1067,7 +1068,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p4w.movementW();
+                possiblem = p4w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1077,7 +1078,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p5w.movementW();
+                possiblem = p5w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1087,7 +1088,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p6w.movementW();
+                possiblem = p6w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1097,7 +1098,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p7w.movementW();
+                possiblem = p7w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1107,7 +1108,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p8w.movementW();
+                possiblem = p8w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1117,7 +1118,7 @@ public class MainFrame extends javax.swing.JFrame {
                         bufferpiece = pieceToMove;
                         bufferloc = initial.getName();
                         
-                        possiblem = p1b.movementB();
+                        possiblem = p1b.movement();
                         
                         possiblemoves(possiblem);
                         
@@ -1128,7 +1129,7 @@ public class MainFrame extends javax.swing.JFrame {
                         bufferpiece = pieceToMove;
                         bufferloc = initial.getName();
                         
-                        possiblem = p2b.movementB();
+                        possiblem = p2b.movement();
                         
                         possiblemoves(possiblem);
                         
@@ -1139,7 +1140,7 @@ public class MainFrame extends javax.swing.JFrame {
                         bufferpiece = pieceToMove;
                         bufferloc = initial.getName();
                         
-                        possiblem = p3b.movementB();
+                        possiblem = p3b.movement();
                         
                         possiblemoves(possiblem);
                         break;
@@ -1149,7 +1150,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p4b.movementB();
+                possiblem = p4b.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1159,7 +1160,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p5b.movementB();
+                possiblem = p5b.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1169,7 +1170,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p6b.movementB();
+                possiblem = p6b.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1179,7 +1180,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p7b.movementB();
+                possiblem = p7b.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1189,7 +1190,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                possiblem = p8b.movementB();
+                possiblem = p8b.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1312,7 +1313,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                //possiblem = q1w.movementW();
+                //possiblem = q1w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -1322,7 +1323,7 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                //possiblem = k1w.movementW();
+                //possiblem = k1w.movement();
 
                 possiblemoves(possiblem);
                 break;
@@ -3527,6 +3528,78 @@ public class MainFrame extends javax.swing.JFrame {
     }
     //======================================================
     
+    //  To set a pawn
+    public void setterOfPawn(String name, String destination, ImageIcon pieceToSet, PawnPiece piece)
+    {
+        if(piece.race.equals("white"))
+        {
+            switch(destination)
+            {
+                case "A3" : 
+                {
+                    piecesAlive[0][2] = name;
+                    removePiecesAlive();
+                    lblA3.setIcon(pieceToSet);
+                    piece.location = "A3";
+                    
+                    refreshHistory();
+                    break;
+                }
+                case "A4" :
+                {
+                    piecesAlive[0][3] = name;
+                    removePiecesAlive();
+                    lblA4.setIcon(pieceToSet);
+                    piece.location = "A4";
+                    
+                    refreshHistory();
+                    break;
+                }
+                case "A5" :
+                {
+                    piecesAlive[0][4] = name;
+                    removePiecesAlive();
+                    lblA5.setIcon(pieceToSet);
+                    piece.location = "A5";
+                    
+                    refreshHistory();
+                    break;
+                }
+                case "A6" :
+                {
+                    piecesAlive[0][5] = name;
+                    removePiecesAlive();
+                    lblA6.setIcon(pieceToSet);
+                    piece.location = "A6";
+                    
+                    refreshHistory();
+                    break;
+                }
+                case "A7" :
+                {
+                    piecesAlive[0][6] = name;
+                    removePiecesAlive();
+                    lblA7.setIcon(pieceToSet);
+                    piece.location = "A7";
+                    
+                    refreshHistory();
+                    break;
+                }
+                case "A8" :
+                {
+                    piecesAlive[0][7] = name;
+                    removePiecesAlive();
+                    lblA8.setIcon(pieceToSet);
+                    piece.location = "A8";
+                    
+                    refreshHistory();
+                    break;
+                }
+            }
+        }
+    }
+    //======================================================
+    
     //  To move the indicated piece to an indicated position
     public void postmovePiece(String buffer, JPanel destination)
     {
@@ -3536,90 +3609,9 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 if(destination.getBorder() == movement)
                 {
-                    switch(destination.getName())
-                    {
-                        case "A3" : 
-                        {   
-                            piecesAlive[0][2] = "p1w";
-                            piecesAlive[0][1] = "";
-
-                            lblA2.setIcon(null);
-                            lblA3.setIcon(pawnw);
-                            p1w.location = "A3";
-
-                            refreshHistory();
-                        }break;
-                        case "A4" : 
-                        {   
-                            if(p1w.moves == 1)
-                            {   
-                                piecesAlive[0][3] = "p1w";
-                                piecesAlive[0][1] = "";
-
-                                lblA2.setIcon(null);
-                                lblA4.setIcon(pawnw);
-                                p1w.location = "A4";
-
-                                refreshHistory();
-                            }
-                            else if(p1w.moves >= 2)
-                            {   
-                                piecesAlive[0][3] = "p1w";
-                                piecesAlive[0][2] = "";
-
-                                lblA3.setIcon(null);
-                                lblA4.setIcon(pawnw);
-                                p1w.location = "A4";
-
-                                refreshHistory();
-                            }
-                        }break;  
-                        case "A5" : 
-                        {   
-                            piecesAlive[0][4] = "p1w";
-                            piecesAlive[0][3] = "";
-
-                            lblA4.setIcon(null);
-                            lblA5.setIcon(pawnw);
-                            p1w.location = "A5";
-
-                            refreshHistory();
-                        }break;
-                        case "A6" : 
-                        {   
-                            piecesAlive[0][5] = "p1w";
-                            piecesAlive[0][4] = "";
-
-                            lblA5.setIcon(null);
-                            lblA6.setIcon(pawnw);
-                            p1w.location = "A6";
-
-                            refreshHistory();
-                        }break;
-                        case "A7" : 
-                        {   
-                            piecesAlive[0][6] = "p1w";
-                            piecesAlive[0][5] = "";
-
-                            lblA6.setIcon(null);
-                            lblA7.setIcon(pawnw);
-                            p1w.location = "A7";
-
-                            refreshHistory();
-                        }break;
-                        case "A8" : 
-                        {   
-                            piecesAlive[0][7] = "p1w";
-                            piecesAlive[0][6] = "";
-
-                            lblA7.setIcon(null);
-                            lblA8.setIcon(pawnw);
-                            p1w.location = "A8";
-
-                            refreshHistory();
-                        }break;
-                    }
+                    setterOfPawn("p1w",destination.getName(),pawnw, p1w);
                 }
+                break;
             }
             case "p2w" : 
             {
@@ -5039,8 +5031,6 @@ public class MainFrame extends javax.swing.JFrame {
             }
             case "r2b" : 
             {
-                
-                
                 if(destination.getBorder() == movement)
                 {
                     setterOfPieceRook("r2b", destination.getName(), rookb, r2b);
@@ -6574,6 +6564,36 @@ public class MainFrame extends javax.swing.JFrame {
         }
         
         outputToOpponent += "," + destination.getName();
+    }
+    //======================================================
+    
+    //  To find the block for pawn white
+    public void blockFinderPawnW()
+    {
+        switch(bufferloc)
+        {
+            case "A2" : 
+            {
+                if(!piecesAlive[0][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                if(piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "A3" : 
+            {
+                if(!piecesAlive[0][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                break;
+            }
+        }
     }
     //======================================================
     
