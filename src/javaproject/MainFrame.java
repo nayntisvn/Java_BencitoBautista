@@ -6193,14 +6193,14 @@ public class MainFrame extends javax.swing.JFrame {
         {
             case "A7" : 
             {
-                if(!piecesAlive[0][2].equals(""))
+                if(!piecesAlive[0][6].equals(""))
                 {
-                    possiblem.remove("A3");
+                    possiblem.remove("A8");
                 }
                 
                 if(piecesAlive[1][2].equals(""))
                 {
-                    possiblem.remove("B3");
+                    possiblem.remove("B8");
                 }
                 break;
             }
@@ -6212,7 +6212,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "A4" : 
+            case "A5" : 
             {
                 if(!piecesAlive[0][4].equals(""))
                 {
@@ -6220,7 +6220,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "A5" : 
+            case "A4" : 
             {
                 if(!piecesAlive[0][4].equals(""))
                 {
@@ -6228,7 +6228,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "A6" : 
+            case "A3" : 
             {
                 if(!piecesAlive[0][5].equals(""))
                 {
@@ -6236,7 +6236,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "A7" : 
+            case "A2" : 
             {
                 if(!piecesAlive[0][6].equals(""))
                 {
@@ -6244,7 +6244,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B2" : 
+            case "B7" : 
             {
                 if(!piecesAlive[1][2].equals(""))
                 {
@@ -6262,7 +6262,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B3" : 
+            case "B6" : 
             {
                 if(!piecesAlive[1][3].equals(""))
                 {
@@ -6270,7 +6270,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B4" : 
+            case "B5" : 
             {
                 if(!piecesAlive[1][4].equals(""))
                 {
@@ -6278,7 +6278,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B5" : 
+            case "B4" : 
             {
                 if(!piecesAlive[1][5].equals(""))
                 {
@@ -6286,7 +6286,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B6" : 
+            case "B3" : 
             {
                 if(!piecesAlive[1][6].equals(""))
                 {
@@ -6294,7 +6294,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "B7" : 
+            case "B2" : 
             {
                 if(!piecesAlive[1][7].equals(""))
                 {
@@ -6303,7 +6303,7 @@ public class MainFrame extends javax.swing.JFrame {
                 break;
             }
             
-            case "C2" : 
+            case "C7" : 
             {
                 if(!piecesAlive[2][2].equals(""))
                 {
@@ -6321,7 +6321,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "C3" : 
+            case "C6" : 
             {
                 if(!piecesAlive[2][3].equals(""))
                 {
@@ -6329,7 +6329,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "C4" : 
+            case "C5" : 
             {
                 if(!piecesAlive[2][4].equals(""))
                 {
@@ -6337,7 +6337,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "C5" : 
+            case "C4" : 
             {
                 if(!piecesAlive[2][5].equals(""))
                 {
@@ -6345,7 +6345,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "C6" : 
+            case "C3" : 
             {
                 if(!piecesAlive[2][6].equals(""))
                 {
@@ -6353,7 +6353,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "C7" : 
+            case "C2" : 
             {
                 if(!piecesAlive[2][7].equals(""))
                 {
@@ -6362,7 +6362,7 @@ public class MainFrame extends javax.swing.JFrame {
                 break;
             }
             //////////////////D
-            case "D2" : 
+            case "D7" : 
             {
                 if(!piecesAlive[3][2].equals(""))
                 {
@@ -6380,7 +6380,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "D3" : 
+            case "D6" : 
             {
                 if(!piecesAlive[3][3].equals(""))
                 {
@@ -6388,7 +6388,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "D4" : 
+            case "D5" : 
             {
                 if(!piecesAlive[3][4].equals(""))
                 {
@@ -6396,7 +6396,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "D5" : 
+            case "D4" : 
             {
                 if(!piecesAlive[3][5].equals(""))
                 {
@@ -6404,7 +6404,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "D6" : 
+            case "D3" : 
             {
                 if(!piecesAlive[3][6].equals(""))
                 {
@@ -6412,7 +6412,7 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
-            case "D7" : 
+            case "D2" : 
             {
                 if(!piecesAlive[3][7].equals(""))
                 {
@@ -6679,6 +6679,11 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A4");
                 }
+                
+                if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                }
                 break;
             }
             case "A4" : 
@@ -6686,6 +6691,11 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[0][4].equals(""))
                 {
                     possiblem.remove("A5");
+                }
+                
+                if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("B4");
                 }
                 break;
             }
@@ -6695,6 +6705,10 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A6");
                 }
+                if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("B4");
+                }
                 break;
             }
             case "A6" : 
@@ -6703,6 +6717,10 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A7");
                 }
+                if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("B4");
+                }
                 break;
             }
             case "A7" : 
@@ -6710,6 +6728,10 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[0][6].equals(""))
                 {
                     possiblem.remove("A8");
+                }
+                if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("B4");
                 }
                 break;
             }
@@ -6735,7 +6757,17 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 if(!piecesAlive[1][3].equals(""))
                 {
-                    possiblem.remove("B3");
+                    possiblem.remove("B4");
+                }
+                
+                if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                }
+                
+                if(piecesAlive[0][3].equals(""))
+                {
+                    possiblem.remove("A4");
                 }
                 break;
             }
@@ -6745,6 +6777,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("B5");
                 }
+                
+                if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                }
+                
+                if(piecesAlive[0][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
                 break;
             }
             case "B5" : 
@@ -6752,6 +6794,16 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[1][5].equals(""))
                 {
                     possiblem.remove("B6");
+                }
+                
+                if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                }
+                
+                if(piecesAlive[0][5].equals(""))
+                {
+                    possiblem.remove("A6");
                 }
                 break;
             }
@@ -6761,6 +6813,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("B7");
                 }
+                
+                if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                }
+                
+                if(piecesAlive[0][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
                 break;
             }
             case "B7" : 
@@ -6768,6 +6830,16 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[1][7].equals(""))
                 {
                     possiblem.remove("B8");
+                }
+                
+                if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                }
+                
+                if(piecesAlive[0][7].equals(""))
+                {
+                    possiblem.remove("A8");
                 }
                 break;
             }
@@ -6796,6 +6868,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("C4");
                 }
+                
+                if(piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
+                
+                if(piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                }
                 break;
             }
             case "C4" : 
@@ -6803,6 +6885,16 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[2][4].equals(""))
                 {
                     possiblem.remove("C5");
+                }
+                
+                if(piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                }
+                
+                if(piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("B5");
                 }
                 break;
             }
@@ -6812,6 +6904,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("C6");
                 }
+                
+                if(piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
+                
+                if(piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                }
                 break;
             }
             case "C6" : 
@@ -6820,6 +6922,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("C7");
                 }
+                
+                if(piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                }
+                
+                if(piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                }
                 break;
             }
             case "C7" : 
@@ -6827,6 +6939,16 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[2][7].equals(""))
                 {
                     possiblem.remove("C8");
+                }
+                
+                if(piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                
+                if(piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("B8");
                 }
                 break;
             }
@@ -6855,6 +6977,16 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("D4");
                 }
+                
+                if(piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                
+                if(piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                }
                 break;
             }
             case "D4" : 
@@ -6862,6 +6994,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[3][4].equals(""))
                 {
                     possiblem.remove("D5");
+                }
+                if(piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                
+                if(piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("C5");
                 }
                 break;
             }
@@ -6871,6 +7012,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("D6");
                 }
+                if(piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                
+                if(piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                }
                 break;
             }
             case "D6" : 
@@ -6879,6 +7029,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("D7");
                 }
+                if(piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                }
+                
+                if(piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                }
                 break;
             }
             case "D7" : 
@@ -6886,6 +7045,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[3][7].equals(""))
                 {
                     possiblem.remove("D8");
+                }
+                if(piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("C8");
                 }
                 break;
             }
@@ -6914,6 +7082,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("E4");
                 }
+                if(piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                
+                if(piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
                 break;
             }
             case "E4" : 
@@ -6921,6 +7098,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[4][4].equals(""))
                 {
                     possiblem.remove("E5");
+                }
+                if(piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                
+                if(piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
                 }
                 break;
             }
@@ -6930,6 +7116,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("E6");
                 }
+                if(piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                
+                if(piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
                 break;
             }
             case "E6" : 
@@ -6938,6 +7133,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("E7");
                 }
+                if(piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                }
+                
+                if(piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                }
                 break;
             }
             case "E7" : 
@@ -6945,6 +7149,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[4][7].equals(""))
                 {
                     possiblem.remove("E8");
+                }
+                if(piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                
+                if(piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("D8");
                 }
                 break;
             }
@@ -6974,6 +7187,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("F4");
                 }
+                if(piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                
+                if(piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
                 break;
             }
             case "F4" : 
@@ -6981,6 +7203,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[5][4].equals(""))
                 {
                     possiblem.remove("F5");
+                }
+                if(piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                
+                if(piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
                 }
                 break;
             }
@@ -6990,6 +7221,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("F6");
                 }
+                if(piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                
+                if(piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
                 break;
             }
             case "F6" : 
@@ -6998,6 +7238,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("F7");
                 }
+                if(piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                }
+                
+                if(piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                }
                 break;
             }
             case "F7" : 
@@ -7005,6 +7254,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[5][7].equals(""))
                 {
                     possiblem.remove("F8");
+                }
+                if(piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                if(piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("E8");
                 }
                 break;
             }
@@ -7033,6 +7291,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("G4");
                 }
+                if(piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                
+                if(piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
                 break;
             }
             case "G4" : 
@@ -7040,6 +7307,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[6][4].equals(""))
                 {
                     possiblem.remove("G5");
+                }
+                if(piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                
+                if(piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
                 }
                 break;
             }
@@ -7049,6 +7325,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("G6");
                 }
+                if(piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                
+                if(piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
                 break;
             }
             case "G6" : 
@@ -7057,6 +7342,15 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("G7");
                 }
+                if(piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H7");
+                }
+                
+                if(piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                }
                 break;
             }
             case "G7" : 
@@ -7064,6 +7358,15 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[6][7].equals(""))
                 {
                     possiblem.remove("G8");
+                }
+                if(piecesAlive[7][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("F8");
                 }
                 break;
             }
@@ -7079,6 +7382,7 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("G3");
                 }
+                
                 break;
             }
             case "H3" : 
@@ -7086,6 +7390,11 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[7][3].equals(""))
                 {
                     possiblem.remove("H4");
+                }
+                
+                if(piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
                 }
                 break;
             }
@@ -7095,6 +7404,10 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("H5");
                 }
+                if(piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
                 break;
             }
             case "H5" : 
@@ -7102,6 +7415,10 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[7][5].equals(""))
                 {
                     possiblem.remove("H6");
+                }
+                if(piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
                 }
                 break;
             }
@@ -7111,6 +7428,10 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("H7");
                 }
+                if(piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                }
                 break;
             }
             case "H7" : 
@@ -7118,6 +7439,10 @@ public class MainFrame extends javax.swing.JFrame {
                 if(!piecesAlive[7][7].equals(""))
                 {
                     possiblem.remove("H8");
+                }
+                if(piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("G8");
                 }
                 break;
             }
