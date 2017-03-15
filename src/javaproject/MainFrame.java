@@ -103,8 +103,8 @@ public class MainFrame extends javax.swing.JFrame {
     BishopPiece b1b = new BishopPiece("black", "C8");
     BishopPiece b2b = new BishopPiece("black", "F8");
     
-    //QueenPiece q1w = new QueenPiece("white", "D1");
-    //QueenPiece q1b = new QueenPiece("black", "D8");
+    QueenPiece q1w = new QueenPiece("white", "D1");
+    QueenPiece q1b = new QueenPiece("black", "D8");
     
     //KingPiece k1w = new KingPiece("white", "E1");
     //KingPiece k1b = new KingPiece("black", "E8");
@@ -1202,6 +1202,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = r1b.movement();
 
+                blockFinderRook();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1222,6 +1223,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = b1b.movement();
 
+                blockFinderBishop();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1230,8 +1232,11 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-//                possiblem = q1b.movement();
+                possiblem = q1b.movement();
 
+                blockFinderBishop();
+                blockFinderRook();
+                
                 possiblemoves(possiblem);
                 break;
             }
@@ -1252,6 +1257,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = b2b.movement();
 
+                blockFinderBishop();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1272,6 +1278,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = r2b.movement();
 
+                blockFinderRook();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1305,6 +1312,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = b1w.movement();
 
+                blockFinderBishop();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1313,8 +1321,11 @@ public class MainFrame extends javax.swing.JFrame {
                 bufferpiece = pieceToMove;
                 bufferloc = initial.getName();
 
-                //possiblem = q1w.movement();
+                possiblem = q1w.movement();
 
+                blockFinderBishop();
+                blockFinderRook();
+                
                 possiblemoves(possiblem);
                 break;
             }
@@ -1335,6 +1346,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = b2w.movement();
 
+                blockFinderBishop();
                 possiblemoves(possiblem);
                 break;
             }
@@ -4977,7 +4989,7 @@ public class MainFrame extends javax.swing.JFrame {
             {
                 if(destination.getBorder() == movement)
                 {
-                    setterOfPieceKnight("h1b", destination.getName(), knightb, h1b);
+                    setterOfPieceKnight("h2b", destination.getName(), knightb, h2b);
                 }
             }
             case "b1w" : 
@@ -6592,6 +6604,7 @@ public class MainFrame extends javax.swing.JFrame {
                     possiblem.remove("A4");
                 }
                 break;
+                
             }
         }
     }
@@ -10871,7 +10884,7 @@ public class MainFrame extends javax.swing.JFrame {
     //======================================================
     
     public void blockFinderBishop()
-        {
+    {
             switch(bufferloc)
             {
                 case "A1" : 
@@ -14729,6 +14742,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         else
         {
+            refreshHistory();
             premovePiece(piecesAlive[0][1], lblA2);
         }
     }//GEN-LAST:event_lblA2MouseClicked
@@ -15038,6 +15052,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         else
         {
+            refreshHistory();
             premovePiece(piecesAlive[1][0], lblB1);
         }
     }//GEN-LAST:event_lblB1MouseClicked
@@ -15139,6 +15154,10 @@ public class MainFrame extends javax.swing.JFrame {
             if(piecesAlive[1][7].charAt(2) != bufferpiece.charAt(2))
             {
                 postmovePiece(bufferpiece, B8);
+            }
+            else
+            {
+                premovePiece(piecesAlive[1][7], lblB8);
             }
         }
         else
@@ -15743,6 +15762,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         else
         {
+            refreshHistory();
             premovePiece(piecesAlive[6][7], lblG8);
         }
     }//GEN-LAST:event_lblG8MouseClicked
