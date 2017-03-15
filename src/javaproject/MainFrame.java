@@ -1771,7 +1771,6 @@ public class MainFrame extends javax.swing.JFrame {
     //  To set a knight
     public void setterOfPieceKnight(String name, String destination, ImageIcon pieceToSet, KnightPiece piece)
     {
-        
         switch(destination)
         {
             case "A1" : 
@@ -7103,7 +7102,16 @@ public class MainFrame extends javax.swing.JFrame {
             }
             case "A8" : 
             {
-                if(!piecesAlive[0][5].equals(""))
+                if(!piecesAlive[0][6].equals(""))
+                {
+                    possiblem.remove("A6");
+                    possiblem.remove("A5");
+                    possiblem.remove("A4");
+                    possiblem.remove("A3");
+                    possiblem.remove("A2");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[0][5].equals(""))
                 {
                     possiblem.remove("A5");
                     possiblem.remove("A4");
@@ -7634,7 +7642,16 @@ public class MainFrame extends javax.swing.JFrame {
             }
             case "B8" : 
             {
-                if(!piecesAlive[1][5].equals(""))
+                if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("B5");
+                    possiblem.remove("B4");
+                    possiblem.remove("B3");
+                    possiblem.remove("B2");
+                    possiblem.remove("B1");
+                }
+                else if(!piecesAlive[1][5].equals(""))
                 {
                     possiblem.remove("B5");
                     possiblem.remove("B4");
@@ -8135,7 +8152,16 @@ public class MainFrame extends javax.swing.JFrame {
             }
             case "C8" : 
             {
-                if(!piecesAlive[2][5].equals(""))
+                if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("C6");
+                    possiblem.remove("C5");
+                    possiblem.remove("C4");
+                    possiblem.remove("C3");
+                    possiblem.remove("C2");
+                    possiblem.remove("C1");
+                }
+                else if(!piecesAlive[2][5].equals(""))
                 {
                     possiblem.remove("C5");
                     possiblem.remove("C4");
@@ -8331,6 +8357,2489 @@ public class MainFrame extends javax.swing.JFrame {
                 else if(!piecesAlive[6][1].equals(""))
                 {
                     possiblem.remove("H2");
+                }
+                
+                break;
+            }
+            case "D3" : 
+            {
+                if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("D6");
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                
+                if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("G3");
+                    possiblem.remove("H3");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("H3");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                break;
+            }
+            case "D4" : 
+            {
+                if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D1");
+                    possiblem.remove("D2");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                
+                if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("G4");
+                    possiblem.remove("H4");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("H4");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                
+                break;
+            }
+            case "D5" : 
+            {
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("D8");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                
+                if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("G5");
+                    possiblem.remove("H5");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("H5");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                
+                break;
+            }
+            case "D6" : 
+            {
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                
+                if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("G6");
+                    possiblem.remove("H6");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("H6");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                
+                break;
+            }
+            case "D7" : 
+            {
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                    possiblem.remove("G7");
+                    possiblem.remove("H7");
+                }
+                else if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("H7");
+                }
+                else if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                break;
+            }
+            case "D8" : 
+            {
+                if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("D5");
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("D1");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                
+                if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("F8");
+                    possiblem.remove("G8");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("G8");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                break;
+            }
+            /////////////// E
+            case "E1" : 
+            {
+                if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("E4");
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[2][0].equals(""))
+                {
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[1][0].equals(""))
+                {
+                    possiblem.remove("A1");
+                }
+                    
+                if(!piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("G1");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                break;
+            }
+            case "E2" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[2][1].equals(""))
+                {
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[1][1].equals(""))
+                {
+                    possiblem.remove("A2");
+                }
+                
+                if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("G2");
+                    possiblem.remove("H2");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("H2");
+                }
+                
+                break;
+            }
+            case "E3" : 
+            {
+                if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("H3");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                break;
+            }
+            case "E4" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E1");
+                    possiblem.remove("E2");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("H4");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                
+                break;
+            }
+            case "E5" : 
+            {
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("H5");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                
+                break;
+            }
+            case "E6" : 
+            {
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("H6");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                
+                break;
+            }
+            case "E7" : 
+            {
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("H7");
+                }
+                else if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H7");
+                }
+                
+                break;
+            }
+            case "E8" : 
+            {
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E5");
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("E1");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                
+                if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("G8");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                break;
+            }
+            /////////// F
+            case "F1" : 
+            {
+                if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("F4");
+                    possiblem.remove("F5");
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("F5");
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                
+                if(!piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("D1");
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[2][0].equals(""))
+                {
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[1][0].equals(""))
+                {
+                    possiblem.remove("A1");
+                }
+                
+                if(!piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                break;
+            }
+            case "F2" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("E8");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[2][1].equals(""))
+                {
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[1][1].equals(""))
+                {
+                    possiblem.remove("A2");
+                }
+                
+                if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("H2");
+                }
+                
+                break;
+            }
+            case "F3" : 
+            {
+                if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                break;
+            }
+            case "F4" : 
+            {
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F1");
+                    possiblem.remove("F2");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F7");
+                    possiblem.remove("F8");
+                }
+                else if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                
+                break;
+            }
+            case "F5" : 
+            {
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                
+                break;
+            }
+            case "F6" : 
+            {
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                
+                break;
+            }
+            case "F7" : 
+            {
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                
+                if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H7");
+                }
+                
+                break;
+            }
+            case "F8" : 
+            {
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("F5");
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F2");
+                    possiblem.remove("F1");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                
+                if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                break;
+            }
+            //////////// G
+            case "G1" : 
+            {
+                if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("G4");
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                if(!piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[2][0].equals(""))
+                {
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[1][0].equals(""))
+                {
+                    possiblem.remove("A2");
+                }
+                
+                break;
+            }
+            case "G2" : 
+            {
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[2][1].equals(""))
+                {
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[1][1].equals(""))
+                {
+                    possiblem.remove("A2");
+                }
+                
+                break;
+            }
+            case "G3" : 
+            {
+                if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                break;
+            }
+            case "G4" : 
+            {
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G1");
+                    possiblem.remove("G2");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                
+                break;
+            }
+            case "G5" : 
+            {
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if (!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G7");
+                    possiblem.remove("G8");
+                }
+                else if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                
+                break;
+            }
+            case "G6" : 
+            {
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                
+                break;
+            }
+            case "G7" : 
+            {
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                
+                break;
+            }
+            case "G8" : 
+            {
+                if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G6");
+                    possiblem.remove("G5");
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G5");
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G4");
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G3");
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G2");
+                    possiblem.remove("G1");
+                }
+                else if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("E8");
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                
+                break;
+            }
+            ///////////// H
+            case "H1" : 
+            {
+                if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H3");
+                    possiblem.remove("H4");
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H4");
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("F1");
+                    possiblem.remove("E1");
+                    possiblem.remove("D1");
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("E1");
+                    possiblem.remove("D1");
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("D1");
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("C1");
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[2][0].equals(""))
+                {
+                    possiblem.remove("B1");
+                    possiblem.remove("A1");
+                }
+                else if(!piecesAlive[1][0].equals(""))
+                {
+                    possiblem.remove("A1");
+                }
+                
+                break;
+            }
+            case "H2" : 
+            {
+                if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H4");
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("F2");
+                    possiblem.remove("E2");
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("E2");
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("D2");
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("C2");
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[2][1].equals(""))
+                {
+                    possiblem.remove("B2");
+                    possiblem.remove("A2");
+                }
+                else if(!piecesAlive[1][1].equals(""))
+                {
+                    possiblem.remove("A2");
+                }
+                
+                break;
+            }
+            case "H3" : 
+            {
+                if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H5");
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                    possiblem.remove("E3");
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                    possiblem.remove("A3");
+                }
+                else if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                break;
+            }
+            case "H4" : 
+            {
+                if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H1");
+                    possiblem.remove("H2");
+                }
+                else if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H6");
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                    possiblem.remove("E4");
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("B4");
+                    possiblem.remove("A4");
+                }
+                else if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                
+                break;
+            }
+            case "H5" : 
+            {
+                if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if (!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H7");
+                    possiblem.remove("H8");
+                }
+                else if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                    possiblem.remove("E5");
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                    possiblem.remove("A5");
+                }
+                else if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                
+                break;
+            }
+            case "H6" : 
+            {
+                if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                    possiblem.remove("E6");
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                    possiblem.remove("A6");
+                }
+                else if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                
+                break;
+            }
+            case "H7" : 
+            {
+                if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H5");
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                    possiblem.remove("E7");
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                    possiblem.remove("A7");
+                }
+                else if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                
+                break;
+            }
+            case "H8" : 
+            {
+                if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H6");
+                    possiblem.remove("H5");
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H5");
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H4");
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H3");
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H2");
+                    possiblem.remove("H1");
+                }
+                else if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("F8");
+                    possiblem.remove("E8");
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("E8");
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                    possiblem.remove("A8");
+                }
+                else if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("A8");
                 }
                 
                 break;
@@ -10808,21 +13317,6 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(!bufferpiece.equals(""))
         {
-            if(piecesAlive[1][1].charAt(2) != bufferpiece.charAt(2))
-            {
-                postmovePiece(bufferpiece, B2);
-            }
-        }
-        else
-        {
-            premovePiece(piecesAlive[1][1], lblB2);
-        }
-    }//GEN-LAST:event_lblB3MouseClicked
-
-    private void lblB2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB2MouseClicked
-        // TODO add your handling code here:
-        if(!bufferpiece.equals(""))
-        {
             if(piecesAlive[1][2].charAt(2) != bufferpiece.charAt(2))
             {
                 postmovePiece(bufferpiece, B3);
@@ -10831,6 +13325,21 @@ public class MainFrame extends javax.swing.JFrame {
         else
         {
             premovePiece(piecesAlive[1][2], lblB3);
+        }
+    }//GEN-LAST:event_lblB3MouseClicked
+
+    private void lblB2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblB2MouseClicked
+        // TODO add your handling code here:
+        if(!bufferpiece.equals(""))
+        {
+            if(piecesAlive[1][1].charAt(2) != bufferpiece.charAt(2))
+            {
+                postmovePiece(bufferpiece, B2);
+            }
+        }
+        else
+        {
+            premovePiece(piecesAlive[1][1], lblB2);
         }
     }//GEN-LAST:event_lblB2MouseClicked
 
