@@ -4918,37 +4918,7 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A6");
                 }
-
-                if(piecesAlive[2][2].equals(""))
-                {
-                    possiblem.remove("C3");
-                }
                 
-                if(piecesAlive[0][2].equals(""))
-                {
-                    possiblem.remove("A3");
-                }
-                break;
-            }
-            case "B6" : 
-            {
-                if(!piecesAlive[1][3].equals(""))
-                {
-                    possiblem.remove("B3");
-                }
-                break;
-            }
-            case "B5" : 
-            {
-                if(!piecesAlive[1][4].equals(""))
-                {
-                    possiblem.remove("B5");
-                }
-                break;
-            }
-            case "B4" : 
-            {
-                if(!piecesAlive[1][5].equals(""))
                 if(piecesAlive[1][5].equals(""))
                 {
                     possiblem.remove("B6");
@@ -5003,11 +4973,6 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("B2");
                 }
-                
-                if(!piecesAlive[1][3].equals(""))
-                {
-                    possiblem.remove("B4");
-                }
                 break;
             }
             case "A2" : 
@@ -5038,10 +5003,6 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A6");
                 }
-                if(!piecesAlive[1][4].equals(""))
-                {
-                    possiblem.remove("B4");
-                }
                 break;
             }
             case "B6" : 
@@ -5059,10 +5020,6 @@ public class MainFrame extends javax.swing.JFrame {
                 if(piecesAlive[0][4].equals(""))
                 {
                     possiblem.remove("A5");
-                }
-                if(!piecesAlive[1][5].equals(""))
-                {
-                    possiblem.remove("B4");
                 }
                 break;
             }
@@ -5136,16 +5093,6 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A1");
                 }
-                
-                if(!piecesAlive[2][4].equals(""))
-                {
-                    possiblem.remove("C5");
-                }
-                
-                if(piecesAlive[0][4].equals(""))
-                {
-                    possiblem.remove("A5");
-                }
                 break;
             }
             ////////////// C
@@ -5157,16 +5104,6 @@ public class MainFrame extends javax.swing.JFrame {
                     possiblem.remove("B6");
                 }
                 
-                if(!piecesAlive[2][5].equals(""))
-                {
-                    possiblem.remove("C6");
-                }
-                
-                if(piecesAlive[0][5].equals(""))
-                {
-                    possiblem.remove("A6");
-                }
-                
                 if(piecesAlive[2][5].equals(""))
                 {
                     possiblem.remove("C6");
@@ -5175,16 +5112,6 @@ public class MainFrame extends javax.swing.JFrame {
                 if(piecesAlive[0][5].equals(""))
                 {
                     possiblem.remove("A6");
-                }
-                
-                if(piecesAlive[3][5].equals(""))
-                {
-                    possiblem.remove("D6");
-                }
-                
-                if(piecesAlive[1][5].equals(""))
-                {
-                    possiblem.remove("B6");
                 }
                 break;
             }
@@ -5240,16 +5167,6 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("A3");
                 }
-                
-                if(piecesAlive[4][3].equals(""))
-                {
-                    possiblem.remove("E4");
-                }
-                
-                if(piecesAlive[2][3].equals(""))
-                {
-                    possiblem.remove("C4");
-                }
                 break;
             }
             case "C3" : 
@@ -5286,17 +5203,13 @@ public class MainFrame extends javax.swing.JFrame {
                 {
                     possiblem.remove("B1");
                 }
-                if(piecesAlive[6][7].equals(""))
-                {
-                    possiblem.remove("G8");
-                }
                 break;
             }
         }
     }
     //======================================================
     
-    
+    //  To find the block of pawn white
     public void blockFinderPawnW()
     {
         
