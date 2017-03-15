@@ -32,16 +32,19 @@ public class Startup extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jButtonPlayer1 = new javax.swing.JButton();
         jButtonPlayer2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButtonPlayer1 = new javax.swing.JButton();
-        jButtonPlayer2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Play Chess");
         getContentPane().setLayout(null);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setToolTipText("");
 
         jButtonPlayer1.setText("Enter as Player 1");
         jButtonPlayer1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -50,8 +53,6 @@ public class Startup extends javax.swing.JFrame {
                 jButtonPlayer1MouseClicked(evt);
             }
         });
-        getContentPane().add(jButtonPlayer1);
-        jButtonPlayer1.setBounds(290, 350, 249, 23);
 
         jButtonPlayer2.setText("Enter as Player 2");
         jButtonPlayer2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -60,20 +61,50 @@ public class Startup extends javax.swing.JFrame {
                 jButtonPlayer2MouseClicked(evt);
             }
         });
-        getContentPane().add(jButtonPlayer2);
-        jButtonPlayer2.setBounds(290, 380, 249, 23);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel1.setText("PLAY CHESS");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(290, 170, 249, 45);
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKGROUND.jpg"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 834, 572);
 
-        setSize(new java.awt.Dimension(857, 629));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(0, 302, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1)
+                        .addComponent(jButtonPlayer1, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonPlayer2, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(0, 303, Short.MAX_VALUE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(0, 180, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addGap(135, 135, 135)
+                    .addComponent(jButtonPlayer1)
+                    .addGap(7, 7, 7)
+                    .addComponent(jButtonPlayer2)
+                    .addGap(0, 181, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 11, 860, 600);
+
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -131,5 +162,6 @@ public class Startup extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPlayer2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
