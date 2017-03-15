@@ -106,8 +106,8 @@ public class MainFrame extends javax.swing.JFrame {
     QueenPiece q1w = new QueenPiece("white", "D1");
     QueenPiece q1b = new QueenPiece("black", "D8");
     
-    //KingPiece k1w = new KingPiece("white", "E1");
-    //KingPiece k1b = new KingPiece("black", "E8");
+    KingPiece k1w = new KingPiece("white", "E1");
+    KingPiece k1b = new KingPiece("black", "E8");
     
     //======================================================
     
