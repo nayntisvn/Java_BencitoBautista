@@ -71,6 +71,7 @@
           <AbsoluteConstraints x="290" y="170" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
@@ -243,6 +244,8 @@
         </Constraint>
       </Constraints>
     </Component>
+=======
+>>>>>>> origin/master
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
