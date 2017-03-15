@@ -6435,6 +6435,516 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
             }
+            case "D7" : 
+            {
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
+                
+                if(piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                }
+                
+                if(piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                break;
+            }
+            case "D6" : 
+            {
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                }
+                
+                if(piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                }
+                
+                if(piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                break;
+            }
+            case "D5" : 
+            {
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
+                
+                if(piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                }
+                
+                if(piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                break;
+            }
+            case "D4" : 
+            {
+                if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                break;
+            }
+            case "D3" : 
+            {
+                if(!piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D2");
+                }
+                
+                if(piecesAlive[2][1].equals(""))
+                {
+                    possiblem.remove("C2");
+                }
+                
+                if(piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E2");
+                }
+                break;
+            }
+            case "D2" : 
+            {
+                if(!piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(piecesAlive[2][0].equals(""))
+                {
+                    possiblem.remove("C1");
+                }
+                
+                if(piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                break;
+            }
+            case "E7" : 
+            {
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                
+                if(piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
+                
+                if(piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                break;
+            }
+            case "E6" : 
+            {
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                
+                if(piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                }
+                
+                if(piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                break;
+            }
+            case "E5" : 
+            {
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                
+                if(piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
+                
+                if(piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                break;
+            }
+            case "E4" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                break;
+            }
+            case "E3" : 
+            {
+                if(!piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E2");
+                }
+                
+                if(piecesAlive[3][1].equals(""))
+                {
+                    possiblem.remove("D2");
+                }
+                
+                if(piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F2");
+                }
+                break;
+            }
+            case "E2" : 
+            {
+                if(!piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(piecesAlive[3][0].equals(""))
+                {
+                    possiblem.remove("D1");
+                }
+                
+                if(piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                break;
+            }
+            case "F7" : 
+            {
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                
+                if(piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                
+                if(piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                break;
+            }
+            case "F6" : 
+            {
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                
+                if(piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                
+                if(piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                break;
+            }
+            case "F5" : 
+            {
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                
+                if(piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                
+                if(piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                break;
+            }
+            case "F4" : 
+            {
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                break;
+            }
+            case "F3" : 
+            {
+                if(!piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F2");
+                }
+                
+                if(piecesAlive[4][1].equals(""))
+                {
+                    possiblem.remove("E2");
+                }
+                
+                if(piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G2");
+                }
+                break;
+            }
+            case "F2" : 
+            {
+                if(!piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(piecesAlive[4][0].equals(""))
+                {
+                    possiblem.remove("E1");
+                }
+                
+                if(piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                break;
+            }
+            case "G7" : 
+            {
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                
+                if(piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                
+                if(piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                break;
+            }
+            case "G6" : 
+            {
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                
+                if(piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                
+                if(piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                break;
+            }
+            case "G5" : 
+            {
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                
+                if(piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                
+                if(piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                break;
+            }
+            case "G4" : 
+            {
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                break;
+            }
+            case "G3" : 
+            {
+                if(!piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G2");
+                }
+                
+                if(piecesAlive[5][1].equals(""))
+                {
+                    possiblem.remove("F2");
+                }
+                
+                if(piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H2");
+                }
+                break;
+            }
+            case "G2" : 
+            {
+                if(!piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                
+                if(piecesAlive[5][0].equals(""))
+                {
+                    possiblem.remove("F1");
+                }
+                
+                if(piecesAlive[7][0].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                break;
+            }
+            case "H7" : 
+            {
+                if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                
+                if(piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                break;
+            }
+            case "H6" : 
+            {
+                if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                
+                if(piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                break;
+            }
+            case "H5" : 
+            {
+                if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                
+                if(piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                break;
+            }
+            case "H4" : 
+            {
+                if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                break;
+            }
+            case "H3" : 
+            {
+                if(!piecesAlive[7][1].equals(""))
+                {
+                    possiblem.remove("H2");
+                }
+                
+                if(piecesAlive[6][1].equals(""))
+                {
+                    possiblem.remove("G2");
+                }
+                break;
+            }
+            case "H2" : 
+            {
+                if(!piecesAlive[7][0].equals(""))
+                {
+                    possiblem.remove("H1");
+                }
+                
+                if(piecesAlive[6][0].equals(""))
+                {
+                    possiblem.remove("G1");
+                }
+                break;
+            }
         }
     }
     //======================================================
