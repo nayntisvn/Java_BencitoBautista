@@ -293,7 +293,7 @@ public class RookPiece {
                     possiblem.add("C" + i);
                 }
                 for(int i = 1; i <= 3; i++){
-                    possiblem.add("A" + i);
+                    possiblem.add("C" + i);
                 }
                 for(char a = 'D'; a <= 'H'; a++){
                     possiblem.add(a + "4");
@@ -322,7 +322,7 @@ public class RookPiece {
             case "C6":  
             {
                 for(int i = 7; i <= 8; i++){
-                    possiblem.add("A" + i);
+                    possiblem.add("C" + i);
                 }
                 for(int i = 1; i <= 5; i++){
                     possiblem.add("C" + i);
@@ -799,7 +799,7 @@ public class RookPiece {
             {
                 possiblem.add("H7");
                 for(int i = 1; i <= 6; i++){
-                    possiblem.add("F" + i);
+                    possiblem.add("G" + i);
                 }
                 for(char a = 'A'; a <= 'F'; a++){
                     possiblem.add(a + "7");
@@ -810,7 +810,7 @@ public class RookPiece {
             case "G8":  
             {   
                 for(int i = 1; i <= 7; i++){
-                    possiblem.add("F" + i);
+                    possiblem.add("G" + i);
                 }
                 possiblem.add("H8");
                 for(char a = 'A'; a <= 'F'; a++){
