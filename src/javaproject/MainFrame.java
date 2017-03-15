@@ -5209,7 +5209,7 @@ public class MainFrame extends javax.swing.JFrame {
     }
     //======================================================
     
-    
+    //  To find the block of pawn white
     public void blockFinderPawnW()
     {
         
