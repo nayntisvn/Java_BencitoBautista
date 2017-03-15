@@ -148,7 +148,6 @@ public class BishopPiece {
                         possiblem.add("F7");
                         possiblem.add("G8");
                         possiblem.add("C2");
-                        possiblem.add("D2");
                         possiblem.add("A2");
                         break;
                 }
@@ -265,8 +264,6 @@ public class BishopPiece {
                         possiblem.add("D6");
                         possiblem.add("E7");
                         possiblem.add("F8");
-                        possiblem.add("G4");
-                        possiblem.add("H3");
                         possiblem.add("D4");
                         possiblem.add("E3");
                         possiblem.add("F2");
