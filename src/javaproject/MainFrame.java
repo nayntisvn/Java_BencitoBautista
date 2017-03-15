@@ -13681,7 +13681,8 @@ public class MainFrame extends javax.swing.JFrame {
     Thread t1, t2;
     String in="",out="";
     String[] input;
-
+    String[] move;
+    
     public Server() {
         try {
             t1 = new Thread(this);
@@ -13710,6 +13711,10 @@ public class MainFrame extends javax.swing.JFrame {
                     if(goNoGo == 1)
                     {
                         pr1.println(outputToOpponent);
+                        move = outputToOpponent.split(",");
+                        
+                        
+                        
                         goNoGo = 0;
                     }
                 } while (!in.equals("END"));
@@ -16932,14 +16937,14 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(!bufferpiece.equals(""))
         {
-            if(piecesAlive[6][5].charAt(2) != bufferpiece.charAt(2))
+            if(piecesAlive[6][4].charAt(2) != bufferpiece.charAt(2))
             {
                 postmovePiece(bufferpiece, G5);
             }
-        else
-        {
-            premovePiece(piecesAlive[6][4], lblG5);
-        }
+            else
+            {
+                premovePiece(piecesAlive[6][4], lblG5);
+            }
         }
         else
         {
