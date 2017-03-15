@@ -10351,7 +10351,8 @@ public class MainFrame extends javax.swing.JFrame {
                         possiblem.remove("G7");
                         possiblem.remove("H8");
                     }
-                    else if(!piecesAlive[4][2].equals(""))
+                    
+                    if(!piecesAlive[4][2].equals(""))
                     {
                         possiblem.remove("G6");
                         possiblem.remove("H7");
