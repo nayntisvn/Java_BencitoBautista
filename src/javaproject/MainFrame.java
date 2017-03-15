@@ -13711,9 +13711,10 @@ public class MainFrame extends javax.swing.JFrame {
                     if(goNoGo == 1)
                     {
                         pr1.println(outputToOpponent);
+                        
                         move = outputToOpponent.split(",");
                         
-                        
+                        jLabel1.setText("You moved : " + move[1] + ", from " + move[2] + ", to" + move[3]);
                         
                         goNoGo = 0;
                     }
@@ -13742,6 +13743,10 @@ public class MainFrame extends javax.swing.JFrame {
                         }
                         else if(input[0].equals("move"))
                         {
+                            move = inputFromOpponent.split(",");
+                        
+                            jLabel1.setText("Player 2 moved : " + move[1] + ", from " + move[2] + ", to" + move[3]);
+                            
                             switch(input[2])
                             { 
                                 case "A1" : premovePiece(input[1], lblA1); break;
@@ -13908,6 +13913,7 @@ public class MainFrame extends javax.swing.JFrame {
     Socket socket;
     Thread t1, t2;
     String in = "", out = "";
+    String[] move;
 
     public Client() {
         try {
@@ -13931,6 +13937,11 @@ public class MainFrame extends javax.swing.JFrame {
                     if(goNoGo == 1)
                     {
                         pr1.println(outputToOpponent);
+                        
+                        move = outputToOpponent.split(",");
+                        
+                        jLabel1.setText("You moved : " + move[1] + ", from " + move[2] + ", to" + move[3]);
+                        
                         goNoGo = 0;
                     }
                 } while (!in.equals("END"));
@@ -13958,6 +13969,11 @@ public class MainFrame extends javax.swing.JFrame {
                         }
                         else if(input[0].equals("move"))
                         {
+                            
+                            move = inputFromOpponent.split(",");
+                        
+                            jLabel1.setText("Player 1 moved : " + move[1] + ", from " + move[2] + ", to" + move[3]);
+                            
                             switch(input[2])
                             { 
                                 case "A1" : premovePiece(input[1], lblA1); break;
