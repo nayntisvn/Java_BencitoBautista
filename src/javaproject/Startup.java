@@ -16,8 +16,11 @@ public class Startup extends javax.swing.JFrame {
     /**
      * Creates new form Startup
      */
+    
+    ImageIcon bg = new ImageIcon(getClass().getClassLoader().getResource("Resources/BACKGROUND.jpg"));
     public Startup() {
         initComponents();
+        jLabel2.setIcon(bg);
     }
 
     /**
