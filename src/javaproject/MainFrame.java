@@ -1127,7 +1127,7 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         possiblem = p1b.movement();
                         
-                        blockFinderPawnW();
+                        blockFinderPawnB();
                         possiblemoves(possiblem);
                         
                         break;
@@ -1138,7 +1138,7 @@ public class MainFrame extends javax.swing.JFrame {
                         bufferloc = initial.getName();
                         
                         possiblem = p2b.movement();
-                        blockFinderPawnW();
+                        blockFinderPawnB();
                         possiblemoves(possiblem);
                         
                         break;
@@ -1150,7 +1150,7 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         possiblem = p3b.movement();
                         
-                        blockFinderPawnW();
+                        blockFinderPawnB();
                         possiblemoves(possiblem);
                         break;
                     }
@@ -1161,7 +1161,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p4b.movement();
 
-                blockFinderPawnW();
+                blockFinderPawnB();
                 possiblemoves(possiblem);
                 break;
                     }
@@ -1172,7 +1172,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p5b.movement();
 
-                blockFinderPawnW();
+                blockFinderPawnB();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1183,7 +1183,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p6b.movement();
 
-                blockFinderPawnW();
+                blockFinderPawnB();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1194,7 +1194,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p7b.movement();
 
-                blockFinderPawnW();
+                blockFinderPawnB();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1205,7 +1205,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p8b.movement();
 
-                blockFinderPawnW();
+                blockFinderPawnB();
                 possiblemoves(possiblem);
                 break;
             }
