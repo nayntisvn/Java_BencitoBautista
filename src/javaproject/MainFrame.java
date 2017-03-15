@@ -1049,6 +1049,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                     possiblem = p2w.movement();
 
+                    blockFinderPawnW();
                     possiblemoves(possiblem);
 
                     break;
@@ -1059,7 +1060,8 @@ public class MainFrame extends javax.swing.JFrame {
                     bufferloc = initial.getName();
 
                     possiblem = p3w.movement();
-
+                    
+                    blockFinderPawnW();
                     possiblemoves(possiblem);
                     break;
                 }
@@ -1070,6 +1072,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p4w.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
                     }
@@ -1080,6 +1083,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p5w.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1090,6 +1094,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p6w.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1100,6 +1105,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p7w.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1110,6 +1116,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p8w.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1120,6 +1127,7 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         possiblem = p1b.movement();
                         
+                        blockFinderPawnW();
                         possiblemoves(possiblem);
                         
                         break;
@@ -1130,7 +1138,7 @@ public class MainFrame extends javax.swing.JFrame {
                         bufferloc = initial.getName();
                         
                         possiblem = p2b.movement();
-                        
+                        blockFinderPawnW();
                         possiblemoves(possiblem);
                         
                         break;
@@ -1142,6 +1150,7 @@ public class MainFrame extends javax.swing.JFrame {
                         
                         possiblem = p3b.movement();
                         
+                        blockFinderPawnW();
                         possiblemoves(possiblem);
                         break;
                     }
@@ -1152,6 +1161,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p4b.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
                     }
@@ -1162,6 +1172,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p5b.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1172,6 +1183,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p6b.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1182,6 +1194,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p7b.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -1192,6 +1205,7 @@ public class MainFrame extends javax.swing.JFrame {
 
                 possiblem = p8b.movement();
 
+                blockFinderPawnW();
                 possiblemoves(possiblem);
                 break;
             }
@@ -6185,6 +6199,473 @@ public class MainFrame extends javax.swing.JFrame {
         outputToOpponent += "," + destination.getName();
     }
     //======================================================
+    public void blockFinderPawnB()
+    {
+        switch(bufferloc)
+        {
+            case "A7" : 
+            {
+                if(!piecesAlive[0][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                
+                if(piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "A6" : 
+            {
+                if(!piecesAlive[0][3].equals(""))
+                {
+                    possiblem.remove("A4");
+                }
+                break;
+            }
+            case "A4" : 
+            {
+                if(!piecesAlive[0][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                break;
+            }
+            case "A5" : 
+            {
+                if(!piecesAlive[0][4].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                break;
+            }
+            case "A6" : 
+            {
+                if(!piecesAlive[0][5].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                break;
+            }
+            case "A7" : 
+            {
+                if(!piecesAlive[0][6].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                break;
+            }
+            case "B2" : 
+            {
+                if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                
+                if(piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                
+                if(piecesAlive[0][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                break;
+            }
+            case "B3" : 
+            {
+                if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "B4" : 
+            {
+                if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                }
+                break;
+            }
+            case "B5" : 
+            {
+                if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                }
+                break;
+            }
+            case "B6" : 
+            {
+                if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                }
+                break;
+            }
+            case "B7" : 
+            {
+                if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                }
+                break;
+            }
+            
+            case "C2" : 
+            {
+                if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                
+                if(piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "C3" : 
+            {
+                if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                }
+                break;
+            }
+            case "C4" : 
+            {
+                if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                }
+                break;
+            }
+            case "C5" : 
+            {
+                if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                }
+                break;
+            }
+            case "C6" : 
+            {
+                if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                }
+                break;
+            }
+            case "C7" : 
+            {
+                if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                }
+                break;
+            }
+            //////////////////D
+            case "D2" : 
+            {
+                if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                break;
+            }
+            case "D3" : 
+            {
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
+                break;
+            }
+            case "D4" : 
+            {
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                }
+                break;
+            }
+            case "D5" : 
+            {
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
+                break;
+            }
+            case "D6" : 
+            {
+                if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                }
+                break;
+            }
+            case "D7" : 
+            {
+                if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                break;
+            }
+            /////////////////////////E
+            case "E2" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                break;
+            }
+            case "E3" : 
+            {
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                break;
+            }
+            case "E4" : 
+            {
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                break;
+            }
+            case "E5" : 
+            {
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                break;
+            }
+            case "E6" : 
+            {
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                }
+                break;
+            }
+            case "E7" : 
+            {
+                if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                break;
+            }
+            
+            /////////////////////F
+            case "F2" : 
+            {
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                break;
+            }
+            case "F3" : 
+            {
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                break;
+            }
+            case "F4" : 
+            {
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                break;
+            }
+            case "F5" : 
+            {
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                break;
+            }
+            case "F6" : 
+            {
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                }
+                break;
+            }
+            case "F7" : 
+            {
+                if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                break;
+            }
+            //////////////G
+            case "G2" : 
+            {
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                
+                if(piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                break;
+            }
+            case "G3" : 
+            {
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                break;
+            }
+            case "G4" : 
+            {
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                break;
+            }
+            case "G5" : 
+            {
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                break;
+            }
+            case "G6" : 
+            {
+                if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                }
+                break;
+            }
+            case "G7" : 
+            {
+                if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                break;
+            }
+            ////////////////////////////H
+            case "H2" : 
+            {
+                if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                break;
+            }
+            case "H3" : 
+            {
+                if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                break;
+            }
+            case "H4" : 
+            {
+                if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                break;
+            }
+            case "H5" : 
+            {
+                if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                break;
+            }
+            case "H6" : 
+            {
+                if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H7");
+                }
+                break;
+            }
+            case "H7" : 
+            {
+                if(!piecesAlive[7][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                break;
+            }
+        }
+    }
     
     //  To find the block for pawn white
     public void blockFinderPawnW()
@@ -6212,6 +6693,446 @@ public class MainFrame extends javax.swing.JFrame {
                 }
                 break;
                 
+            }
+            case "A4" : 
+            {
+                if(!piecesAlive[0][4].equals(""))
+                {
+                    possiblem.remove("A5");
+                }
+                break;
+            }
+            case "A5" : 
+            {
+                if(!piecesAlive[0][4].equals(""))
+                {
+                    possiblem.remove("A6");
+                }
+                break;
+            }
+            case "A6" : 
+            {
+                if(!piecesAlive[0][5].equals(""))
+                {
+                    possiblem.remove("A7");
+                }
+                break;
+            }
+            case "A7" : 
+            {
+                if(!piecesAlive[0][6].equals(""))
+                {
+                    possiblem.remove("A8");
+                }
+                break;
+            }
+            case "B2" : 
+            {
+                if(!piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                
+                if(piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                
+                if(piecesAlive[0][2].equals(""))
+                {
+                    possiblem.remove("A3");
+                }
+                break;
+            }
+            case "B3" : 
+            {
+                if(!piecesAlive[1][3].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "B4" : 
+            {
+                if(!piecesAlive[1][4].equals(""))
+                {
+                    possiblem.remove("B5");
+                }
+                break;
+            }
+            case "B5" : 
+            {
+                if(!piecesAlive[1][5].equals(""))
+                {
+                    possiblem.remove("B6");
+                }
+                break;
+            }
+            case "B6" : 
+            {
+                if(!piecesAlive[1][6].equals(""))
+                {
+                    possiblem.remove("B7");
+                }
+                break;
+            }
+            case "B7" : 
+            {
+                if(!piecesAlive[1][7].equals(""))
+                {
+                    possiblem.remove("B8");
+                }
+                break;
+            }
+            
+            case "C2" : 
+            {
+                if(!piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                
+                if(piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[1][2].equals(""))
+                {
+                    possiblem.remove("B3");
+                }
+                break;
+            }
+            case "C3" : 
+            {
+                if(!piecesAlive[2][3].equals(""))
+                {
+                    possiblem.remove("C4");
+                }
+                break;
+            }
+            case "C4" : 
+            {
+                if(!piecesAlive[2][4].equals(""))
+                {
+                    possiblem.remove("C5");
+                }
+                break;
+            }
+            case "C5" : 
+            {
+                if(!piecesAlive[2][5].equals(""))
+                {
+                    possiblem.remove("C6");
+                }
+                break;
+            }
+            case "C6" : 
+            {
+                if(!piecesAlive[2][6].equals(""))
+                {
+                    possiblem.remove("C7");
+                }
+                break;
+            }
+            case "C7" : 
+            {
+                if(!piecesAlive[2][7].equals(""))
+                {
+                    possiblem.remove("C8");
+                }
+                break;
+            }
+            //////////////////D
+            case "D2" : 
+            {
+                if(!piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[2][2].equals(""))
+                {
+                    possiblem.remove("C3");
+                }
+                break;
+            }
+            case "D3" : 
+            {
+                if(!piecesAlive[3][3].equals(""))
+                {
+                    possiblem.remove("D4");
+                }
+                break;
+            }
+            case "D4" : 
+            {
+                if(!piecesAlive[3][4].equals(""))
+                {
+                    possiblem.remove("D5");
+                }
+                break;
+            }
+            case "D5" : 
+            {
+                if(!piecesAlive[3][5].equals(""))
+                {
+                    possiblem.remove("D6");
+                }
+                break;
+            }
+            case "D6" : 
+            {
+                if(!piecesAlive[3][6].equals(""))
+                {
+                    possiblem.remove("D7");
+                }
+                break;
+            }
+            case "D7" : 
+            {
+                if(!piecesAlive[3][7].equals(""))
+                {
+                    possiblem.remove("D8");
+                }
+                break;
+            }
+            /////////////////////////E
+            case "E2" : 
+            {
+                if(!piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[3][2].equals(""))
+                {
+                    possiblem.remove("D3");
+                }
+                break;
+            }
+            case "E3" : 
+            {
+                if(!piecesAlive[4][3].equals(""))
+                {
+                    possiblem.remove("E4");
+                }
+                break;
+            }
+            case "E4" : 
+            {
+                if(!piecesAlive[4][4].equals(""))
+                {
+                    possiblem.remove("E5");
+                }
+                break;
+            }
+            case "E5" : 
+            {
+                if(!piecesAlive[4][5].equals(""))
+                {
+                    possiblem.remove("E6");
+                }
+                break;
+            }
+            case "E6" : 
+            {
+                if(!piecesAlive[4][6].equals(""))
+                {
+                    possiblem.remove("E7");
+                }
+                break;
+            }
+            case "E7" : 
+            {
+                if(!piecesAlive[4][7].equals(""))
+                {
+                    possiblem.remove("E8");
+                }
+                break;
+            }
+            
+            /////////////////////F
+            case "F2" : 
+            {
+                if(!piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                
+                if(piecesAlive[4][2].equals(""))
+                {
+                    possiblem.remove("E3");
+                }
+                break;
+            }
+            case "F3" : 
+            {
+                if(!piecesAlive[5][3].equals(""))
+                {
+                    possiblem.remove("F4");
+                }
+                break;
+            }
+            case "F4" : 
+            {
+                if(!piecesAlive[5][4].equals(""))
+                {
+                    possiblem.remove("F5");
+                }
+                break;
+            }
+            case "F5" : 
+            {
+                if(!piecesAlive[5][5].equals(""))
+                {
+                    possiblem.remove("F6");
+                }
+                break;
+            }
+            case "F6" : 
+            {
+                if(!piecesAlive[5][6].equals(""))
+                {
+                    possiblem.remove("F7");
+                }
+                break;
+            }
+            case "F7" : 
+            {
+                if(!piecesAlive[5][7].equals(""))
+                {
+                    possiblem.remove("F8");
+                }
+                break;
+            }
+            //////////////G
+            case "G2" : 
+            {
+                if(!piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                
+                if(piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                if(piecesAlive[5][2].equals(""))
+                {
+                    possiblem.remove("F3");
+                }
+                break;
+            }
+            case "G3" : 
+            {
+                if(!piecesAlive[6][3].equals(""))
+                {
+                    possiblem.remove("G4");
+                }
+                break;
+            }
+            case "G4" : 
+            {
+                if(!piecesAlive[6][4].equals(""))
+                {
+                    possiblem.remove("G5");
+                }
+                break;
+            }
+            case "G5" : 
+            {
+                if(!piecesAlive[6][5].equals(""))
+                {
+                    possiblem.remove("G6");
+                }
+                break;
+            }
+            case "G6" : 
+            {
+                if(!piecesAlive[6][6].equals(""))
+                {
+                    possiblem.remove("G7");
+                }
+                break;
+            }
+            case "G7" : 
+            {
+                if(!piecesAlive[6][7].equals(""))
+                {
+                    possiblem.remove("G8");
+                }
+                break;
+            }
+            ////////////////////////////H
+            case "H2" : 
+            {
+                if(!piecesAlive[7][2].equals(""))
+                {
+                    possiblem.remove("H3");
+                }
+                
+                if(piecesAlive[6][2].equals(""))
+                {
+                    possiblem.remove("G3");
+                }
+                break;
+            }
+            case "H3" : 
+            {
+                if(!piecesAlive[7][3].equals(""))
+                {
+                    possiblem.remove("H4");
+                }
+                break;
+            }
+            case "H4" : 
+            {
+                if(!piecesAlive[7][4].equals(""))
+                {
+                    possiblem.remove("H5");
+                }
+                break;
+            }
+            case "H5" : 
+            {
+                if(!piecesAlive[7][5].equals(""))
+                {
+                    possiblem.remove("H6");
+                }
+                break;
+            }
+            case "H6" : 
+            {
+                if(!piecesAlive[7][6].equals(""))
+                {
+                    possiblem.remove("H7");
+                }
+                break;
+            }
+            case "H7" : 
+            {
+                if(!piecesAlive[7][7].equals(""))
+                {
+                    possiblem.remove("H8");
+                }
+                break;
             }
         }
     }
