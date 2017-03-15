@@ -35,7 +35,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
-    String url = "192.168.1.100";
+    String url = "192.168.173.1";
     String player = "";
     int goNoGo = 0;
     public String inputFromOpponent = null;
@@ -11647,13 +11647,13 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         
         refreshBoard();
-//        
-//        this.player = player;
-//        if ("player1".equals(player)){
-//            new Server();
-//        }else if("player2".equals(player)){
-//            new Client();
-//        }
+        
+        this.player = player;
+        if ("player1".equals(player)){
+            new Server();
+        }else if("player2".equals(player)){
+            new Client();
+        }
     }
 
     /**
