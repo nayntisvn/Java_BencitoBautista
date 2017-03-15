@@ -684,28 +684,28 @@ public class PawnPiece {
                     case "G5": {
                                 ordinate[1] = '4';
                                 possiblem.add("G" + ordinate[1] + "");
-                                possiblem.add("E4");
+                                possiblem.add("F4");
                                 possiblem.add("H4");
                             }
                             break;
                     case "G4": {
                                 ordinate[1] = '3';
                                 possiblem.add("G" + ordinate[1] + "");
-                                possiblem.add("E3");
+                                possiblem.add("F3");
                                 possiblem.add("H3");
                             }
                             break;
                     case "G3": {
                                 ordinate[1] = '2';
                                 possiblem.add("G" + ordinate[1] + "");
-                                possiblem.add("E2");
+                                possiblem.add("F2");
                                 possiblem.add("H2");
                             }
                             break;
                     case "G2": {
                                 ordinate[1] = '1';
                                 possiblem.add("G" + ordinate[1] + "");
-                                possiblem.add("E1");
+                                possiblem.add("F1");
                                 possiblem.add("H1");
                             }
                             break;
