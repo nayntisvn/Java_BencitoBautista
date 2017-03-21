@@ -35,7 +35,7 @@ public class MainFrame extends javax.swing.JFrame {
     //  Tas icomment out mo yung sakin.
 //
     //======================================================
-    String url = "192.168.173.1";
+    String url = "127.0.0.1";
     String player = "";
     int goNoGo = 0;
     public String inputFromOpponent = null;
